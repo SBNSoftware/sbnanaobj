@@ -11,13 +11,6 @@ art_make_library( LIBRARY_NAME StandardRecord
 
 build_dictionary( StandardRecord
                   DICTIONARY_LIBRARIES StandardRecord
-                  ${ART_FRAMEWORK_CORE}
-				  ${ART_FRAMEWORK_PRINCIPAL}
-				  art_Persistency_Common
-				  art_Utilities canvas
-				  cetlib cetlib_except
-				  ${MF_MESSAGELOGGER}
-				  ${MF_UTILITIES}
                  )
 
 install_headers()

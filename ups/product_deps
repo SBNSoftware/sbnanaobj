@@ -33,12 +33,9 @@ fwdir   product_dir scripts
 # With "product  version" table below, we now define dependencies
 # Add the dependent product and version
 
+# TODO can we use just ROOT? We use this to get art_make_library()
 product             version
-larsoft             v09_12_00
-sbnobj              v09_09_04
-sbndaq_artdaq_core  v0_07_03_of0
-# For CAFAna
-srproxy          v00.17
+canvas_root_io      v1_05_02
 
 # list products required ONLY for the build
 # any products here must NOT have qualifiers
@@ -47,17 +44,11 @@ cetbuildtools v7_17_01 - only_for_build
 # We now define allowed qualifiers and the corresponding qualifiers for the dependencies.
 # Make the table by adding columns before "notes".
 
-qualifier     larsoft     sbnobj     sbndaq_artdaq_core  srproxy notes
-e19:debug     e19:debug   e19:debug  e19:debug		 py3     -nq-
-e19:prof      e19:prof    e19:prof   e19:prof		 py3     -nq-
-c7:debug      c7:debug    c7:debug   c7:debug		 py3     -nq-
-c7:prof       c7:prof     c7:prof    c7:prof		 py3     -nq-
-
-# table fragment to set FW_SEARCH_PATH needed to find XML files:
-table_fragment_begin
-    # currently, XML pandora files are installed in 'scripts':
-    pathPrepend(FW_SEARCH_PATH, ${SBNCODE_DIR}/scripts)
-table_fragment_end
+qualifier canvas_root_io notes
+e19:debug e19:debug      -nq-
+e19:prof  e19:prof       -nq-
+c7:debug  c7:debug       -nq-
+c7:prof   c7:prof        -nq-
 
 # Preserve tabs and formatting in emacs and vi / vim:
 
