@@ -4,9 +4,9 @@
 #ifndef SRSHOWER_H
 #define SRSHOWER_H
 
-#include "sbncode/StandardRecord/SRVector3D.h"
-#include "sbncode/StandardRecord/SRShowerSelection.h"
-#include "sbncode/StandardRecord/SRTrackTruth.h"
+#include "sbnanaobj/StandardRecord/SRVector3D.h"
+#include "sbnanaobj/StandardRecord/SRShowerSelection.h"
+#include "sbnanaobj/StandardRecord/SRTrackTruth.h"
 
 namespace caf
 {

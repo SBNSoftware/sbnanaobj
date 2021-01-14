@@ -17,7 +17,7 @@
 cmake_minimum_required (VERSION 3.12)
 #cmake_minimum_required (VERSION 3.12...3.14 FATAL_ERROR)
 
-project(sbncode)
+project(sbnanaobj)
 
 message(STATUS "\n\n  ==========================   ${PROJECT_NAME}   ==========================")
 
@@ -63,9 +63,8 @@ include(ArtDictionary)
 include(ArtMake)
 include(BuildPlugins)
 
-add_subdirectory(sbncode)
+add_subdirectory(sbnanaobj)
 add_subdirectory(ups)
-add_subdirectory(fcl)
 
 # packaging utility
 include(UseCPack)

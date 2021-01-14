@@ -4,7 +4,7 @@
 //          direction and length, but does not own its cell hits.
 ////////////////////////////////////////////////////////////////////////
 
-#include "sbncode/StandardRecord/SRTrack.h"
+#include "sbnanaobj/StandardRecord/SRTrack.h"
 
 #include <climits>
 

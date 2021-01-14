@@ -2,7 +2,7 @@
 // \file    SRCRTHitMAtch.cxx
 ////////////////////////////////////////////////////////////////////////
 
-#include "sbncode/StandardRecord/SRCRTHitMatch.h"
+#include "sbnanaobj/StandardRecord/SRCRTHitMatch.h"
 
 namespace caf
 {

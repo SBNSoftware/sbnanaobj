@@ -2,7 +2,7 @@
 // \file    SRSliceRecoBranch.cxx
 ////////////////////////////////////////////////////////////////////////
 
-#include "sbncode/StandardRecord/SRSliceRecoBranch.h"
+#include "sbnanaobj/StandardRecord/SRSliceRecoBranch.h"
 
 
 namespace caf 

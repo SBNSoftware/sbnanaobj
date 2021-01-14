@@ -4,7 +4,7 @@
 #ifndef SRCRTTRACK_H
 #define SRCRTTRACK_H
 
-#include "sbncode/StandardRecord/SRCRTHit.h"
+#include "sbnanaobj/StandardRecord/SRCRTHit.h"
 
 namespace caf
 {

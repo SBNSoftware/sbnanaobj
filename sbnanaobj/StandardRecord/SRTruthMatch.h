@@ -6,7 +6,7 @@
 #ifndef SRTRUTHMATCH_H
 #define SRTRUTHMATCH_H
 
-#include "sbncode/StandardRecord/SRVector3D.h"
+#include "sbnanaobj/StandardRecord/SRVector3D.h"
 
 
 namespace caf

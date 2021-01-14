@@ -4,7 +4,7 @@
 // \author  $Author: psihas@fnal.gov
 ////////////////////////////////////////////////////////////////////////
 
-#include "sbncode/StandardRecord/SRTrueInteraction.h"
+#include "sbnanaobj/StandardRecord/SRTrueInteraction.h"
 
 
 namespace caf

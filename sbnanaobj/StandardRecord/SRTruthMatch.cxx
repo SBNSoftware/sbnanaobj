@@ -4,7 +4,7 @@
 // \author  $Author: psihas@fnal.gov
 ////////////////////////////////////////////////////////////////////////
 
-#include "sbncode/StandardRecord/SRTruthMatch.h"
+#include "sbnanaobj/StandardRecord/SRTruthMatch.h"
 
 #include <limits>
 
