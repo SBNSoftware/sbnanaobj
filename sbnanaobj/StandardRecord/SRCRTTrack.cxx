@@ -1,15 +1,14 @@
 ////////////////////////////////////////////////////////////////////////
-// \file    SRCRTHit.cxx
+// \file    SRCRTTrack.cxx
 ////////////////////////////////////////////////////////////////////////
 
-#include "sbncode/StandardRecord/SRCRTHit.h"
+#include "sbncode/StandardRecord/SRCRTTrack.h"
 
 namespace caf
 {
 
-  SRCRTHit::SRCRTHit():
-    time(std::numeric_limits<float>::signaling_NaN()),
-    pe(std::numeric_limits<float>::signaling_NaN())
+  SRCRTTrack::SRCRTTrack():
+    time(std::numeric_limits<float>::signaling_NaN())
   {}
 } // end namespace caf
 ////////////////////////////////////////////////////////////////////////
