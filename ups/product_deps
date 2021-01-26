@@ -2,7 +2,7 @@
 
 # The *parent* line must the first non-commented line and defines this product and version
 # The version should be of the form vxx_yy_zz (e.g. v01_02_03)
-parent sbnanaobj v09_12_00_01
+parent sbnanaobj v09_14_00
 defaultqual e19
 
 # These optional lines define the installed directories where headers,
@@ -35,7 +35,7 @@ fwdir   product_dir scripts
 
 # TODO can we use just ROOT? We use this to get art_make_library()
 product             version
-canvas_root_io      v1_05_02
+root      	    v6_18_04d
 
 # list products required ONLY for the build
 # any products here must NOT have qualifiers
@@ -44,7 +44,7 @@ cetbuildtools v7_17_01 - only_for_build
 # We now define allowed qualifiers and the corresponding qualifiers for the dependencies.
 # Make the table by adding columns before "notes".
 
-qualifier canvas_root_io notes
+qualifier root	    	 notes
 e19:debug e19:debug      -nq-
 e19:prof  e19:prof       -nq-
 c7:debug  c7:debug       -nq-

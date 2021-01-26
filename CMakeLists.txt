@@ -15,10 +15,8 @@
 
 # use cmake 2.8 or later
 cmake_minimum_required (VERSION 3.12)
-#cmake_minimum_required (VERSION 3.12...3.14 FATAL_ERROR)
 
 project(sbnanaobj)
-
 message(STATUS "\n\n  ==========================   ${PROJECT_NAME}   ==========================")
 
 # cetbuildtools contains our cmake modules
@@ -27,13 +25,11 @@ IF (NOT CETBUILDTOOLS_VERSION)
     MESSAGE (FATAL_ERROR "ERROR: setup cetbuildtools to get the cmake modules")
 ENDIF()
 
-set(CMAKE_MODULE_PATH $ENV{CANVAS_ROOT_IO_DIR}/Modules
-                      $ENV{CETBUILDTOOLS_DIR}/Modules
+set(CMAKE_MODULE_PATH $ENV{CETBUILDTOOLS_DIR}/Modules
                       ${CMAKE_MODULE_PATH})
 
 include(CetCMakeEnv)
 cet_cmake_env()
-
 set_install_root()
 
 # The specification of the C++ standard is required because CET macros
@@ -52,10 +48,9 @@ cet_report_compiler_flags()
 
 # these are minimum required versions, not the actual product versions
 find_ups_product(cetbuildtools v05_14_00)
-find_ups_product(canvas_root_io v1_05_02)
+find_ups_root(v6_00_00)
 
-# macros for dictionary and simple_plugin
-include(ArtDictionary)
+# additional macros for dictionary and simple_plugin
 
 add_subdirectory(sbnanaobj)
 add_subdirectory(ups)
