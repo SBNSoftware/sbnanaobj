@@ -4,7 +4,7 @@
 //          for larana Chi2ParticleID results. 
 ////////////////////////////////////////////////////////////////////////
 
-#include "sbncode/StandardRecord/SRTrkChi2PID.h"
+#include "sbnanaobj/StandardRecord/SRTrkChi2PID.h"
 
 #include <limits>
 

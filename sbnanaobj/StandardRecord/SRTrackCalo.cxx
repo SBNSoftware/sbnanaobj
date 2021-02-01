@@ -4,7 +4,7 @@
 //          for larana Chi2ParticleID results. 
 ////////////////////////////////////////////////////////////////////////
 
-#include "sbncode/StandardRecord/SRTrackCalo.h"
+#include "sbnanaobj/StandardRecord/SRTrackCalo.h"
 
 #include <limits>
 

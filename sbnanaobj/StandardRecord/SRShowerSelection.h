@@ -4,7 +4,7 @@
 #ifndef SRSHOWERSELECTION_H
 #define SRSHOWERSELECTION_H
 
-#include "sbncode/StandardRecord/SRVector3D.h"
+#include "sbnanaobj/StandardRecord/SRVector3D.h"
 
 namespace caf
 {

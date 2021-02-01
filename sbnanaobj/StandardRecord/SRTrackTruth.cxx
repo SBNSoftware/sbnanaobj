@@ -3,7 +3,7 @@
 // \brief   An SRTrack is a high level track object.  It knows its
 //          direction and length, but does not own its cell hits.
 ////////////////////////////////////////////////////////////////////////
-#include "sbncode/StandardRecord/SRTrackTruth.h"
+#include "sbnanaobj/StandardRecord/SRTrackTruth.h"
 
 #include <climits>
 //#include <bits/stdc++.h> //not available in clang

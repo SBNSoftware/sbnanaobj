@@ -5,7 +5,7 @@
 // \author  Christopher Backhouse - bckhouse@caltech.edu
 ////////////////////////////////////////////////////////////////////////
 
-#include "sbncode/StandardRecord/SRVector3D.h"
+#include "sbnanaobj/StandardRecord/SRVector3D.h"
  
 namespace caf
 {

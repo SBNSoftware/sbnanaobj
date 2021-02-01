@@ -3,7 +3,7 @@
 // \author  Christopher Backhouse - bckhouse@caltech.edu
 ////////////////////////////////////////////////////////////////////////
  
-#include "sbncode/StandardRecord/SRLorentzVector.h"
+#include "sbnanaobj/StandardRecord/SRLorentzVector.h"
  
 namespace caf
 {

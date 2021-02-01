@@ -4,8 +4,8 @@
 #ifndef SRFAKERECOPARTICLE_H
 #define SRFAKERECOPARTICLE_H
 
-#include "sbncode/StandardRecord/SRTruthMatch.h"
-#include "sbncode/StandardRecord/SRTrueParticle.h"
+#include "sbnanaobj/StandardRecord/SRTruthMatch.h"
+#include "sbnanaobj/StandardRecord/SRTrueParticle.h"
 
 namespace caf
 {

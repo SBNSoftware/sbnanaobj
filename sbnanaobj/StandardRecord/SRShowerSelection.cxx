@@ -2,7 +2,7 @@
 // \file    SRShowerSelection.cxx
 ////////////////////////////////////////////////////////////////////////
 
-#include "sbncode/StandardRecord/SRShowerSelection.h"
+#include "sbnanaobj/StandardRecord/SRShowerSelection.h"
 
 namespace caf
 {

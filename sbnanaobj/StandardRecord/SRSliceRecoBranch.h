@@ -4,9 +4,9 @@
 #ifndef SRSLICERECOBRANCH_H
 #define SRSLICERECOBRANCH_H
 
-#include "sbncode/StandardRecord/SRTrack.h"
-#include "sbncode/StandardRecord/SRShower.h"
-// #include "sbncode/StandardRecord/SRVertex.h"
+#include "sbnanaobj/StandardRecord/SRTrack.h"
+#include "sbnanaobj/StandardRecord/SRShower.h"
+// #include "sbnanaobj/StandardRecord/SRVertex.h"
 
 #include <vector>
 

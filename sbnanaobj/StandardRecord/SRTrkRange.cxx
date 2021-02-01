@@ -3,7 +3,7 @@
 // \brief   An SRTrkRange is an object for p estimates using range
 ////////////////////////////////////////////////////////////////////////
 
-#include "sbncode/StandardRecord/SRTrkRange.h"
+#include "sbnanaobj/StandardRecord/SRTrkRange.h"
 
 #include <limits>
 

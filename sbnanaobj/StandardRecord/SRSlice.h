@@ -6,11 +6,11 @@
 #ifndef SRSLICE_H
 #define SRSLICE_H
 
-#include "sbncode/StandardRecord/SRFlashMatch.h"
-#include "sbncode/StandardRecord/SRSliceRecoBranch.h"
-#include "sbncode/StandardRecord/SRTrueInteraction.h"
-#include "sbncode/StandardRecord/SRTruthMatch.h"
-#include "sbncode/StandardRecord/SRVector3D.h"
+#include "sbnanaobj/StandardRecord/SRFlashMatch.h"
+#include "sbnanaobj/StandardRecord/SRSliceRecoBranch.h"
+#include "sbnanaobj/StandardRecord/SRTrueInteraction.h"
+#include "sbnanaobj/StandardRecord/SRTruthMatch.h"
+#include "sbnanaobj/StandardRecord/SRVector3D.h"
 
 
 namespace caf

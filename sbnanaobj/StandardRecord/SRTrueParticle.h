@@ -6,9 +6,9 @@
 
 #include <cstdint>
 
-#include "sbncode/StandardRecord/SRVector3D.h"
+#include "sbnanaobj/StandardRecord/SRVector3D.h"
 
-#include "sbncode/StandardRecord/SREnums.h"
+#include "sbnanaobj/StandardRecord/SREnums.h"
 
 /* #include "SRVector3D.h" */
 

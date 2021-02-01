@@ -2,7 +2,7 @@
 // \file    SRCRTTrack.cxx
 ////////////////////////////////////////////////////////////////////////
 
-#include "sbncode/StandardRecord/SRCRTTrack.h"
+#include "sbnanaobj/StandardRecord/SRCRTTrack.h"
 
 namespace caf
 {

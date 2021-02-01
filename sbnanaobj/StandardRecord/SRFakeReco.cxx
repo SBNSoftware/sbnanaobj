@@ -4,7 +4,7 @@
 // \author  $Author: grayputnam@uchicago.edu
 ////////////////////////////////////////////////////////////////////////
 
-#include "sbncode/StandardRecord/SRFakeReco.h"
+#include "sbnanaobj/StandardRecord/SRFakeReco.h"
 
 
 namespace caf

@@ -4,7 +4,7 @@
 //          direction and length, but does not own its cell hits.
 ////////////////////////////////////////////////////////////////////////
 
-#include "sbncode/StandardRecord/SRShower.h"
+#include "sbnanaobj/StandardRecord/SRShower.h"
 
 namespace caf
 {
