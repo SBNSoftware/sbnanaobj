@@ -13,6 +13,7 @@
 #include "sbnanaobj/StandardRecord/SRCRTHitMatch.h"
 #include "sbnanaobj/StandardRecord/SRCRTTrackMatch.h"
 #include "sbnanaobj/StandardRecord/SRTrackCalo.h"
+#include "sbnanaobj/StandardRecord/SRTrkSplit.h"
 
 #include "sbnanaobj/StandardRecord/SRVector3D.h"
 #include "sbnanaobj/StandardRecord/SREnums.h"
@@ -36,6 +37,7 @@ namespace caf
       float          len;          ///< track length [cm]
       float          costh;       ///< Costh of start direction of track
       float          phi;         ///< Angle of the start direction of the track in the x-y plane
+      SRVector3D     dir;         ///< Direction of track at start
       SRVector3D     start;       ///< Start point of track
       SRVector3D     end;         ///< End point of track
       int            ID;          ///< ID of this track (taken from the pandora particle "ID" of this track)
@@ -50,6 +52,8 @@ namespace caf
 
       SRTrkMCS       mcsP;
       SRTrkRange     rangeP;
+
+      SRTrkSplit     split;
 
       SRTrackTruth   truth;        ///< truth information
       SRCRTHitMatch  crthit;       ///< CRT Hit match
