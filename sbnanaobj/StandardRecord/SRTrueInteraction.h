@@ -32,8 +32,6 @@ namespace caf
 
     float      E;             ///< True energy [GeV]
     float      visE;          ///< True interaction deposited energy
-    float      visEinslc;     ///< True deposited energy in slice [GeV]
-    float      visEcosmic;    ///< True slice deposited energy from cosmics
     float      time;           ///< Time
     float      bjorkenX;          //!< Bjorken x = (k-k')^2/(2*p.q) [Dimensionless]
     float      inelasticityY;     //!< Inelasticity y
