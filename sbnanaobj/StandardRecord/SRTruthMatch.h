@@ -20,7 +20,9 @@ namespace caf
       virtual ~SRTruthMatch();
 
       float      eff;           ///< Slice efficiency for this interaction
-      float      pur;           ///< Slicer purity for this interaction
+      float      pur;           ///< Slice purity for this interaction
+      float      visEinslc;     ///< True deposited energy in slice [GeV]
+      float      visEcosmic;    ///< True slice deposited energy from cosmics
       int        index;         ///< Index of the matched true neutrino interaction (-1 if not matched to neutrino)
 
       void setDefault();
