@@ -26,8 +26,6 @@ namespace caf
 
     E(std::numeric_limits<float>::signaling_NaN()),
     visE(std::numeric_limits<float>::signaling_NaN()),
-    visEinslc(std::numeric_limits<float>::signaling_NaN()),
-    visEcosmic(std::numeric_limits<float>::signaling_NaN()),
     time(std::numeric_limits<float>::signaling_NaN()),
     bjorkenX(std::numeric_limits<float>::signaling_NaN()),
     inelasticityY(std::numeric_limits<float>::signaling_NaN()),

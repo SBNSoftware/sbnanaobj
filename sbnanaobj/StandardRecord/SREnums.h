@@ -135,7 +135,10 @@ namespace caf
     kG4hIoni=54,
     kG4muPairProd=55,
     kG4hPairProd=56,
-    kG4LArVoxelReadoutScoringProcess=57
+    kG4LArVoxelReadoutScoringProcess=57,
+    kG4ionIoni=58,
+    kG4hBrems=59,
+    kG4UNKNOWN=60
   };// g4_process_
 
 }
