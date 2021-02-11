@@ -21,6 +21,7 @@
   <class name="caf::SRTrkChi2PID" />
   <class name="caf::SRTrkMCS" />
   <class name="caf::SRTrkRange" />
+  <class name="caf::SRTrkSplit" />
   <class name="caf::SRTrueParticle" />
   <class name="caf::SRTruthMatch" />
   <class name="caf::SRTrueInteraction" />
