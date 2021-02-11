@@ -22,8 +22,6 @@ namespace caf
     int   index;           //!< Index of the matched true neutrino interaction (-1 if not matched to neutrino)
     int   targetPDG;       //!< PDG code of struck target
     int   genie_intcode;   //!< Interaction mode (as for LArSoft MCNeutrino::Mode() )
-    int   parentPDG;       //!< Parent hadron/muon PDG
-    int   parentDecayMode; //!< Parent hadron/muon decay mode
 
     bool    isnc;              //!< same as LArSoft "ccnc" - 0=CC, 1=NC
     bool    iscc;              //!< CC (true) or NC/interference (false)
@@ -45,10 +43,16 @@ namespace caf
     float      eccqe;             //!< CCQE energy
     float      baseline;          //!< Distance from decay to interaction
 
+    int        parent_dcy_mode;   //!< Parent hadron/muon decay mode
+    int        parent_pdg;        //!< PDG Code of parent particle ID
+    SRVector3D prod_vtx;          //!< Neutrino production vertex [cm; beam coordinates]
+    SRVector3D parent_dcy_mom;    //!< Neutrino parent momentum at decay [GeV; beam coordinates]
+    float      parent_dcy_E;      //!< Neutrino parent energy at decay [GeV]
+    float      imp_weight;        //!< Importance weight from flux file
+
     SRVector3D        vtx;             //!< Vertex position in detector coord. [cm]
     SRVector3D        momentum;        //!< Neutrino three-momentum
     SRVector3D        position;        //!< Neutrino interaction position
-    SRVector3D        parentDecayVtx;  //!< Parent hadron/muon decay vertex
 
     Det_t             det;
 

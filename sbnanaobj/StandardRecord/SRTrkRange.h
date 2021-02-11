@@ -15,6 +15,7 @@ namespace caf
       virtual ~SRTrkRange();
 
       float    p_muon;   ///< momentum estimate from trk range (muon hypothesis)
+      float    p_pion;   ///< momentum estimate from trk range (pion hypothesis)
       float    p_proton; ///< momentum estimate from trk range (proton hypothesis)
 
       void setDefault();

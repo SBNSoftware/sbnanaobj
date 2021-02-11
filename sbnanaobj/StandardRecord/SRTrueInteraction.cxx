@@ -17,8 +17,6 @@ namespace caf
     index(-1),
     targetPDG(-999),
     genie_intcode(-999),
-    parentPDG(-999),
-    parentDecayMode(-999),
     isnc(false),
     iscc(false),
     isvtxcont(false),
