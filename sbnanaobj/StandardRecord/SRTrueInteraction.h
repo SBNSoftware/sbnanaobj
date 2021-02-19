@@ -45,6 +45,13 @@ namespace caf
     float      eccqe;             //!< CCQE energy
     float      baseline;          //!< Distance from decay to interaction
 
+    unsigned   plane0nhitprim;    //!< Number of hits from primary particles on plane 0 (1st Ind.)
+    unsigned   plane1nhitprim;    //!< Number of hits from primary particles on plane 1 (2nd Ind.)
+    unsigned   plane2nhitprim;    //!< Number of hits from primary particles on plane 2 (Col.)
+    unsigned   plane0nhit;    //!< Number of hits from particles on plane 0 (1st Ind.)
+    unsigned   plane1nhit;    //!< Number of hits from particles on plane 1 (2nd Ind.)
+    unsigned   plane2nhit;    //!< Number of hits from particles on plane 2 (Col.)
+
     int        parent_dcy_mode;   //!< Parent hadron/muon decay mode
     int        parent_pdg;        //!< PDG Code of parent particle ID
     SRVector3D prod_vtx;          //!< Neutrino production vertex [cm; beam coordinates]
