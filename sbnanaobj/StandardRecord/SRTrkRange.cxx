@@ -12,6 +12,7 @@ namespace caf
 
   SRTrkRange::SRTrkRange():
     p_muon(std::numeric_limits<float>::signaling_NaN()),
+    p_pion(std::numeric_limits<float>::signaling_NaN()),
     p_proton(std::numeric_limits<float>::signaling_NaN())
   {  }
 
@@ -20,6 +21,7 @@ namespace caf
   void SRTrkRange::setDefault()
   {
     p_muon     = -5.0;
+    p_pion     = -5.0;
     p_proton   = -5.0;
   }
 
