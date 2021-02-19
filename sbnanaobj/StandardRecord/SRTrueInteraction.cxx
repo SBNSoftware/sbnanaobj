@@ -23,7 +23,9 @@ namespace caf
     is_numucc_primary(false),
 
     E(std::numeric_limits<float>::signaling_NaN()),
-    visE(std::numeric_limits<float>::signaling_NaN()),
+    plane0VisE(std::numeric_limits<float>::signaling_NaN()),
+    plane1VisE(std::numeric_limits<float>::signaling_NaN()),
+    plane2VisE(std::numeric_limits<float>::signaling_NaN()),
     time(std::numeric_limits<float>::signaling_NaN()),
     bjorkenX(std::numeric_limits<float>::signaling_NaN()),
     inelasticityY(std::numeric_limits<float>::signaling_NaN()),
