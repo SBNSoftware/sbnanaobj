@@ -111,6 +111,7 @@
    <version ClassVersion="10" checksum="839301601"/>
   </class>
 
+  <class name="caf::SRPFP" />
   <!--<class name="caf::SRLorentzVector" /> -->
 
   <class name="std::vector<caf::SRFakeReco>" />
