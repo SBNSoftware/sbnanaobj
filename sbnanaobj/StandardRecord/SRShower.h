@@ -7,6 +7,7 @@
 #include "sbnanaobj/StandardRecord/SRVector3D.h"
 #include "sbnanaobj/StandardRecord/SRShowerSelection.h"
 #include "sbnanaobj/StandardRecord/SRTrackTruth.h"
+#include "sbnanaobj/StandardRecord/SRPFP.h"
 
 namespace caf
 {
@@ -42,16 +43,10 @@ namespace caf
       SRVector3D start;             ///< shower start point in detector coordinates [cm]
       SRVector3D end;               ///< shower end point (start+len*dir) in detector coordinates [cm]
 
-      int            ID;          ///< ID of this shower (taken from the pandora particle "ID" of this PFP)
-      std::vector<int> daughters; ///< ID's of daughters of this shower
-      int parent;                 ///< ID of parent particle of this shower
-
       SRShowerSelection selVars;
-      SRTrackTruth   truth;        ///< truth information TODO: make seperate showe info class
+      SRTrackTruth truth;        ///< truth information TODO: make seperate showe info class
+      SRPFP pfp;                 ///< Contains the hierarchy and metadata from Pandora
 
-      bool parent_is_primary;
-      
-      int slcID;            ///< ID of the slice that this shower is in
       unsigned producer;    ///< Index of the producer that produced this object. In ICARUS, this is the same as the cryostat.
 
     };

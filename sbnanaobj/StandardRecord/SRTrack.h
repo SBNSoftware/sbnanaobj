@@ -13,6 +13,7 @@
 #include "sbnanaobj/StandardRecord/SRCRTHitMatch.h"
 #include "sbnanaobj/StandardRecord/SRCRTTrackMatch.h"
 #include "sbnanaobj/StandardRecord/SRTrackCalo.h"
+#include "sbnanaobj/StandardRecord/SRPFP.h"
 
 #include "sbnanaobj/StandardRecord/SRVector3D.h"
 #include "sbnanaobj/StandardRecord/SREnums.h"
@@ -55,7 +56,8 @@ namespace caf
 
       SRTrackTruth   truth;        ///< truth information
       SRCRTHitMatch  crthit;       ///< CRT Hit match
-      SRCRTTrackMatch  crttrack;       ///< CRT Track match
+      SRCRTTrackMatch  crttrack;   ///< CRT Track match
+      SRPFP pfp;                   ///< Contains the hierarchy and metadata from Pandora
 
       // TO DO: Move the following into SRObjects      
 
@@ -77,13 +79,6 @@ namespace caf
       /* }; */
 
       //      CRTMatch       crt_match;   ///< Matching to CRT information
-      std::vector<int> daughters; ///< ID's of daughters of this track
-      int             ndaughters; //< Number of daughters
-      int parent;                 ///< ID of parent particle of this track
-      bool parent_is_primary;
-
-      int slcID;
-
 
     };
 
