@@ -13,7 +13,7 @@
 #include "sbnanaobj/StandardRecord/SRCRTHitMatch.h"
 #include "sbnanaobj/StandardRecord/SRCRTTrackMatch.h"
 #include "sbnanaobj/StandardRecord/SRTrackCalo.h"
-
+#include "sbnanaobj/StandardRecord/SR2EndTrack.h"
 #include "sbnanaobj/StandardRecord/SRVector3D.h"
 #include "sbnanaobj/StandardRecord/SREnums.h"
 
@@ -54,6 +54,8 @@ namespace caf
       SRTrackTruth   truth;        ///< truth information
       SRCRTHitMatch  crthit;       ///< CRT Hit match
       SRCRTTrackMatch  crttrack;       ///< CRT Track match
+
+      SR2EndTrack    dend;         ///< Double-ended track info
 
       // TO DO: Move the following into SRObjects      
 
