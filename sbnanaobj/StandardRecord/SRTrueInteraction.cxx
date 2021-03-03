@@ -16,6 +16,7 @@ namespace caf
     inttype(0),
     index(-1),
     targetPDG(-999),
+    hitnuc(-999),
     genie_intcode(-999),
     isnc(false),
     iscc(false),
