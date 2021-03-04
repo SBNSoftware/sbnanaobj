@@ -21,7 +21,10 @@ namespace caf
     {
     public:
 
-      float    planeVisE;   //!< Sum of energy deposited on each plane in the TPC (generically is =3*(startE-endE)). Helpful for truth matching. [GeV]
+      float    plane0VisE;   //!< Sum of energy deposited on plane 0 (1st Ind.) [GeV]
+      float    plane1VisE;   //!< Sum of energy deposited on plane 1 (2nd Ind.) [GeV]
+      float    plane2VisE;   //!< Sum of energy deposited on plane 2 (Col.) [GeV]
+
       float    genE;        //!< Energy at generation pt [GeV]
       float    startE;      //!< Energy at first pt in active TPC volume [GeV]
       float    endE;        //!< Energy at last pt in active TPC volume [GeV]
@@ -29,6 +32,10 @@ namespace caf
       float    startT;      //!< Start time of first TPC point [mus -- t=0 is spill time]
       float    endT;        //!< End time last point in the active [mus -- t=0 is spill time]
       float    length;      //!< Trajectory length in active TPC volume the particle first enters [cm]
+
+      unsigned plane0nhit;  //!< Number of hits on plane 0 (1st Ind.)
+      unsigned plane1nhit;  //!< Number of hits on plane 1 (2nd Ind.)
+      unsigned plane2nhit;  //!< Number of hits on plane 2 (Col.)
 
       SRVector3D genp;        //!< Momentum at generation point [GeV/c]
       SRVector3D startp;      //!< Momentum at first point in the active TPC volume [GeV/c]

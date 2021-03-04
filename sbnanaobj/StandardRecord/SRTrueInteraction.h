@@ -23,8 +23,6 @@ namespace caf
     int   index;           //!< Index of the matched true neutrino interaction (-1 if not matched to neutrino)
     int   targetPDG;       //!< PDG code of struck target
     int   genie_intcode;   //!< Interaction mode (as for LArSoft MCNeutrino::Mode() )
-    int   parentPDG;       //!< Parent hadron/muon PDG
-    int   parentDecayMode; //!< Parent hadron/muon decay mode
 
     bool    isnc;              //!< same as LArSoft "ccnc" - 0=CC, 1=NC
     bool    iscc;              //!< CC (true) or NC/interference (false)
@@ -32,9 +30,9 @@ namespace caf
     bool    is_numucc_primary; //!< Whether this is the "primary" reco neutrino slice as defined by the numu CC analysis
 
     float      E;             ///< True energy [GeV]
-    float      visE;          ///< True interaction deposited energy
-    float      visEinslc;     ///< True deposited energy in slice [GeV]
-    float      visEcosmic;    ///< True slice deposited energy from cosmics
+    float      plane0VisE;    ///< True interaction deposited energy on plane 0 (1st Ind.)
+    float      plane1VisE;    ///< True interaction deposited energy on plane 1 (2nd Ind.)
+    float      plane2VisE;    ///< True interaction deposited energy on plane 2 (Col.)
     float      time;           ///< Time
     float      bjorkenX;          //!< Bjorken x = (k-k')^2/(2*p.q) [Dimensionless]
     float      inelasticityY;     //!< Inelasticity y
@@ -48,10 +46,23 @@ namespace caf
     float      eccqe;             //!< CCQE energy
     float      baseline;          //!< Distance from decay to interaction
 
+    unsigned   plane0nhitprim;    //!< Number of hits from primary particles on plane 0 (1st Ind.)
+    unsigned   plane1nhitprim;    //!< Number of hits from primary particles on plane 1 (2nd Ind.)
+    unsigned   plane2nhitprim;    //!< Number of hits from primary particles on plane 2 (Col.)
+    unsigned   plane0nhit;    //!< Number of hits from particles on plane 0 (1st Ind.)
+    unsigned   plane1nhit;    //!< Number of hits from particles on plane 1 (2nd Ind.)
+    unsigned   plane2nhit;    //!< Number of hits from particles on plane 2 (Col.)
+
+    int        parent_dcy_mode;   //!< Parent hadron/muon decay mode
+    int        parent_pdg;        //!< PDG Code of parent particle ID
+    SRVector3D prod_vtx;          //!< Neutrino production vertex [cm; beam coordinates]
+    SRVector3D parent_dcy_mom;    //!< Neutrino parent momentum at decay [GeV; beam coordinates]
+    float      parent_dcy_E;      //!< Neutrino parent energy at decay [GeV]
+    float      imp_weight;        //!< Importance weight from flux file
+
     SRVector3D        vtx;             //!< Vertex position in detector coord. [cm]
     SRVector3D        momentum;        //!< Neutrino three-momentum
     SRVector3D        position;        //!< Neutrino interaction position
-    SRVector3D        parentDecayVtx;  //!< Parent hadron/muon decay vertex
 
     Det_t             det;
 
