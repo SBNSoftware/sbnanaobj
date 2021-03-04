@@ -16,6 +16,7 @@ namespace caf
     inttype(0),
     index(-1),
     targetPDG(-999),
+    hitnuc(-999),
     genie_intcode(-999),
     isnc(false),
     iscc(false),
@@ -38,6 +39,19 @@ namespace caf
     t(std::numeric_limits<float>::signaling_NaN()),
     eccqe(std::numeric_limits<float>::signaling_NaN()),
     baseline(std::numeric_limits<float>::signaling_NaN()),
+
+    npiplus(0),
+    npiminus(0),
+    npizero(0),
+    nproton(0),
+    nneutron(0),
+
+    ischarm(false),
+    isseaquark(false),
+    resnum(-999),
+    xsec(std::numeric_limits<float>::signaling_NaN()),
+    genweight(std::numeric_limits<float>::signaling_NaN()),
+
     plane0nhitprim(0),
     plane1nhitprim(0),
     plane2nhitprim(0),
