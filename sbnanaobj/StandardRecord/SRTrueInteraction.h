@@ -6,6 +6,7 @@
 
 #include "sbnanaobj/StandardRecord/SRTruthMatch.h"
 #include "sbnanaobj/StandardRecord/SRTrueParticle.h"
+#include "sbnanaobj/StandardRecord/SRSystWeights.h"
 
 namespace caf
 {
@@ -62,6 +63,7 @@ namespace caf
     int                        nprim;       ///< Number of primary daughters
     std::vector<SRTrueParticle> prim;       ///< Primary daughters, lepton comes first in vector.
 
+    SRSystWeights wgt;
   };
 
 } // end namespace
