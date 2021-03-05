@@ -21,6 +21,9 @@ namespace caf
     int   inttype;         //!< Interaction type enum int_type::[...]
     int   index;           //!< Index of the matched true neutrino interaction (-1 if not matched to neutrino)
     int   targetPDG;       //!< PDG code of struck target
+    /// PDG code of struck nucleon (or, in the case of MEC, struck nucleon-nucleon pair).
+    /// For MEC, the codes are: 2000000200 --> nn,  2000000201 --> np,  2000000202 --> "pp
+    int   hitnuc;
     int   genie_intcode;   //!< Interaction mode (as for LArSoft MCNeutrino::Mode() )
 
     bool    isnc;              //!< same as LArSoft "ccnc" - 0=CC, 1=NC
@@ -44,6 +47,20 @@ namespace caf
     float      t;                 //!< Kinematic t
     float      eccqe;             //!< CCQE energy
     float      baseline;          //!< Distance from decay to interaction
+
+    unsigned int npiplus;  ///< Number of \f$\pi^+\f$'s after neutrino reaction, before FSI
+    unsigned int npiminus; ///< Number of \f$\pi^1\f$'s after neutrino reaction, before FSI
+    unsigned int npizero;  ///< Number of \f$\pi^0\f$'s after neutrino reaction, before FSI
+    unsigned int nproton;  ///< Number of protons after neutrino reaction, before FSI
+    unsigned int nneutron; ///< Number of neutrons after neutrino reaction, before FSI
+
+    // GTruth stuff
+    bool ischarm;    ///< Is a charmed quark in interaction
+    bool isseaquark; ///< Did neutrino scatter off a sea quark
+    int resnum;      ///< Resonance number, straight from GENIE
+    float xsec;      ///< xsec for thrown interaction, in 1/GeV^2, as stored by the GENIE spline
+
+    float genweight; ///< Weight, if any, assigned by the generator
 
     unsigned   plane0nhitprim;    //!< Number of hits from primary particles on plane 0 (1st Ind.)
     unsigned   plane1nhitprim;    //!< Number of hits from primary particles on plane 1 (2nd Ind.)
