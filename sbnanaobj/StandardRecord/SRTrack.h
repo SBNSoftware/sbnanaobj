@@ -36,6 +36,8 @@ namespace caf
       float          len;          ///< track length [cm]
       float          costh;       ///< Costh of start direction of track
       float          phi;         ///< Angle of the start direction of the track in the x-y plane
+      SRVector3D     dir;         ///< Direction of track at start
+      SRVector3D     dir_end;     ///< Direction of track at end
       SRVector3D     start;       ///< Start point of track
       SRVector3D     end;         ///< End point of track
       int            ID;          ///< ID of this track (taken from the pandora particle "ID" of this track)
