@@ -6,7 +6,6 @@
 
 #include "sbnanaobj/StandardRecord/SRTruthMatch.h"
 #include "sbnanaobj/StandardRecord/SRTrueParticle.h"
-#include "sbnanaobj/StandardRecord/SRSystWeights.h"
 
 namespace caf
 {
@@ -74,7 +73,12 @@ namespace caf
     int                        nprim;       ///< Number of primary daughters
     std::vector<SRTrueParticle> prim;       ///< Primary daughters, lepton comes first in vector.
 
-    SRSystWeights wgt;
+    /// \brief Systematic weights
+    ///
+    /// The first index is the parameter set, the second the universe. The
+    /// parameter sets are those defined in the globalTree, with matching
+    /// indices.
+    std::vector<std::vector<float>> wgt;
   };
 
 } // end namespace

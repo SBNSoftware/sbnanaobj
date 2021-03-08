@@ -28,8 +28,6 @@
   <class name="caf::SRVector3D" />
   <class name="caf::SRFakeReco" />
   <class name="caf::SRFakeRecoParticle" />
-  <class name="caf::SRSystWeights" />
-  <class name="caf::SRGenieSystWeights" />
   <class name="caf::SRGlobal" />
   <class name="caf::SRWeightPSet" />
   <class name="caf::SRWeightMapEntry" />
