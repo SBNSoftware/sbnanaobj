@@ -6,19 +6,24 @@
 #ifndef SRVECTOR3D_H
 #define SRVECTOR3D_H
  
+#ifndef __castxml__
 #include "TVector3.h"
+#endif
 
 namespace caf
 {
- /// A 3-vector with more efficient storage than TVector3
+  /// A 3-vector with more efficient storage than TVector3
   class SRVector3D
- {
-   public:
+  {
+  public:
     SRVector3D();
+    virtual ~SRVector3D();
+
+#ifndef __castxml__
     SRVector3D(float x, float y, float z);
     /// Easy conversion from TVector3
     SRVector3D(const TVector3& v);
-    virtual ~SRVector3D();
+
     void SetXYZ(float x, float y, float z);
 
     /// Easy conversion back to TVector3
@@ -43,6 +48,7 @@ namespace caf
       const float m = Mag();
       return SRVector3D(x/m, y/m, z/m);
     }
+#endif
 
     float x;
     float y;
