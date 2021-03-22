@@ -6,7 +6,7 @@
 #ifndef SRLORENTZVECTOR_H
 #define SRLORENTZVECTOR_H
  
-#ifndef __GCCXML__
+#ifndef __castxml__
 #include "TLorentzVector.h"
 #include "TVector3.h"
 #endif
@@ -20,7 +20,7 @@ namespace caf
     SRLorentzVector();
     virtual ~SRLorentzVector();
 
-#ifndef __GCCXML__
+#ifndef __castxml__
     SRLorentzVector(const TLorentzVector& v);
 
     /// Recommend users convert back to TLorentzVector for boosts etc
