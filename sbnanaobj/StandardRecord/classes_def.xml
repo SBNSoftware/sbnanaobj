@@ -24,6 +24,7 @@
   <class name="caf::SRTrueParticle" />
   <class name="caf::SRTruthMatch" />
   <class name="caf::SRTrueInteraction" />
+  <class name="caf::SRMultiverse" />
   <class name="caf::SRTruthBranch" />
   <class name="caf::SRVector3D" />
   <class name="caf::SRFakeReco" />
@@ -44,6 +45,7 @@
   <class name="std::vector<caf::SRShower>" />
   <class name="std::vector<caf::SRShowerSelection>" />
   <class name="std::vector<caf::SRTrueInteraction>" />
+  <class name="std::vector<caf::SRMultiverse>" />
   <class name="std::vector<caf::SRTrueParticle>" />
   <class name="std::vector<caf::ParticleMatch>" />
 
