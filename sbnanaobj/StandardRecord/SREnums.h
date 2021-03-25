@@ -141,6 +141,9 @@ namespace caf
     kG4UNKNOWN=60
   };// g4_process_
 
+  enum ReweightType_t{
+    kMultiSim, kPMNSigma, kFixed, kDefault
+  };
 }
 
 #endif
