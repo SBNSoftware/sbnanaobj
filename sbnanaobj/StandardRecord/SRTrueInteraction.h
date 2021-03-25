@@ -9,6 +9,14 @@
 
 namespace caf
 {
+  // NB - 'wgt' below cannot be just vector<vector<float>> due to bugs in
+  // SRProxy/FlatMaker.
+  class SRMultiverse
+  {
+  public:
+    std::vector<float> univ;
+  };
+
   /// The SRTrueInteraction is a representation of neutrino interaction information
   class SRTrueInteraction
   {
@@ -90,6 +98,12 @@ namespace caf
     int                        nprim;       ///< Number of primary daughters
     std::vector<SRTrueParticle> prim;       ///< Primary daughters, lepton comes first in vector.
 
+    /// \brief Systematic weights
+    ///
+    /// The first index is the parameter set, the second the universe. The
+    /// parameter sets are those defined in the globalTree, with matching
+    /// indices.
+    std::vector<SRMultiverse> wgt;
   };
 
 } // end namespace
