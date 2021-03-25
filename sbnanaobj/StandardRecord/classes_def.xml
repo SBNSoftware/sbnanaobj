@@ -116,6 +116,7 @@
   <class name="caf::SRTrackScatterDCA" />
   <class name="caf::SRTrackStoppingChi2Fit" />
   <class name="caf::SRTrackMVAPID" />
+  <class name="caf::SRShowerMVAPID" />
   <!--<class name="caf::SRLorentzVector" /> -->
 
   <class name="std::vector<caf::SRSlice>" />
