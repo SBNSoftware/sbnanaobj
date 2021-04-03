@@ -5,34 +5,114 @@
 <!-- art::Wrappers for these products are defined in CAFMaker -->
 
 <lcgdict>
-  <class name="caf::StandardRecord"/>
+  <class name="caf::StandardRecord" ClassVersion="10">
+   <version ClassVersion="10" checksum="2569909752"/>
+  </class>
 
-  <class name="caf::SRHeader"       />
-  <class name="caf::SRShower" />
-  <class name="caf::SRShowerSelection" />
-  <class name="caf::SRSlice"        />
-  <class name="caf::FlashMatch"        />
-  <class name="caf::SRFlashMatch"        />
-  <class name="caf::SRSliceRecoBranch" />
-  <class name="caf::SRTrack" />
-  <class name="caf::SRTrackTruth" />
-  <class name="caf::ParticleMatch" />
-  <class name="caf::SRTrackCalo" />
-  <class name="caf::SRTrkChi2PID" />
-  <class name="caf::SRTrkMCS" />
-  <class name="caf::SRTrkRange" />
-  <class name="caf::SRTrueParticle" />
-  <class name="caf::SRTruthMatch" />
-  <class name="caf::SRTrueInteraction" />
-  <class name="caf::SRMultiverse" />
-  <class name="caf::SRTruthBranch" />
-  <class name="caf::SRVector3D" />
-  <class name="caf::SRFakeReco" />
-  <class name="caf::SRFakeRecoParticle" />
-  <class name="caf::SRGlobal" />
-  <class name="caf::SRWeightPSet" />
-  <class name="caf::SRWeightMapEntry" />
-  <class name="caf::SRWeightParam" />
+  <class name="caf::SRHeader" ClassVersion="10">
+   <version ClassVersion="10" checksum="2908097963"/>
+  </class>
+
+  <class name="caf::SRShower" ClassVersion="10">
+   <version ClassVersion="10" checksum="2253513844"/>
+  </class>
+
+  <class name="caf::SRShowerSelection" ClassVersion="10">
+   <version ClassVersion="10" checksum="83320005"/>
+  </class>
+
+  <class name="caf::SRSlice" ClassVersion="10">
+   <version ClassVersion="10" checksum="1310903600"/>
+  </class>
+
+  <class name="caf::FlashMatch" ClassVersion="10">
+   <version ClassVersion="10" checksum="1963026454"/>
+  </class>
+
+  <class name="caf::SRFlashMatch" ClassVersion="10">
+   <version ClassVersion="10" checksum="3065846543"/>
+  </class>
+
+  <class name="caf::SRSliceRecoBranch" ClassVersion="10">
+   <version ClassVersion="10" checksum="1432916981"/>
+  </class>
+
+  <class name="caf::SRTrack" ClassVersion="10">
+   <version ClassVersion="10" checksum="1169960296"/>
+  </class>
+
+  <class name="caf::SRTrackTruth" ClassVersion="10">
+   <version ClassVersion="10" checksum="2876855736"/>
+  </class>
+
+  <class name="caf::ParticleMatch" ClassVersion="10">
+   <version ClassVersion="10" checksum="3607466832"/>
+  </class>
+
+  <class name="caf::SRTrackCalo" ClassVersion="10">
+   <version ClassVersion="10" checksum="821640099"/>
+  </class>
+
+  <class name="caf::SRTrkChi2PID" ClassVersion="10">
+   <version ClassVersion="10" checksum="3162028429"/>
+  </class>
+
+  <class name="caf::SRTrkMCS" ClassVersion="10">
+   <version ClassVersion="10" checksum="4182678053"/>
+  </class>
+
+  <class name="caf::SRTrkRange" ClassVersion="10">
+   <version ClassVersion="10" checksum="4056415501"/>
+  </class>
+
+  <class name="caf::SRTrueParticle" ClassVersion="10">
+   <version ClassVersion="10" checksum="1955089855"/>
+  </class>
+
+  <class name="caf::SRTruthMatch" ClassVersion="10">
+   <version ClassVersion="10" checksum="833172973"/>
+  </class>
+
+  <class name="caf::SRTrueInteraction" ClassVersion="10">
+   <version ClassVersion="10" checksum="3285338012"/>
+  </class>
+
+  <class name="caf::SRMultiverse" ClassVersion="10">
+   <version ClassVersion="10" checksum="1609299342"/>
+  </class>
+
+  <class name="caf::SRTruthBranch" ClassVersion="10">
+   <version ClassVersion="10" checksum="2608785459"/>
+  </class>
+
+  <class name="caf::SRVector3D" ClassVersion="10">
+   <version ClassVersion="10" checksum="2884901936"/>
+  </class>
+
+  <class name="caf::SRFakeReco" ClassVersion="10">
+   <version ClassVersion="10" checksum="33803094"/>
+  </class>
+
+  <class name="caf::SRFakeRecoParticle" ClassVersion="10">
+   <version ClassVersion="10" checksum="1590406308"/>
+  </class>
+
+  <class name="caf::SRGlobal" ClassVersion="10">
+   <version ClassVersion="10" checksum="3788780245"/>
+  </class>
+
+  <class name="caf::SRWeightPSet" ClassVersion="10">
+   <version ClassVersion="10" checksum="6352511"/>
+  </class>
+
+  <class name="caf::SRWeightMapEntry" ClassVersion="10">
+   <version ClassVersion="10" checksum="1665234647"/>
+  </class>
+
+  <class name="caf::SRWeightParam" ClassVersion="10">
+   <version ClassVersion="10" checksum="839301601"/>
+  </class>
+
   <!--<class name="caf::SRLorentzVector" /> -->
 
   <class name="std::vector<caf::SRFakeReco>" />
@@ -49,19 +129,30 @@
   <class name="std::vector<caf::SRTrueParticle>" />
   <class name="std::vector<caf::ParticleMatch>" />
 
-  <class name="caf::SRCRTHit" />
+  <class name="caf::SRCRTHit" ClassVersion="10">
+   <version ClassVersion="10" checksum="3162534166"/>
+  </class>
   <class name="std::vector<caf::SRCRTHit>" />
-  <class name="caf::SRCRTTrack" />
-  <class name="std::vector<caf::SRCRTTrack>" />
-  <class name="caf::SRCRTHitMatch" />
-  <class name="caf::SRCRTTrackMatch" />
 
-  <enum name="caf::Plane_t" />
-  <enum name="caf::Det_t" />
-  <enum name="caf::MCType_t" />
-  <enum name="caf::Wall_t" />
-  <enum name="caf::generator_" />
-  <enum name="caf::interaction_mode_" />
-  <enum name="caf::genie_status_" />
-  <enum name="caf::g4_process_" />
+  <class name="caf::SRCRTTrack" ClassVersion="10">
+   <version ClassVersion="10" checksum="2589421679"/>
+  </class>
+  <class name="std::vector<caf::SRCRTTrack>" />
+
+  <class name="caf::SRCRTHitMatch" ClassVersion="10">
+   <version ClassVersion="10" checksum="1521467565"/>
+  </class>
+
+  <class name="caf::SRCRTTrackMatch" ClassVersion="10">
+   <version ClassVersion="10" checksum="2672302824"/>
+  </class>
+
+  <enum name="caf::Plane_t" ClassVersion="10"/>
+  <enum name="caf::Det_t" ClassVersion="10"/>
+  <enum name="caf::MCType_t" ClassVersion="10"/>
+  <enum name="caf::Wall_t" ClassVersion="10"/>
+  <enum name="caf::generator_" ClassVersion="10"/>
+  <enum name="caf::interaction_mode_" ClassVersion="10"/>
+  <enum name="caf::genie_status_" ClassVersion="10"/>
+  <enum name="caf::g4_process_" ClassVersion="10"/>
 </lcgdict>
