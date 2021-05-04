@@ -19,10 +19,16 @@ namespace caf
   class FlashMatch {
   public:
     FlashMatch();
-    bool present;
+    bool  present;
     float score;
+    float scr_y;
+    float scr_z;
+    float scr_rr;
+    float scr_ratio;
     float time;
     float pe;
+    SRVector3D chargeXYZ;
+    SRVector3D lightXYZ;
   };
 
   /// An  SRSlice contains overarching information for a slice.

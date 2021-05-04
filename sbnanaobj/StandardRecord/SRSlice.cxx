@@ -14,6 +14,10 @@ namespace caf
   FlashMatch::FlashMatch():
     present(false),
     score(std::numeric_limits<float>::signaling_NaN()),
+    scr_y(std::numeric_limits<float>::signaling_NaN()),
+    scr_z(std::numeric_limits<float>::signaling_NaN()),
+    scr_rr(std::numeric_limits<float>::signaling_NaN()),
+    scr_ratio(std::numeric_limits<float>::signaling_NaN()),
     time(std::numeric_limits<float>::signaling_NaN()),
     pe(std::numeric_limits<float>::signaling_NaN())
   {}

@@ -6,6 +6,8 @@
 #ifndef SRFLASHMATCH_H
 #define SRFLASHMATCH_H
 
+#include "sbnanaobj/StandardRecord/SRVector3D.h"
+
 
 namespace caf
 {
@@ -19,8 +21,14 @@ namespace caf
 
       bool  present;
       float score;
+      float scr_y;
+      float scr_z;
+      float scr_rr;
+      float scr_ratio;
       float time;
       float pe;
+      SRVector3D chargeXYZ;
+      SRVector3D lightXYZ;
 
       void setDefault();
 

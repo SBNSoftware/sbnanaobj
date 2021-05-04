@@ -25,11 +25,13 @@
    <version ClassVersion="10" checksum="1310903600"/>
   </class>
 
-  <class name="caf::FlashMatch" ClassVersion="10">
+  <class name="caf::FlashMatch" ClassVersion="11">
+   <version ClassVersion="11" checksum="2399434594"/>
    <version ClassVersion="10" checksum="1963026454"/>
   </class>
 
-  <class name="caf::SRFlashMatch" ClassVersion="10">
+  <class name="caf::SRFlashMatch" ClassVersion="11">
+   <version ClassVersion="11" checksum="2591294731"/>
    <version ClassVersion="10" checksum="3065846543"/>
   </class>
 
