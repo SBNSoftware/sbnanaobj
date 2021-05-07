@@ -19,7 +19,7 @@ namespace caf
   class FlashMatch {
   public:
     FlashMatch();
-    bool  present;
+    bool present;
     float score;
     float scr_y;
     float scr_z;
