@@ -20,13 +20,13 @@ namespace caf
   public:
     FlashMatch();
     bool present;
+    float time;
+    float pe;
     float score;
     float scr_y;
     float scr_z;
     float scr_rr;
     float scr_ratio;
-    float time;
-    float pe;
     SRVector3D chargeXYZ;
     SRVector3D lightXYZ;
   };
@@ -58,7 +58,7 @@ namespace caf
       std::vector<size_t> primary; //!< ID's of primary tracks and showers in slice
       int                 self;    //!< ID of the particle representing this slice
 
-      SRSliceRecoBranch   reco; //!< TPC reco information for the slice      
+      SRSliceRecoBranch   reco; //!< TPC reco information for the slice
 
       void setDefault();
 

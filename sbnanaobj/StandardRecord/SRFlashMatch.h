@@ -20,13 +20,13 @@ namespace caf
       virtual ~SRFlashMatch();
 
       bool  present;
+      float time;
+      float pe;
       float score;
       float scr_y;
       float scr_z;
       float scr_rr;
       float scr_ratio;
-      float time;
-      float pe;
       SRVector3D chargeXYZ;
       SRVector3D lightXYZ;
 
