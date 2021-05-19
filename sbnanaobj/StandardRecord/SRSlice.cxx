@@ -14,7 +14,8 @@ namespace caf
   FlashMatch::FlashMatch():
     present(false),
     time(std::numeric_limits<float>::signaling_NaN()),
-    pe(std::numeric_limits<float>::signaling_NaN()),
+    charge_q(std::numeric_limits<float>::signaling_NaN()),
+    light_pe(std::numeric_limits<float>::signaling_NaN()),
     score(std::numeric_limits<float>::signaling_NaN()),
     scr_y(std::numeric_limits<float>::signaling_NaN()),
     scr_z(std::numeric_limits<float>::signaling_NaN()),

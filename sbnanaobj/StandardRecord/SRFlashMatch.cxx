@@ -13,7 +13,8 @@ namespace caf
   SRFlashMatch::SRFlashMatch():
     present(false),
     time(std::numeric_limits<float>::signaling_NaN()),
-    pe(std::numeric_limits<float>::signaling_NaN()),
+    charge_q(std::numeric_limits<float>::signaling_NaN()),
+    light_pe(std::numeric_limits<float>::signaling_NaN()),
     score(std::numeric_limits<float>::signaling_NaN()),
     scr_y(std::numeric_limits<float>::signaling_NaN()),
     scr_z(std::numeric_limits<float>::signaling_NaN()),
@@ -30,7 +31,8 @@ namespace caf
   {
     present        = false;
     time           = -5.0;
-    pe             = -5.0;
+    charge_q       = -5.0;
+    light_pe       = -5.0;
     score          = -5.0;
     scr_y          = -5.0;
     scr_z          = -5.0;

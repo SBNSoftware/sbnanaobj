@@ -21,7 +21,8 @@ namespace caf
     FlashMatch();
     bool present;
     float time;
-    float pe;
+    float charge_q;
+    float light_pe;
     float score;
     float scr_y;
     float scr_z;
