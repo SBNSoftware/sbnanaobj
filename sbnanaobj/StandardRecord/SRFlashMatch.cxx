@@ -13,32 +13,29 @@ namespace caf
   SRFlashMatch::SRFlashMatch():
     present(false),
     time(std::numeric_limits<float>::signaling_NaN()),
-    charge_q(std::numeric_limits<float>::signaling_NaN()),
-    light_pe(std::numeric_limits<float>::signaling_NaN()),
-    score(std::numeric_limits<float>::signaling_NaN()),
-    scr_y(std::numeric_limits<float>::signaling_NaN()),
-    scr_z(std::numeric_limits<float>::signaling_NaN()),
-    scr_rr(std::numeric_limits<float>::signaling_NaN()),
-    scr_ratio(std::numeric_limits<float>::signaling_NaN())
-    // what about chargeXYZ and lightXYZ?
-  {  }
-
+    charge(SRFlashMatch::Charge(
+             std::numeric_limits<float>::signaling_NaN(),
+             SRVector3D())),
+    light(SRFlashMatch::Flash(
+            std::numeric_limits<float>::signaling_NaN(),
+            SRVector3D())),
+    score(SRFlashMatch::Score(
+            std::numeric_limits<float>::signaling_NaN(),
+            std::numeric_limits<float>::signaling_NaN(),
+            std::numeric_limits<float>::signaling_NaN(),
+            std::numeric_limits<float>::signaling_NaN(),
+            std::numeric_limits<float>::signaling_NaN()))
+  {}
 
   SRFlashMatch::~SRFlashMatch(){  }
 
-
   void SRFlashMatch::setDefault()
   {
-    present        = false;
-    time           = -5.0;
-    charge_q       = -5.0;
-    light_pe       = -5.0;
-    score          = -5.0;
-    scr_y          = -5.0;
-    scr_z          = -5.0;
-    scr_rr         = -5.0;
-    scr_ratio      = -5.0;
-    // what about chargeXYZ and lightXYZ?
+    present = false;
+    time    = -5.0;
+    charge  = SRFlashMatch::Charge(-5.0, SRVector3D(-10.,-10.,-10.));
+    light   = SRFlashMatch::Flash(-5.0, SRVector3D(-10.,-10.,-10.));
+    score   = SRFlashMatch::Score(-5.0,-5.0,-5.0,-5.0,-5.0);
   }
 
 } // end namespace caf
