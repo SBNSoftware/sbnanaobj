@@ -15,23 +15,6 @@
 
 namespace caf
 {
-  /// A matching of TPC slice charge to Optical flash light
-  class FlashMatch {
-  public:
-    FlashMatch();
-    bool present;
-    float time;
-    float charge_q;
-    float light_pe;
-    float score;
-    float scr_y;
-    float scr_z;
-    float scr_rr;
-    float scr_ratio;
-    SRVector3D chargeXYZ;
-    SRVector3D lightXYZ;
-  };
-
   /// An  SRSlice contains overarching information for a slice.
   class SRSlice
     {
@@ -48,10 +31,9 @@ namespace caf
       SRTrueInteraction truth; //!< Truth information on the slice
       SRTruthMatch tmatch; //!< Matching information between truth and reco objects
 
+      SRFlashMatch fmatch;   //!< Optical flash-match for this slice of TPC charge
       SRFlashMatch fmatch_a; //!< Optical flash-match for this slice of TPC charge
       SRFlashMatch fmatch_b; //!< Optical flash-match for this slice of TPC charge
-
-      FlashMatch fmatch; //!< Optical flash-match for this slice of TPC charge
 
       bool is_clear_cosmic; //!< Whether pandora marks the slice as a "clear" cosmic
       int nu_pdg; //!< PDG assigned to the PFParticle Neutrino
