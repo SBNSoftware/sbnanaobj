@@ -17,7 +17,7 @@ namespace caf
     chargeCenter(SRVector3D()),
     lightPE(std::numeric_limits<float>::signaling_NaN()),
     lightCenter(SRVector3D()),
-    scoreTotal(std::numeric_limits<float>::signaling_NaN()),
+    score(std::numeric_limits<float>::signaling_NaN()),
     scoreY(std::numeric_limits<float>::signaling_NaN()),
     scoreZ(std::numeric_limits<float>::signaling_NaN()),
     scoreRR(std::numeric_limits<float>::signaling_NaN()),
@@ -32,7 +32,7 @@ namespace caf
     time       = -5.0;
     chargeQ    = -5.0;
     lightPE    = -5.0;
-    scoreTotal = -5.0;
+    score      = -5.0;
     scoreY     = -5.0;
     scoreZ     = -5.0;
     scoreRR    = -5.0;
