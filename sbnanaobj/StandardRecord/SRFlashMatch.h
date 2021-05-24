@@ -15,36 +15,20 @@ namespace caf
   class SRFlashMatch
     {
     public:
-
-      struct Charge {
-        float q;           //!< charge in slc
-        SRVector3D center; //!< Weighted center position [cm]
-        Charge(float q_, SRVector3D center_) : q(q_), center(center_) {}
-      };
-      struct Flash {
-        float pe;          //!< photo-electrons on simple flash
-        SRVector3D center; //!< Weighted center position [cm]
-        Flash(float pe_, SRVector3D center_) : pe(pe_), center(center_) {}
-      };
-      struct Score {
-        float total; //!< total score, sum of terms
-        float y;     //!< score for y metric
-        float z;     //!< score for z metric
-        float rr;    //!< score for rr metric
-        float ratio; //!< score for ratio metric
-        Score(float total_, float y_, float z_,
-              float rr_, float ratio_) :
-          total(total_), y(y_), z(z_), rr(rr_), ratio(ratio_) {}
-      };
-
       SRFlashMatch();
       virtual ~SRFlashMatch();
 
-      bool  present;
-      float time;
-      Charge charge;
-      Flash light;
-      Score score;
+      bool  present;             //!< whether there's a match
+      float time;                //!< time of flash
+      float chargeQ;             //!< charge in slc
+      SRVector3D chargeCenter;   //!< Weighted center position [cm]
+      float lightPE;             //!< photo-electrons on simple flash
+      SRVector3D lightCenter;    //!< Weighted center position [cm]
+      float scoreTotal;          //!< total score, sum of terms
+      float scoreY;              //!< score for y metric
+      float scoreZ;              //!< score for z metric
+      float scoreRR;             //!< score for rr metric
+      float scoreRatio;          //!< score for ratio metric
 
       void setDefault();
     };
