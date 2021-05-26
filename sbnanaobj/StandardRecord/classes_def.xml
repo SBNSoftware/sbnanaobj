@@ -21,16 +21,12 @@
    <version ClassVersion="10" checksum="83320005"/>
   </class>
 
-  <class name="caf::SRSlice" ClassVersion="10">
-   <version ClassVersion="10" checksum="1310903600"/>
+  <class name="caf::SRSlice" ClassVersion="11">
+   <version ClassVersion="11" checksum="3227898381"/>
   </class>
 
-  <class name="caf::FlashMatch" ClassVersion="10">
-   <version ClassVersion="10" checksum="1963026454"/>
-  </class>
-
-  <class name="caf::SRFlashMatch" ClassVersion="10">
-   <version ClassVersion="10" checksum="3065846543"/>
+  <class name="caf::SRFlashMatch" ClassVersion="11">
+   <version ClassVersion="11" checksum="581180094"/>
   </class>
 
   <class name="caf::SRSliceRecoBranch" ClassVersion="10">
