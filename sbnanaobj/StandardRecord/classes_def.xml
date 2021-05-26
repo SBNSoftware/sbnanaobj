@@ -26,7 +26,7 @@
   </class>
 
   <class name="caf::SRFlashMatch" ClassVersion="11">
-   <version ClassVersion="11" checksum="581180094"/>
+   <version ClassVersion="11" checksum="1429601394"/>
   </class>
 
   <class name="caf::SRSliceRecoBranch" ClassVersion="10">
