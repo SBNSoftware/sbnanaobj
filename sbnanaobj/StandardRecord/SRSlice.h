@@ -46,7 +46,7 @@ namespace caf
 
       FlashMatch fmatch; //!< Optical flash-match for this slice of TPC charge
 
-      SRFakeReco freco;
+      SRFakeReco fake_reco;
 
       bool is_clear_cosmic; //!< Whether pandora marks the slice as a "clear" cosmic
       int nu_pdg; //!< PDG assigned to the PFParticle Neutrino
