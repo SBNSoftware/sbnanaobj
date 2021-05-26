@@ -11,21 +11,32 @@
 namespace caf
 {
   SRFlashMatch::SRFlashMatch():
-    score(std::numeric_limits<float>::signaling_NaN()),
+    present(false),
     time(std::numeric_limits<float>::signaling_NaN()),
-    pe(std::numeric_limits<float>::signaling_NaN())
-  {  }
-
+    chargeQ(std::numeric_limits<float>::signaling_NaN()),
+    chargeCenter(SRVector3D()),
+    lightPE(std::numeric_limits<float>::signaling_NaN()),
+    lightCenter(SRVector3D()),
+    score(std::numeric_limits<float>::signaling_NaN()),
+    scoreY(std::numeric_limits<float>::signaling_NaN()),
+    scoreZ(std::numeric_limits<float>::signaling_NaN()),
+    scoreRR(std::numeric_limits<float>::signaling_NaN()),
+    scoreRatio(std::numeric_limits<float>::signaling_NaN())
+  {}
 
   SRFlashMatch::~SRFlashMatch(){  }
 
-
   void SRFlashMatch::setDefault()
   {
-    present        = false;
-    score          = -5.0;
-    time           = -5.0;
-    pe             = -5.0;
+    present    = false;
+    time       = -5.0;
+    chargeQ    = -5.0;
+    lightPE    = -5.0;
+    score      = -5.0;
+    scoreY     = -5.0;
+    scoreZ     = -5.0;
+    scoreRR    = -5.0;
+    scoreRatio = -5.0;
   }
 
 } // end namespace caf

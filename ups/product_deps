@@ -2,8 +2,8 @@
 
 # The *parent* line must the first non-commented line and defines this product and version
 # The version should be of the form vxx_yy_zz (e.g. v01_02_03)
-parent sbnanaobj v09_16_06
-defaultqual e19
+parent sbnanaobj v09_16_07
+defaultqual e20
 
 # These optional lines define the installed directories where headers,
 # libraries, and executables will be found.
@@ -46,8 +46,6 @@ cetbuildtools v7_17_01 - only_for_build
 qualifier  root       notes
 e20:debug  e20:p383b:debug  -nq-
 e20:prof   e20:p383b:prof   -nq-
-e19:debug  e19:p383b:debug  -nq-
-e19:prof   e19:p383b:prof   -nq-
 c7:debug   c7:p383b:debug   -nq-
 c7:prof    c7:p383b:prof    -nq-
 
