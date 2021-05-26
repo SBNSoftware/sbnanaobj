@@ -90,7 +90,8 @@
    <version ClassVersion="10" checksum="2884901936"/>
   </class>
 
-  <class name="caf::SRFakeReco" ClassVersion="10">
+  <class name="caf::SRFakeReco" ClassVersion="11">
+   <version ClassVersion="11" checksum="3177120490"/>
    <version ClassVersion="10" checksum="33803094"/>
   </class>
 

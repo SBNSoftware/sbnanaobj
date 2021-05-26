@@ -24,6 +24,7 @@ namespace caf
     std::vector<SRFakeRecoParticle> hadrons; ///! Fake-reco information on hadronic state
     int nhad; ///! Number of hadrons
     float wgt; ///! Weight for this interaction
+    bool filled;
   };
 
 } // end namespace
