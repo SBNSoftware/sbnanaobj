@@ -3,6 +3,7 @@
 | -------- | ------ |
 | Energy   | GeV    |
 | Momentum | GeV/c  |
-| Time     | ns     | 
+| Time     | us     |
 | Distance | cm     |
 | dE/dx    | MeV/cm |
+| Angles   | rad    |

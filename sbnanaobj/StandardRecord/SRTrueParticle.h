@@ -28,9 +28,9 @@ namespace caf
       float    genE;        //!< Energy at generation pt [GeV]
       float    startE;      //!< Energy at first pt in active TPC volume [GeV]
       float    endE;        //!< Energy at last pt in active TPC volume [GeV]
-      float    genT;        //!< Start time of gen point [mus -- t=0 is spill time]
-      float    startT;      //!< Start time of first TPC point [mus -- t=0 is spill time]
-      float    endT;        //!< End time last point in the active [mus -- t=0 is spill time]
+      float    genT;        //!< Start time of gen point [us -- t=0 is spill time]
+      float    startT;      //!< Start time of first TPC point [us -- t=0 is spill time]
+      float    endT;        //!< End time last point in the active [us -- t=0 is spill time]
       float    length;      //!< Trajectory length in active TPC volume the particle first enters [cm]
 
       unsigned plane0nhit;  //!< Number of hits on plane 0 (1st Ind.)
