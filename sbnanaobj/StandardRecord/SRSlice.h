@@ -6,12 +6,12 @@
 #ifndef SRSLICE_H
 #define SRSLICE_H
 
+#include "sbnanaobj/StandardRecord/SRFakeReco.h"
 #include "sbnanaobj/StandardRecord/SRFlashMatch.h"
 #include "sbnanaobj/StandardRecord/SRSliceRecoBranch.h"
 #include "sbnanaobj/StandardRecord/SRTrueInteraction.h"
 #include "sbnanaobj/StandardRecord/SRTruthMatch.h"
 #include "sbnanaobj/StandardRecord/SRVector3D.h"
-
 
 namespace caf
 {
@@ -34,6 +34,8 @@ namespace caf
       SRFlashMatch fmatch;   //!< Optical flash-match for this slice of TPC charge
       SRFlashMatch fmatch_a; //!< Optical flash-match for this slice of TPC charge
       SRFlashMatch fmatch_b; //!< Optical flash-match for this slice of TPC charge
+
+      SRFakeReco fake_reco;
 
       bool is_clear_cosmic; //!< Whether pandora marks the slice as a "clear" cosmic
       int nu_pdg; //!< PDG assigned to the PFParticle Neutrino

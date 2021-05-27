@@ -7,6 +7,8 @@
 #include "sbnanaobj/StandardRecord/SRVector3D.h"
 #include "sbnanaobj/StandardRecord/SRFakeRecoParticle.h"
 
+#include <vector>
+
 namespace caf
 {
   /// The SRFakeReco is a faked reconstruction using estimates from the SBN proposal 
@@ -22,6 +24,7 @@ namespace caf
     std::vector<SRFakeRecoParticle> hadrons; ///! Fake-reco information on hadronic state
     int nhad; ///! Number of hadrons
     float wgt; ///! Weight for this interaction
+    bool filled;
   };
 
 } // end namespace

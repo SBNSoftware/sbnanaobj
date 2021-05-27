@@ -12,7 +12,9 @@ namespace caf
 
   SRFakeReco::SRFakeReco():
     nuE(std::numeric_limits<float>::signaling_NaN()),
-    wgt(std::numeric_limits<float>::signaling_NaN())
+    nhad(0),
+    wgt(std::numeric_limits<float>::signaling_NaN()),
+    filled(false)
   {  }
 
 } // end namespace caf
