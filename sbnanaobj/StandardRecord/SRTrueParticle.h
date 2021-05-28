@@ -5,6 +5,7 @@
 #define SRTRUEPARTICLE_H
 
 #include <cstdint>
+#include <vector>
 
 #include "sbnanaobj/StandardRecord/SRVector3D.h"
 

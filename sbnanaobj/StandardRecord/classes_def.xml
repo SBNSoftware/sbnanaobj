@@ -21,16 +21,13 @@
    <version ClassVersion="10" checksum="83320005"/>
   </class>
 
-  <class name="caf::SRSlice" ClassVersion="10">
-   <version ClassVersion="10" checksum="1310903600"/>
+  <class name="caf::SRSlice" ClassVersion="12">
+   <version ClassVersion="12" checksum="3783103871"/>
+   <version ClassVersion="11" checksum="3227898381"/>
   </class>
 
-  <class name="caf::FlashMatch" ClassVersion="10">
-   <version ClassVersion="10" checksum="1963026454"/>
-  </class>
-
-  <class name="caf::SRFlashMatch" ClassVersion="10">
-   <version ClassVersion="10" checksum="3065846543"/>
+  <class name="caf::SRFlashMatch" ClassVersion="11">
+   <version ClassVersion="11" checksum="1429601394"/>
   </class>
 
   <class name="caf::SRSliceRecoBranch" ClassVersion="10">
@@ -89,7 +86,8 @@
    <version ClassVersion="10" checksum="2884901936"/>
   </class>
 
-  <class name="caf::SRFakeReco" ClassVersion="10">
+  <class name="caf::SRFakeReco" ClassVersion="11">
+   <version ClassVersion="11" checksum="3177120490"/>
    <version ClassVersion="10" checksum="33803094"/>
   </class>
 
