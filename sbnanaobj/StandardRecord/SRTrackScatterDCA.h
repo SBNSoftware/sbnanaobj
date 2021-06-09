@@ -13,13 +13,12 @@ class SRTrackScatterDCA {
   SRTrackScatterDCA();
   ~SRTrackScatterDCA() {}
 
-  float mean;   // Average DCA
-  float stdDev; // Standard Deviation DCA
-  float max;    // Maximum DCA
+  float mean;   // Average DCA [cm]
+  float stdDev; // Standard Deviation DCA [cm]
+  float max;    // Maximum DCA [cm]
 };
 
 } // end namespace
 
 #endif // SRTrackScatterDCA_H
 //////////////////////////////////////////////////////////////////////////////
-

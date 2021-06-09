@@ -6,25 +6,23 @@
 
 /* #include "sbnanaobj/StandardRecord/SRVector3D.h" */
 
-#include "sbnanaobj/StandardRecord/SRCRTHitMatch.h"
-#include "sbnanaobj/StandardRecord/SRCRTTrackMatch.h"
-#include "sbnanaobj/StandardRecord/SRPFP.h"
-#include "sbnanaobj/StandardRecord/SRTrackCalo.h"
-#include "sbnanaobj/StandardRecord/SRTrackLGCFit.h"
-#include "sbnanaobj/StandardRecord/SRTrackMVAPID.h"
-#include "sbnanaobj/StandardRecord/SRTrackScatterDCA.h"
-#include "sbnanaobj/StandardRecord/SRTrackStoppingChi2Fit.h"
 #include "sbnanaobj/StandardRecord/SRTrackTruth.h"
 #include "sbnanaobj/StandardRecord/SRTrkChi2PID.h"
 #include "sbnanaobj/StandardRecord/SRTrkMCS.h"
 #include "sbnanaobj/StandardRecord/SRTrkRange.h"
+#include "sbnanaobj/StandardRecord/SRCRTHitMatch.h"
+#include "sbnanaobj/StandardRecord/SRCRTTrackMatch.h"
+#include "sbnanaobj/StandardRecord/SRTrackCalo.h"
+#include "sbnanaobj/StandardRecord/SRPFP.h"
+#include "sbnanaobj/StandardRecord/SRTrackMVAPID.h"
+#include "sbnanaobj/StandardRecord/SRTrackScatterDCA.h"
+#include "sbnanaobj/StandardRecord/SRTrackStoppingChi2Fit.h"
 
-#include "sbnanaobj/StandardRecord/SREnums.h"
 #include "sbnanaobj/StandardRecord/SRVector3D.h"
+#include "sbnanaobj/StandardRecord/SREnums.h"
 
 #include <vector>
 
-<<<<<<< HEAD
 namespace caf
 {
   /// Representation of a rb::Track, knows energy and direction, but not a list
@@ -64,7 +62,6 @@ namespace caf
       SRCRTTrackMatch  crttrack;   ///< CRT Track match
       SRPFP pfp;                   ///< Contains the hierarchy and metadata from Pandora
 
-      SRTrackLGCFit lgcFit;                   ///< Results from fitting a Landau-Guassian convolution
       SRTrackScatterDCA scatterDCA;           ///< Scattering variables relating to spread about interpolated trackj
       SRTrackStoppingChi2Fit stoppingChi2Fit; ///< Fit results from Pol0 and Exp to dEdx vs res. range
       SRTrackMVAPID mvaPID;                   ///< Results from the track PID MVA

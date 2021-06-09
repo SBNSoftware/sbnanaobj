@@ -15,7 +15,7 @@ class SRTrackStoppingChi2Fit {
 
   float pol0Chi2; // Chi^2 of fitting a 0 degree polynomial
   float expChi2;  // Chi^2 of fitting an exponential
-  float pol0Fit;  // Best fit value of a 0 degree polynomial
+  float pol0Fit;  // Best fit value of a 0 degree polynomial [MeV/cm]
 };
 
 } // end namespace

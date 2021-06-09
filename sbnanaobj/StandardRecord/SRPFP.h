@@ -14,7 +14,7 @@ class SRPFP {
   ~SRPFP() {}
 
   int ID;                     ///< ID of this pfp (taken from the pandora particle "ID" of this PFP)
-  unsigned int ndaughters;    //< Number of daughters
+  unsigned int ndaughters;    ///< Number of daughters
   std::vector<int> daughters; ///< ID's of daughters of this pfp
 
   int parent;             ///< ID of parent particle of this pfp
