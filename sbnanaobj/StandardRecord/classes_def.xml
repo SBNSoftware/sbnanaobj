@@ -115,11 +115,26 @@
    <version ClassVersion="10" checksum="839301601"/>
   </class>
 
-  <class name="caf::SRPFP" />
-  <class name="caf::SRTrackScatterDCA" />
-  <class name="caf::SRTrackStoppingChi2Fit" />
-  <class name="caf::SRTrackDazzle" />
-  <class name="caf::SRShowerRazzle" />
+  <class name="caf::SRPFP" ClassVersion="10">
+   <version ClassVersion="10" checksum="9826405"/>
+  </class>
+
+  <class name="caf::SRTrackScatterDCA" ClassVersion="10">
+   <version ClassVersion="10" checksum="2698420631"/>
+  </class>
+
+  <class name="caf::SRTrackStoppingChi2Fit" ClassVersion="10">
+   <version ClassVersion="10" checksum="1034764347"/>
+  </class>
+
+  <class name="caf::SRTrackDazzle" ClassVersion="10">
+   <version ClassVersion="10" checksum="2576140139"/>
+  </class>
+
+  <class name="caf::SRShowerRazzle" ClassVersion="10">
+   <version ClassVersion="10" checksum="133600353"/>
+  </class>
+
   <!--<class name="caf::SRLorentzVector" /> -->
 
   <class name="std::vector<caf::SRSlice>" />
