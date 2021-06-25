@@ -26,7 +26,7 @@ namespace caf
     dir(-5.0, -5.0, -5.0),
     start(-5.0, -5.0, -5.0),
     end(-5.0, -5.0, -5.0),
-    cosmicCylinder(-5.f)
+    cosmicDist(-5.f)
   {
   }
 

@@ -1,11 +1,11 @@
 ////////////////////////////////////////////////////////////////////////
-// \file    SRTrackScatterDCA.cxx
+// \file    SRTrackScatterClosestApproach.cxx
 ////////////////////////////////////////////////////////////////////////
-#include "sbnanaobj/StandardRecord/SRTrackScatterDCA.h"
+#include "sbnanaobj/StandardRecord/SRTrackScatterClosestApproach.h"
 
 namespace caf {
 
-SRTrackScatterDCA::SRTrackScatterDCA()
+SRTrackScatterClosestApproach::SRTrackScatterClosestApproach()
     : mean(-5.f)
     , stdDev(-5.f)
     , max(-5.f)

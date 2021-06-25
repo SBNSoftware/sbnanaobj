@@ -15,7 +15,7 @@
 #include "sbnanaobj/StandardRecord/SRTrackCalo.h"
 #include "sbnanaobj/StandardRecord/SRPFP.h"
 #include "sbnanaobj/StandardRecord/SRTrackDazzle.h"
-#include "sbnanaobj/StandardRecord/SRTrackScatterDCA.h"
+#include "sbnanaobj/StandardRecord/SRTrackScatterClosestApproach.h"
 #include "sbnanaobj/StandardRecord/SRTrackStoppingChi2Fit.h"
 
 #include "sbnanaobj/StandardRecord/SRVector3D.h"
@@ -62,9 +62,9 @@ namespace caf
       SRCRTTrackMatch  crttrack;   ///< CRT Track match
       SRPFP pfp;                   ///< Contains the hierarchy and metadata from Pandora
 
-      SRTrackScatterDCA scatterDCA;           ///< Scattering variables relating to spread about interpolated trackj
-      SRTrackStoppingChi2Fit stoppingChi2Fit; ///< Fit results from Pol0 and Exp to dEdx vs res. range
-      SRTrackDazzle dazzle;                   ///< Results from the track PID MVA
+      SRTrackScatterClosestApproach scatterClosestApproach; ///< Scattering variables relating to spread about interpolated track
+      SRTrackStoppingChi2Fit stoppingChi2Fit;               ///< Fit results from Pol0 and Exp to dEdx vs res. range
+      SRTrackDazzle dazzle;                                 ///< Results from the track PID MVA
 
       // TO DO: Move the following into SRObjects      
 

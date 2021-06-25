@@ -43,7 +43,7 @@ namespace caf
       SRVector3D dir;               ///< direction cosines at the start of the shower
       SRVector3D start;             ///< shower start point in detector coordinates [cm]
       SRVector3D end;               ///< shower end point (start+len*dir) in detector coordinates [cm]
-      float cosmicCylinder;         ///< Distance of closest approach to cosmic ray [cm]
+      float cosmicDist;             ///< Distance of closest approach to cosmic ray [cm]
 
       SRPFP pfp;          ///< Contains the hierarchy and metadata from Pandora
 
