@@ -1,11 +1,11 @@
 ////////////////////////////////////////////////////////////////////////
-// \file    SRShowerMVAPID.cxx
+// \file    SRShowerRazzle.cxx
 ////////////////////////////////////////////////////////////////////////
 
-#include "sbnanaobj/StandardRecord/SRShowerMVAPID.h"
+#include "sbnanaobj/StandardRecord/SRShowerRazzle.h"
 
 namespace caf {
-SRShowerMVAPID::SRShowerMVAPID()
+SRShowerRazzle::SRShowerRazzle()
     : pdg(-5)
     , electronScore(-5.f)
     , photonScore(-5.f)

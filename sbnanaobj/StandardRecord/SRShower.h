@@ -8,7 +8,7 @@
 #include "sbnanaobj/StandardRecord/SRShowerSelection.h"
 #include "sbnanaobj/StandardRecord/SRTrackTruth.h"
 #include "sbnanaobj/StandardRecord/SRPFP.h"
-#include "sbnanaobj/StandardRecord/SRShowerMVAPID.h"
+#include "sbnanaobj/StandardRecord/SRShowerRazzle.h"
 
 namespace caf
 {
@@ -47,7 +47,7 @@ namespace caf
 
       SRPFP pfp;          ///< Contains the hierarchy and metadata from Pandora
 
-      SRShowerMVAPID mvaPID; ///< Results from the shower PID MVA
+      SRShowerRazzle razzle; ///< Results from the shower PID MVA
       SRShowerSelection selVars;
       SRTrackTruth   truth;        ///< truth information TODO: make seperate showe info class
 

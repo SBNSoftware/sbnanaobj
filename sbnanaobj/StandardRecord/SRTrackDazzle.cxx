@@ -1,11 +1,11 @@
 ////////////////////////////////////////////////////////////////////////
-// \file    SRTrackMVAPID.cxx
+// \file    SRTrackDazzle.cxx
 ////////////////////////////////////////////////////////////////////////
 
-#include "sbnanaobj/StandardRecord/SRTrackMVAPID.h"
+#include "sbnanaobj/StandardRecord/SRTrackDazzle.h"
 
 namespace caf {
-SRTrackMVAPID::SRTrackMVAPID()
+SRTrackDazzle::SRTrackDazzle()
     : pdg(-5)
     , muonScore(-5.f)
     , pionScore(-5.f)

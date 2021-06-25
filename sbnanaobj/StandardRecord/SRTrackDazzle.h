@@ -1,17 +1,17 @@
 ////////////////////////////////////////////////////////////////////////
-// \file    SRTrackMVAPID.h
+// \file    SRTrackDazzle.h
 ////////////////////////////////////////////////////////////////////////
-#ifndef SRTRACKMVAPID_H
-#define SRTRACKMVAPID_H
+#ifndef SRTRACKDazzle_H
+#define SRTRACKDazzle_H
 
 #include <vector>
 
 namespace caf {
 /// Representation of Track MVA PID outputs
-class SRTrackMVAPID {
+class SRTrackDazzle {
   public:
-  SRTrackMVAPID();
-  ~SRTrackMVAPID() {}
+  SRTrackDazzle();
+  ~SRTrackDazzle() {}
 
   int pdg;
 
@@ -26,6 +26,6 @@ class SRTrackMVAPID {
 
 } // end namespace
 
-#endif // SRTrackMVAPID_H
+#endif // SRTrackDazzle_H
 //////////////////////////////////////////////////////////////////////////////
 

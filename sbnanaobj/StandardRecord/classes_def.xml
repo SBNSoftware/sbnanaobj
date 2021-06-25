@@ -13,7 +13,8 @@
    <version ClassVersion="10" checksum="2908097963"/>
   </class>
 
-  <class name="caf::SRShower" ClassVersion="11">
+  <class name="caf::SRShower" ClassVersion="12">
+   <version ClassVersion="12" checksum="284748722"/>
    <version ClassVersion="11" checksum="1389407166"/>
    <version ClassVersion="10" checksum="2253513844"/>
   </class>
@@ -35,7 +36,8 @@
    <version ClassVersion="10" checksum="1432916981"/>
   </class>
 
-  <class name="caf::SRTrack" ClassVersion="11">
+  <class name="caf::SRTrack" ClassVersion="12">
+   <version ClassVersion="12" checksum="844169319"/>
    <version ClassVersion="11" checksum="2040174465"/>
    <version ClassVersion="10" checksum="1169960296"/>
   </class>
@@ -116,8 +118,8 @@
   <class name="caf::SRPFP" />
   <class name="caf::SRTrackScatterDCA" />
   <class name="caf::SRTrackStoppingChi2Fit" />
-  <class name="caf::SRTrackMVAPID" />
-  <class name="caf::SRShowerMVAPID" />
+  <class name="caf::SRTrackDazzle" />
+  <class name="caf::SRShowerRazzle" />
   <!--<class name="caf::SRLorentzVector" /> -->
 
   <class name="std::vector<caf::SRSlice>" />

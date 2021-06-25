@@ -1,17 +1,17 @@
 ////////////////////////////////////////////////////////////////////////
-// \file    SRShowerMVAPID.h
+// \file    SRShowerRazzle.h
 ////////////////////////////////////////////////////////////////////////
-#ifndef SRSHOWERMVAPID_H
-#define SRSHOWERMVAPID_H
+#ifndef SRSHOWERRazzle_H
+#define SRSHOWERRazzle_H
 
 #include <vector>
 
 namespace caf {
 /// Representation of Shower MVA PID outputs
-class SRShowerMVAPID {
+class SRShowerRazzle {
   public:
-  SRShowerMVAPID();
-  ~SRShowerMVAPID() {}
+  SRShowerRazzle();
+  ~SRShowerRazzle() {}
 
   int pdg;
 
@@ -24,5 +24,5 @@ class SRShowerMVAPID {
 
 } // end namespace
 
-#endif // SRShowerMVAPID_H
+#endif // SRShowerRazzle_H
 //////////////////////////////////////////////////////////////////////////////

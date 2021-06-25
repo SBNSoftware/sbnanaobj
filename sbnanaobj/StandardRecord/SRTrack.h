@@ -14,7 +14,7 @@
 #include "sbnanaobj/StandardRecord/SRCRTTrackMatch.h"
 #include "sbnanaobj/StandardRecord/SRTrackCalo.h"
 #include "sbnanaobj/StandardRecord/SRPFP.h"
-#include "sbnanaobj/StandardRecord/SRTrackMVAPID.h"
+#include "sbnanaobj/StandardRecord/SRTrackDazzle.h"
 #include "sbnanaobj/StandardRecord/SRTrackScatterDCA.h"
 #include "sbnanaobj/StandardRecord/SRTrackStoppingChi2Fit.h"
 
@@ -64,7 +64,7 @@ namespace caf
 
       SRTrackScatterDCA scatterDCA;           ///< Scattering variables relating to spread about interpolated trackj
       SRTrackStoppingChi2Fit stoppingChi2Fit; ///< Fit results from Pol0 and Exp to dEdx vs res. range
-      SRTrackMVAPID mvaPID;                   ///< Results from the track PID MVA
+      SRTrackDazzle dazzle;                   ///< Results from the track PID MVA
 
       // TO DO: Move the following into SRObjects      
 
