@@ -7,7 +7,7 @@
 namespace caf {
 
 SRPFP::SRPFP()
-    : ID(-5)
+    : id(-5)
     , ndaughters(0)
     , daughters()
     , parent(-5)

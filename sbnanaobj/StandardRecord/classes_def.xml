@@ -13,10 +13,8 @@
    <version ClassVersion="10" checksum="2908097963"/>
   </class>
 
-  <class name="caf::SRShower" ClassVersion="13">
-   <version ClassVersion="13" checksum="979709822"/>
-   <version ClassVersion="12" checksum="284748722"/>
-   <version ClassVersion="11" checksum="1389407166"/>
+  <class name="caf::SRShower" ClassVersion="11">
+   <version ClassVersion="11" checksum="979709822"/>
    <version ClassVersion="10" checksum="2253513844"/>
   </class>
 
@@ -37,10 +35,8 @@
    <version ClassVersion="10" checksum="1432916981"/>
   </class>
 
-  <class name="caf::SRTrack" ClassVersion="13">
-   <version ClassVersion="13" checksum="1319166397"/>
-   <version ClassVersion="12" checksum="844169319"/>
-   <version ClassVersion="11" checksum="2040174465"/>
+  <class name="caf::SRTrack" ClassVersion="11">
+   <version ClassVersion="11" checksum="1319166397"/>
    <version ClassVersion="10" checksum="1169960296"/>
   </class>
 
@@ -118,12 +114,11 @@
   </class>
 
   <class name="caf::SRPFP" ClassVersion="10">
-   <version ClassVersion="10" checksum="9826405"/>
+   <version ClassVersion="10" checksum="1732359397"/>
   </class>
 
-  <class name="caf::SRTrackScatterClosestApproach" ClassVersion="11">
-   <version ClassVersion="11" checksum="736513134"/>
-   <version ClassVersion="10" checksum="2698420631"/>
+  <class name="caf::SRTrackScatterClosestApproach" ClassVersion="10">
+   <version ClassVersion="10" checksum="736513134"/>
   </class>
 
   <class name="caf::SRTrackStoppingChi2Fit" ClassVersion="10">
