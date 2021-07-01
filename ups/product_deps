@@ -34,7 +34,7 @@ fwdir   product_dir scripts
 # Add the dependent product and version
 
 product             version
-root                v6_22_06a
+root                v6_22_08b
 
 # list products required ONLY for the build
 # any products here must NOT have qualifiers
