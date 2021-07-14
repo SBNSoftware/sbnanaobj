@@ -70,6 +70,10 @@
    <version ClassVersion="10" checksum="833172973"/>
   </class>
 
+  <class name="caf::SRMeVPrtl" ClassVersion="10">
+   <version ClassVersion="10" checksum="38757427"/>
+  </class>
+
   <class name="caf::SRTrueInteraction" ClassVersion="10">
    <version ClassVersion="10" checksum="3285338012"/>
   </class>
@@ -78,7 +82,8 @@
    <version ClassVersion="10" checksum="1609299342"/>
   </class>
 
-  <class name="caf::SRTruthBranch" ClassVersion="10">
+  <class name="caf::SRTruthBranch" ClassVersion="11">
+   <version ClassVersion="11" checksum="1553456992"/>
    <version ClassVersion="10" checksum="2608785459"/>
   </class>
 

@@ -44,7 +44,9 @@ namespace caf
   enum generator_
   {
     kUnknownGenerator = 0,
-    kGENIE            = 1
+    kGENIE            = 1,
+    kMeVPrtlHiggs     = 2,
+    kMeVPrtlHNL       = 3
   };
 
   /// Enum of possible types of truth-matching a TPC slice
