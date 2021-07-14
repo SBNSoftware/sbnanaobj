@@ -6,33 +6,27 @@
 
 #include "sbnanaobj/StandardRecord/SRTrack.h"
 #include "sbnanaobj/StandardRecord/SRShower.h"
-// #include "sbnanaobj/StandardRecord/SRVertex.h"
+#include "sbnanaobj/StandardRecord/SRStub.h"
 
 #include <vector>
 
 namespace caf
 {
-  /// Vectors of reconstructed vertices found by various algorithms
+  /// Vectors of reconstructed objects found by various algorithms
   class SRSliceRecoBranch
   {
   public:
     SRSliceRecoBranch();
     ~SRSliceRecoBranch();
             
-    /* std::vector<SRVertex> vtx; ///< Vector of vertices */
-    /* size_t               nvtx;   ///< Number of vertices */
-
-    std::vector<SRTrack>  trk;      ///< Vector of pandora tracks
+    std::vector<SRTrack>  trk;     ///< Vector of pandora tracks
     size_t               ntrk;     ///< Number of panora tracks
 
-    std::vector<SRShower> shw;      ///< Vector of trac showers
+    std::vector<SRShower> shw;     ///< Vector of trac showers
     size_t               nshw;     ///< Number of trac showers
 
-    // std::vector<SRShower> shw_em;      ///< Vector of em showers
-    // size_t               nshw_em;     ///< Number of em showers
-
-    // std::vector<SRShower> shw_pandora;      ///< Vector of pandora showers
-    // size_t               nshw_pandora;     ///< Number of pandora showers
+    std::vector<SRStub> stub;      ///< Vector of stubs
+    size_t             nstub;      ///< Number of stubs
 
     void fillSizes();
       
