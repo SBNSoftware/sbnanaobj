@@ -35,6 +35,18 @@
    <version ClassVersion="10" checksum="1432916981"/>
   </class>
 
+  <class name="caf::SRStub" ClassVersion="10">
+   <version ClassVersion="10" checksum="2026969588"/>
+  </class>
+
+  <class name="caf::SRStubPlane" ClassVersion="10">
+   <version ClassVersion="10" checksum="1403160680"/>
+  </class>
+
+  <class name="caf::SRStubHit" ClassVersion="10">
+   <version ClassVersion="10" checksum="3777054621"/>
+  </class>
+
   <class name="caf::SRTrack" ClassVersion="10">
    <version ClassVersion="10" checksum="1169960296"/>
   </class>
