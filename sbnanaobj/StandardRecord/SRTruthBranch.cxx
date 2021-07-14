@@ -9,7 +9,8 @@ namespace caf
 {
   
   SRTruthBranch::SRTruthBranch() :
-    nnu(0)
+    nnu(0),
+    nprtl(0)
   {  
   }
   
