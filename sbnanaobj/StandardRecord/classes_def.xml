@@ -30,7 +30,8 @@
    <version ClassVersion="11" checksum="1429601394"/>
   </class>
 
-  <class name="caf::SRSliceRecoBranch" ClassVersion="10">
+  <class name="caf::SRSliceRecoBranch" ClassVersion="11">
+   <version ClassVersion="11" checksum="1272564698"/>
    <version ClassVersion="10" checksum="1432916981"/>
   </class>
 
