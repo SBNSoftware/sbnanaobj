@@ -6,6 +6,7 @@
 
 #include "sbnanaobj/StandardRecord/SRVector3D.h"
 #include "sbnanaobj/StandardRecord/SREnums.h"
+#include "sbnanaobj/StandardRecord/SRTrackTruth.h"
 
 #include <vector>
 
@@ -48,7 +49,7 @@ namespace caf
       float efield_end; //!< Electric field at the end position of the stub [kV/cm]
 
       int pfpid; //!< PFP ID of an object that "overlays" the stub. -1 if there is no such object.
-
+      SRTrackTruth truth;        ///< truth information
   };
 } // end namespace
 
