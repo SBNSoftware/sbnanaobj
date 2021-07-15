@@ -20,6 +20,9 @@ namespace caf
       float dedx; //!< dQ/dx [ADC/cm] -- pre calibration and electron lifetime correction
       float pitch; //!< Track pitch [cm]
       float t; //!< Time of deposition [ticks]
+      float integral; //!< Hit Charge Integral [ADC]
+      float sumadc; //!< Hit Charge SummedADC [ADC]
+      short wire; //!< Wire of Calo-Point
   };
 
 
