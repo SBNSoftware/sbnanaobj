@@ -44,6 +44,15 @@ namespace caf
       SRVector3D start;       //!< Start position in the active TPC volume [cm]
       SRVector3D end;         //!< End position in the active TPC volume [cm]
 
+      SRVector3D scdy_start;  //!< Start point within secondary cryo (if any) [cm]
+      SRVector3D scdy_startp; //!< Momentum for start point within secondary cryo (if any) [GeV/c]
+      float      scdy_startT; //!< Start time for start point within secondary cryo (if any) [mus]
+      float      scdy_startE; //!< Energy for start point within secondary cryo (if any) [GeV]
+      SRVector3D prim_end;    //!< End point within primary cryo if it has a potion also in the secondary cryo [cm]
+      SRVector3D prim_endp;   //!< Momentum for end point within primary cryo if it has a potion also in the secondary cryo [GeV/c]
+      float      prim_endT;   //!< Start time for end point within primary cryo if it has a potion also in the secondary cryo [mus]
+      float      prim_endE;   //!< Energy for end point within primary cryo if it has a potion also in the secondary cryo [GeV]
+
       Wall_t   wallin;      //!< Wall of cryostat particle enters (wNone if starting in detector)
       Wall_t   wallout;     //!< Wall of cryostat particle exits (wNone if stopping in detector)
 
