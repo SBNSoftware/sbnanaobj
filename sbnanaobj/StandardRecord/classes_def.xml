@@ -48,7 +48,12 @@
    <version ClassVersion="10" checksum="3607466832"/>
   </class>
 
-  <class name="caf::SRTrackCalo" ClassVersion="10">
+  <class name="caf::SRCaloPoint" ClassVersion="10">
+   <version ClassVersion="10" checksum="3748600600"/>
+  </class>
+
+  <class name="caf::SRTrackCalo" ClassVersion="11">
+   <version ClassVersion="11" checksum="517393199"/>
    <version ClassVersion="10" checksum="821640099"/>
   </class>
 
