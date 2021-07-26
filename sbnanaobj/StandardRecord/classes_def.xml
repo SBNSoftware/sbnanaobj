@@ -13,7 +13,8 @@
    <version ClassVersion="10" checksum="2908097963"/>
   </class>
 
-  <class name="caf::SRShower" ClassVersion="10">
+  <class name="caf::SRShower" ClassVersion="11">
+   <version ClassVersion="11" checksum="979709822"/>
    <version ClassVersion="10" checksum="2253513844"/>
   </class>
 
@@ -47,7 +48,8 @@
    <version ClassVersion="10" checksum="3777054621"/>
   </class>
 
-  <class name="caf::SRTrack" ClassVersion="10">
+  <class name="caf::SRTrack" ClassVersion="11">
+   <version ClassVersion="11" checksum="1319166397"/>
    <version ClassVersion="10" checksum="1169960296"/>
   </class>
 
@@ -59,7 +61,12 @@
    <version ClassVersion="10" checksum="3607466832"/>
   </class>
 
-  <class name="caf::SRTrackCalo" ClassVersion="10">
+  <class name="caf::SRCaloPoint" ClassVersion="10">
+   <version ClassVersion="10" checksum="3748600600"/>
+  </class>
+
+  <class name="caf::SRTrackCalo" ClassVersion="11">
+   <version ClassVersion="11" checksum="517393199"/>
    <version ClassVersion="10" checksum="821640099"/>
   </class>
 
@@ -124,8 +131,29 @@
    <version ClassVersion="10" checksum="839301601"/>
   </class>
 
+  <class name="caf::SRPFP" ClassVersion="10">
+   <version ClassVersion="10" checksum="1732359397"/>
+  </class>
+
+  <class name="caf::SRTrackScatterClosestApproach" ClassVersion="10">
+   <version ClassVersion="10" checksum="736513134"/>
+  </class>
+
+  <class name="caf::SRTrackStoppingChi2Fit" ClassVersion="10">
+   <version ClassVersion="10" checksum="1034764347"/>
+  </class>
+
+  <class name="caf::SRTrackDazzle" ClassVersion="10">
+   <version ClassVersion="10" checksum="2576140139"/>
+  </class>
+
+  <class name="caf::SRShowerRazzle" ClassVersion="10">
+   <version ClassVersion="10" checksum="133600353"/>
+  </class>
+
   <!--<class name="caf::SRLorentzVector" /> -->
 
+  <class name="std::vector<caf::SRSlice>" />
   <class name="std::vector<caf::SRFakeReco>" />
   <class name="std::vector<caf::SRFakeRecoParticle>" />
   <class name="std::vector<caf::SRTrackCalo>" />

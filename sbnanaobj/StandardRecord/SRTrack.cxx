@@ -16,11 +16,7 @@ namespace caf
     npts(-1),
     len(std::numeric_limits<float>::signaling_NaN()),
     costh(std::numeric_limits<float>::signaling_NaN()),
-    phi(std::numeric_limits<float>::signaling_NaN()),
-    ID(INT_MIN),
-    parent(INT_MIN),
-    parent_is_primary(false),
-    slcID(INT_MIN)
+    phi(std::numeric_limits<float>::signaling_NaN())
   {
   }
 } // end namespace caf
