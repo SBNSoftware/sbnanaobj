@@ -18,7 +18,7 @@ namespace caf
     SRMeVPrtl();
     ~SRMeVPrtl() {  }
 
-    caf::generator_ gen; //!< Generator for this event
+    caf::mevprtlchannel_ gen; //!< Generator physics channel for this event
     caf::SRVector3D dcy; //!< Decay location [cm]
     float dcyT; //!< Decay time [us]
     caf::SRVector3D mom; //!< Portal momentum [GeV]

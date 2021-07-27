@@ -71,7 +71,7 @@
   </class>
 
   <class name="caf::SRMeVPrtl" ClassVersion="10">
-   <version ClassVersion="10" checksum="38757427"/>
+   <version ClassVersion="10" checksum="3963837747"/>
   </class>
 
   <class name="caf::SRTrueInteraction" ClassVersion="10">
@@ -155,6 +155,7 @@
   <enum name="caf::MCType_t" ClassVersion="10"/>
   <enum name="caf::Wall_t" ClassVersion="10"/>
   <enum name="caf::generator_" ClassVersion="10"/>
+  <enum name="caf::mevprtlchannel_" ClassVersion="10"/>
   <enum name="caf::interaction_mode_" ClassVersion="10"/>
   <enum name="caf::genie_status_" ClassVersion="10"/>
   <enum name="caf::g4_process_" ClassVersion="10"/>

@@ -9,7 +9,7 @@ namespace caf
 {
 
   SRMeVPrtl::SRMeVPrtl():
-    gen(caf::kUnknownGenerator),
+    gen(kUnknownMeVPrtlChannel),
     dcyT(std::numeric_limits<float>::signaling_NaN()),
     E(std::numeric_limits<float>::signaling_NaN()),
     M(std::numeric_limits<float>::signaling_NaN()),
