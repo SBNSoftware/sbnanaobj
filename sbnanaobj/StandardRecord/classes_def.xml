@@ -31,8 +31,21 @@
    <version ClassVersion="11" checksum="1429601394"/>
   </class>
 
-  <class name="caf::SRSliceRecoBranch" ClassVersion="10">
+  <class name="caf::SRSliceRecoBranch" ClassVersion="11">
+   <version ClassVersion="11" checksum="1272564698"/>
    <version ClassVersion="10" checksum="1432916981"/>
+  </class>
+
+  <class name="caf::SRStub" ClassVersion="10">
+   <version ClassVersion="10" checksum="2026969588"/>
+  </class>
+
+  <class name="caf::SRStubPlane" ClassVersion="10">
+   <version ClassVersion="10" checksum="1403160680"/>
+  </class>
+
+  <class name="caf::SRStubHit" ClassVersion="10">
+   <version ClassVersion="10" checksum="3777054621"/>
   </class>
 
   <class name="caf::SRTrack" ClassVersion="11">
