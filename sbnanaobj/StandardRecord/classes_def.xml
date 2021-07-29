@@ -90,6 +90,10 @@
    <version ClassVersion="10" checksum="833172973"/>
   </class>
 
+  <class name="caf::SRMeVPrtl" ClassVersion="10">
+   <version ClassVersion="10" checksum="3963837747"/>
+  </class>
+
   <class name="caf::SRTrueInteraction" ClassVersion="10">
    <version ClassVersion="10" checksum="3285338012"/>
   </class>
@@ -98,7 +102,8 @@
    <version ClassVersion="10" checksum="1609299342"/>
   </class>
 
-  <class name="caf::SRTruthBranch" ClassVersion="10">
+  <class name="caf::SRTruthBranch" ClassVersion="11">
+   <version ClassVersion="11" checksum="1553456992"/>
    <version ClassVersion="10" checksum="2608785459"/>
   </class>
 
@@ -191,6 +196,7 @@
   <enum name="caf::MCType_t" ClassVersion="10"/>
   <enum name="caf::Wall_t" ClassVersion="10"/>
   <enum name="caf::generator_" ClassVersion="10"/>
+  <enum name="caf::mevprtlchannel_" ClassVersion="10"/>
   <enum name="caf::interaction_mode_" ClassVersion="10"/>
   <enum name="caf::genie_status_" ClassVersion="10"/>
   <enum name="caf::g4_process_" ClassVersion="10"/>

@@ -44,7 +44,15 @@ namespace caf
   enum generator_
   {
     kUnknownGenerator = 0,
-    kGENIE            = 1
+    kGENIE            = 1,
+    kMeVPrtl          = 2
+  };
+
+  // For MeVPrtl -- which physics channel
+  enum mevprtlchannel_ {
+    kUnknownMeVPrtlChannel = 0,
+    kMeVPrtlHiggs          = 1,
+    kMeVPrtlHNL            = 2
   };
 
   /// Enum of possible types of truth-matching a TPC slice
