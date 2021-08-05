@@ -49,7 +49,8 @@
    <version ClassVersion="10" checksum="3777054621"/>
   </class>
 
-  <class name="caf::SRTrack" ClassVersion="11">
+  <class name="caf::SRTrack" ClassVersion="12">
+   <version ClassVersion="12" checksum="3952974887"/>
    <version ClassVersion="11" checksum="1319166397"/>
    <version ClassVersion="10" checksum="1169960296"/>
   </class>
