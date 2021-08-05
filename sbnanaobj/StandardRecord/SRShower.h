@@ -26,10 +26,10 @@ namespace caf
       float density;                ///< shower density [MeV/cm]
       float len;                    ///< shower length [cm]
       float open_angle;             ///< shower opening angle [rad]
-      std::vector<float> dEdx;      ///< shower calculated dEdx at each plane [MeV/cm]
-      std::vector<float> energy;    ///< shower calculated energy at each plane [GeV]
-      std::vector<unsigned int> nHits; ///< Number of hits associated to the shower in each plane
-      std::vector<float> wirePitch; ///< Wire pitch corrected for the angle of the shower in each plane [cm]
+      float dEdx[3];                ///< shower calculated dEdx at each plane [MeV/cm]
+      float energy[3];              ///< shower calculated energy at each plane [GeV]
+      unsigned int nHits[3];       ///< Number of hits associated to the shower in each plane
+      float wirePitch[3];           ///< Wire pitch corrected for the angle of the shower in each plane [cm]
       SRVector3D dir;               ///< direction cosines at the start of the shower
       SRVector3D start;             ///< shower start point in detector coordinates [cm]
       SRVector3D end;               ///< shower end point (start+len*dir) in detector coordinates [cm]

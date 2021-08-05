@@ -13,7 +13,8 @@
    <version ClassVersion="10" checksum="2908097963"/>
   </class>
 
-  <class name="caf::SRShower" ClassVersion="12">
+  <class name="caf::SRShower" ClassVersion="13">
+   <version ClassVersion="13" checksum="150649609"/>
    <version ClassVersion="12" checksum="2025293789"/>
    <version ClassVersion="11" checksum="979709822"/>
    <version ClassVersion="10" checksum="2253513844"/>
@@ -49,7 +50,8 @@
    <version ClassVersion="10" checksum="3777054621"/>
   </class>
 
-  <class name="caf::SRTrack" ClassVersion="12">
+  <class name="caf::SRTrack" ClassVersion="13">
+   <version ClassVersion="13" checksum="522362999"/>
    <version ClassVersion="12" checksum="3952974887"/>
    <version ClassVersion="11" checksum="1319166397"/>
    <version ClassVersion="10" checksum="1169960296"/>
