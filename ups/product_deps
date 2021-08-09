@@ -34,20 +34,22 @@ fwdir   product_dir scripts
 # Add the dependent product and version
 
 product             version
-root                v6_22_08b
+root                v6_22_08d
 
 # list products required ONLY for the build
 # any products here must NOT have qualifiers
-cetbuildtools v7_17_01 - only_for_build
+cetbuildtools v8_14_02 - only_for_build
+end_product_list
 
 # We now define allowed qualifiers and the corresponding qualifiers for the dependencies.
 # Make the table by adding columns before "notes".
 
 qualifier  root       notes
-e20:debug  e20:p383b:debug  -nq-
-e20:prof   e20:p383b:prof   -nq-
-c7:debug   c7:p383b:debug   -nq-
-c7:prof    c7:p383b:prof    -nq-
+e20:debug  e20:p392:debug  -nq-
+e20:prof   e20:p392:prof   -nq-
+c7:debug   c7:p392:debug   -nq-
+c7:prof    c7:p392:prof    -nq-
+end_qualifier_list
 
 # Preserve tabs and formatting in emacs and vi / vim:
 
