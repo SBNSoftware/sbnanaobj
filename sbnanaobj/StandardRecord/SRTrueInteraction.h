@@ -54,7 +54,7 @@ namespace caf
     float      w;                 //!< Hadronic invariant mass W
     float      t;                 //!< Kinematic t
     float      eccqe;             //!< CCQE energy
-    float      baseline;          //!< Distance from decay to interaction
+    float      baseline;          //!< Distance from decay to interaction [m]
 
     unsigned int npiplus;  ///< Number of \f$\pi^+\f$'s after neutrino reaction, before FSI
     unsigned int npiminus; ///< Number of \f$\pi^1\f$'s after neutrino reaction, before FSI
