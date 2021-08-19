@@ -146,8 +146,8 @@ namespace caf
     kG4LArVoxelReadoutScoringProcess=57,
     kG4ionIoni=58,
     kG4hBrems=59,
-    kG4UNKNOWN=60,
-    kG4Transportation=61
+    kG4Transportation=60,
+    kG4UNKNOWN=61
   };// g4_process_
 
   enum ReweightType_t{
