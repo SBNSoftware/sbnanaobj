@@ -9,6 +9,12 @@
 
 namespace caf
 {
+  SRTrueInteractionPlaneInfo::SRTrueInteractionPlaneInfo() :
+    visE(std::numeric_limits<float>::signaling_NaN()),
+    nhitprim(0),
+    nhit(0)
+  {
+  }
 
   SRTrueInteraction::SRTrueInteraction():
     initpdg(-1),
@@ -24,9 +30,6 @@ namespace caf
     is_numucc_primary(false),
 
     E(std::numeric_limits<float>::signaling_NaN()),
-    plane0VisE(std::numeric_limits<float>::signaling_NaN()),
-    plane1VisE(std::numeric_limits<float>::signaling_NaN()),
-    plane2VisE(std::numeric_limits<float>::signaling_NaN()),
     time(std::numeric_limits<float>::signaling_NaN()),
     bjorkenX(std::numeric_limits<float>::signaling_NaN()),
     inelasticityY(std::numeric_limits<float>::signaling_NaN()),
@@ -52,12 +55,6 @@ namespace caf
     xsec(std::numeric_limits<float>::signaling_NaN()),
     genweight(std::numeric_limits<float>::signaling_NaN()),
 
-    plane0nhitprim(0),
-    plane1nhitprim(0),
-    plane2nhitprim(0),
-    plane0nhit(0),
-    plane1nhit(0),
-    plane2nhit(0),
     parent_dcy_mode(-1),
     parent_pdg(-1),
     parent_dcy_E(std::numeric_limits<float>::signaling_NaN()),

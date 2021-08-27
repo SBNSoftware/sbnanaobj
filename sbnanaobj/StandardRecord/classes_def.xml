@@ -86,7 +86,18 @@
    <version ClassVersion="10" checksum="4056415501"/>
   </class>
 
-  <class name="caf::SRTrueParticle" ClassVersion="10">
+  <class name="caf::SRTrueParticlePlaneInfo" ClassVersion="11">
+   <version ClassVersion="11" checksum="317847253"/>
+   <version ClassVersion="10" checksum="1689803547"/>
+  </class>
+
+  <class name="caf::SRTrueInteractionPlaneInfo" ClassVersion="10">
+   <version ClassVersion="10" checksum="888913434"/>
+  </class>
+
+  <class name="caf::SRTrueParticle" ClassVersion="12">
+   <version ClassVersion="12" checksum="4278434173"/>
+   <version ClassVersion="11" checksum="917559391"/>
    <version ClassVersion="10" checksum="1955089855"/>
   </class>
 
@@ -98,7 +109,8 @@
    <version ClassVersion="10" checksum="3963837747"/>
   </class>
 
-  <class name="caf::SRTrueInteraction" ClassVersion="10">
+  <class name="caf::SRTrueInteraction" ClassVersion="11">
+   <version ClassVersion="11" checksum="1242940498"/>
    <version ClassVersion="10" checksum="3285338012"/>
   </class>
 
