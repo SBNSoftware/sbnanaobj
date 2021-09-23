@@ -27,7 +27,7 @@ incdir  product_dir  include
 libdir  fq_dir       lib
 bindir  fq_dir       bin
 gdmldir product_dir
-fcldir  product_dir
+fcldir  -
 fwdir   product_dir scripts
 
 # With "product  version" table below, we now define dependencies
@@ -45,10 +45,10 @@ end_product_list
 # Make the table by adding columns before "notes".
 
 qualifier  root       notes
-e20:debug  e20:p383b:debug  -nq-
-e20:prof   e20:p383b:prof   -nq-
-c7:debug   c7:p383b:debug   -nq-
-c7:prof    c7:p383b:prof    -nq-
+e20:debug  e20:p392:debug  -nq-
+e20:prof   e20:p392:prof   -nq-
+c7:debug   c7:p392:debug   -nq-
+c7:prof    c7:p392:prof    -nq-
 end_qualifier_list
 
 # Preserve tabs and formatting in emacs and vi / vim:
