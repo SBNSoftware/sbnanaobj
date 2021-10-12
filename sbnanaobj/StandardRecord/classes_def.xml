@@ -62,11 +62,13 @@
    <version ClassVersion="10" checksum="1169960296"/>
   </class>
 
-  <class name="caf::SRTrackTruth" ClassVersion="10">
+  <class name="caf::SRTrackTruth" ClassVersion="11">
+   <version ClassVersion="11" checksum="3541008994"/>
    <version ClassVersion="10" checksum="2876855736"/>
   </class>
 
-  <class name="caf::ParticleMatch" ClassVersion="10">
+  <class name="caf::SRParticleMatch" ClassVersion="11">
+   <version ClassVersion="11" checksum="3083434249"/>
    <version ClassVersion="10" checksum="3607466832"/>
   </class>
 
@@ -192,7 +194,7 @@
   <class name="std::vector<caf::SRTrueInteraction>" />
   <class name="std::vector<caf::SRMultiverse>" />
   <class name="std::vector<caf::SRTrueParticle>" />
-  <class name="std::vector<caf::ParticleMatch>" />
+  <class name="std::vector<caf::SRParticleMatch>" />
 
   <class name="caf::SRCRTHit" ClassVersion="10">
    <version ClassVersion="10" checksum="3162534166"/>
