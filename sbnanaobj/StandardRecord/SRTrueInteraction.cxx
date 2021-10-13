@@ -13,11 +13,11 @@ namespace caf
   SRTrueInteraction::SRTrueInteraction():
     initpdg(-1),
     pdg(-1),
-    inttype(0),
     index(-1),
     targetPDG(-999),
     hitnuc(-999),
-    genie_intcode(kUnknownInteraction),
+    genie_mode(kUnknownInteractionMode),
+    genie_inttype(kUnknownInteractionType),
     isnc(false),
     iscc(false),
     isvtxcont(false),
