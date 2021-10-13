@@ -90,8 +90,6 @@ namespace caf
 
     Det_t             det;
 
-    interaction_mode_ mode;       ///< True mode of from enum
-
     generator_        generator;  ///< The generator that created this neutrino interaction
     std::vector<unsigned int>   genVersion; ///< Version of the generator that created this neutrino interaction
 

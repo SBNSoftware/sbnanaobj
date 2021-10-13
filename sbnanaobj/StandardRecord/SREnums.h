@@ -55,16 +55,6 @@ namespace caf
     kMeVPrtlHNL            = 2
   };
 
-  /// Enum of possible types of truth-matching a TPC slice
-  enum interaction_mode_ 
-  {
-    kCC = 0,           //!< CC neutrino interaction
-    kNC = 1,           //!< NC neutrino interaction
-    kCosmic = 2,       //!< Cosmic activity
-    kIntimeCosmic = 3, //!< Cosmic activity in event triggered by intime-cosmic
-    kOther = 4 //!< Release valve value -- if nothing else really fits
-  };
-
   /// These values are taken from nusimdata/SimulationBase/MCNeutrino.h (where
   /// they are probably copied from some genie header). Duplicating that
   /// information here is sub-optimal, but less sub-optimal than adding a

@@ -63,7 +63,6 @@ namespace caf
     parent_dcy_E(std::numeric_limits<float>::signaling_NaN()),
     imp_weight(std::numeric_limits<float>::signaling_NaN()),
     det(kUNKNOWN),
-    mode(kOther),
     generator(kUnknownGenerator),
     genVersion(),
     nprim(0),
