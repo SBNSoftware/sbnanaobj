@@ -26,7 +26,6 @@ namespace caf
 
     int   initpdg;         //!< Initial PDG code of probe neutrino
     int   pdg;             //!< PDG code of probe neutrino
-    int   inttype;         //!< Interaction type enum int_type::[...]
     int   index;           //!< Index of the matched true neutrino interaction (-1 if not matched to neutrino)
     int   targetPDG;       //!< PDG code of struck target
     /// PDG code of struck nucleon (or, in the case of MEC, struck nucleon-nucleon pair).
