@@ -32,7 +32,7 @@ namespace caf
     /// PDG code of struck nucleon (or, in the case of MEC, struck nucleon-nucleon pair).
     /// For MEC, the codes are: 2000000200 --> nn,  2000000201 --> np,  2000000202 --> "pp
     int   hitnuc;
-    int   genie_intcode;   //!< Interaction mode (as for LArSoft MCNeutrino::Mode() )
+    interaction_type_ genie_intcode;   //!< Interaction mode (as for LArSoft MCNeutrino::Mode() )
 
     bool    isnc;              //!< same as LArSoft "ccnc" - 0=CC, 1=NC
     bool    iscc;              //!< CC (true) or NC/interference (false)

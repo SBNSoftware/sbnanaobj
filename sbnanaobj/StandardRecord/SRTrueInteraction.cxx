@@ -17,7 +17,7 @@ namespace caf
     index(-1),
     targetPDG(-999),
     hitnuc(-999),
-    genie_intcode(-999),
+    genie_intcode(kUnknownInteraction),
     isnc(false),
     iscc(false),
     isvtxcont(false),

@@ -65,6 +65,29 @@ namespace caf
     kOther = 4 //!< Release valve value -- if nothing else really fits
   };
 
+  /// These values are taken from nusimdata/SimulationBase/MCNeutrino.h (where
+  /// they are probably copied from some genie header). Duplicating that
+  /// information here is sub-optimal, but less sub-optimal than adding a
+  /// dependency on larsoft to interpret the CAF files.
+  enum interaction_type_
+  {
+    kUnknownInteraction        =   -1,
+    kQE                        =    0,
+    kRes                       =    1,
+    kDIS                       =    2,
+    kCoh                       =    3,
+    kCohElastic                =    4,
+    kElectronScattering        =    5,
+    kIMDAnnihilation           =    6,
+    kInverseBetaDecay          =    7,
+    kGlashowResonance          =    8,
+    kAMNuGamma                 =    9,
+    kMEC                       =   10,
+    kDiffractive               =   11,
+    kEM                        =   12,
+    kWeakMix                   =   13
+  };
+
   /// Which genie status?
   enum genie_status_ 
   { 
