@@ -21,11 +21,6 @@ namespace caf
   class SRTrueParticle
     {
     public:
-
-      float    plane0VisE;   //!< Sum of energy deposited on plane 0 (1st Ind.) [GeV]
-      float    plane1VisE;   //!< Sum of energy deposited on plane 1 (2nd Ind.) [GeV]
-      float    plane2VisE;   //!< Sum of energy deposited on plane 2 (Col.) [GeV]
-
       float    genE;        //!< Energy at generation pt [GeV]
       float    startE;      //!< Energy at first pt in active TPC volume [GeV]
       float    endE;        //!< Energy at last pt in active TPC volume [GeV]
@@ -34,9 +29,12 @@ namespace caf
       float    endT;        //!< End time last point in the active [us -- t=0 is spill time]
       float    length;      //!< Trajectory length in active TPC volume the particle first enters [cm]
 
-      unsigned plane0nhit;  //!< Number of hits on plane 0 (1st Ind.)
-      unsigned plane1nhit;  //!< Number of hits on plane 1 (2nd Ind.)
-      unsigned plane2nhit;  //!< Number of hits on plane 2 (Col.)
+      std::vector<float>    plane0VisE;   //!< Sum of energy deposited on plane 0 (1st Ind.) -- indexed by Cryostat [GeV]
+      std::vector<float>    plane1VisE;   //!< Sum of energy deposited on plane 1 (2nd Ind.) -- indexed by Cryostat [GeV]
+      std::vector<float>    plane2VisE;   //!< Sum of energy deposited on plane 2 (Col.) -- indexex by Cryostat [GeV]
+      std::vector<unsigned> plane0nhit;  //!< Number of hits on plane 0 -- indexed by Cryostat(1st Ind.)
+      std::vector<unsigned> plane1nhit;  //!< Number of hits on plane 1 -- indexed by Cryostat (2nd Ind.)
+      std::vector<unsigned> plane2nhit;  //!< Number of hits on plane 2 -- indexed by Cryostat (Col.)
 
       SRVector3D genp;        //!< Momentum at generation point [GeV/c]
       SRVector3D startp;      //!< Momentum at first point in the active TPC volume [GeV/c]
@@ -55,6 +53,7 @@ namespace caf
       int      pdg;          //!< Particle ID code
       int      G4ID;         //!< ID of the particle (taken from G4 -- -1 if this particle is not propogated by G4)
       int      interaction_id; //!< Neutrino interaction ID of the source of this particle (-1 if cosmic)
+      int      cryostat;     //!< Cryostat that the particle enters first -- -1 if it does not enter a Cryostat
 
       std::vector<unsigned> daughters; //!< ID's of daughter particles from this particle
       unsigned parent; //!< ID's of parent particle from this particle

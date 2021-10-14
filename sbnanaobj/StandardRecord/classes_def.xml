@@ -82,19 +82,23 @@
    <version ClassVersion="10" checksum="4056415501"/>
   </class>
 
-  <class name="caf::SRTrueParticle" ClassVersion="10">
+  <class name="caf::SRTrueParticle" ClassVersion="11">
+   <version ClassVersion="11" checksum="3988893361"/>
    <version ClassVersion="10" checksum="1955089855"/>
   </class>
 
-  <class name="caf::SRTruthMatch" ClassVersion="10">
+  <class name="caf::SRTruthMatch" ClassVersion="11">
+   <version ClassVersion="11" checksum="2394989040"/>
    <version ClassVersion="10" checksum="833172973"/>
   </class>
 
-  <class name="caf::SRMeVPrtl" ClassVersion="10">
+  <class name="caf::SRMeVPrtl" ClassVersion="11">
+   <version ClassVersion="11" checksum="2904339381"/>
    <version ClassVersion="10" checksum="3963837747"/>
   </class>
 
-  <class name="caf::SRTrueInteraction" ClassVersion="10">
+  <class name="caf::SRTrueInteraction" ClassVersion="11">
+   <version ClassVersion="11" checksum="734411305"/>
    <version ClassVersion="10" checksum="3285338012"/>
   </class>
 

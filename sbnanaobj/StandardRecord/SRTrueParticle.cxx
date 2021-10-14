@@ -10,9 +10,6 @@ namespace caf
 {
 
   SRTrueParticle::SRTrueParticle():
-    plane0VisE(std::numeric_limits<float>::signaling_NaN()),
-    plane1VisE(std::numeric_limits<float>::signaling_NaN()),
-    plane2VisE(std::numeric_limits<float>::signaling_NaN()),
     genE(std::numeric_limits<float>::signaling_NaN()),
     startE(std::numeric_limits<float>::signaling_NaN()),
     endE(std::numeric_limits<float>::signaling_NaN()),
@@ -20,9 +17,6 @@ namespace caf
     startT(std::numeric_limits<float>::signaling_NaN()),
     endT(std::numeric_limits<float>::signaling_NaN()),
     length(std::numeric_limits<float>::signaling_NaN()),
-    plane0nhit(0),
-    plane1nhit(0),
-    plane2nhit(0),
     wallin(kWallNone),
     wallout(kWallNone),
     cont_tpc(false),
@@ -31,6 +25,7 @@ namespace caf
     pdg(INT_MIN),
     G4ID(INT_MIN),
     interaction_id(INT_MIN),
+    cryostat(-1),
     generator(kUnknownGenerator),
     start_process(g4_process_(caf::kG4UNKNOWN)), 
     end_process(g4_process_(caf::kG4UNKNOWN)),
