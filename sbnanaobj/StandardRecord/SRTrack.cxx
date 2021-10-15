@@ -8,15 +8,19 @@
 
 #include <climits>
 
+namespace{
+  constexpr float kInvalid = std::numeric_limits<float>::signaling_NaN();
+}
+
 namespace caf
 {
 
   SRTrack::SRTrack():
     producer(UINT_MAX),
     npts(-1),
-    len(std::numeric_limits<float>::signaling_NaN()),
-    costh(std::numeric_limits<float>::signaling_NaN()),
-    phi(std::numeric_limits<float>::signaling_NaN())
+    len(kInvalid),
+    costh(kInvalid),
+    phi(kInvalid)
   {
   }
 } // end namespace caf
