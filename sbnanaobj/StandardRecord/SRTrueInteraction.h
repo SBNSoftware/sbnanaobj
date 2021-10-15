@@ -17,6 +17,16 @@ namespace caf
     std::vector<float> univ;
   };
 
+  class SRTrueInteractionPlaneInfo
+  {
+  public:
+    SRTrueInteractionPlaneInfo();
+
+    float visE;        //!< Sum of energy deposited on plane [GeV]
+    unsigned int nhitprim; //!< Number of hits from primary particles on plane
+    unsigned int nhit;     //!< Number of hits on plane
+  };
+
   /// The SRTrueInteraction is a representation of neutrino interaction information
   class SRTrueInteraction
   {
@@ -40,9 +50,7 @@ namespace caf
     bool    is_numucc_primary; //!< Whether this is the "primary" reco neutrino slice as defined by the numu CC analysis
 
     float      E;             ///< True energy [GeV]
-    float      plane0VisE;    ///< True interaction deposited energy on plane 0 (1st Ind.)
-    float      plane1VisE;    ///< True interaction deposited energy on plane 1 (2nd Ind.)
-    float      plane2VisE;    ///< True interaction deposited energy on plane 2 (Col.)
+    SRTrueInteractionPlaneInfo plane[3];
     float      time;           ///< Time
     float      bjorkenX;          //!< Bjorken x = (k-k')^2/(2*p.q) [Dimensionless]
     float      inelasticityY;     //!< Inelasticity y
@@ -69,13 +77,6 @@ namespace caf
     float xsec;      ///< xsec for thrown interaction, in 1/GeV^2, as stored by the GENIE spline
 
     float genweight; ///< Weight, if any, assigned by the generator
-
-    unsigned   plane0nhitprim;    //!< Number of hits from primary particles on plane 0 (1st Ind.)
-    unsigned   plane1nhitprim;    //!< Number of hits from primary particles on plane 1 (2nd Ind.)
-    unsigned   plane2nhitprim;    //!< Number of hits from primary particles on plane 2 (Col.)
-    unsigned   plane0nhit;    //!< Number of hits from particles on plane 0 (1st Ind.)
-    unsigned   plane1nhit;    //!< Number of hits from particles on plane 1 (2nd Ind.)
-    unsigned   plane2nhit;    //!< Number of hits from particles on plane 2 (Col.)
 
     int        parent_dcy_mode;   //!< Parent hadron/muon decay mode
     int        parent_pdg;        //!< PDG Code of parent particle ID
