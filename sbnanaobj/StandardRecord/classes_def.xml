@@ -100,7 +100,8 @@
    <version ClassVersion="10" checksum="888913434"/>
   </class>
 
-  <class name="caf::SRTrueParticle" ClassVersion="12">
+  <class name="caf::SRTrueParticle" ClassVersion="13">
+   <version ClassVersion="13" checksum="2314011736"/>
    <version ClassVersion="12" checksum="4278434173"/>
    <version ClassVersion="11" checksum="917559391"/>
    <version ClassVersion="10" checksum="1955089855"/>
@@ -116,7 +117,8 @@
    <version ClassVersion="10" checksum="3963837747"/>
   </class>
 
-  <class name="caf::SRTrueInteraction" ClassVersion="11">
+  <class name="caf::SRTrueInteraction" ClassVersion="12">
+   <version ClassVersion="12" checksum="1548379487"/>
    <version ClassVersion="11" checksum="1242940498"/>
    <version ClassVersion="10" checksum="3285338012"/>
   </class>
