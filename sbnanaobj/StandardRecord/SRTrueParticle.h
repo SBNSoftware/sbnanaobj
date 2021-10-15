@@ -16,11 +16,22 @@
 
 namespace caf
 {
+  class SRTrueParticlePlaneInfo
+  {
+  public:
+    SRTrueParticlePlaneInfo();
+
+    float visE;        //!< Sum of energy deposited on plane [GeV]
+    unsigned int nhit; //!< Number of hits on plane
+  };
+
   /// Representation of a simb::MCParticle, knows energy, direction,
   // etc, but no hit information.
   class SRTrueParticle
     {
     public:
+      std::vector<SRTrueParticlePlaneInfo> plane[3]; //!< Per-plane, per-cryostat deposition information
+
       float    genE;        //!< Energy at generation pt [GeV]
       float    startE;      //!< Energy at first pt in active TPC volume [GeV]
       float    endE;        //!< Energy at last pt in active TPC volume [GeV]

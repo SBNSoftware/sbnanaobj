@@ -8,6 +8,11 @@
 
 namespace caf
 {
+  SRTrueParticlePlaneInfo::SRTrueParticlePlaneInfo() :
+    visE(std::numeric_limits<float>::signaling_NaN()),
+    nhit(0)
+  {
+  }
 
   SRTrueParticle::SRTrueParticle():
     genE(std::numeric_limits<float>::signaling_NaN()),

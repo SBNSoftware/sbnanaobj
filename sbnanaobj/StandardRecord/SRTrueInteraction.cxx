@@ -9,6 +9,12 @@
 
 namespace caf
 {
+  SRTrueInteractionPlaneInfo::SRTrueInteractionPlaneInfo() :
+    visE(std::numeric_limits<float>::signaling_NaN()),
+    nhitprim(0),
+    nhit(0)
+  {
+  }
 
   SRTrueInteraction::SRTrueInteraction():
     initpdg(-1),

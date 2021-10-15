@@ -17,6 +17,16 @@ namespace caf
     std::vector<float> univ;
   };
 
+  class SRTrueInteractionPlaneInfo
+  {
+  public:
+    SRTrueInteractionPlaneInfo();
+
+    float visE;        //!< Sum of energy deposited on plane [GeV]
+    unsigned int nhitprim; //!< Number of hits from primary particles on plane
+    unsigned int nhit;     //!< Number of hits on plane
+  };
+
   /// The SRTrueInteraction is a representation of neutrino interaction information
   class SRTrueInteraction
   {
@@ -40,6 +50,9 @@ namespace caf
     bool    is_numucc_primary; //!< Whether this is the "primary" reco neutrino slice as defined by the numu CC analysis
 
     float      E;             ///< True energy [GeV]
+
+    std::vector<SRTrueInteractionPlaneInfo> plane[3]; //!< Per-plane, per-cryostat deposition information
+
     float      time;           ///< Time
     float      bjorkenX;          //!< Bjorken x = (k-k')^2/(2*p.q) [Dimensionless]
     float      inelasticityY;     //!< Inelasticity y
@@ -66,16 +79,6 @@ namespace caf
     float xsec;      ///< xsec for thrown interaction, in 1/GeV^2, as stored by the GENIE spline
 
     float genweight; ///< Weight, if any, assigned by the generator
-
-    std::vector<float>      plane0VisE;    ///< True interaction deposited energy on plane 0 -- per Cryostat (1st Ind.)
-    std::vector<float>      plane1VisE;    ///< True interaction deposited energy on plane 1 -- per Cryostat (2nd Ind.)
-    std::vector<float>      plane2VisE;    ///< True interaction deposited energy on plane 2 -- per Cryostat (Col.)
-    std::vector<unsigned>   plane0nhitprim;    //!< Number of hits from primary particles on plane 0 -- per Cryostat (1st Ind.)
-    std::vector<unsigned>   plane1nhitprim;    //!< Number of hits from primary particles on plane 1 -- per Cryostat (2nd Ind.)
-    std::vector<unsigned>   plane2nhitprim;    //!< Number of hits from primary particles on plane 2 -- per Cryostat (Col.)
-    std::vector<unsigned>   plane0nhit;    //!< Number of hits from particles on plane 0 -- per Cryostat (1st Ind.)
-    std::vector<unsigned>   plane1nhit;    //!< Number of hits from particles on plane 1 -- per Cryostat (2nd Ind.)
-    std::vector<unsigned>   plane2nhit;    //!< Number of hits from particles on plane 2 -- per Cryostat (Col.)
 
     int        parent_dcy_mode;   //!< Parent hadron/muon decay mode
     int        parent_pdg;        //!< PDG Code of parent particle ID
