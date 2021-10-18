@@ -67,9 +67,8 @@
    <version ClassVersion="10" checksum="2876855736"/>
   </class>
 
-  <class name="caf::SRParticleMatch" ClassVersion="11">
-   <version ClassVersion="11" checksum="3083434249"/>
-   <version ClassVersion="10" checksum="3607466832"/>
+  <class name="caf::SRParticleMatch" ClassVersion="10">
+   <version ClassVersion="10" checksum="3613006913"/>
   </class>
 
   <class name="caf::SRCaloPoint" ClassVersion="10">
@@ -195,6 +194,11 @@
   <class name="std::vector<caf::SRMultiverse>" />
   <class name="std::vector<caf::SRTrueParticle>" />
   <class name="std::vector<caf::SRParticleMatch>" />
+  <class name="std::vector<caf::SRCaloPoint>" />
+  <class name="std::vector<caf::SRMeVPrtl>" />
+  <class name="std::vector<caf::SRStub>" />
+  <class name="std::vector<caf::SRStubHit>" />
+  <class name="std::vector<caf::SRStubPlane>" />
 
   <class name="caf::SRCRTHit" ClassVersion="10">
    <version ClassVersion="10" checksum="3162534166"/>
