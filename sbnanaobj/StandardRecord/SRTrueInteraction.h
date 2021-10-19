@@ -51,7 +51,7 @@ namespace caf
 
     float      E;             ///< True energy [GeV]
 
-    std::vector<SRTrueInteractionPlaneInfo> plane[3]; //!< Per-plane, per-cryostat deposition information
+    SRTrueInteractionPlaneInfo plane[2][3]; //!< Per-plane, per-cryostat deposition information
 
     float      time;           ///< Time
     float      bjorkenX;          //!< Bjorken x = (k-k')^2/(2*p.q) [Dimensionless]
