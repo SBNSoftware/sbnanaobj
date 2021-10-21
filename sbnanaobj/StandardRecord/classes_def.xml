@@ -13,7 +13,14 @@
    <version ClassVersion="10" checksum="2908097963"/>
   </class>
 
-  <class name="caf::SRShower" ClassVersion="11">
+  <class name="caf::SRShowerPlaneInfo" ClassVersion="10">
+   <version ClassVersion="10" checksum="4180347773"/>
+  </class>
+
+  <class name="caf::SRShower" ClassVersion="14">
+   <version ClassVersion="14" checksum="3720936031"/>
+   <version ClassVersion="13" checksum="150649609"/>
+   <version ClassVersion="12" checksum="2025293789"/>
    <version ClassVersion="11" checksum="979709822"/>
    <version ClassVersion="10" checksum="2253513844"/>
   </class>
@@ -48,7 +55,9 @@
    <version ClassVersion="10" checksum="3777054621"/>
   </class>
 
-  <class name="caf::SRTrack" ClassVersion="11">
+  <class name="caf::SRTrack" ClassVersion="13">
+   <version ClassVersion="13" checksum="522362999"/>
+   <version ClassVersion="12" checksum="3952974887"/>
    <version ClassVersion="11" checksum="1319166397"/>
    <version ClassVersion="10" checksum="1169960296"/>
   </class>
@@ -82,7 +91,18 @@
    <version ClassVersion="10" checksum="4056415501"/>
   </class>
 
-  <class name="caf::SRTrueParticle" ClassVersion="10">
+  <class name="caf::SRTrueParticlePlaneInfo" ClassVersion="11">
+   <version ClassVersion="11" checksum="317847253"/>
+   <version ClassVersion="10" checksum="1689803547"/>
+  </class>
+
+  <class name="caf::SRTrueInteractionPlaneInfo" ClassVersion="10">
+   <version ClassVersion="10" checksum="888913434"/>
+  </class>
+
+  <class name="caf::SRTrueParticle" ClassVersion="12">
+   <version ClassVersion="12" checksum="4278434173"/>
+   <version ClassVersion="11" checksum="917559391"/>
    <version ClassVersion="10" checksum="1955089855"/>
   </class>
 
@@ -94,8 +114,9 @@
    <version ClassVersion="10" checksum="3963837747"/>
   </class>
 
-  <class name="caf::SRTrueInteraction" ClassVersion="11">
-   <version ClassVersion="11" checksum="2252482058"/>
+  <class name="caf::SRTrueInteraction" ClassVersion="12">
+   <version ClassVersion="12" checksum="4069981100"/>
+   <version ClassVersion="11" checksum="1242940498"/>
    <version ClassVersion="10" checksum="3285338012"/>
   </class>
 

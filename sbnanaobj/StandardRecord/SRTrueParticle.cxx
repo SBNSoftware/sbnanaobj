@@ -8,11 +8,13 @@
 
 namespace caf
 {
+  SRTrueParticlePlaneInfo::SRTrueParticlePlaneInfo() :
+    visE(std::numeric_limits<float>::signaling_NaN()),
+    nhit(0)
+  {
+  }
 
   SRTrueParticle::SRTrueParticle():
-    plane0VisE(std::numeric_limits<float>::signaling_NaN()),
-    plane1VisE(std::numeric_limits<float>::signaling_NaN()),
-    plane2VisE(std::numeric_limits<float>::signaling_NaN()),
     genE(std::numeric_limits<float>::signaling_NaN()),
     startE(std::numeric_limits<float>::signaling_NaN()),
     endE(std::numeric_limits<float>::signaling_NaN()),
@@ -20,9 +22,6 @@ namespace caf
     startT(std::numeric_limits<float>::signaling_NaN()),
     endT(std::numeric_limits<float>::signaling_NaN()),
     length(std::numeric_limits<float>::signaling_NaN()),
-    plane0nhit(0),
-    plane1nhit(0),
-    plane2nhit(0),
     wallin(kWallNone),
     wallout(kWallNone),
     cont_tpc(false),
@@ -37,33 +36,5 @@ namespace caf
     gstatus(kIStUndefined)
   {
   }
-
-  bool SRTrueParticle::IsPrimary() const {
-    return start_process == kG4primary;
-  }
-
-  bool SRTrueParticle::HasBraggPeak() const {
-    return \
-      // check contained, id, & end process (stopping-only)
-      contained &&
-      ( abs(pdg) == 13 || abs(pdg) == 2212 ||
-  abs(pdg) == 211 || abs(pdg) == 321 ) &&
-      ( end_process ==  kG4CoupledTransportation ||
-  end_process ==  kG4FastScintillation ||
-  end_process ==  kG4Decay ||
-  end_process ==  kG4muMinusCaptureAtRest );
-  }
-
-  bool SRTrueParticle::IsGenie() const {
-    return gstatus !=  kNotGenie;
-  }
-
-  bool SRTrueParticle::IsStable() const {
-    return \
-       gstatus ==  kNotGenie // non-genie particles are stable
-    || gstatus ==  kIStStableFinalState; // stable genie particle
-
-  }
-
 } // end namespace caf
 ////////////////////////////////////////////////////////////////////////
