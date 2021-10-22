@@ -59,6 +59,7 @@ namespace caf
     parent_pdg(-1),
     parent_dcy_E(std::numeric_limits<float>::signaling_NaN()),
     imp_weight(std::numeric_limits<float>::signaling_NaN()),
+    cryostat(-1),
     det(kUNKNOWN),
     mode(kOther),
     generator(kUnknownGenerator),

@@ -30,7 +30,7 @@ namespace caf
   class SRTrueParticle
     {
     public:
-      SRTrueParticlePlaneInfo plane[3];
+      SRTrueParticlePlaneInfo plane[2][3]; //!< Per-plane, per-cryostat deposition information
 
       float    genE;        //!< Energy at generation pt [GeV]
       float    startE;      //!< Energy at first pt in active TPC volume [GeV]
@@ -57,6 +57,7 @@ namespace caf
       int      pdg;          //!< Particle ID code
       int      G4ID;         //!< ID of the particle (taken from G4 -- -1 if this particle is not propogated by G4)
       int      interaction_id; //!< Neutrino interaction ID of the source of this particle (-1 if cosmic)
+      int      cryostat;     //!< Cryostat that the particle enters first -- -1 if it does not enter a Cryostat
 
       std::vector<unsigned> daughters; //!< ID's of daughter particles from this particle
       unsigned parent; //!< ID's of parent particle from this particle
