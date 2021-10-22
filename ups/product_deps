@@ -1,7 +1,6 @@
 # This @product_deps@ file defines dependencies for this package.
 
-# The *parent* line must the first non-commented line and defines this product and version
-# The version should be of the form vxx_yy_zz (e.g. v01_02_03)
+# The *parent* line must the first non-commented line and defines this product
 parent sbnanaobj
 defaultqual e20
 
@@ -31,6 +30,7 @@ fcldir  -
 fwdir   product_dir scripts
 
 # With "product  version" table below, we now define dependencies
+# The version should be of the form vxx_yy_zz (e.g. v01_02_03)
 # Add the dependent product and version
 
 product             version
