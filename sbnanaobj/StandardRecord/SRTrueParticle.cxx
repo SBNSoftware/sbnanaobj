@@ -30,6 +30,7 @@ namespace caf
     pdg(INT_MIN),
     G4ID(INT_MIN),
     interaction_id(INT_MIN),
+    cryostat(-1),
     generator(kUnknownGenerator),
     start_process(g4_process_(caf::kG4UNKNOWN)), 
     end_process(g4_process_(caf::kG4UNKNOWN)),

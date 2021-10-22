@@ -50,7 +50,9 @@ namespace caf
     bool    is_numucc_primary; //!< Whether this is the "primary" reco neutrino slice as defined by the numu CC analysis
 
     float      E;             ///< True energy [GeV]
-    SRTrueInteractionPlaneInfo plane[3];
+
+    SRTrueInteractionPlaneInfo plane[2][3]; //!< Per-plane, per-cryostat deposition information
+
     float      time;           ///< Time
     float      bjorkenX;          //!< Bjorken x = (k-k')^2/(2*p.q) [Dimensionless]
     float      inelasticityY;     //!< Inelasticity y
@@ -89,6 +91,7 @@ namespace caf
     SRVector3D        momentum;        //!< Neutrino three-momentum
     SRVector3D        position;        //!< Neutrino interaction position
 
+    int               cryostat;   //!< Cryostat the the Interaction originates in. -1 if it originates outside a cryostat.
     Det_t             det;
 
     generator_        generator;  ///< The generator that created this neutrino interaction

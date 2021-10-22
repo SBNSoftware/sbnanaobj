@@ -20,6 +20,7 @@ namespace caf
       virtual ~SRTruthMatch();
 
       float      eff;           ///< Slice efficiency for this interaction
+      float      eff_cryo;      ///< Slice efficiency for this interaction for the cryostat the interaction originates in
       float      pur;           ///< Slice purity for this interaction
       float      visEinslc;     ///< True deposited energy in slice [GeV]
       float      visEcosmic;    ///< True slice deposited energy from cosmics

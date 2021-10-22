@@ -19,22 +19,24 @@ namespace caf
     ~SRMeVPrtl() {  }
 
     caf::mevprtlchannel_ gen; //!< Generator physics channel for this event
-    caf::SRVector3D dcy; //!< Decay location [cm]
-    float dcyT; //!< Decay time [us]
-    caf::SRVector3D mom; //!< Portal momentum [GeV]
-    float E; //!< Portal Energy [GeV]
-    float M; //!< Portal Mass [GeV]
+    caf::SRVector3D position; //!< Decay location [cm]
+    double time; //!< Decay time [us]
+    caf::SRVector3D momentum; //!< Portal momentum [GeV]
+    double E; //!< Portal Energy [GeV]
+    double M; //!< Portal Mass [GeV]
 
-    float flux_weight; //!< Weight associated with the production of the Portal
-    float ray_weight; //!< Weight associated with the Portal hitting the detector
-    float decay_weight; //!< Weight associated with the Portal decaying
+    int cryostat; //!< Cryostat that the decay occurs in
+
+    double flux_weight; //!< Weight associated with the production of the Portal
+    double ray_weight; //!< Weight associated with the Portal hitting the detector
+    double decay_weight; //!< Weight associated with the Portal decaying
 
     // Constants! For random model parameters
-    float C1;
-    float C2;
-    float C3;
-    float C4;
-    float C5;
+    double C1;
+    double C2;
+    double C3;
+    double C4;
+    double C5;
   };
 
 } // end namespace
