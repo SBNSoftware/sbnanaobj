@@ -36,13 +36,13 @@ namespace caf
 
     int   initpdg;         //!< Initial PDG code of probe neutrino
     int   pdg;             //!< PDG code of probe neutrino
-    int   inttype;         //!< Interaction type enum int_type::[...]
     int   index;           //!< Index of the matched true neutrino interaction (-1 if not matched to neutrino)
     int   targetPDG;       //!< PDG code of struck target
     /// PDG code of struck nucleon (or, in the case of MEC, struck nucleon-nucleon pair).
     /// For MEC, the codes are: 2000000200 --> nn,  2000000201 --> np,  2000000202 --> "pp
     int   hitnuc;
-    int   genie_intcode;   //!< Interaction mode (as for LArSoft MCNeutrino::Mode() )
+    genie_interaction_mode_ genie_mode;   //!< Interaction mode (as for LArSoft MCNeutrino::Mode() )
+    genie_interaction_type_ genie_inttype; //!< Following LARSoft MCNeutrino::InteractionType()
 
     bool    isnc;              //!< same as LArSoft "ccnc" - 0=CC, 1=NC
     bool    iscc;              //!< CC (true) or NC/interference (false)
@@ -93,8 +93,6 @@ namespace caf
 
     int               cryostat;   //!< Cryostat the the Interaction originates in. -1 if it originates outside a cryostat.
     Det_t             det;
-
-    interaction_mode_ mode;       ///< True mode of from enum
 
     generator_        generator;  ///< The generator that created this neutrino interaction
     std::vector<unsigned int>   genVersion; ///< Version of the generator that created this neutrino interaction
