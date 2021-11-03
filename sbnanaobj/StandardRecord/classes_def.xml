@@ -67,9 +67,21 @@
    <version ClassVersion="10" checksum="2876855736"/>
   </class>
 
-  <class name="caf::SRParticleMatch" ClassVersion="10">
-   <version ClassVersion="10" checksum="3613006913"/>
+  <class name="caf::SRParticleMatch" ClassVersion="11">
+   <version ClassVersion="11" checksum="3613006913"/>
+   <version ClassVersion="10" checksum="3607466832"/>
   </class>
+
+  <!-- Allows us to convert from the deprecated ParticleMatch 
+       to the newer SRParticleMatch to open old files -->
+  <ioread targetClass="caf::SRParticleMatch" sourceClass="caf::ParticleMatch" version="[-10]"
+    source="int G4ID;" target="G4ID" >
+    <![CDATA[{ G4ID = onfile.G4ID; }]]>
+  </ioread>
+  <ioread targetClass="caf::SRParticleMatch" sourceClass="caf::ParticleMatch" version="[-10]"
+    source="float energy;" target="energy" >
+    <![CDATA[{ energy = onfile.energy; }]]>
+  </ioread>
 
   <class name="caf::SRCaloPoint" ClassVersion="10">
    <version ClassVersion="10" checksum="3748600600"/>
