@@ -69,7 +69,6 @@
 
   <class name="caf::SRParticleMatch" ClassVersion="11">
    <version ClassVersion="11" checksum="3613006913"/>
-   <version ClassVersion="10" checksum="3607466832"/>
   </class>
 
   <!-- Allows us to convert from the deprecated ParticleMatch 
