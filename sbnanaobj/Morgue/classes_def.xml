@@ -1,0 +1,11 @@
+<!-- Include std::vector lines only for objects that are actually stored in -->
+<!-- vectors in the StandardRecord structure. Add an entry for those to     -->
+<!-- classes.h as well. -->
+
+<!-- art::Wrappers for these products are defined in CAFMaker -->
+
+<lcgdict>
+  <class name="caf::ParticleMatch" ClassVersion="10">
+   <version ClassVersion="10" checksum="3607466832"/>
+  </class>
+</lcgdict>

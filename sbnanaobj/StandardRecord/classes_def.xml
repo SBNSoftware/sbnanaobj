@@ -62,13 +62,25 @@
    <version ClassVersion="10" checksum="1169960296"/>
   </class>
 
-  <class name="caf::SRTrackTruth" ClassVersion="10">
+  <class name="caf::SRTrackTruth" ClassVersion="11">
+   <version ClassVersion="11" checksum="3541008994"/>
    <version ClassVersion="10" checksum="2876855736"/>
   </class>
 
-  <class name="caf::ParticleMatch" ClassVersion="10">
-   <version ClassVersion="10" checksum="3607466832"/>
+  <class name="caf::SRParticleMatch" ClassVersion="11">
+   <version ClassVersion="11" checksum="3613006913"/>
   </class>
+
+  <!-- Allows us to convert from the deprecated ParticleMatch 
+       to the newer SRParticleMatch to open old files -->
+  <ioread targetClass="caf::SRParticleMatch" sourceClass="caf::ParticleMatch" version="[-10]"
+    source="int G4ID;" target="G4ID" >
+    <![CDATA[{ G4ID = onfile.G4ID; }]]>
+  </ioread>
+  <ioread targetClass="caf::SRParticleMatch" sourceClass="caf::ParticleMatch" version="[-10]"
+    source="float energy;" target="energy" >
+    <![CDATA[{ energy = onfile.energy; }]]>
+  </ioread>
 
   <class name="caf::SRCaloPoint" ClassVersion="10">
    <version ClassVersion="10" checksum="3748600600"/>
@@ -197,7 +209,12 @@
   <class name="std::vector<caf::SRTrueInteraction>" />
   <class name="std::vector<caf::SRMultiverse>" />
   <class name="std::vector<caf::SRTrueParticle>" />
-  <class name="std::vector<caf::ParticleMatch>" />
+  <class name="std::vector<caf::SRParticleMatch>" />
+  <class name="std::vector<caf::SRCaloPoint>" />
+  <class name="std::vector<caf::SRMeVPrtl>" />
+  <class name="std::vector<caf::SRStub>" />
+  <class name="std::vector<caf::SRStubHit>" />
+  <class name="std::vector<caf::SRStubPlane>" />
 
   <class name="caf::SRCRTHit" ClassVersion="10">
    <version ClassVersion="10" checksum="3162534166"/>
