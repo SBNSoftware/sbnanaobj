@@ -23,7 +23,9 @@ namespace caf
   ngenevt(0),
   pot(0.),
   mctype(caf::kMCUnknown),
-  det(std::numeric_limits<Det_t>::signaling_NaN())
+  det(std::numeric_limits<Det_t>::signaling_NaN()),
+  proc(-1),
+  cluster(-1)
   // blind(false),
   {  }
 
