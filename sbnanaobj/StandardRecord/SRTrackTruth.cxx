@@ -12,7 +12,10 @@ namespace caf
 {
 
 SRTrackTruth::SRTrackTruth():
-  total_deposited_energy(std::numeric_limits<float>::signaling_NaN()),
+  visEintrk(std::numeric_limits<float>::signaling_NaN()),
+  eff(std::numeric_limits<float>::signaling_NaN()),
+  eff_cryo(std::numeric_limits<float>::signaling_NaN()),
+  pur(std::numeric_limits<float>::signaling_NaN()),
   nmatches(0)
 {}
 

@@ -25,7 +25,10 @@ namespace caf
   class SRTrackTruth {
   public:
     SRTrackTruth(); //!< Constructor
-    float total_deposited_energy; //!< True total deposited energy associated with this Track across all 3 planes [GeV]. NOTE: this energy is a sum of the depoisted energy as seen individually by each plane
+    float visEintrk; //!< True total deposited energy associated with this Track across all 3 planes [GeV]. NOTE: this energy is a sum of the depoisted energy as seen individually by each plane
+    float eff; //!< Cluster efficiency for best matched particle
+    float eff_cryo; //!< Clsuter efficiency for best matched particle, for the cryostat this cluster is in
+    float pur; //!< Cluster purity for best matched particle
   
     int                       nmatches; //!< Number of matches
     std::vector<ParticleMatch> matches; //!< List of particle matches, sorted by most energy matched */
