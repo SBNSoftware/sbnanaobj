@@ -55,14 +55,82 @@ namespace caf
     kMeVPrtlHNL            = 2
   };
 
-  /// Enum of possible types of truth-matching a TPC slice
-  enum interaction_mode_ 
+  /// These values are taken from nusimdata/SimulationBase/MCNeutrino.h (where
+  /// they are probably copied from some genie header). Duplicating that
+  /// information here is sub-optimal, but less sub-optimal than adding a
+  /// dependency on larsoft to interpret the CAF files.
+  enum genie_interaction_mode_
   {
-    kCC = 0,           //!< CC neutrino interaction
-    kNC = 1,           //!< NC neutrino interaction
-    kCosmic = 2,       //!< Cosmic activity
-    kIntimeCosmic = 3, //!< Cosmic activity in event triggered by intime-cosmic
-    kOther = 4 //!< Release valve value -- if nothing else really fits
+    // Low part of the enum, used to encode mode
+    kUnknownInteractionMode    =   -1,
+    kQE                        =    0,
+    kRes                       =    1,
+    kDIS                       =    2,
+    kCoh                       =    3,
+    kCohElastic                =    4,
+    kElectronScattering        =    5,
+    kIMDAnnihilation           =    6,
+    kInverseBetaDecay          =    7,
+    kGlashowResonance          =    8,
+    kAMNuGamma                 =    9,
+    kMEC                       =   10,
+    kDiffractive               =   11,
+    kEM                        =   12,
+    kWeakMix                   =   13
+  };
+
+  enum genie_interaction_type_
+  {
+    kUnknownInteractionType    = -1,
+    kNuanceOffset              = 1000,                ///< offset to account for adding in Nuance codes to this enum
+    kCCQE                      = kNuanceOffset +  1,  ///< charged current quasi-elastic
+    kNCQE                      = kNuanceOffset +  2,  ///< neutral current quasi-elastic
+    kResCCNuProtonPiPlus       = kNuanceOffset +  3,  ///< resonant charged current, nu p -> l- p pi+
+    kResCCNuNeutronPi0         = kNuanceOffset +  4,  ///< resonant charged current, nu n -> l- p pi0
+    kResCCNuNeutronPiPlus      = kNuanceOffset +  5,  ///< resonant charged current, nu n -> l- n pi+
+    kResNCNuProtonPi0          = kNuanceOffset +  6,  ///< resonant neutral current, nu p -> nu p pi0
+    kResNCNuProtonPiPlus       = kNuanceOffset +  7,  ///< resonant neutral current, nu p -> nu p pi+
+    kResNCNuNeutronPi0         = kNuanceOffset +  8,  ///< resonant neutral current, nu n -> nu n pi0
+    kResNCNuNeutronPiMinus     = kNuanceOffset +  9,  ///< resonant neutral current, nu n -> nu p pi-
+    kResCCNuBarNeutronPiMinus  = kNuanceOffset + 10,  ///< resonant charged current, nubar n -> l+ n pi-
+    kResCCNuBarProtonPi0       = kNuanceOffset + 11,  ///< resonant charged current, nubar p -> l+ n pi0
+    kResCCNuBarProtonPiMinus   = kNuanceOffset + 12,  ///< resonant charged current, nubar p -> l+ p pi-
+    kResNCNuBarProtonPi0       = kNuanceOffset + 13,  ///< resonant charged current, nubar p -> nubar p pi0
+    kResNCNuBarProtonPiPlus    = kNuanceOffset + 14,  ///< resonant charged current, nubar p -> nubar n pi+
+    kResNCNuBarNeutronPi0      = kNuanceOffset + 15,  ///< resonant charged current, nubar n -> nubar n pi0
+    kResNCNuBarNeutronPiMinus  = kNuanceOffset + 16,  ///< resonant charged current, nubar n -> nubar p pi-
+    kResCCNuDeltaPlusPiPlus    = kNuanceOffset + 17,
+    kResCCNuDelta2PlusPiMinus  = kNuanceOffset + 21,
+    kResCCNuBarDelta0PiMinus   = kNuanceOffset + 28,
+    kResCCNuBarDeltaMinusPiPlus= kNuanceOffset + 32,
+    kResCCNuProtonRhoPlus      = kNuanceOffset + 39,
+    kResCCNuNeutronRhoPlus     = kNuanceOffset + 41,
+    kResCCNuBarNeutronRhoMinus = kNuanceOffset + 46,
+    kResCCNuBarNeutronRho0     = kNuanceOffset + 48,
+    kResCCNuSigmaPlusKaonPlus  = kNuanceOffset + 53,
+    kResCCNuSigmaPlusKaon0     = kNuanceOffset + 55,
+    kResCCNuBarSigmaMinusKaon0 = kNuanceOffset + 60,
+    kResCCNuBarSigma0Kaon0     = kNuanceOffset + 62,
+    kResCCNuProtonEta          = kNuanceOffset + 67,
+    kResCCNuBarNeutronEta      = kNuanceOffset + 70,
+    kResCCNuKaonPlusLambda0    = kNuanceOffset + 73,
+    kResCCNuBarKaon0Lambda0    = kNuanceOffset + 76,
+    kResCCNuProtonPiPlusPiMinus= kNuanceOffset + 79,
+    kResCCNuProtonPi0Pi0       = kNuanceOffset + 80,
+    kResCCNuBarNeutronPiPlusPiMinus = kNuanceOffset + 85,
+    kResCCNuBarNeutronPi0Pi0   = kNuanceOffset + 86,
+    kResCCNuBarProtonPi0Pi0    = kNuanceOffset + 90,
+    kCCDIS                     = kNuanceOffset + 91,  ///< charged current deep inelastic scatter
+    kNCDIS                     = kNuanceOffset + 92,  ///< charged current deep inelastic scatter
+    kUnUsed1                   = kNuanceOffset + 93,
+    kUnUsed2                   = kNuanceOffset + 94,
+    kCCQEHyperon               = kNuanceOffset + 95,
+    kNCCOH                     = kNuanceOffset + 96,
+    kCCCOH                     = kNuanceOffset + 97,  ///< charged current coherent pion
+    kNuElectronElastic         = kNuanceOffset + 98,  ///< neutrino electron elastic scatter
+    kInverseMuDecay            = kNuanceOffset + 99,  ///< inverse muon decay
+    kMEC2p2h                   = kNuanceOffset + 100  ///< extension of nuance encoding for MEC / 2p2h
+
   };
 
   /// Which genie status?

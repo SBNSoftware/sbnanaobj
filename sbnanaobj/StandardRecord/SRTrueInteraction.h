@@ -17,6 +17,16 @@ namespace caf
     std::vector<float> univ;
   };
 
+  class SRTrueInteractionPlaneInfo
+  {
+  public:
+    SRTrueInteractionPlaneInfo();
+
+    float visE;        //!< Sum of energy deposited on plane [GeV]
+    unsigned int nhitprim; //!< Number of hits from primary particles on plane
+    unsigned int nhit;     //!< Number of hits on plane
+  };
+
   /// The SRTrueInteraction is a representation of neutrino interaction information
   class SRTrueInteraction
   {
@@ -26,13 +36,13 @@ namespace caf
 
     int   initpdg;         //!< Initial PDG code of probe neutrino
     int   pdg;             //!< PDG code of probe neutrino
-    int   inttype;         //!< Interaction type enum int_type::[...]
     int   index;           //!< Index of the matched true neutrino interaction (-1 if not matched to neutrino)
     int   targetPDG;       //!< PDG code of struck target
     /// PDG code of struck nucleon (or, in the case of MEC, struck nucleon-nucleon pair).
     /// For MEC, the codes are: 2000000200 --> nn,  2000000201 --> np,  2000000202 --> "pp
     int   hitnuc;
-    int   genie_intcode;   //!< Interaction mode (as for LArSoft MCNeutrino::Mode() )
+    genie_interaction_mode_ genie_mode;   //!< Interaction mode (as for LArSoft MCNeutrino::Mode() )
+    genie_interaction_type_ genie_inttype; //!< Following LARSoft MCNeutrino::InteractionType()
 
     bool    isnc;              //!< same as LArSoft "ccnc" - 0=CC, 1=NC
     bool    iscc;              //!< CC (true) or NC/interference (false)
@@ -40,6 +50,9 @@ namespace caf
     bool    is_numucc_primary; //!< Whether this is the "primary" reco neutrino slice as defined by the numu CC analysis
 
     float      E;             ///< True energy [GeV]
+
+    SRTrueInteractionPlaneInfo plane[2][3]; //!< Per-plane, per-cryostat deposition information
+
     float      time;           ///< Time
     float      bjorkenX;          //!< Bjorken x = (k-k')^2/(2*p.q) [Dimensionless]
     float      inelasticityY;     //!< Inelasticity y
@@ -67,16 +80,6 @@ namespace caf
 
     float genweight; ///< Weight, if any, assigned by the generator
 
-    std::vector<float>      plane0VisE;    ///< True interaction deposited energy on plane 0 -- per Cryostat (1st Ind.)
-    std::vector<float>      plane1VisE;    ///< True interaction deposited energy on plane 1 -- per Cryostat (2nd Ind.)
-    std::vector<float>      plane2VisE;    ///< True interaction deposited energy on plane 2 -- per Cryostat (Col.)
-    std::vector<unsigned>   plane0nhitprim;    //!< Number of hits from primary particles on plane 0 -- per Cryostat (1st Ind.)
-    std::vector<unsigned>   plane1nhitprim;    //!< Number of hits from primary particles on plane 1 -- per Cryostat (2nd Ind.)
-    std::vector<unsigned>   plane2nhitprim;    //!< Number of hits from primary particles on plane 2 -- per Cryostat (Col.)
-    std::vector<unsigned>   plane0nhit;    //!< Number of hits from particles on plane 0 -- per Cryostat (1st Ind.)
-    std::vector<unsigned>   plane1nhit;    //!< Number of hits from particles on plane 1 -- per Cryostat (2nd Ind.)
-    std::vector<unsigned>   plane2nhit;    //!< Number of hits from particles on plane 2 -- per Cryostat (Col.)
-
     int        parent_dcy_mode;   //!< Parent hadron/muon decay mode
     int        parent_pdg;        //!< PDG Code of parent particle ID
     SRVector3D prod_vtx;          //!< Neutrino production vertex [cm; beam coordinates]
@@ -88,10 +91,8 @@ namespace caf
     SRVector3D        momentum;        //!< Neutrino three-momentum
     SRVector3D        position;        //!< Neutrino interaction position
 
-    int               cryostat;   //!< Cryostat the the Interaction originates in. -1 if it orginiates outside a cryostat.
+    int               cryostat;   //!< Cryostat the the Interaction originates in. -1 if it originates outside a cryostat.
     Det_t             det;
-
-    interaction_mode_ mode;       ///< True mode of from enum
 
     generator_        generator;  ///< The generator that created this neutrino interaction
     std::vector<unsigned int>   genVersion; ///< Version of the generator that created this neutrino interaction

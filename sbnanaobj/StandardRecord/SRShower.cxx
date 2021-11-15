@@ -6,8 +6,22 @@
 
 #include "sbnanaobj/StandardRecord/SRShower.h"
 
+#include <climits>
+
+namespace{
+  constexpr float kInvalid = std::numeric_limits<float>::signaling_NaN();
+}
+
 namespace caf
 {
+
+  SRShowerPlaneInfo::SRShowerPlaneInfo() :
+    dEdx(kInvalid),
+    energy(kInvalid),
+    nHits(0),
+    wirePitch(kInvalid)
+  {
+  }
 
   SRShower::SRShower():
     bestplane(-5),
@@ -17,12 +31,6 @@ namespace caf
     density(-5.0),
     len(-5.0),
     open_angle(-5.0),
-    dEdx_plane0(-5.0), dEdx_plane1(-5.0), dEdx_plane2(-5.0),
-    energy_plane0(-5.0), energy_plane1(-5.0), energy_plane2(-5.0),
-    nHits_plane0(0), nHits_plane1(0), nHits_plane2(0),
-    wirePitch_plane0(0), wirePitch_plane1(0), wirePitch_plane2(0),
-    dEdx(),
-    energy(),
     dir(-5.0, -5.0, -5.0),
     start(-5.0, -5.0, -5.0),
     end(-5.0, -5.0, -5.0),

@@ -13,9 +13,9 @@
 # ======================================================================
 
 
-cmake_minimum_required (VERSION 3.12...3.18 FATAL_ERROR)
+cmake_minimum_required(VERSION 3.19 FATAL_ERROR)
 
-project(sbnanaobj LANGUAGES CXX)
+project(sbnanaobj VERSION 09.17.05 LANGUAGES CXX)
 
 message(STATUS "\n\n  ==========================   ${PROJECT_NAME}   ==========================")
 
@@ -24,8 +24,6 @@ find_package(cetbuildtools REQUIRED)
 
 include(CetCMakeEnv)
 cet_cmake_env()
-
-set_install_root()
 
 # The specification of the C++ standard is required because CET macros
 # set it to C++98 by default, and then override it depending on the

@@ -14,7 +14,14 @@
    <version ClassVersion="10" checksum="2908097963"/>
   </class>
 
-  <class name="caf::SRShower" ClassVersion="11">
+  <class name="caf::SRShowerPlaneInfo" ClassVersion="10">
+   <version ClassVersion="10" checksum="4180347773"/>
+  </class>
+
+  <class name="caf::SRShower" ClassVersion="14">
+   <version ClassVersion="14" checksum="3720936031"/>
+   <version ClassVersion="13" checksum="150649609"/>
+   <version ClassVersion="12" checksum="2025293789"/>
    <version ClassVersion="11" checksum="979709822"/>
    <version ClassVersion="10" checksum="2253513844"/>
   </class>
@@ -49,19 +56,33 @@
    <version ClassVersion="10" checksum="3777054621"/>
   </class>
 
-  <class name="caf::SRTrack" ClassVersion="11">
+  <class name="caf::SRTrack" ClassVersion="13">
+   <version ClassVersion="13" checksum="522362999"/>
+   <version ClassVersion="12" checksum="3952974887"/>
    <version ClassVersion="11" checksum="1319166397"/>
    <version ClassVersion="10" checksum="1169960296"/>
   </class>
 
-  <class name="caf::SRTrackTruth" ClassVersion="11">
-   <version ClassVersion="11" checksum="1268322903"/>
+  <class name="caf::SRTrackTruth" ClassVersion="12">
+   <version ClassVersion="12" checksum="1268322903"/>
+   <version ClassVersion="11" checksum="3541008994"/>
    <version ClassVersion="10" checksum="2876855736"/>
   </class>
 
-  <class name="caf::ParticleMatch" ClassVersion="10">
-   <version ClassVersion="10" checksum="3607466832"/>
+  <class name="caf::SRParticleMatch" ClassVersion="11">
+   <version ClassVersion="11" checksum="3613006913"/>
   </class>
+
+  <!-- Allows us to convert from the deprecated ParticleMatch 
+       to the newer SRParticleMatch to open old files -->
+  <ioread targetClass="caf::SRParticleMatch" sourceClass="caf::ParticleMatch" version="[-10]"
+    source="int G4ID;" target="G4ID" >
+    <![CDATA[{ G4ID = onfile.G4ID; }]]>
+  </ioread>
+  <ioread targetClass="caf::SRParticleMatch" sourceClass="caf::ParticleMatch" version="[-10]"
+    source="float energy;" target="energy" >
+    <![CDATA[{ energy = onfile.energy; }]]>
+  </ioread>
 
   <class name="caf::SRCaloPoint" ClassVersion="10">
    <version ClassVersion="10" checksum="3748600600"/>
@@ -84,8 +105,19 @@
    <version ClassVersion="10" checksum="4056415501"/>
   </class>
 
-  <class name="caf::SRTrueParticle" ClassVersion="11">
-   <version ClassVersion="11" checksum="3988893361"/>
+  <class name="caf::SRTrueParticlePlaneInfo" ClassVersion="11">
+   <version ClassVersion="11" checksum="317847253"/>
+   <version ClassVersion="10" checksum="1689803547"/>
+  </class>
+
+  <class name="caf::SRTrueInteractionPlaneInfo" ClassVersion="10">
+   <version ClassVersion="10" checksum="888913434"/>
+  </class>
+
+  <class name="caf::SRTrueParticle" ClassVersion="13">
+   <version ClassVersion="13" checksum="1021174965"/>
+   <version ClassVersion="12" checksum="4278434173"/>
+   <version ClassVersion="11" checksum="917559391"/>
    <version ClassVersion="10" checksum="1955089855"/>
   </class>
 
@@ -100,8 +132,10 @@
    <version ClassVersion="10" checksum="3963837747"/>
   </class>
 
-  <class name="caf::SRTrueInteraction" ClassVersion="11">
-   <version ClassVersion="11" checksum="734411305"/>
+  <class name="caf::SRTrueInteraction" ClassVersion="13">
+   <version ClassVersion="13" checksum="2387159424"/>
+   <version ClassVersion="12" checksum="671928574"/>
+   <version ClassVersion="11" checksum="1242940498"/>
    <version ClassVersion="10" checksum="3285338012"/>
   </class>
 
@@ -178,7 +212,12 @@
   <class name="std::vector<caf::SRTrueInteraction>" />
   <class name="std::vector<caf::SRMultiverse>" />
   <class name="std::vector<caf::SRTrueParticle>" />
-  <class name="std::vector<caf::ParticleMatch>" />
+  <class name="std::vector<caf::SRParticleMatch>" />
+  <class name="std::vector<caf::SRCaloPoint>" />
+  <class name="std::vector<caf::SRMeVPrtl>" />
+  <class name="std::vector<caf::SRStub>" />
+  <class name="std::vector<caf::SRStubHit>" />
+  <class name="std::vector<caf::SRStubPlane>" />
 
   <class name="caf::SRCRTHit" ClassVersion="10">
    <version ClassVersion="10" checksum="3162534166"/>
