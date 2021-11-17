@@ -63,9 +63,8 @@
    <version ClassVersion="10" checksum="1169960296"/>
   </class>
 
-  <class name="caf::SRTrackTruth" ClassVersion="13">
-   <version ClassVersion="13" checksum="2098868401"/>
-   <version ClassVersion="12" checksum="1268322903"/>
+  <class name="caf::SRTrackTruth" ClassVersion="12">
+   <version ClassVersion="12" checksum="2098868401"/>
    <version ClassVersion="11" checksum="3541008994"/>
    <version ClassVersion="10" checksum="2876855736"/>
   </class>
