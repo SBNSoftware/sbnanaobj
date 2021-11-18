@@ -30,6 +30,8 @@ namespace caf
       Det_t          det;       ///< Detector, SBND=1 ICARUS=2
       bool           first_in_subrun; ///< Whether this event is the first in the subrun
       bool           first_in_file;   ///< Whether this event is there first in the input file
+      int            proc; //< Process number of job that created CAF file
+      int            cluster; //< Cluster number of job that created CAF file
       // bool           blind;     ///< if true, record has been corrupted for blindness
 
     };
