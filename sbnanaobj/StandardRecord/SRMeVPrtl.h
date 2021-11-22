@@ -31,6 +31,10 @@ namespace caf
     double ray_weight; //!< Weight associated with the Portal hitting the detector
     double decay_weight; //!< Weight associated with the Portal decaying
 
+    double decay_length; //!< Mean decay length  of particle
+    caf::SRVector3D enter; //!< Entry position of particle into Active Volume
+    caf::SRVector3D exit; //!< Exit position of particle into Active Volume
+
     // Constants! For random model parameters
     double C1;
     double C2;
