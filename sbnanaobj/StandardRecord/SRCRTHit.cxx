@@ -9,7 +9,8 @@ namespace caf
 
   SRCRTHit::SRCRTHit():
     time(std::numeric_limits<float>::signaling_NaN()),
-    pe(std::numeric_limits<float>::signaling_NaN())
+    pe(std::numeric_limits<float>::signaling_NaN()),
+    plane(INT_MIN)
   {}
 } // end namespace caf
 ////////////////////////////////////////////////////////////////////////
