@@ -26,12 +26,11 @@ namespace caf
     M876BB_spill_time_diff(std::numeric_limits<float>::signaling_NaN()),
     MMBTBB_spill_time_diff(std::numeric_limits<float>::signaling_NaN())
   {}
-  SRBNBInfo::~SRBNBInfo() {}
 
   void SRBNBInfo::setDefault()
   {
-    spill_time_sec = 0;
-    spill_time_nsec = 0;
+    spill_time_sec = UINT_MAX;
+    spill_time_nsec = UINT_MAX;
     event = UINT_MAX;
     TOR860 = -999.0;
     TOR875 = -999.0;
