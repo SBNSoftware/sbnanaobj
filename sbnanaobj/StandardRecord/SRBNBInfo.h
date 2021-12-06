@@ -9,7 +9,6 @@ namespace caf
   {
   public:
     SRBNBInfo();
-    virtual ~SRBNBInfo();
     
     unsigned long int spill_time_sec;
     unsigned long int spill_time_nsec;
