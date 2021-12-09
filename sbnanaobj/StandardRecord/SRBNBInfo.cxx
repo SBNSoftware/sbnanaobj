@@ -6,8 +6,8 @@
 namespace caf
 {
   SRBNBInfo::SRBNBInfo():
-    spill_time_sec(UINT_MAX),
-    spill_time_nsec(UINT_MAX),
+    spill_time_sec(std::numeric_limits<unsigned long int>::max()),
+    spill_time_nsec(std::numeric_limits<unsigned long int>::max()),
     event(UINT_MAX),
     TOR860(std::numeric_limits<float>::signaling_NaN()),
     TOR875(std::numeric_limits<float>::signaling_NaN()),
@@ -29,8 +29,8 @@ namespace caf
 
   void SRBNBInfo::setDefault()
   {
-    spill_time_sec = UINT_MAX;
-    spill_time_nsec = UINT_MAX;
+    spill_time_sec = std::numeric_limits<unsigned long int>::max();
+    spill_time_nsec = std::numeric_limits<unsigned long int>::max();
     event = UINT_MAX;
     TOR860 = -999.0;
     TOR875 = -999.0;
