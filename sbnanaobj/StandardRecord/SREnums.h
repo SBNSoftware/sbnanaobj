@@ -154,6 +154,7 @@ namespace caf
   /// Which G4 process ?
   enum g4_process_ 
   {
+    kG4UNKNOWN=-1,
     kG4primary=0,
     kG4CoupledTransportation=1,
     kG4FastScintillation=2,
@@ -216,8 +217,7 @@ namespace caf
     kG4hBrems=59,
     kG4Transportation=60,
     kG4msc=61,
-    kG4StepLimiter=62,
-    kG4UNKNOWN=63
+    kG4StepLimiter=62
   };// g4_process_
 
   enum ReweightType_t{
