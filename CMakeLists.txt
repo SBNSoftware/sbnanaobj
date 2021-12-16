@@ -15,7 +15,9 @@
 
 cmake_minimum_required(VERSION 3.19 FATAL_ERROR)
 
-project(sbnanaobj VERSION 09.17.07 LANGUAGES CXX)
+
+project(sbnanaobj VERSION 09.17.06.01 LANGUAGES CXX)
+
 
 message(STATUS "\n\n  ==========================   ${PROJECT_NAME}   ==========================")
 
