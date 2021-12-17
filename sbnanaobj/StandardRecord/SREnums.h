@@ -215,7 +215,9 @@ namespace caf
     kG4ionIoni=58,
     kG4hBrems=59,
     kG4Transportation=60,
-    kG4UNKNOWN=61
+    kG4msc=61,
+    kG4StepLimiter=62,
+    kG4UNKNOWN=63
   };// g4_process_
 
   enum ReweightType_t{
