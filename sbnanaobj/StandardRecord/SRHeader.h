@@ -6,9 +6,6 @@
 #define SRHEADER_H
 
 #include "sbnanaobj/StandardRecord/SREnums.h"
-#include "sbnanaobj/StandardRecord/SRBNBInfo.h"
-
-#include <vector>
 
 namespace caf
 {
@@ -36,7 +33,6 @@ namespace caf
       int            proc; //< Process number of job that created CAF file
       int            cluster; //< Cluster number of job that created CAF file
       // bool           blind;     ///< if true, record has been corrupted for blindness
-      std::vector<caf::SRBNBInfo> bnbinfo; ///< storing beam information per subrun
 
     };
 
