@@ -25,8 +25,9 @@ namespace caf
   mctype(caf::kMCUnknown),
   det(caf::kUNKNOWN),
   proc(-1),
-  cluster(-1)
+  cluster(-1),
   // blind(false),
+  husk(false)
   {  }
 
   SRHeader::~SRHeader(){  }

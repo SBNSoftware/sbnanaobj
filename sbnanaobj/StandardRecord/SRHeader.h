@@ -38,6 +38,10 @@ namespace caf
       // bool           blind;     ///< if true, record has been corrupted for blindness
       std::vector<caf::SRBNBInfo> bnbinfo; ///< storing beam information per subrun
 
+      /// If true, this record has been filterd out, and only remains as a
+      /// receptacle for exposure information. It should be skipped in any
+      /// analysis, apart from for including its POT.
+      bool           husk;
     };
 
 } // end namespace
