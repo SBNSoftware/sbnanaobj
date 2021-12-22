@@ -9,7 +9,9 @@
    <version ClassVersion="10" checksum="2569909752"/>
   </class>
 
-  <class name="caf::SRHeader" ClassVersion="11">
+  <class name="caf::SRHeader" ClassVersion="13">
+   <version ClassVersion="13" checksum="2553933268"/>
+   <version ClassVersion="12" checksum="3508873578"/>
    <version ClassVersion="11" checksum="2592833259"/>
    <version ClassVersion="10" checksum="2908097963"/>
   </class>
@@ -197,6 +199,10 @@
    <version ClassVersion="10" checksum="133600353"/>
   </class>
 
+  <class name="caf::SRBNBInfo" ClassVersion="10">
+   <version ClassVersion="10" checksum="2143749817"/>
+  </class>
+
   <!--<class name="caf::SRLorentzVector" /> -->
 
   <class name="std::vector<caf::SRSlice>" />
@@ -218,6 +224,7 @@
   <class name="std::vector<caf::SRStub>" />
   <class name="std::vector<caf::SRStubHit>" />
   <class name="std::vector<caf::SRStubPlane>" />
+  <class name="std::vector<caf::SRBNBInfo>" />
 
   <class name="caf::SRCRTHit" ClassVersion="10">
    <version ClassVersion="10" checksum="3162534166"/>
