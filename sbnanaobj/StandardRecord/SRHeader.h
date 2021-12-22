@@ -34,6 +34,10 @@ namespace caf
       int            cluster; //< Cluster number of job that created CAF file
       // bool           blind;     ///< if true, record has been corrupted for blindness
 
+      /// If true, this record has been filterd out, and only remains as a
+      /// receptacle for exposure information. It should be skipped in any
+      /// analysis, apart from for including its POT.
+      bool           husk;
     };
 
 } // end namespace
