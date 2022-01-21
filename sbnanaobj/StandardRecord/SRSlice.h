@@ -40,6 +40,18 @@ namespace caf
       bool is_clear_cosmic; //!< Whether pandora marks the slice as a "clear" cosmic
       int nu_pdg; //!< PDG assigned to the PFParticle Neutrino
       float nu_score; //!< Score of how neutrino-like the slice is
+      // SliceID Features going into nu_score calculation
+      float        nuid_nuNFinalStatePfos;        //!< nuNFinalStatePfos feature in NeutrinoID
+      unsigned int nuid_nuNHitsTotal;             //!< nuNHitsTotal feature in NeutrinoID
+      float        nuid_nuVertexY;                //!< nuVertexY feature in NeutrinoID
+      float        nuid_nuWeightedDirZ;           //!< nuWeightedDirZ feature in NeutrinoID
+      float        nuid_nuNSpacePointsInSphere;   //!< nuNSpacePointsInSphere feature in NeutrinoID
+      float        nuid_nuEigenRatioInSphere;     //!< nuEigenRatioInSphere feature in NeutrinoID
+      float        nuid_crLongestTrackDirY;       //!< crLongestTrackDirY feature in NeutrinoID
+      float        nuid_crLongestTrackDeflection; //!< crLongestTrackDeflection feature in NeutrinoID
+      float        nuid_crFracHitsInLongestTrack; //!< crFracHitsInLongestTrack feature in NeutrinoID
+      unsigned int nuid_nCRHitsMax;               //!< nCRHitsMax feature in NeutrinoID
+
       std::vector<size_t> primary; //!< ID's of primary tracks and showers in slice
       int                 self;    //!< ID of the particle representing this slice
 
