@@ -32,7 +32,8 @@
    <version ClassVersion="10" checksum="83320005"/>
   </class>
 
-  <class name="caf::SRSlice" ClassVersion="12">
+  <class name="caf::SRSlice" ClassVersion="13">
+   <version ClassVersion="13" checksum="3232004716"/>
    <version ClassVersion="12" checksum="3783103871"/>
    <version ClassVersion="11" checksum="3227898381"/>
   </class>
