@@ -41,16 +41,16 @@ namespace caf
       int nu_pdg; //!< PDG assigned to the PFParticle Neutrino
       float nu_score; //!< Score of how neutrino-like the slice is
       // SliceID Features going into nu_score calculation
-      float        nuid_nuNFinalStatePfos;        //!< nuNFinalStatePfos feature in NeutrinoID
-      unsigned int nuid_nuNHitsTotal;             //!< nuNHitsTotal feature in NeutrinoID
-      float        nuid_nuVertexY;                //!< nuVertexY feature in NeutrinoID
-      float        nuid_nuWeightedDirZ;           //!< nuWeightedDirZ feature in NeutrinoID
-      float        nuid_nuNSpacePointsInSphere;   //!< nuNSpacePointsInSphere feature in NeutrinoID
-      float        nuid_nuEigenRatioInSphere;     //!< nuEigenRatioInSphere feature in NeutrinoID
-      float        nuid_crLongestTrackDirY;       //!< crLongestTrackDirY feature in NeutrinoID
-      float        nuid_crLongestTrackDeflection; //!< crLongestTrackDeflection feature in NeutrinoID
-      float        nuid_crFracHitsInLongestTrack; //!< crFracHitsInLongestTrack feature in NeutrinoID
-      unsigned int nuid_nCRHitsMax;               //!< nCRHitsMax feature in NeutrinoID
+      float        nuid_nuNFinalStatePfos;        //!< NuNFinalStatePfos feature in NeutrinoID
+      unsigned int nuid_nuNHitsTotal;             //!< NuNHitsTotal feature in NeutrinoID
+      float        nuid_nuVertexY;                //!< NuVertexY feature in NeutrinoID
+      float        nuid_nuWeightedDirZ;           //!< NuWeightedDirZ feature in NeutrinoID
+      float        nuid_nuNSpacePointsInSphere;   //!< NuNSpacePointsInSphere feature in NeutrinoID
+      float        nuid_nuEigenRatioInSphere;     //!< NuEigenRatioInSphere feature in NeutrinoID
+      float        nuid_crLongestTrackDirY;       //!< CRLongestTrackDirY feature in NeutrinoID
+      float        nuid_crLongestTrackDeflection; //!< CRLongestTrackDeflection feature in NeutrinoID
+      float        nuid_crFracHitsInLongestTrack; //!< CRFracHitsInLongestTrack feature in NeutrinoID
+      unsigned int nuid_crNHitsMax;               //!< CRNHitsMax feature in NeutrinoID
 
       std::vector<size_t> primary; //!< ID's of primary tracks and showers in slice
       int                 self;    //!< ID of the particle representing this slice
