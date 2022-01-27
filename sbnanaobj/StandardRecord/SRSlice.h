@@ -12,6 +12,7 @@
 #include "sbnanaobj/StandardRecord/SRTrueInteraction.h"
 #include "sbnanaobj/StandardRecord/SRTruthMatch.h"
 #include "sbnanaobj/StandardRecord/SRVector3D.h"
+#include "sbnanaobj/StandardRecord/SRNuID.h"
 
 namespace caf
 {
@@ -40,17 +41,8 @@ namespace caf
       bool is_clear_cosmic; //!< Whether pandora marks the slice as a "clear" cosmic
       int nu_pdg; //!< PDG assigned to the PFParticle Neutrino
       float nu_score; //!< Score of how neutrino-like the slice is
-      // SliceID Features going into nu_score calculation
-      float        nuid_nuNFinalStatePfos;        //!< NuNFinalStatePfos feature in NeutrinoID
-      unsigned int nuid_nuNHitsTotal;             //!< NuNHitsTotal feature in NeutrinoID
-      float        nuid_nuVertexY;                //!< NuVertexY feature in NeutrinoID
-      float        nuid_nuWeightedDirZ;           //!< NuWeightedDirZ feature in NeutrinoID
-      float        nuid_nuNSpacePointsInSphere;   //!< NuNSpacePointsInSphere feature in NeutrinoID
-      float        nuid_nuEigenRatioInSphere;     //!< NuEigenRatioInSphere feature in NeutrinoID
-      float        nuid_crLongestTrackDirY;       //!< CRLongestTrackDirY feature in NeutrinoID
-      float        nuid_crLongestTrackDeflection; //!< CRLongestTrackDeflection feature in NeutrinoID
-      float        nuid_crFracHitsInLongestTrack; //!< CRFracHitsInLongestTrack feature in NeutrinoID
-      unsigned int nuid_crNHitsMax;               //!< CRNHitsMax feature in NeutrinoID
+
+      SRNuID nuid; //!< Neutrino ID Features (BDT inputs) going into nu_score calculation
 
       std::vector<size_t> primary; //!< ID's of primary tracks and showers in slice
       int                 self;    //!< ID of the particle representing this slice
