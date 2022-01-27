@@ -26,7 +26,7 @@ namespace caf
     nuid_crLongestTrackDirY(std::numeric_limits<float>::signaling_NaN()),
     nuid_crLongestTrackDeflection(std::numeric_limits<float>::signaling_NaN()),
     nuid_crFracHitsInLongestTrack(std::numeric_limits<float>::signaling_NaN()),
-    nuid_nCRHitsMax(0),
+    nuid_crNHitsMax(0),
     self(INT_MIN)
   {  }
 
