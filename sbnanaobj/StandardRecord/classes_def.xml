@@ -16,6 +16,8 @@
    <version ClassVersion="10" checksum="2908097963"/>
   </class>
 
+  <class name="caf::SRNuID" />
+
   <class name="caf::SRShowerPlaneInfo" ClassVersion="10">
    <version ClassVersion="10" checksum="4180347773"/>
   </class>
