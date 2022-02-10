@@ -12,16 +12,16 @@
 namespace caf
 {
   SRNuID::SRNuID():
-    NuNFinalStatePfos(std::numeric_limits<float>::signaling_NaN()),
-    NuNHitsTotal(0),
-    NuVertexY(std::numeric_limits<float>::signaling_NaN()),
-    NuWeightedDirZ(std::numeric_limits<float>::signaling_NaN()),
-    NuNSpacePointsInSphere(std::numeric_limits<float>::signaling_NaN()),
-    NuEigenRatioInSphere(std::numeric_limits<float>::signaling_NaN()),
-    CRLongestTrackDirY(std::numeric_limits<float>::signaling_NaN()),
-    CRLongestTrackDeflection(std::numeric_limits<float>::signaling_NaN()),
-    CRFracHitsInLongestTrack(std::numeric_limits<float>::signaling_NaN()),
-    CRNHitsMax(0)
+    nufspfos(std::numeric_limits<float>::signaling_NaN()),
+    nutothits(0),
+    nuvtxy(std::numeric_limits<float>::signaling_NaN()),
+    nuwgtdirz(std::numeric_limits<float>::signaling_NaN()),
+    nusps(std::numeric_limits<float>::signaling_NaN()),
+    nueigen(std::numeric_limits<float>::signaling_NaN()),
+    crlongtrkdiry(std::numeric_limits<float>::signaling_NaN()),
+    crlongtrkdef(std::numeric_limits<float>::signaling_NaN()),
+    crlongtrkhitfrac(std::numeric_limits<float>::signaling_NaN()),
+    crmaxhits(0)
   {  }
 
 
@@ -30,16 +30,16 @@ namespace caf
 
   void SRNuID::setDefault()
   {
-    NuNFinalStatePfos = -9999.f;
-    NuNHitsTotal = 0;
-    NuVertexY = -9999.f;
-    NuWeightedDirZ = -9999.f;
-    NuNSpacePointsInSphere = -9999.f;
-    NuEigenRatioInSphere = -9999.f;
-    CRLongestTrackDirY =-9999.f;
-    CRLongestTrackDeflection = -9999.f;
-    CRFracHitsInLongestTrack = -9999.f;
-    CRNHitsMax = 0;
+    nufspfos         = -9999.f;
+    nutothits        = 0;
+    nuvtxy           = -9999.f;
+    nuwgtdirz        = -9999.f;
+    nusps            = -9999.f;
+    nueigen          = -9999.f;
+    crlongtrkdiry    = -9999.f;
+    crlongtrkdef     = -9999.f;
+    crlongtrkhitfrac = -9999.f;
+    crmaxhits        = 0;
   }
 
 
