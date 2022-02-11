@@ -15,16 +15,16 @@ namespace caf
     SRNuID();
     virtual ~SRNuID();
 
-    float        nufspfos;         //!< NuNFinalStatePfos feature in NeutrinoID
-    unsigned int nutothits;        //!< NuNHitsTotal feature in NeutrinoID
-    float        nuvtxy;           //!< NuVertexY feature in NeutrinoID
-    float        nuwgtdirz;        //!< NuWeightedDirZ feature in NeutrinoID
-    float        nusps;            //!< NuNSpacePointsInSphere feature in NeutrinoID
-    float        nueigen;          //!< NuEigenRatioInSphere feature in NeutrinoID
-    float        crlongtrkdiry;    //!< CRLongestTrackDirY feature in NeutrinoID
-    float        crlongtrkdef;     //!< CRLongestTrackDeflection feature in NeutrinoID
-    float        crlongtrkhitfrac; //!< CRFracHitsInLongestTrack feature in NeutrinoID
-    unsigned int crmaxhits;        //!< CRNHitsMax feature in NeutrinoID
+    float nufspfos;         //!< NuNFinalStatePfos feature in NeutrinoID
+    int   nutothits;        //!< NuNHitsTotal feature in NeutrinoID
+    float nuvtxy;           //!< NuVertexY feature in NeutrinoID
+    float nuwgtdirz;        //!< NuWeightedDirZ feature in NeutrinoID
+    float nusps;            //!< NuNSpacePointsInSphere feature in NeutrinoID
+    float nueigen;          //!< NuEigenRatioInSphere feature in NeutrinoID
+    float crlongtrkdiry;    //!< CRLongestTrackDirY feature in NeutrinoID
+    float crlongtrkdef;     //!< CRLongestTrackDeflection feature in NeutrinoID
+    float crlongtrkhitfrac; //!< CRFracHitsInLongestTrack feature in NeutrinoID
+    int   crmaxhits;        //!< CRNHitsMax feature in NeutrinoID
 
     void setDefault();
   };
