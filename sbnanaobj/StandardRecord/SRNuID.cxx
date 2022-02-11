@@ -13,7 +13,7 @@ namespace caf
 {
   SRNuID::SRNuID():
     nufspfos(std::numeric_limits<float>::signaling_NaN()),
-    nutothits(0),
+    nutothits(-1),
     nuvtxy(std::numeric_limits<float>::signaling_NaN()),
     nuwgtdirz(std::numeric_limits<float>::signaling_NaN()),
     nusps(std::numeric_limits<float>::signaling_NaN()),
@@ -21,7 +21,7 @@ namespace caf
     crlongtrkdiry(std::numeric_limits<float>::signaling_NaN()),
     crlongtrkdef(std::numeric_limits<float>::signaling_NaN()),
     crlongtrkhitfrac(std::numeric_limits<float>::signaling_NaN()),
-    crmaxhits(0)
+    crmaxhits(-1)
   {  }
 
 
@@ -31,7 +31,7 @@ namespace caf
   void SRNuID::setDefault()
   {
     nufspfos         = -9999.f;
-    nutothits        = 0;
+    nutothits        = -1;
     nuvtxy           = -9999.f;
     nuwgtdirz        = -9999.f;
     nusps            = -9999.f;
@@ -39,7 +39,7 @@ namespace caf
     crlongtrkdiry    = -9999.f;
     crlongtrkdef     = -9999.f;
     crlongtrkhitfrac = -9999.f;
-    crmaxhits        = 0;
+    crmaxhits        = -1;
   }
 
 
