@@ -221,7 +221,7 @@ namespace caf
   };// g4_process_
 
   enum ReweightType_t{
-    kMultiSim, kPMNSigma, kFixed, kDefault
+    kMultisim, kPMNSigma, kMultisigma, kFixed, kDefault
   };
 }
 
