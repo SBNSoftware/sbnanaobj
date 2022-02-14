@@ -25,6 +25,10 @@
    <version ClassVersion="10" checksum="4180347773"/>
   </class>
 
+  <class name="caf::SRPfoChar" ClassVersion="10">
+   <version ClassVersion="10" checksum="1292282650"/>
+  </class>
+
   <class name="caf::SRShower" ClassVersion="14">
    <version ClassVersion="14" checksum="3720936031"/>
    <version ClassVersion="13" checksum="150649609"/>
@@ -186,7 +190,8 @@
    <version ClassVersion="10" checksum="839301601"/>
   </class>
 
-  <class name="caf::SRPFP" ClassVersion="10">
+  <class name="caf::SRPFP" ClassVersion="11">
+   <version ClassVersion="11" checksum="1905365454"/>
    <version ClassVersion="10" checksum="1732359397"/>
   </class>
 
