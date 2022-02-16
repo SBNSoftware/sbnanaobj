@@ -5,7 +5,7 @@
 
 namespace caf
 {
-  const float kSignalingNaN = std::numeric_limits<float>::signaling_NaN();
+  constexpr float kSignalingNaN = std::numeric_limits<float>::signaling_NaN();
 }
 
 #endif //SBNANAOBJ_STANDARDRECORD_SRHELPER_H
