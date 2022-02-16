@@ -15,7 +15,6 @@
 #include "sbnanaobj/StandardRecord/SRNuID.h"
 #include "sbnanaobj/StandardRecord/SRHelper.h"
 
-#include <limits>
 #include <climits>
 
 namespace caf
