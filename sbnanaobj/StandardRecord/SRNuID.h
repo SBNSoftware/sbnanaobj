@@ -6,7 +6,7 @@
 #ifndef SBNANAOBJ_STANDARDRECORD_SRNUID_H
 #define SBNANAOBJ_STANDARDRECORD_SRNUID_H
 
-#include "sbnanaobj/StandardRecord/SRHelper.h"
+#include "sbnanaobj/StandardRecord/SRConstants.h"
 
 namespace caf
 {
