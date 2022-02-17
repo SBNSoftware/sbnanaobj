@@ -13,7 +13,7 @@
 #include "sbnanaobj/StandardRecord/SRTruthMatch.h"
 #include "sbnanaobj/StandardRecord/SRVector3D.h"
 #include "sbnanaobj/StandardRecord/SRNuID.h"
-#include "sbnanaobj/StandardRecord/SRHelper.h"
+#include "sbnanaobj/StandardRecord/SRConstants.h"
 
 #include <climits>
 
