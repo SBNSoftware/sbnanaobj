@@ -14,7 +14,7 @@ namespace caf
   void SRNuID::setDefault()
   {
     nufspfos         = -9999.f;
-    nutothits        = -1;
+    nutothits        = -5;
     nuvtxy           = -9999.f;
     nuwgtdirz        = -9999.f;
     nusps            = -9999.f;
@@ -22,7 +22,7 @@ namespace caf
     crlongtrkdiry    = -9999.f;
     crlongtrkdef     = -9999.f;
     crlongtrkhitfrac = -9999.f;
-    crmaxhits        = -1;
+    crmaxhits        = -5;
   }
 
 
