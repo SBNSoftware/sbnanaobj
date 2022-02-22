@@ -17,6 +17,7 @@ namespace caf
     is_clear_cosmic(false),
     nu_pdg(INT_MIN),
     nu_score(std::numeric_limits<float>::signaling_NaN()),
+    crumbs_result(std::numeric_limits<float>::signaling_NaN()),
     self(INT_MIN)
   {  }
 
