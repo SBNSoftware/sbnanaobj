@@ -6,6 +6,7 @@
 #ifndef SRSLICE_H
 #define SRSLICE_H
 
+#include "sbnanaobj/StandardRecord/SRCRUMBSResult.h"
 #include "sbnanaobj/StandardRecord/SRFakeReco.h"
 #include "sbnanaobj/StandardRecord/SRFlashMatch.h"
 #include "sbnanaobj/StandardRecord/SRSliceRecoBranch.h"
@@ -37,10 +38,10 @@ namespace caf
 
       SRFakeReco fake_reco;
 
-      bool is_clear_cosmic; //!< Whether pandora marks the slice as a "clear" cosmic
-      int nu_pdg;           //!< PDG assigned to the PFParticle Neutrino
-      float nu_score;       //!< Score of how neutrino-like the slice is according to pandora
-      float crumbs_result;  //!< Score of how neutrino-like the slice is according to the CRUMBS ID
+      bool is_clear_cosmic;          //!< Whether pandora marks the slice as a "clear" cosmic
+      int nu_pdg;                    //!< PDG assigned to the PFParticle Neutrino
+      float nu_score;                //!< Score of how neutrino-like the slice is according to pandora
+      SRCRUMBSResult crumbs_result;  //!< Score of how neutrino-like the slice is according to the CRUMBS ID
 
       std::vector<size_t> primary; //!< ID's of primary tracks and showers in slice
       int                 self;    //!< ID of the particle representing this slice
