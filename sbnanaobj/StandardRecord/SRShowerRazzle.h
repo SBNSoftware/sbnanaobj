@@ -4,8 +4,6 @@
 #ifndef SRSHOWERRAZZLE_H
 #define SRSHOWERRAZZLE_H
 
-#include <vector>
-
 namespace caf {
 /// Representation of Shower MVA PID outputs
 class SRShowerRazzle {

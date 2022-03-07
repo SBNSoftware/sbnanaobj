@@ -21,8 +21,6 @@
 #include "sbnanaobj/StandardRecord/SRVector3D.h"
 #include "sbnanaobj/StandardRecord/SREnums.h"
 
-#include <vector>
-
 namespace caf
 {
   /// Representation of a rb::Track, knows energy and direction, but not a list
