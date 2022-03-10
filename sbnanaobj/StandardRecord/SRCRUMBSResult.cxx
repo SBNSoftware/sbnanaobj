@@ -23,6 +23,8 @@ SRCRUMBSResult::SRCRUMBSResult()
   , pds_FMTime(-5.f)
   , crt_TrackScore(-5.f)
   , crt_HitScore(-5.f)
+  , crt_TrackTime(-5.f)
+  , crt_HitTime(-5.f)
 {
 }
 

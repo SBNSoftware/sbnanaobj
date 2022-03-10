@@ -202,8 +202,8 @@
    <version ClassVersion="10" checksum="2143749817"/>
   </class>
 
-  <class name="caf::SRCRUMBSResult" ClassVersion="11">
-   <version ClassVersion="11" checksum="2856367835"/>
+  <class name="caf::SRCRUMBSResult" ClassVersion="12">
+   <version ClassVersion="12" checksum="511805423"/>
   </class>
 
   <!--<class name="caf::SRLorentzVector" /> -->
