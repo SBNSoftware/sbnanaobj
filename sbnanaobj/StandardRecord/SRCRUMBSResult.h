@@ -31,6 +31,8 @@ class SRCRUMBSResult {
   float pds_FMTime;
   float crt_TrackScore;
   float crt_HitScore;
+  float crt_TrackTime;
+  float crt_HitTime;
 };
 
 } // end namespace
