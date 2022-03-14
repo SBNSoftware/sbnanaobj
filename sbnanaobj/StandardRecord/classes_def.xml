@@ -204,7 +204,7 @@
    <version ClassVersion="10" checksum="2143749817"/>
   </class>
   <class name="caf::SRNuMIInfo" ClassVersion="10">
-   <version ClassVersion="10" checksum="2793623668"/>
+   <version ClassVersion="10" checksum="3796231674"/>
   </class>
 
   <!--<class name="caf::SRLorentzVector" /> -->

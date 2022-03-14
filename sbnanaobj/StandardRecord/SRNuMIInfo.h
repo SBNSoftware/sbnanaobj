@@ -24,6 +24,9 @@ namespace caf
     float NSLIND; // horn current /4 
     float TRTGTD;
     float TR101D;
+    float TORTGT;
+    float TOR101;
+    float time; //!< Time of device used to lookup spill
 
     unsigned long int spill_time_s; //!< The IFDB Beam Spill Time, unit sec
     unsigned long int spill_time_ns; //!< The IFDB Beam Spill Time, unit nsec

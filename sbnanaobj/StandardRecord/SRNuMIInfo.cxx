@@ -13,6 +13,9 @@ namespace caf
     NSLIND(std::numeric_limits<float>::signaling_NaN()),
     TRTGTD(std::numeric_limits<float>::signaling_NaN()),
     TR101D(std::numeric_limits<float>::signaling_NaN()),
+    TORTGT(std::numeric_limits<float>::signaling_NaN()),
+    TOR101(std::numeric_limits<float>::signaling_NaN()),
+    time(std::numeric_limits<float>::signaling_NaN()),
 
     spill_time_s(std::numeric_limits<unsigned long int>::max()),
     spill_time_ns(std::numeric_limits<unsigned long int>::max()),
