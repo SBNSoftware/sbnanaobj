@@ -9,18 +9,18 @@
 
 namespace caf
 {
-  /// The SRFakeRecoParticle is a faked reconstruction using estimates from the SBN proposal 
+  /// The SRFakeRecoParticle is a faked reconstruction using estimates from the SBN proposal
   class SRFakeRecoParticle
   {
   public:
     SRFakeRecoParticle();
     ~SRFakeRecoParticle() {  }
 
-    float ke; ///! Fake-reco kinetic energy [GeV]
-    float costh; ///! Fake-reco cosine of angle w.r.t. beam direction
-    float len; ///! Fake-reco particle length [cm]
-    int pid;    ///! Fake-reco particle ID
-    bool contained; ///! Whether contained
+    float ke; ///< Fake-reco kinetic energy [GeV]
+    float costh; ///< Fake-reco cosine of angle w.r.t. beam direction
+    float len; ///< Fake-reco particle length [cm]
+    int pid;    ///< Fake-reco particle ID
+    bool contained; ///< Whether contained
   };
 
 } // end namespace

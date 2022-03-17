@@ -40,10 +40,10 @@ namespace caf
     std::vector<SRFakeReco>     fake_reco; ///< List of fake-reco slices
     int                        ntrue_particles; ///< Number of true particles in list
     std::vector<SRTrueParticle> true_particles; ///< True particles in spill
-    int                        ncrt_hits; ///!< Number of CRT hits in event
-    std::vector<SRCRTHit>       crt_hits; ///!< CRT hits in event
-    int                        ncrt_tracks; //!< Number of CRT tracks in event
-    std::vector<SRCRTTrack>     crt_tracks; ///!< CRT tracks in event
+    int                        ncrt_hits; ///< Number of CRT hits in event
+    std::vector<SRCRTHit>       crt_hits; ///< CRT hits in event
+    int                        ncrt_tracks; ///< Number of CRT tracks in event
+    std::vector<SRCRTTrack>     crt_tracks; ///< CRT tracks in event
 
 
     bool pass_flashtrig;     ///< Whether this Record passed the Flash Trigger requirement
