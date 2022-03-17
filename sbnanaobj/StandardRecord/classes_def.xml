@@ -204,9 +204,20 @@
    <version ClassVersion="10" checksum="2143749817"/>
   </class>
 
-  <class name="caf::SRCRUMBSResult" ClassVersion="13">
-   <version ClassVersion="13" checksum="1781332055"/>
-   <version ClassVersion="12" checksum="511805423"/>
+  <class name="caf::SRCRUMBSResult" ClassVersion="10">
+   <version ClassVersion="10" checksum="783958853"/>
+  </class>
+
+  <class name="caf::SRCRUMBSTPCVars" ClassVersion="10">
+   <version ClassVersion="10" checksum="1693619771"/>
+  </class>
+
+  <class name="caf::SRCRUMBSPDSVars" ClassVersion="10">
+   <version ClassVersion="10" checksum="2282974103"/>
+  </class>
+
+  <class name="caf::SRCRUMBSCRTVars" ClassVersion="10">
+   <version ClassVersion="10" checksum="1010873394"/>
   </class>
 
   <!--<class name="caf::SRLorentzVector" /> -->

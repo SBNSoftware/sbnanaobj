@@ -6,28 +6,44 @@
 #include <limits>
 
 namespace caf {
-SRCRUMBSResult::SRCRUMBSResult()
-  : score(std::numeric_limits<float>::signaling_NaN())
-  , tpc_CRFracHitsInLongestTrack(std::numeric_limits<float>::signaling_NaN())
-  , tpc_CRLongestTrackDeflection(std::numeric_limits<float>::signaling_NaN())
-  , tpc_CRLongestTrackDirY(std::numeric_limits<float>::signaling_NaN())
-  , tpc_CRNHitsMax(std::numeric_limits<int>::max())
-  , tpc_NuEigenRatioInSphere(std::numeric_limits<float>::signaling_NaN())
-  , tpc_NuNFinalStatePfos(std::numeric_limits<int>::max())
-  , tpc_NuNHitsTotal(std::numeric_limits<int>::max())
-  , tpc_NuNSpacePointsInSphere(std::numeric_limits<int>::max())
-  , tpc_NuVertexY(std::numeric_limits<float>::signaling_NaN())
-  , tpc_NuWeightedDirZ(std::numeric_limits<float>::signaling_NaN())
-  , tpc_StoppingChi2CosmicRatio(std::numeric_limits<float>::signaling_NaN())
-  , pds_FMTotalScore(std::numeric_limits<float>::signaling_NaN())
-  , pds_FMPE(std::numeric_limits<float>::signaling_NaN())
-  , pds_FMTime(std::numeric_limits<float>::signaling_NaN())
-  , crt_TrackScore(std::numeric_limits<float>::signaling_NaN())
-  , crt_HitScore(std::numeric_limits<float>::signaling_NaN())
-  , crt_TrackTime(std::numeric_limits<float>::signaling_NaN())
-  , crt_HitTime(std::numeric_limits<float>::signaling_NaN())
-{
-}
+
+  SRCRUMBSTPCVars::SRCRUMBSTPCVars()
+    : crlongtrackhitfrac(std::numeric_limits<float>::signaling_NaN())
+    , crlongtrackdefl(std::numeric_limits<float>::signaling_NaN())
+    , crlongtrackdiry(std::numeric_limits<float>::signaling_NaN())
+    , crnhitsmax(std::numeric_limits<int>::max())
+    , nusphereeigenratio(std::numeric_limits<float>::signaling_NaN())
+    , nufinalstatepfos(std::numeric_limits<int>::max())
+    , nutotalhits(std::numeric_limits<int>::max())
+    , nuspherespacepoints(std::numeric_limits<int>::max())
+    , nuvertexy(std::numeric_limits<float>::signaling_NaN())
+    , nuwgtdirz(std::numeric_limits<float>::signaling_NaN())
+    , stoppingchi2ratio(std::numeric_limits<float>::signaling_NaN())
+  {
+  }
+
+  SRCRUMBSPDSVars::SRCRUMBSPDSVars()
+    : fmtotalscore(std::numeric_limits<float>::signaling_NaN())
+    , fmpe(std::numeric_limits<float>::signaling_NaN())
+    , fmtime(std::numeric_limits<float>::signaling_NaN())
+  {
+  }
+
+  SRCRUMBSCRTVars::SRCRUMBSCRTVars()
+    : trackscore(std::numeric_limits<float>::signaling_NaN())
+    , hitscore(std::numeric_limits<float>::signaling_NaN())
+    , tracktime(std::numeric_limits<float>::signaling_NaN())
+    , hittime(std::numeric_limits<float>::signaling_NaN())
+  {
+  }
+
+  SRCRUMBSResult::SRCRUMBSResult()
+    : score(std::numeric_limits<float>::signaling_NaN())
+    , tpc()
+    , pds()
+    , crt()
+  {
+  }
 
 } // end namespace
 //////////////////////////////////////////////////////////////////////////////
