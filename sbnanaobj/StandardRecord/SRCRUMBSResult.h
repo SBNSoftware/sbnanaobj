@@ -4,9 +4,6 @@
 #ifndef SRCRUMBSRESULT_H
 #define SRCRUMBSRESULT_H
 
-
-#include <vector>
-
 namespace caf {
 /// Representation of CRUMBS MVA Slice ID output
 class SRCRUMBSResult {
