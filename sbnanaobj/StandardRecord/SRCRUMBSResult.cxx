@@ -3,28 +3,29 @@
 ////////////////////////////////////////////////////////////////////////
 
 #include "sbnanaobj/StandardRecord/SRCRUMBSResult.h"
+#include <limits>
 
 namespace caf {
 SRCRUMBSResult::SRCRUMBSResult()
-  : score(-5.f)
-  , tpc_CRFracHitsInLongestTrack(-5.f)
-  , tpc_CRLongestTrackDeflection(-5.f)
-  , tpc_CRLongestTrackDirY(-5.f)
-  , tpc_CRNHitsMax(-5.f)
-  , tpc_NuEigenRatioInSphere(-5.f)
-  , tpc_NuNFinalStatePfos(-5.f)
-  , tpc_NuNHitsTotal(-5.f)
-  , tpc_NuNSpacePointsInSphere(-5.f)
-  , tpc_NuVertexY(-5.f)
-  , tpc_NuWeightedDirZ(-5.f)
-  , tpc_StoppingChi2CosmicRatio(-5.f)
-  , pds_FMTotalScore(-5.f)
-  , pds_FMPE(-5.f)
-  , pds_FMTime(-5.f)
-  , crt_TrackScore(-5.f)
-  , crt_HitScore(-5.f)
-  , crt_TrackTime(-5.f)
-  , crt_HitTime(-5.f)
+  : score(std::numeric_limits<float>::signaling_NaN())
+  , tpc_CRFracHitsInLongestTrack(std::numeric_limits<float>::signaling_NaN())
+  , tpc_CRLongestTrackDeflection(std::numeric_limits<float>::signaling_NaN())
+  , tpc_CRLongestTrackDirY(std::numeric_limits<float>::signaling_NaN())
+  , tpc_CRNHitsMax(std::numeric_limits<int>::max())
+  , tpc_NuEigenRatioInSphere(std::numeric_limits<float>::signaling_NaN())
+  , tpc_NuNFinalStatePfos(std::numeric_limits<int>::max())
+  , tpc_NuNHitsTotal(std::numeric_limits<int>::max())
+  , tpc_NuNSpacePointsInSphere(std::numeric_limits<int>::max())
+  , tpc_NuVertexY(std::numeric_limits<float>::signaling_NaN())
+  , tpc_NuWeightedDirZ(std::numeric_limits<float>::signaling_NaN())
+  , tpc_StoppingChi2CosmicRatio(std::numeric_limits<float>::signaling_NaN())
+  , pds_FMTotalScore(std::numeric_limits<float>::signaling_NaN())
+  , pds_FMPE(std::numeric_limits<float>::signaling_NaN())
+  , pds_FMTime(std::numeric_limits<float>::signaling_NaN())
+  , crt_TrackScore(std::numeric_limits<float>::signaling_NaN())
+  , crt_HitScore(std::numeric_limits<float>::signaling_NaN())
+  , crt_TrackTime(std::numeric_limits<float>::signaling_NaN())
+  , crt_HitTime(std::numeric_limits<float>::signaling_NaN())
 {
 }
 

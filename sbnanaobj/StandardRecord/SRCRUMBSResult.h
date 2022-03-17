@@ -18,11 +18,11 @@ class SRCRUMBSResult {
   float tpc_CRFracHitsInLongestTrack;
   float tpc_CRLongestTrackDeflection;
   float tpc_CRLongestTrackDirY;
-  float tpc_CRNHitsMax;
+  int   tpc_CRNHitsMax;
   float tpc_NuEigenRatioInSphere;
-  float tpc_NuNFinalStatePfos;
-  float tpc_NuNHitsTotal;
-  float tpc_NuNSpacePointsInSphere;
+  int   tpc_NuNFinalStatePfos;
+  int   tpc_NuNHitsTotal;
+  int   tpc_NuNSpacePointsInSphere;
   float tpc_NuVertexY;
   float tpc_NuWeightedDirZ;
   float tpc_StoppingChi2CosmicRatio;
