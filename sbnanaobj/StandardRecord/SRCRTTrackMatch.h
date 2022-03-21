@@ -4,8 +4,6 @@
 #ifndef SRCRTTRACKMATCH_H
 #define SRCRTTRACKMATCH_H
 
-#include <limits>
-
 namespace caf
 {
   /// Matching information between a TPC Track and a CRT Track

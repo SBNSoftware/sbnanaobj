@@ -4,8 +4,6 @@
 #ifndef SRTRACKSTOPPINGCHI2FIT_H
 #define SRTRACKSTOPPINGCHI2FIT_H
 
-#include <vector>
-
 namespace caf {
 /// Representation of a Pol0 and Exp fit to dEdx vs res. range
 class SRTrackStoppingChi2Fit {

@@ -5,7 +5,6 @@
 #define SRCRTHIT_H
 
 #include "sbnanaobj/StandardRecord/SRVector3D.h"
-#include <climits>
 
 namespace caf
 {

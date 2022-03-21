@@ -4,6 +4,8 @@
 
 #include "sbnanaobj/StandardRecord/SRCRTHit.h"
 
+#include <climits>
+
 namespace caf
 {
 
