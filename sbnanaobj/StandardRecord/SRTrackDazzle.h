@@ -4,8 +4,6 @@
 #ifndef SRTRACKDAZZLE_H
 #define SRTRACKDAZZLE_H
 
-#include <vector>
-
 namespace caf {
 /// Representation of Track MVA PID outputs
 class SRTrackDazzle {

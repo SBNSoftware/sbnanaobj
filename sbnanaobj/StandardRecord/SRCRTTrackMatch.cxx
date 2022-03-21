@@ -4,6 +4,8 @@
 
 #include "sbnanaobj/StandardRecord/SRCRTTrackMatch.h"
 
+#include <limits>
+
 namespace caf
 {
 
