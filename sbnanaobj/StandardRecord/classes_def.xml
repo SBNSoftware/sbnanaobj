@@ -16,6 +16,10 @@
    <version ClassVersion="10" checksum="2908097963"/>
   </class>
 
+  <class name="caf::SRNuID" ClassVersion="10">
+   <version ClassVersion="10" checksum="1379012114"/>
+  </class>
+
   <class name="caf::SRShowerPlaneInfo" ClassVersion="10">
    <version ClassVersion="10" checksum="4180347773"/>
   </class>
@@ -32,7 +36,8 @@
    <version ClassVersion="10" checksum="83320005"/>
   </class>
 
-  <class name="caf::SRSlice" ClassVersion="12">
+  <class name="caf::SRSlice" ClassVersion="13">
+   <version ClassVersion="13" checksum="3717369530"/>
    <version ClassVersion="12" checksum="3783103871"/>
    <version ClassVersion="11" checksum="3227898381"/>
   </class>
