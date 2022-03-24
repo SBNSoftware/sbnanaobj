@@ -229,6 +229,7 @@
   <class name="std::vector<caf::SRStubHit>" />
   <class name="std::vector<caf::SRStubPlane>" />
   <class name="std::vector<caf::SRBNBInfo>" />
+  <class name="std::vector<caf::SRNuMIInfo>" />
 
   <class name="caf::SRCRTHit" ClassVersion="10">
    <version ClassVersion="10" checksum="3162534166"/>
