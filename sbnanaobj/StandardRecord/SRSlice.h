@@ -53,10 +53,6 @@ namespace caf
       std::vector<size_t> primary;             //!< ID's of primary tracks and showers in slice
       int                 self { INT_MIN };    //!< ID of the particle representing this slice
 
-      std::vector<size_t> primary; //!< ID's of primary tracks and showers in slice
-      int                 self;    //!< ID of the particle representing this slice
-
-
       SRSliceRecoBranch   reco; //!< TPC reco information for the slice
 
       void setDefault();
