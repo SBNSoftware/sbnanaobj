@@ -38,7 +38,7 @@
   </class>
 
   <class name="caf::SRSlice" ClassVersion="13">
-   <version ClassVersion="13" checksum="3717369530"/>
+   <version ClassVersion="13" checksum="1378484383"/>
    <version ClassVersion="12" checksum="3783103871"/>
    <version ClassVersion="11" checksum="3227898381"/>
   </class>
@@ -212,6 +212,22 @@
    <version ClassVersion="10" checksum="3796231674"/>
   </class>
 
+  <class name="caf::SRCRUMBSResult" ClassVersion="10">
+   <version ClassVersion="10" checksum="783958853"/>
+  </class>
+
+  <class name="caf::SRCRUMBSTPCVars" ClassVersion="10">
+   <version ClassVersion="10" checksum="1693619771"/>
+  </class>
+
+  <class name="caf::SRCRUMBSPDSVars" ClassVersion="10">
+   <version ClassVersion="10" checksum="2282974103"/>
+  </class>
+
+  <class name="caf::SRCRUMBSCRTVars" ClassVersion="10">
+   <version ClassVersion="10" checksum="1010873394"/>
+  </class>
+
   <!--<class name="caf::SRLorentzVector" /> -->
 
   <class name="std::vector<caf::SRSlice>" />
@@ -234,6 +250,7 @@
   <class name="std::vector<caf::SRStubHit>" />
   <class name="std::vector<caf::SRStubPlane>" />
   <class name="std::vector<caf::SRBNBInfo>" />
+  <class name="std::vector<caf::SRCRUMBSResult>" />
 
   <class name="caf::SRCRTHit" ClassVersion="10">
    <version ClassVersion="10" checksum="3162534166"/>
