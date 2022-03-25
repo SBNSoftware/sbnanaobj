@@ -272,13 +272,19 @@
    <version ClassVersion="10" checksum="2672302824"/>
   </class>
 
-  <enum name="caf::Plane_t" ClassVersion="10"/>
   <enum name="caf::Det_t" ClassVersion="10"/>
-  <enum name="caf::MCType_t" ClassVersion="10"/>
+  <enum name="caf::Plane_t" ClassVersion="10"/>
   <enum name="caf::Wall_t" ClassVersion="10"/>
+  <enum name="caf::MCType_t" ClassVersion="10"/>
   <enum name="caf::generator_" ClassVersion="10"/>
   <enum name="caf::mevprtlchannel_" ClassVersion="10"/>
-  <enum name="caf::interaction_mode_" ClassVersion="10"/>
+  <enum name="caf::genie_interaction_mode_" ClassVersion="10"/>
+  <enum name="caf::genie_interaction_type_" ClassVersion="10"/>
   <enum name="caf::genie_status_" ClassVersion="10"/>
   <enum name="caf::g4_process_" ClassVersion="10"/>
+  <enum name="caf::ReweightType_t" ClassVersion="10"/>
+
+  <!-- Kept for now as a deprecated name, may be needed for opening old files -->
+  <enum name="caf::interaction_mode_" ClassVersion="10"/>
+
 </lcgdict>
