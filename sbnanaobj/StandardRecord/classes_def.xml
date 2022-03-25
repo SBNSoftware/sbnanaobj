@@ -9,11 +9,16 @@
    <version ClassVersion="10" checksum="2569909752"/>
   </class>
 
-  <class name="caf::SRHeader" ClassVersion="13">
-   <version ClassVersion="13" checksum="2553933268"/>
-   <version ClassVersion="12" checksum="3508873578"/>
+  <class name="caf::SRHeader" ClassVersion="14">
+   <version ClassVersion="14" checksum="381900980"/>
+    <version ClassVersion="13" checksum="2553933268"/>
+    <version ClassVersion="12" checksum="3508873578"/>
    <version ClassVersion="11" checksum="2592833259"/>
    <version ClassVersion="10" checksum="2908097963"/>
+  </class>
+
+  <class name="caf::SRNuID" ClassVersion="10">
+   <version ClassVersion="10" checksum="1379012114"/>
   </class>
 
   <class name="caf::SRShowerPlaneInfo" ClassVersion="10">
@@ -32,7 +37,9 @@
    <version ClassVersion="10" checksum="83320005"/>
   </class>
 
-  <class name="caf::SRSlice" ClassVersion="12">
+  <class name="caf::SRSlice" ClassVersion="14">
+   <version ClassVersion="14" checksum="740791578"/>
+   <version ClassVersion="13" checksum="1378484383"/>
    <version ClassVersion="12" checksum="3783103871"/>
    <version ClassVersion="11" checksum="3227898381"/>
   </class>
@@ -202,6 +209,25 @@
   <class name="caf::SRBNBInfo" ClassVersion="10">
    <version ClassVersion="10" checksum="2143749817"/>
   </class>
+  <class name="caf::SRNuMIInfo" ClassVersion="10">
+   <version ClassVersion="10" checksum="3796231674"/>
+  </class>
+
+  <class name="caf::SRCRUMBSResult" ClassVersion="10">
+   <version ClassVersion="10" checksum="783958853"/>
+  </class>
+
+  <class name="caf::SRCRUMBSTPCVars" ClassVersion="10">
+   <version ClassVersion="10" checksum="1693619771"/>
+  </class>
+
+  <class name="caf::SRCRUMBSPDSVars" ClassVersion="10">
+   <version ClassVersion="10" checksum="2282974103"/>
+  </class>
+
+  <class name="caf::SRCRUMBSCRTVars" ClassVersion="10">
+   <version ClassVersion="10" checksum="1010873394"/>
+  </class>
 
   <!--<class name="caf::SRLorentzVector" /> -->
 
@@ -225,6 +251,8 @@
   <class name="std::vector<caf::SRStubHit>" />
   <class name="std::vector<caf::SRStubPlane>" />
   <class name="std::vector<caf::SRBNBInfo>" />
+  <class name="std::vector<caf::SRNuMIInfo>" />
+  <class name="std::vector<caf::SRCRUMBSResult>" />
 
   <class name="caf::SRCRTHit" ClassVersion="10">
    <version ClassVersion="10" checksum="3162534166"/>

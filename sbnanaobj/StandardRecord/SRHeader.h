@@ -7,6 +7,7 @@
 
 #include "sbnanaobj/StandardRecord/SREnums.h"
 #include "sbnanaobj/StandardRecord/SRBNBInfo.h"
+#include "sbnanaobj/StandardRecord/SRNuMIInfo.h"
 
 #include <vector>
 
@@ -37,6 +38,7 @@ namespace caf
       int            cluster; //< Cluster number of job that created CAF file
       // bool           blind;     ///< if true, record has been corrupted for blindness
       std::vector<caf::SRBNBInfo> bnbinfo; ///< storing beam information per subrun
+      std::vector<caf::SRNuMIInfo> numiinfo; ///< storing beam information per subrun
 
       /// If true, this record has been filterd out, and only remains as a
       /// receptacle for exposure information. It should be skipped in any
