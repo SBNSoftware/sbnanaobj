@@ -254,7 +254,8 @@
   <class name="std::vector<caf::SRNuMIInfo>" />
   <class name="std::vector<caf::SRCRUMBSResult>" />
 
-  <class name="caf::SRCRTHit" ClassVersion="10">
+  <class name="caf::SRCRTHit" ClassVersion="11">
+   <version ClassVersion="11" checksum="3268314487"/>
    <version ClassVersion="10" checksum="3162534166"/>
   </class>
   <class name="std::vector<caf::SRCRTHit>" />
