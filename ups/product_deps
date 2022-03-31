@@ -35,7 +35,7 @@ fwdir   product_dir scripts
 
 product             version
 root                v6_22_08d
-srproxy             v00.32
+srproxy             v00.34
 
 # list products required ONLY for the build
 # any products here must NOT have qualifiers
