@@ -37,7 +37,9 @@ namespace caf
       int            proc; //< Process number of job that created CAF file
       int            cluster; //< Cluster number of job that created CAF file
       // bool           blind;     ///< if true, record has been corrupted for blindness
+      size_t                      nbnbinfo; ///< Number of BNBInfo objects
       std::vector<caf::SRBNBInfo> bnbinfo; ///< storing beam information per subrun
+      size_t                       nnumiinfo; ///< Number of NuMIInfo objects
       std::vector<caf::SRNuMIInfo> numiinfo; ///< storing beam information per subrun
 
       /// If true, this record has been filterd out, and only remains as a

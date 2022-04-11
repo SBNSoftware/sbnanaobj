@@ -27,6 +27,8 @@ namespace caf
   proc(-1),
   cluster(-1),
   // blind(false),
+  nbnbinfo(0),
+  nnumiinfo(0),
   husk(false)
   {  }
 
