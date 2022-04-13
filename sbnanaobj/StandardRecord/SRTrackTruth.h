@@ -4,9 +4,10 @@
 #ifndef SRTRACKTRUTH_H
 #define SRTRACKTRUTH_H
 
+#include "sbnanaobj/StandardRecord/SRTrueParticle.h"
+#include "sbnanaobj/StandardRecord/SRParticleMatch.h"
+
 #include <vector>
-#include "SRTrueParticle.h"
-#include "SRParticleMatch.h"
 
 namespace caf
 {

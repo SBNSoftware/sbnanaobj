@@ -1,7 +1,7 @@
 #ifndef SRWEIGHTMAPENTRY_H
 #define SRWEIGHTMAPENTRY_H
 
-#include "SRWeightParam.h"
+#include "sbnanaobj/StandardRecord/SRWeightParam.h"
 
 #include <vector>
 

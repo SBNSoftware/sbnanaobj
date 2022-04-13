@@ -4,8 +4,6 @@
 #ifndef SRTRACKSCATTERClosestApproach_H
 #define SRTRACKSCATTERClosestApproach_H
 
-#include <vector>
-
 namespace caf {
 /// Representation of track scattering variables compare to interpolated start and end points
 class SRTrackScatterClosestApproach {

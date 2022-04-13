@@ -4,15 +4,11 @@
 #ifndef SRTRUEPARTICLE_H
 #define SRTRUEPARTICLE_H
 
-#include <cstdint>
-#include <vector>
-
 #include "sbnanaobj/StandardRecord/SRVector3D.h"
 
 #include "sbnanaobj/StandardRecord/SREnums.h"
 
-/* #include "SRVector3D.h" */
-
+#include <vector>
 
 namespace caf
 {

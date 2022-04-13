@@ -12,8 +12,8 @@
   <class name="caf::SRHeader" ClassVersion="15">
    <version ClassVersion="15" checksum="2023063203"/>
    <version ClassVersion="14" checksum="381900980"/>
-    <version ClassVersion="13" checksum="2553933268"/>
-    <version ClassVersion="12" checksum="3508873578"/>
+   <version ClassVersion="13" checksum="2553933268"/>
+   <version ClassVersion="12" checksum="3508873578"/>
    <version ClassVersion="11" checksum="2592833259"/>
    <version ClassVersion="10" checksum="2908097963"/>
   </class>
@@ -210,6 +210,7 @@
   <class name="caf::SRBNBInfo" ClassVersion="10">
    <version ClassVersion="10" checksum="2143749817"/>
   </class>
+
   <class name="caf::SRNuMIInfo" ClassVersion="10">
    <version ClassVersion="10" checksum="3796231674"/>
   </class>

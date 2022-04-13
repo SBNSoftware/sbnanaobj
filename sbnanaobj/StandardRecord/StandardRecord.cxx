@@ -5,7 +5,7 @@
 // \author  $Author: psihas@fnal.gov
 ////////////////////////////////////////////////////////////////////////
 
-#include "StandardRecord.h"
+#include "sbnanaobj/StandardRecord/StandardRecord.h"
 
 
 namespace caf
