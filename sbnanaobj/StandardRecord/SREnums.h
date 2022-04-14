@@ -220,8 +220,13 @@ namespace caf
     kG4UNKNOWN=63
   };// g4_process_
 
+  //==== This should be synchronized to rwtype in sbnobj/Common/SBNEventWeight/EventWeightParameterSet.h
   enum ReweightType_t{
-    kMultiSim, kPMNSigma, kFixed, kDefault
+    kDefault = -1,
+    kMultiSim = 0,
+    kPMNSigma = 1,
+    kFixed = 2,
+    kMultiSigma = 3
   };
 }
 
