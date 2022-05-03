@@ -9,6 +9,7 @@
 #include "sbnanaobj/StandardRecord/SRStub.h"
 
 #include <vector>
+#include <unordered_map>
 
 namespace caf
 {
@@ -20,15 +21,14 @@ namespace caf
     ~SRSliceRecoBranch();
             
     std::vector<SRTrack>  trk;     ///< Vector of pandora tracks
-    std::unordered_map<int, std:vector<SRTrack>> trkMap;
+    std::unordered_map<size_t, SRTrack> trkMap;
     size_t               ntrk;     ///< Number of panora tracks
 
     std::vector<SRShower> shw;     ///< Vector of trac showers
-    std::unordered_map<int, std:vector<SRShower>> shwMap;
+    std::unordered_map<size_t, SRShower> shwMap;
     size_t               nshw;     ///< Number of trac showers
 
     std::vector<SRStub> stub;      ///< Vector of stubs
-    std::unordered_map<int, std:vector<SRStub>> stubMap;
     size_t             nstub;      ///< Number of stubs
 
     void fillSizes();
