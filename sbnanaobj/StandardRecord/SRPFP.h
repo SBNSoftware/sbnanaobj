@@ -5,6 +5,8 @@
 #define SRPFP_H
 
 #include "sbnanaobj/StandardRecord/SRPFOChar.h"
+#include "sbnanaobj/StandardRecord/SRTrack.h"
+#include "sbnanaobj/StandardRecord/SRShower.h"
 
 #include <vector>
 
@@ -27,6 +29,9 @@ class SRPFP {
 
   int slcID; // ID of the slice that this PFP belongs to
   float t0; // T0 assigned by TPC reco, if any
+
+  SRTrack trk;
+  SRShower shw;
 };
 
 } // end namespace
