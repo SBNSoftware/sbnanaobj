@@ -4,6 +4,9 @@
 #ifndef SRPFP_H
 #define SRPFP_H
 
+#include "sbnanaobj/StandardRecord/SRTrack.h"
+#include "sbnanaobj/StandardRecord/SRShower.h"
+
 #include <vector>
 
 namespace caf {
@@ -23,6 +26,10 @@ class SRPFP {
   float trackScore; ///< The MVA score that determines how track/shower like a PFP is
 
   int slcID; // ID of the slice that this PFP belongs to
+
+  SRTrack trk;
+  SRShower shw;
+
 };
 
 } // end namespace

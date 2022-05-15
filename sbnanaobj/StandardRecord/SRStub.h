@@ -7,6 +7,7 @@
 #include "sbnanaobj/StandardRecord/SRVector3D.h"
 #include "sbnanaobj/StandardRecord/SREnums.h"
 #include "sbnanaobj/StandardRecord/SRTrackTruth.h"
+#include "sbnanaobj/StandardRecord/SRPFP.h"
 
 #include <vector>
 
