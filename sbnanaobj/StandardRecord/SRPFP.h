@@ -6,6 +6,9 @@
 
 #include "sbnanaobj/StandardRecord/SRPfoChar.h"
 
+#include "sbnanaobj/StandardRecord/SRTrack.h"
+#include "sbnanaobj/StandardRecord/SRShower.h"
+
 #include <vector>
 
 namespace caf {
@@ -27,6 +30,10 @@ class SRPFP {
   SRPfoChar pfochar;
 
   int slcID; // ID of the slice that this PFP belongs to
+
+  SRTrack trk;
+  SRShower shw;
+
 };
 
 } // end namespace

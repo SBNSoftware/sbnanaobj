@@ -7,7 +7,7 @@
 #include "sbnanaobj/StandardRecord/SRVector3D.h"
 #include "sbnanaobj/StandardRecord/SRShowerSelection.h"
 #include "sbnanaobj/StandardRecord/SRTrackTruth.h"
-#include "sbnanaobj/StandardRecord/SRPFP.h"
+//#include "sbnanaobj/StandardRecord/SRPFP.h"
 #include "sbnanaobj/StandardRecord/SRShowerRazzle.h"
 
 namespace caf
@@ -43,7 +43,7 @@ namespace caf
       SRVector3D end;               ///< shower end point (start+len*dir) in detector coordinates [cm]
       float cosmicDist;             ///< Distance of closest approach to cosmic ray [cm]
 
-      SRPFP pfp;          ///< Contains the hierarchy and metadata from Pandora
+//      SRPFP pfp;          ///< Contains the hierarchy and metadata from Pandora
 
       SRShowerRazzle razzle; ///< Results from the shower PID MVA
       SRShowerSelection selVars;
