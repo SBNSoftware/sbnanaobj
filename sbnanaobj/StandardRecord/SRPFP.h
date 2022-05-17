@@ -31,8 +31,8 @@ class SRPFP {
 
   int slcID; // ID of the slice that this PFP belongs to
 
-  SRTrack trk;
-  SRShower shw;
+  SRTrack trk; // Track reconstructed from this PFP
+  SRShower shw; // Shower reoconstructed from this PFP
 
 };
 

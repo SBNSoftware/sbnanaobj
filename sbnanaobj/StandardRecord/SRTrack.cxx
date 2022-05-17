@@ -21,7 +21,6 @@ namespace caf
     len(kInvalid),
     costh(kInvalid),
     phi(kInvalid)
-//    ID(INT_MIN)
   {
   }
 } // end namespace caf
