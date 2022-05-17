@@ -9,6 +9,7 @@ namespace caf
 {
   
   SRSliceRecoBranch::SRSliceRecoBranch() :
+    nstub(0),
     npfp(0)
   {  
   }

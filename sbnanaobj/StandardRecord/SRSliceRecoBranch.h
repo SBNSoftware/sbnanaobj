@@ -4,8 +4,6 @@
 #ifndef SRSLICERECOBRANCH_H
 #define SRSLICERECOBRANCH_H
 
-//#include "sbnanaobj/StandardRecord/SRTrack.h"
-//#include "sbnanaobj/StandardRecord/SRShower.h"
 #include "sbnanaobj/StandardRecord/SRStub.h"
 #include "sbnanaobj/StandardRecord/SRHit.h"
 #include "sbnanaobj/StandardRecord/SRPFP.h"
@@ -21,9 +19,10 @@ namespace caf
   public:
     SRSliceRecoBranch();
     ~SRSliceRecoBranch();
-
-    std::vector<SRPFP> pfp;
-    size_t             npfp;            
+    
+    std::vector<SRPFP> pfp;        ///< Vector of pfps
+    size_t             npfp;       ///< Number of pfps
+    
     std::vector<SRStub> stub;      ///< Vector of stubs
     size_t             nstub;      ///< Number of stubs
 

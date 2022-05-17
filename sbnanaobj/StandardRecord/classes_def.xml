@@ -41,7 +41,8 @@
    <version ClassVersion="10" checksum="4180347773"/>
   </class>
 
-  <class name="caf::SRShower" ClassVersion="14">
+  <class name="caf::SRShower" ClassVersion="15">
+   <version ClassVersion="15" checksum="3211336966"/>
    <version ClassVersion="14" checksum="3720936031"/>
    <version ClassVersion="13" checksum="150649609"/>
    <version ClassVersion="12" checksum="2025293789"/>
@@ -82,7 +83,8 @@
    <version ClassVersion="10" checksum="3777054621"/>
   </class>
 
-  <class name="caf::SRTrack" ClassVersion="13">
+  <class name="caf::SRTrack" ClassVersion="14">
+   <version ClassVersion="14" checksum="3934033130"/>
    <version ClassVersion="13" checksum="522362999"/>
    <version ClassVersion="12" checksum="3952974887"/>
    <version ClassVersion="11" checksum="1319166397"/>
@@ -206,9 +208,14 @@
    <version ClassVersion="10" checksum="839301601"/>
   </class>
 
+<<<<<<< HEAD
   <class name="caf::SRPFP" ClassVersion="12">
    <version ClassVersion="12" checksum="2470467174"/>
    <version ClassVersion="11" checksum="1837341006"/>
+=======
+  <class name="caf::SRPFP" ClassVersion="11">
+   <version ClassVersion="11" checksum="4069884459"/>
+>>>>>>> e2ea18a (Removed commented out code and added comments.)
    <version ClassVersion="10" checksum="1732359397"/>
   </class>
 
