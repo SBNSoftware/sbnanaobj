@@ -13,7 +13,6 @@
 #include "sbnanaobj/StandardRecord/SRCRTHitMatch.h"
 #include "sbnanaobj/StandardRecord/SRCRTTrackMatch.h"
 #include "sbnanaobj/StandardRecord/SRTrackCalo.h"
-//#include "sbnanaobj/StandardRecord/SRPFP.h"
 #include "sbnanaobj/StandardRecord/SRTrackDazzle.h"
 #include "sbnanaobj/StandardRecord/SRTrackScatterClosestApproach.h"
 #include "sbnanaobj/StandardRecord/SRTrackStoppingChi2Fit.h"
@@ -42,7 +41,6 @@ namespace caf
       SRVector3D     dir_end;     ///< Direction of track at end
       SRVector3D     start;       ///< Start point of track
       SRVector3D     end;         ///< End point of track
- //     int            ID;          ///< ID of this track (taken from the pandora particle "ID" of this track)
 
       SRTrkChi2PID chi2pid[3]; ///< Per-plane Chi2 Particle ID
       SRTrackCalo calo[3]; ///< Per-plane Calorimetry information
@@ -54,7 +52,6 @@ namespace caf
       SRTrackTruth   truth;        ///< truth information
       SRCRTHitMatch  crthit;       ///< CRT Hit match
       SRCRTTrackMatch  crttrack;   ///< CRT Track match
-//      SRPFP pfp;                   ///< Contains the hierarchy and metadata from Pandora
 
       SRTrackScatterClosestApproach scatterClosestApproach; ///< Scattering variables relating to spread about interpolated track
       SRTrackStoppingChi2Fit stoppingChi2Fit;               ///< Fit results from Pol0 and Exp to dEdx vs res. range

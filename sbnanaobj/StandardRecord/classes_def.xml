@@ -20,7 +20,8 @@
    <version ClassVersion="10" checksum="4180347773"/>
   </class>
 
-  <class name="caf::SRShower" ClassVersion="14">
+  <class name="caf::SRShower" ClassVersion="15">
+   <version ClassVersion="15" checksum="3211336966"/>
    <version ClassVersion="14" checksum="3720936031"/>
    <version ClassVersion="13" checksum="150649609"/>
    <version ClassVersion="12" checksum="2025293789"/>
@@ -41,7 +42,8 @@
    <version ClassVersion="11" checksum="1429601394"/>
   </class>
 
-  <class name="caf::SRSliceRecoBranch" ClassVersion="11">
+  <class name="caf::SRSliceRecoBranch" ClassVersion="12">
+   <version ClassVersion="12" checksum="1302849020"/>
    <version ClassVersion="11" checksum="1272564698"/>
    <version ClassVersion="10" checksum="1432916981"/>
   </class>
@@ -58,7 +60,8 @@
    <version ClassVersion="10" checksum="3777054621"/>
   </class>
 
-  <class name="caf::SRTrack" ClassVersion="13">
+  <class name="caf::SRTrack" ClassVersion="14">
+   <version ClassVersion="14" checksum="3934033130"/>
    <version ClassVersion="13" checksum="522362999"/>
    <version ClassVersion="12" checksum="3952974887"/>
    <version ClassVersion="11" checksum="1319166397"/>
@@ -179,7 +182,8 @@
    <version ClassVersion="10" checksum="839301601"/>
   </class>
 
-  <class name="caf::SRPFP" ClassVersion="10">
+  <class name="caf::SRPFP" ClassVersion="11">
+   <version ClassVersion="11" checksum="4069884459"/>
    <version ClassVersion="10" checksum="1732359397"/>
   </class>
 
