@@ -9,8 +9,8 @@ namespace caf
 {
   
   SRSliceRecoBranch::SRSliceRecoBranch() :
-    nstub(0),
-    npfp(0)
+    npfp(0),
+    nstub(0)
   {  
   }
   
@@ -20,9 +20,7 @@ namespace caf
 
   void SRSliceRecoBranch::fillSizes()
   {
-    
     npfp   = pfp.size();
-
   }
  
 } // end namespace caf
