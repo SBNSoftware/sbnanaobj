@@ -6,6 +6,8 @@
 #ifndef SROPFLASH_H
 #define SROPFLASH_H
 
+#include "sbnanaobj/StandardRecord/SRConstants.h"
+#include <climits>
 
 namespace caf
 {
@@ -13,41 +15,25 @@ namespace caf
   class SROpFlash
     {
     public:
-
       SROpFlash();
 
-      virtual ~SROpFlash() {}
-//NOTE: They all have this. Not sure what exactly this does, but it seems necessary.
-
-      double Time; //Time on trigger time scale [us].
-      double Timewidth; //Width of the flash in time [us].
-      double AbsTime; //Time by PMT readout clock.
-
-      double PE; //Number of PE on a give PMT.
-//NOTE: Might not need this? Doesn't make sense to store each entry separately given that we have the vector form.
-      std::vector<double> PEs; //Number of PE on each PMT.
-      double TotalPE; //Total number of PE across all PMTs.
-      double FastToTotal; //Fast to total light ratio.
-
-      bool OnBeamTime; //Is this in time with beam?
-//NOTE: Changed from int to bool. I have a feeling this int was 0/1.
-
-      bool hasXCenter; //Is the estimated center on x direction is available?
-//NOTE: This one's weird. Do we need this? Do some flashes not have X centers?
-      double XCenter; //Geometric center in x [cm].
-      double XWidth; //Geometric width in x [cm].
-      double YCenter; //Geometric center in y [cm].
-      double YWidth; //Geometric width in y [cm].
-      double ZCenter; //Geometric center in z [cm].
-      double ZWidth; //Geometric width in z [cm].
-
-//NOTE: Dropping frame stuff (uBooNE) and wire centers/widths
-
-      std::vector<double> PE_per_wall; //Backhouse's suggestion
-      int cryo; //0 for SBND/ICARUS East, 1 for ICARUS West
-//NOTE: New additions
+      bool  OnBeamTime  { false             }; //!< Is this in time with beam?
+      float Time        { kSignalingNaN     }; //!< Time on trigger time scale [us].
+      float Timewidth   { kSignalingNaN     }; //!< Width of the flash in time [us].
+      float TotalPE     { kSignalingNaN     }; //!< Total number of PE across all PMTs.
+      float FastToTotal { kSignalingNaN     }; //!< Fast to total light ratio.
+      float YCenter     { kSignalingNaN     }; //!< Geometric center in y [cm].
+      float YWidth      { kSignalingNaN     }; //!< Geometric width in y [cm].
+      float ZCenter     { kSignalingNaN     }; //!< Geometric center in z [cm].
+      float ZWidth      { kSignalingNaN     }; //!< Geometric width in z [cm].
+      float XCenter     { kSignalingNaN     }; //!< Geometric center in x [cm].
+      float XWidth      { kSignalingNaN     }; //!< Geometric width in x [cm].
+      int   Cryo        { kUninitializedInt }; //!< 0 for SBND/ICARUS East, 1 for ICARUS West; NOT IN THE RECOB
+      std::vector<float> PEs;                  //!< Number of PE on each PMT (180 entries).
+      std::vector<float> PEsPerWall;           //!< Number of PE on each wall (2 entries); NOT IN THE RECOB
 
       void setDefault();
+
     };
 
 } // end namespace
