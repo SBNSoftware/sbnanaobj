@@ -46,8 +46,8 @@ namespace caf
     std::vector<SRCRTHit>       crt_hits; ///< CRT hits in event
     int                        ncrt_tracks; ///< Number of CRT tracks in event
     std::vector<SRCRTTrack>     crt_tracks; ///< CRT tracks in event
-    int                        n_flashes; ///< Number of OpFlashes in spill
-    std::vector<SROpFlash>      flash; ///< List of OpFlashes in spill
+    int                        nopflashes; ///< Number of OpFlashes in spill
+    std::vector<SROpFlash>      opflashes; ///< List of OpFlashes in spill
 
     bool pass_flashtrig;     ///< Whether this Record passed the Flash Trigger requirement
 
