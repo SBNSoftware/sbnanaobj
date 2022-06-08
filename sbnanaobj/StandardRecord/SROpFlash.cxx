@@ -11,7 +11,7 @@
 namespace caf
 {
 
-  SROpFlash::SROpFlash():
+  SROpFlash::SROpFlash()
   {}
 
   void SROpFlash::setDefault()

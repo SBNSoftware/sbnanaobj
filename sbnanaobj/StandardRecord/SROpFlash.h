@@ -8,6 +8,7 @@
 
 #include "sbnanaobj/StandardRecord/SRConstants.h"
 #include <climits>
+#include <vector>
 
 namespace caf
 {
@@ -19,7 +20,7 @@ namespace caf
 
       bool  OnBeamTime  { false             }; //!< Is this in time with beam?
       float Time        { kSignalingNaN     }; //!< Time on trigger time scale [us].
-      float Timewidth   { kSignalingNaN     }; //!< Width of the flash in time [us].
+      float TimeWidth   { kSignalingNaN     }; //!< Width of the flash in time [us].
       float TotalPE     { kSignalingNaN     }; //!< Total number of PE across all PMTs.
       float FastToTotal { kSignalingNaN     }; //!< Fast to total light ratio.
       float YCenter     { kSignalingNaN     }; //!< Geometric center in y [cm].
