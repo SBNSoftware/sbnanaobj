@@ -19,6 +19,9 @@ namespace caf
 
     Time        = -9999.f;
     TimeWidth   =    -5.f;
+    TimeMean    =    -5.f;
+    TimeSD      =    -5.f;
+    FirstTime    =    -5.f;
     TotalPE     =    -5.f;
     FastToTotal =    -5.f;
     OnBeamTime  =   false;
@@ -29,6 +32,7 @@ namespace caf
     ZCenter     = -9999.f;
     ZWidth      =    -5.f;
     Cryo        =      -5;
+    FirstPMT    =      -5;
   }
 
 } // end namespace caf

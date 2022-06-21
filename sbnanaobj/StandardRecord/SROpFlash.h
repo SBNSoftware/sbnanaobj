@@ -21,6 +21,9 @@ namespace caf
       bool  OnBeamTime  { false             }; //!< Is this in time with beam?
       float Time        { kSignalingNaN     }; //!< Time on trigger time scale [us].
       float TimeWidth   { kSignalingNaN     }; //!< Width of the flash in time [us].
+      float TimeMean    { kSignalingNaN     }; //!< Mean time of hits [us].
+      float TimeSD      { kSignalingNaN     }; //!< Standard deviation of hit times [us].
+      float FirstTime   { kSignalingNaN     }; //!< Time of first hit [us].
       float TotalPE     { kSignalingNaN     }; //!< Total number of PE across all PMTs.
       float FastToTotal { kSignalingNaN     }; //!< Fast to total light ratio.
       float YCenter     { kSignalingNaN     }; //!< Geometric center in y [cm].
@@ -30,6 +33,8 @@ namespace caf
       float XCenter     { kSignalingNaN     }; //!< Geometric center in x [cm].
       float XWidth      { kSignalingNaN     }; //!< Geometric width in x [cm].
       int   Cryo        { kUninitializedInt }; //!< 0 for SBND/ICARUS East, 1 for ICARUS West; NOT IN THE RECOB
+      int   FirstPMT    { kUninitializedInt }; //!< Channel number of first hit
+
       std::vector<float> PEs;                  //!< Number of PE on each PMT (180 entries).
       std::vector<float> PEsPerWall;           //!< Number of PE on each wall (2 entries); NOT IN THE RECOB
 
