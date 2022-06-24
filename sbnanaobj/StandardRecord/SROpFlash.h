@@ -1,46 +1,41 @@
 ////////////////////////////////////////////////////////////////////////
 // \file    SROPFLASH.h
-// \brief   Adaptation of recob::OpFlash (https://nusoft.fnal.gov/larsoft/doxsvn/html/classrecob_1_1OpFlash.html). This SR code copied/based on other SR objects.
+// \brief   Adaptation of recob::OpFlash (https://nusoft.fnal.gov/larsoft/doxsvn/html/classrecob_1_1OpFlash.html).
 // \author  jsmedley@fnal.gov
 ////////////////////////////////////////////////////////////////////////
 #ifndef SROPFLASH_H
 #define SROPFLASH_H
 
 #include "sbnanaobj/StandardRecord/SRConstants.h"
-#include <climits>
+#include "sbnanaobj/StandardRecord/SRVector3D.h"
 #include <vector>
 
 namespace caf
 {
-  /// OpFlash
+  /// Optical Flash -- a summary of multiple optical hits that have been determined to be associated
   class SROpFlash
-    {
-    public:
-      SROpFlash();
+  {
+  public:
+    SROpFlash();
 
-      bool  OnBeamTime  { false             }; //!< Is this in time with beam?
-      float Time        { kSignalingNaN     }; //!< Time on trigger time scale [us].
-      float TimeWidth   { kSignalingNaN     }; //!< Width of the flash in time [us].
-      float TimeMean    { kSignalingNaN     }; //!< Mean time of hits [us].
-      float TimeSD      { kSignalingNaN     }; //!< Standard deviation of hit times [us].
-      float FirstTime   { kSignalingNaN     }; //!< Time of first hit [us].
-      float TotalPE     { kSignalingNaN     }; //!< Total number of PE across all PMTs.
-      float FastToTotal { kSignalingNaN     }; //!< Fast to total light ratio.
-      float YCenter     { kSignalingNaN     }; //!< Geometric center in y [cm].
-      float YWidth      { kSignalingNaN     }; //!< Geometric width in y [cm].
-      float ZCenter     { kSignalingNaN     }; //!< Geometric center in z [cm].
-      float ZWidth      { kSignalingNaN     }; //!< Geometric width in z [cm].
-      float XCenter     { kSignalingNaN     }; //!< Geometric center in x [cm].
-      float XWidth      { kSignalingNaN     }; //!< Geometric width in x [cm].
-      int   Cryo        { kUninitializedInt }; //!< 0 for SBND/ICARUS East, 1 for ICARUS West; NOT IN THE RECOB
-      int   FirstPMT    { kUninitializedInt }; //!< Channel number of first hit
+    bool  onbeamtime       { false                        }; //!< Is this in time with beam?
+    int   cryo             { kUninitializedInt            }; //!< 0 for SBND/ICARUS East, 1 for ICARUS West.
+    int   firstpmt         { kUninitializedInt            }; //!< Channel number of first hit
+    float time             { kSignalingNaN                }; //!< Time on trigger time scale [us].
+    float timewidth        { kSignalingNaN                }; //!< Width of the flash in time [us].
+    float timemean         { kSignalingNaN                }; //!< Mean time of hits [us].
+    float timesd           { kSignalingNaN                }; //!< Standard deviation of hit times [us].
+    float firsttime        { kSignalingNaN                }; //!< Time of first hit [us].
+    float totalpe          { kSignalingNaN                }; //!< Total number of PE across all PMTs.
+    float fasttototal      { kSignalingNaN                }; //!< Fast to total light ratio.
+    float peperwall[2] { kSignalingNaN, kSignalingNaN };
 
-      std::vector<float> PEs;                  //!< Number of PE on each PMT (180 entries).
-      std::vector<float> PEsPerWall;           //!< Number of PE on each wall (2 entries); NOT IN THE RECOB
+    SRVector3D center;                                       //!< Geometric center in <x,y,z> [cm].
+    SRVector3D width;                                        //!< Geometric width in <x,y,z> [cm].
 
-      void setDefault();
+    void setDefault();
 
-    };
+  };
 
 } // end namespace
 

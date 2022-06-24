@@ -17,22 +17,21 @@ namespace caf
   void SROpFlash::setDefault()
   {
 
-    Time        = -9999.f;
-    TimeWidth   =    -5.f;
-    TimeMean    =    -5.f;
-    TimeSD      =    -5.f;
-    FirstTime    =    -5.f;
-    TotalPE     =    -5.f;
-    FastToTotal =    -5.f;
-    OnBeamTime  =   false;
-    XCenter     = -9999.f;
-    XWidth      =    -5.f;
-    YCenter     = -9999.f;
-    YWidth      =    -5.f;
-    ZCenter     = -9999.f;
-    ZWidth      =    -5.f;
-    Cryo        =      -5;
-    FirstPMT    =      -5;
+    onbeamtime       =   false;
+    cryo             =      -5;
+    firstpmt         =      -5;
+    time             = -9999.f;
+    timewidth        =    -5.f;
+    timemean         = -9999.f;
+    timesd           =    -5.f;
+    firsttime        = -9999.f;
+    totalpe          =    -5.f;
+    fasttototal      =    -5.f;
+    peperwall[0] = -5.f;
+    peperwall[1] = -5.f;
+
+    center           = SRVector3D(-9999.f, -9999.f, -9999.f);
+    width            = SRVector3D(-9999.f, -9999.f, -9999.f);
   }
 
 } // end namespace caf
