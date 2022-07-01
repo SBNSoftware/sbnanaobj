@@ -5,7 +5,8 @@
 <!-- art::Wrappers for these products are defined in CAFMaker -->
 
 <lcgdict>
-  <class name="caf::StandardRecord" ClassVersion="10">
+  <class name="caf::StandardRecord" ClassVersion="11">
+   <version ClassVersion="11" checksum="483883398"/>
    <version ClassVersion="10" checksum="2569909752"/>
   </class>
 
@@ -272,6 +273,11 @@
   </class>
 
   <class name="caf::SRCRTTrackMatch" ClassVersion="10">
+   <version ClassVersion="10" checksum="2672302824"/>
+  </class>
+
+  <class name="caf::SROpFlash" ClassVersion="11">
+   <version ClassVersion="11" checksum="2756572285"/>
    <version ClassVersion="10" checksum="2672302824"/>
   </class>
 
