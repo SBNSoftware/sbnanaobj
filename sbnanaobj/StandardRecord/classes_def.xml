@@ -276,7 +276,8 @@
    <version ClassVersion="10" checksum="2672302824"/>
   </class>
 
-  <class name="caf::SROpFlash" ClassVersion="11">
+  <class name="caf::SROpFlash" ClassVersion="12">
+   <version ClassVersion="12" checksum="3122666215"/>
    <version ClassVersion="11" checksum="2756572285"/>
    <version ClassVersion="10" checksum="2672302824"/>
   </class>
