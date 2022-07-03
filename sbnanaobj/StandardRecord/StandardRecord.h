@@ -14,6 +14,8 @@
 #include "sbnanaobj/StandardRecord/SRSliceRecoBranch.h"
 #include "sbnanaobj/StandardRecord/SRTruthBranch.h"
 #include "sbnanaobj/StandardRecord/SRFakeReco.h"
+#include "sbnanaobj/StandardRecord/SROpFlash.h"
+
 
 /// Common Analysis Files
 namespace caf
@@ -44,7 +46,8 @@ namespace caf
     std::vector<SRCRTHit>       crt_hits; ///< CRT hits in event
     int                        ncrt_tracks; ///< Number of CRT tracks in event
     std::vector<SRCRTTrack>     crt_tracks; ///< CRT tracks in event
-
+    int                        nopflashes; ///< Number of OpFlashes in spill
+    std::vector<SROpFlash>      opflashes; ///< List of OpFlashes in spill
 
     bool pass_flashtrig;     ///< Whether this Record passed the Flash Trigger requirement
 
