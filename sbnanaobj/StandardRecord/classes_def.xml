@@ -22,6 +22,8 @@
    <version ClassVersion="10" checksum="1379012114"/>
   </class>
 
+  <class name="caf::SRPfoChar" ClassVersion="10"/>
+
   <class name="caf::SRShowerPlaneInfo" ClassVersion="10">
    <version ClassVersion="10" checksum="4180347773"/>
   </class>
