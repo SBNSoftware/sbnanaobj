@@ -7,6 +7,7 @@
 #include "sbnanaobj/StandardRecord/SRTrack.h"
 #include "sbnanaobj/StandardRecord/SRShower.h"
 #include "sbnanaobj/StandardRecord/SRStub.h"
+#include "sbnanaobj/StandardRecord/SRHit.h"
 
 #include <vector>
 
@@ -27,6 +28,9 @@ namespace caf
 
     std::vector<SRStub> stub;      ///< Vector of stubs
     size_t             nstub;      ///< Number of stubs
+
+    std::vector<SRHit> hit;        ///< Vector of hits
+    size_t            nhit;        ///< Number of hits
 
     void fillSizes();
       
