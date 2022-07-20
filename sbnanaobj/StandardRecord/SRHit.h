@@ -15,7 +15,7 @@ namespace caf
       ~SRSpacePoint(){  }
 
       SRVector3D XYZ;
-      double Chisq;
+      double chisq;
 
       int pfpID; // PFP ID that this spacepoint belongs to; -1 if no PFP
   };
