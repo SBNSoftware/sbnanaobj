@@ -12,7 +12,6 @@ namespace caf
   {
     public:
       SRSpacePoint();
-      ~SRSpacePoint(){  }
 
       SRVector3D XYZ;
       double chisq;
@@ -42,6 +41,8 @@ namespace caf
       int wireID;
 
       SRSpacePoint spacepoint;
+
+      unsigned producer;    ///< Index of the producer that produced this object. In ICARUS, this is the same as the cryostat.
     };
 
 } // end namespace

@@ -11,8 +11,7 @@
 namespace caf
 {
   SRSpacePoint::SRSpacePoint():
-  
-    XYZ(-999999,-999999,-999999),
+    XYZ(-999.,-999.,-999.),
     chisq(-5.),
     pfpID(-1)
   {
