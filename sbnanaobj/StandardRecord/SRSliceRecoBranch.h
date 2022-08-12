@@ -26,11 +26,11 @@ namespace caf
     std::vector<SRShower> shw;     ///< Vector of trac showers
     size_t               nshw;     ///< Number of trac showers
 
-    std::vector<SRStub> stub;      ///< Vector of stubs
-    size_t             nstub;      ///< Number of stubs
-
     std::vector<SRHit> hit;        ///< Vector of hits
     size_t            nhit;        ///< Number of hits
+
+    std::vector<SRStub> stub;      ///< Vector of stubs
+    size_t             nstub;      ///< Number of stubs
 
     void fillSizes();
       

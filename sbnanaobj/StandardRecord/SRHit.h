@@ -16,6 +16,7 @@ namespace caf
       SRVector3D XYZ;
       double chisq;
 
+      int ID; // spacepoint ID 
       int pfpID; // PFP ID that this spacepoint belongs to; -1 if no PFP
   };
 
@@ -26,13 +27,11 @@ namespace caf
     public:
       SRHit();
       ~SRHit(){  }
-      float startTick;
-      float endTick;
+      float peakTime; // time of hit peak in tick units
 
       float RMS;
 
       float peakAmplitude;
-      float summedADC;
       float integral;
 
       int cryoID;

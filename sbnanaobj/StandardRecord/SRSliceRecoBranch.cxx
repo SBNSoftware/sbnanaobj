@@ -11,8 +11,8 @@ namespace caf
   SRSliceRecoBranch::SRSliceRecoBranch() :
     ntrk(0),
     nshw(0),
-    nstub(0),
-    nhit(0)
+    nhit(0),
+    nstub(0)
   {  
   }
   

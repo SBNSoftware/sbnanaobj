@@ -13,19 +13,18 @@ namespace caf
   SRSpacePoint::SRSpacePoint():
     XYZ(-999.,-999.,-999.),
     chisq(-5.),
+    ID(-1),
     pfpID(-1)
   {
   }
 
   SRHit::SRHit():
 
-    startTick(-999.),
-    endTick(-999.),
+    peakTime(-9999.),
 
     RMS(-5.),
 
     peakAmplitude(-5.),
-    summedADC(-5.),
     integral(-5.),
 
     cryoID(-5),
