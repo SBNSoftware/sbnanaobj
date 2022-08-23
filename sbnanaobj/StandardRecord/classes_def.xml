@@ -5,7 +5,8 @@
 <!-- art::Wrappers for these products are defined in CAFMaker -->
 
 <lcgdict>
-  <class name="caf::StandardRecord" ClassVersion="10">
+  <class name="caf::StandardRecord" ClassVersion="11">
+   <version ClassVersion="11" checksum="483883398"/>
    <version ClassVersion="10" checksum="2569909752"/>
   </class>
 
@@ -150,7 +151,8 @@
    <version ClassVersion="10" checksum="833172973"/>
   </class>
 
-  <class name="caf::SRMeVPrtl" ClassVersion="12">
+  <class name="caf::SRMeVPrtl" ClassVersion="13">
+   <version ClassVersion="13" checksum="1679355068"/>
    <version ClassVersion="12" checksum="485663119"/>
    <version ClassVersion="11" checksum="2904339381"/>
    <version ClassVersion="10" checksum="3963837747"/>
@@ -290,6 +292,13 @@
    <version ClassVersion="10" checksum="2672302824"/>
   </class>
 
+  <class name="caf::SROpFlash" ClassVersion="12">
+   <version ClassVersion="12" checksum="3122666215"/>
+   <version ClassVersion="11" checksum="2756572285"/>
+   <version ClassVersion="10" checksum="2672302824"/>
+  </class>
+  <class name="std::vector<caf::SROpFlash>" />
+  
   <enum name="caf::Det_t" ClassVersion="10"/>
   <enum name="caf::Plane_t" ClassVersion="10"/>
   <enum name="caf::Wall_t" ClassVersion="10"/>

@@ -34,6 +34,7 @@ namespace caf
     double decay_length; //!< Mean decay length  of particle
     caf::SRVector3D enter; //!< Entry position of particle into Active Volume
     caf::SRVector3D exit; //!< Exit position of particle into Active Volume
+    caf::SRVector3D start; //!< Start position of Portal in detector coordinates [cm]
 
     // Constants! For random model parameters
     double C1;
