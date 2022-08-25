@@ -10,7 +10,9 @@
    <version ClassVersion="10" checksum="2569909752"/>
   </class>
 
-  <class name="caf::SRHeader" ClassVersion="15">
+  <class name="caf::SRHeader" ClassVersion="17">
+   <version ClassVersion="17" checksum="2337090307"/>
+   <version ClassVersion="16" checksum="456049177"/>
    <version ClassVersion="15" checksum="2023063203"/>
    <version ClassVersion="14" checksum="381900980"/>
    <version ClassVersion="13" checksum="2553933268"/>
@@ -217,6 +219,10 @@
    <version ClassVersion="10" checksum="3796231674"/>
   </class>
 
+  <class name="caf::SREXTInfo" ClassVersion="10">
+   <version ClassVersion="10" checksum="850665470"/>
+  </class>
+
   <class name="caf::SRCRUMBSResult" ClassVersion="10">
    <version ClassVersion="10" checksum="783958853"/>
   </class>
@@ -256,6 +262,7 @@
   <class name="std::vector<caf::SRStubPlane>" />
   <class name="std::vector<caf::SRBNBInfo>" />
   <class name="std::vector<caf::SRNuMIInfo>" />
+  <class name="std::vector<caf::SREXTInfo>" />
   <class name="std::vector<caf::SRCRUMBSResult>" />
 
   <class name="caf::SRCRTHit" ClassVersion="11">

@@ -29,6 +29,7 @@ namespace caf
   // blind(false),
   nbnbinfo(0),
   nnumiinfo(0),
+  nextinfo(0),
   husk(false)
   {  }
 

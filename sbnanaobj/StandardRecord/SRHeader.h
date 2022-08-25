@@ -8,6 +8,7 @@
 #include "sbnanaobj/StandardRecord/SREnums.h"
 #include "sbnanaobj/StandardRecord/SRBNBInfo.h"
 #include "sbnanaobj/StandardRecord/SRNuMIInfo.h"
+#include "sbnanaobj/StandardRecord/SREXTInfo.h"
 
 #include <vector>
 
@@ -30,6 +31,7 @@ namespace caf
       unsigned int   fno;       ///< Index of file processed by CAFMaker
       unsigned int   ngenevt;   ///< Number of events generated in input file associated with this record (before any filters)
       float          pot;       ///< POT of the subrun associated with this record
+      float          extcount;
       MCType_t       mctype;    ///< Type of Monte Carlo used to generate this record
       Det_t          det;       ///< Detector, SBND=1 ICARUS=2
       bool           first_in_subrun; ///< Whether this event is the first in the subrun
@@ -41,6 +43,8 @@ namespace caf
       std::vector<caf::SRBNBInfo> bnbinfo; ///< storing beam information per subrun
       size_t                       nnumiinfo; ///< Number of NuMIInfo objects
       std::vector<caf::SRNuMIInfo> numiinfo; ///< storing beam information per subrun
+      size_t         nextinfo;
+      std::vector<caf::SREXTInfo> extinfo;
 
 
       /// If true, this record has been filterd out, and only remains as a
