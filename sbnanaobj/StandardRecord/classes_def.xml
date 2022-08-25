@@ -234,9 +234,8 @@
    <version ClassVersion="10" checksum="1010873394"/>
   </class>
 
-  <class name="caf::SRTrigger" ClassVersion="11">
-   <version ClassVersion="11" checksum="3388549490"/>
-   <version ClassVersion="10" checksum="3162219101"/>
+  <class name="caf::SRTrigger" ClassVersion="10">
+   <version ClassVersion="10" checksum="3388549490"/>
   </class>
 
   <!--<class name="caf::SRLorentzVector" /> -->
