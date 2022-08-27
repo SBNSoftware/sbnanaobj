@@ -23,16 +23,12 @@
    <version ClassVersion="10" checksum="1379012114"/>
   </class>
 
-  <class name="caf::SRHit" ClassVersion="12">
-   <version ClassVersion="12" checksum="1096003590"/>
-   <version ClassVersion="11" checksum="2966996940"/>
-   <version ClassVersion="10" checksum="4180347773"/>
+  <class name="caf::SRHit" ClassVersion="10">
+   <version ClassVersion="10" checksum="1494967532"/>
   </class>
 
-  <class name="caf::SRSpacePoint" ClassVersion="12">
-   <version ClassVersion="12" checksum="3576822006"/>
-   <version ClassVersion="11" checksum="262273522"/>
-   <version ClassVersion="10" checksum="4180347773"/>
+  <class name="caf::SRSpacePoint" ClassVersion="10">
+   <version ClassVersion="10" checksum="3576822006"/>
   </class>
 
   <class name="caf::SRShowerPlaneInfo" ClassVersion="10">

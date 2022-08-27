@@ -1,7 +1,8 @@
 ////////////////////////////////////////////////////////////////////////
 // \file    SRHit.cxx
-// \brief   An SRHit is a high level shower object.  It knows its
-//          direction and length, but does not own its cell hits.
+// \brief   An SRHit is a low level hit object.  It knows its
+//          amplitude and time, as well as the pandora spacepoint
+//          created from it.
 ////////////////////////////////////////////////////////////////////////
 
 #include "sbnanaobj/StandardRecord/SRHit.h"
@@ -10,28 +11,30 @@
 
 namespace caf
 {
-  SRSpacePoint::SRSpacePoint():
-    XYZ(-999.,-999.,-999.),
-    chisq(-5.),
-    ID(-1),
-    pfpID(-1)
-  {
-  }
+  SRSpacePoint::SRSpacePoint()
+  {  }
 
-  SRHit::SRHit():
+  SRHit::SRHit()
+  {  }
 
-    peakTime(-9999.),
+  void SRHit::setDefault()
+  { 
+    peakTime      = -9999.f;
 
-    RMS(-5.),
+    RMS           = -9999.f;
 
-    peakAmplitude(-5.),
-    integral(-5.),
+    peakAmplitude = -9999.f;
+    integral      = -9999.f;
 
-    cryoID(-5),
-    tpcID(-5),
-    planeID(-5),
-    wireID(-5)
-  {
+    cryoID        = -5;
+    tpcID         = -5;
+    planeID       = -5;
+    wireID        = -5;
+
+    spacepoint.XYZ   = {-9999.f,-9999.f,-9999.f};
+    spacepoint.chisq = -9999.f;
+    spacepoint.ID    = -1;
+    spacepoint.pfpID = -1;
   }
 
 } // end namespace caf
