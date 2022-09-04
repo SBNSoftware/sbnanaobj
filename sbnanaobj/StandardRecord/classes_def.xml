@@ -58,9 +58,8 @@
    <version ClassVersion="11" checksum="1429601394"/>
   </class>
 
-  <class name="caf::SRSliceRecoBranch" ClassVersion="13">
-   <version ClassVersion="13" checksum="2959836900"/>
-   <version ClassVersion="12" checksum="7829888"/>
+  <class name="caf::SRSliceRecoBranch" ClassVersion="12">
+   <version ClassVersion="12" checksum="2959836900"/>
    <version ClassVersion="11" checksum="1272564698"/>
    <version ClassVersion="10" checksum="1432916981"/>
   </class>
