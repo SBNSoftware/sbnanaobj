@@ -24,6 +24,14 @@
    <version ClassVersion="10" checksum="1379012114"/>
   </class>
 
+  <class name="caf::SRHit" ClassVersion="10">
+   <version ClassVersion="10" checksum="1494967532"/>
+  </class>
+
+  <class name="caf::SRSpacePoint" ClassVersion="10">
+   <version ClassVersion="10" checksum="3576822006"/>
+  </class>
+
   <class name="caf::SRShowerPlaneInfo" ClassVersion="10">
    <version ClassVersion="10" checksum="4180347773"/>
   </class>
@@ -51,7 +59,8 @@
    <version ClassVersion="11" checksum="1429601394"/>
   </class>
 
-  <class name="caf::SRSliceRecoBranch" ClassVersion="11">
+  <class name="caf::SRSliceRecoBranch" ClassVersion="12">
+   <version ClassVersion="12" checksum="2959836900"/>
    <version ClassVersion="11" checksum="1272564698"/>
    <version ClassVersion="10" checksum="1432916981"/>
   </class>
@@ -249,6 +258,7 @@
   <class name="std::vector<caf::SRVector3D>" />
   <!--<class name="std::vector<caf::SRLorentzVector>" /> -->
   <class name="std::vector<caf::SRShower>" />
+  <class name="std::vector<caf::SRHit>" />
   <class name="std::vector<caf::SRShowerSelection>" />
   <class name="std::vector<caf::SRTrueInteraction>" />
   <class name="std::vector<caf::SRMultiverse>" />
