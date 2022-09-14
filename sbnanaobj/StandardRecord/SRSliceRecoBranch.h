@@ -7,7 +7,6 @@
 #include "sbnanaobj/StandardRecord/SRStub.h"
 #include "sbnanaobj/StandardRecord/SRHit.h"
 #include "sbnanaobj/StandardRecord/SRPFP.h"
->>>>>>> 2d13569 (Removed tracks and showers and added PFPs to the SRSliceRecoBranch, and added a shower and track to SRPFPs.)
 
 #include <vector>
 
