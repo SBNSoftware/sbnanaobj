@@ -21,6 +21,10 @@ namespace caf
   void SRSliceRecoBranch::fillSizes()
   {
     npfp   = pfp.size();
+    //    nvtx   = vtx.size();
+    nhit   = hit.size();
+    // nshw_em = shw_em.size();
+    // nshw_pandora = shw_pandora.size();
   }
  
 } // end namespace caf
