@@ -24,7 +24,9 @@
    <version ClassVersion="10" checksum="1379012114"/>
   </class>
 
-  <class name="caf::SRPfoChar" />
+  <class name="caf::SRPfoChar" ClassVersion="10">
+   <version ClassVersion="10" checksum="1292282650"/>
+  </class>
 
   <class name="caf::SRHit" ClassVersion="10">
    <version ClassVersion="10" checksum="1494967532"/>
