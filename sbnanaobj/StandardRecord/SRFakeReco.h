@@ -11,19 +11,19 @@
 
 namespace caf
 {
-  /// The SRFakeReco is a faked reconstruction using estimates from the SBN proposal 
+  /// The SRFakeReco is a faked reconstruction using estimates from the SBN proposal
   class SRFakeReco
   {
   public:
     SRFakeReco();
     ~SRFakeReco() {  }
 
-    float nuE; ///! Fake-reco neutrino Energy [GeV]
-    SRVector3D vtx; ///! Interaction vertex in detector coordinates [cm] 
-    SRFakeRecoParticle lepton; ///! Fake-reco lepton information 
-    std::vector<SRFakeRecoParticle> hadrons; ///! Fake-reco information on hadronic state
-    int nhad; ///! Number of hadrons
-    float wgt; ///! Weight for this interaction
+    float nuE; ///< Fake-reco neutrino Energy [GeV]
+    SRVector3D vtx; ///< Interaction vertex in detector coordinates [cm]
+    SRFakeRecoParticle lepton; ///< Fake-reco lepton information
+    std::vector<SRFakeRecoParticle> hadrons; ///< Fake-reco information on hadronic state
+    int nhad; ///< Number of hadrons
+    float wgt; ///< Weight for this interaction
     bool filled;
   };
 

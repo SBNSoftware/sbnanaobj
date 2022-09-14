@@ -6,18 +6,9 @@
 
 #include "sbnanaobj/StandardRecord/SRSlice.h"
 
-#include <limits>
-#include <climits>
-
 namespace caf
 {
-  SRSlice::SRSlice():
-    producer(UINT_MAX),
-    charge(std::numeric_limits<float>::signaling_NaN()),
-    is_clear_cosmic(false),
-    nu_pdg(INT_MIN),
-    nu_score(std::numeric_limits<float>::signaling_NaN()),
-    self(INT_MIN)
+  SRSlice::SRSlice()
   {  }
 
 

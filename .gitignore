@@ -9,6 +9,10 @@ messages.log
 localProducts*
 build_*
 
+# Generated sources #
+#####################
+*_dict.cc
+
 # Compiled source #
 ###################
 *.com

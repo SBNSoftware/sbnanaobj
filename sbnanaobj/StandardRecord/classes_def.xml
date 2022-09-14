@@ -5,15 +5,31 @@
 <!-- art::Wrappers for these products are defined in CAFMaker -->
 
 <lcgdict>
-  <class name="caf::StandardRecord" ClassVersion="10">
+  <class name="caf::StandardRecord" ClassVersion="11">
+   <version ClassVersion="11" checksum="483883398"/>
    <version ClassVersion="10" checksum="2569909752"/>
   </class>
 
-  <class name="caf::SRHeader" ClassVersion="13">
+  <class name="caf::SRHeader" ClassVersion="16">
+   <version ClassVersion="16" checksum="2130480854"/>
+   <version ClassVersion="15" checksum="2023063203"/>
+   <version ClassVersion="14" checksum="381900980"/>
    <version ClassVersion="13" checksum="2553933268"/>
    <version ClassVersion="12" checksum="3508873578"/>
    <version ClassVersion="11" checksum="2592833259"/>
    <version ClassVersion="10" checksum="2908097963"/>
+  </class>
+
+  <class name="caf::SRNuID" ClassVersion="10">
+   <version ClassVersion="10" checksum="1379012114"/>
+  </class>
+
+  <class name="caf::SRHit" ClassVersion="10">
+   <version ClassVersion="10" checksum="1494967532"/>
+  </class>
+
+  <class name="caf::SRSpacePoint" ClassVersion="10">
+   <version ClassVersion="10" checksum="3576822006"/>
   </class>
 
   <class name="caf::SRShowerPlaneInfo" ClassVersion="10">
@@ -33,7 +49,9 @@
    <version ClassVersion="10" checksum="83320005"/>
   </class>
 
-  <class name="caf::SRSlice" ClassVersion="12">
+  <class name="caf::SRSlice" ClassVersion="14">
+   <version ClassVersion="14" checksum="740791578"/>
+   <version ClassVersion="13" checksum="1378484383"/>
    <version ClassVersion="12" checksum="3783103871"/>
    <version ClassVersion="11" checksum="3227898381"/>
   </class>
@@ -131,7 +149,8 @@
    <version ClassVersion="10" checksum="833172973"/>
   </class>
 
-  <class name="caf::SRMeVPrtl" ClassVersion="12">
+  <class name="caf::SRMeVPrtl" ClassVersion="13">
+   <version ClassVersion="13" checksum="1679355068"/>
    <version ClassVersion="12" checksum="485663119"/>
    <version ClassVersion="11" checksum="2904339381"/>
    <version ClassVersion="10" checksum="3963837747"/>
@@ -207,6 +226,30 @@
    <version ClassVersion="10" checksum="2143749817"/>
   </class>
 
+  <class name="caf::SRNuMIInfo" ClassVersion="10">
+   <version ClassVersion="10" checksum="3796231674"/>
+  </class>
+
+  <class name="caf::SRCRUMBSResult" ClassVersion="10">
+   <version ClassVersion="10" checksum="783958853"/>
+  </class>
+
+  <class name="caf::SRCRUMBSTPCVars" ClassVersion="10">
+   <version ClassVersion="10" checksum="1693619771"/>
+  </class>
+
+  <class name="caf::SRCRUMBSPDSVars" ClassVersion="10">
+   <version ClassVersion="10" checksum="2282974103"/>
+  </class>
+
+  <class name="caf::SRCRUMBSCRTVars" ClassVersion="10">
+   <version ClassVersion="10" checksum="1010873394"/>
+  </class>
+
+  <class name="caf::SRTrigger" ClassVersion="10">
+   <version ClassVersion="10" checksum="3388549490"/>
+  </class>
+
   <!--<class name="caf::SRLorentzVector" /> -->
 
   <class name="std::vector<caf::SRSlice>" />
@@ -218,6 +261,7 @@
   <class name="std::vector<caf::SRVector3D>" />
   <!--<class name="std::vector<caf::SRLorentzVector>" /> -->
   <class name="std::vector<caf::SRShower>" />
+  <class name="std::vector<caf::SRHit>" />
   <class name="std::vector<caf::SRShowerSelection>" />
   <class name="std::vector<caf::SRTrueInteraction>" />
   <class name="std::vector<caf::SRMultiverse>" />
@@ -229,8 +273,12 @@
   <class name="std::vector<caf::SRStubHit>" />
   <class name="std::vector<caf::SRStubPlane>" />
   <class name="std::vector<caf::SRBNBInfo>" />
+  <class name="std::vector<caf::SRNuMIInfo>" />
+  <class name="std::vector<caf::SRCRUMBSResult>" />
+  <class name="std::vector<caf::SRTrigger>" />
 
-  <class name="caf::SRCRTHit" ClassVersion="10">
+  <class name="caf::SRCRTHit" ClassVersion="11">
+   <version ClassVersion="11" checksum="3268314487"/>
    <version ClassVersion="10" checksum="3162534166"/>
   </class>
   <class name="std::vector<caf::SRCRTHit>" />
@@ -248,13 +296,26 @@
    <version ClassVersion="10" checksum="2672302824"/>
   </class>
 
-  <enum name="caf::Plane_t" ClassVersion="10"/>
+  <class name="caf::SROpFlash" ClassVersion="12">
+   <version ClassVersion="12" checksum="3122666215"/>
+   <version ClassVersion="11" checksum="2756572285"/>
+   <version ClassVersion="10" checksum="2672302824"/>
+  </class>
+  <class name="std::vector<caf::SROpFlash>" />
+  
   <enum name="caf::Det_t" ClassVersion="10"/>
-  <enum name="caf::MCType_t" ClassVersion="10"/>
+  <enum name="caf::Plane_t" ClassVersion="10"/>
   <enum name="caf::Wall_t" ClassVersion="10"/>
+  <enum name="caf::MCType_t" ClassVersion="10"/>
   <enum name="caf::generator_" ClassVersion="10"/>
   <enum name="caf::mevprtlchannel_" ClassVersion="10"/>
-  <enum name="caf::interaction_mode_" ClassVersion="10"/>
+  <enum name="caf::genie_interaction_mode_" ClassVersion="10"/>
+  <enum name="caf::genie_interaction_type_" ClassVersion="10"/>
   <enum name="caf::genie_status_" ClassVersion="10"/>
   <enum name="caf::g4_process_" ClassVersion="10"/>
+  <enum name="caf::ReweightType_t" ClassVersion="10"/>
+
+  <!-- Kept for now as a deprecated name, may be needed for opening old files -->
+  <enum name="caf::interaction_mode_" ClassVersion="10"/>
+
 </lcgdict>
