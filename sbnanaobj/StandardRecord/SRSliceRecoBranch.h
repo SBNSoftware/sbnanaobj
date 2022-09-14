@@ -5,11 +5,8 @@
 #define SRSLICERECOBRANCH_H
 
 #include "sbnanaobj/StandardRecord/SRStub.h"
-<<<<<<< HEAD
 #include "sbnanaobj/StandardRecord/SRPFP.h"
-=======
 #include "sbnanaobj/StandardRecord/SRHit.h"
->>>>>>> develop
 
 #include <vector>
 
