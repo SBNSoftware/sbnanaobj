@@ -26,8 +26,6 @@ namespace caf
     nhit   = hit.size();
     // nshw_em = shw_em.size();
     // nshw_pandora = shw_pandora.size();
-
->>>>>>> develop
   }
  
 } // end namespace caf
