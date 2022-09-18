@@ -105,7 +105,8 @@
     <![CDATA[{ energy = onfile.energy; }]]>
   </ioread>
 
-  <class name="caf::SRCaloPoint" ClassVersion="10">
+  <class name="caf::SRCaloPoint" ClassVersion="11">
+   <version ClassVersion="11" checksum="3357014269"/>
    <version ClassVersion="10" checksum="3748600600"/>
   </class>
 
