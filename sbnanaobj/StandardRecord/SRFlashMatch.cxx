@@ -13,6 +13,7 @@ namespace caf
   SRFlashMatch::SRFlashMatch():
     present(false),
     time(std::numeric_limits<float>::signaling_NaN()),
+    time_beam(std::numeric_limits<float>::signaling_NaN()),
     chargeQ(std::numeric_limits<float>::signaling_NaN()),
     chargeCenter(SRVector3D()),
     lightPE(std::numeric_limits<float>::signaling_NaN()),
@@ -30,6 +31,7 @@ namespace caf
   {
     present    = false;
     time       = -5.0;
+    time_beam  = -5.0;
     chargeQ    = -5.0;
     lightPE    = -5.0;
     score      = -5.0;

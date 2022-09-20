@@ -19,7 +19,8 @@ namespace caf
       virtual ~SRFlashMatch();
 
       bool  present;             //!< whether there's a match
-      float time;                //!< time of flash
+      float time;                //!< time of flash (NOTE: currently different in MC and data) 
+      float time_beam;           //!< time of flash w.r.t beam spill (same in MC and data)
       float chargeQ;             //!< charge in slc
       SRVector3D chargeCenter;   //!< Weighted center position [cm]
       float lightPE;             //!< photo-electrons on simple flash
