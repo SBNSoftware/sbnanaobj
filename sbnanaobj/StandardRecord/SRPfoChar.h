@@ -11,10 +11,10 @@
 namespace caf
 {
   /// Pfo Characterisation (track vs shower) features (MVA inputs)
-  class SRPfoChar
+  class SRPFOChar
   {
   public:
-    SRPfoChar();
+    SRPFOChar();
 
     float chgendfrac    { kSignalingNaN }; // LArThreeDChargeFeatureTool_EndFraction feature
     float chgfracspread { kSignalingNaN }; // LArThreeDChargeFeatureTool_FractionalSpread feature

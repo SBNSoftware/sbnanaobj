@@ -23,7 +23,7 @@ class SRPFP {
   bool parent_is_primary; ///< If this is a primary daughter of a neutrino/cosmic
 
   float trackScore;  ///< The MVA score that determines how track/shower like a PFP is
-  SRPfoChar pfochar; ///< The MVA inputs (features) in determination of the track score (PFO Characterisation)
+  SRPFOChar pfochar; ///< The MVA inputs (features) in determination of the track score (PFO Characterisation)
 
   int slcID; // ID of the slice that this PFP belongs to
 };

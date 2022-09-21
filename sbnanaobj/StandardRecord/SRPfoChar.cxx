@@ -8,10 +8,10 @@
 
 namespace caf
 {
-  SRPfoChar::SRPfoChar()
+  SRPFOChar::SRPFOChar()
   {  }
 
-  void SRPfoChar::setDefault()
+  void SRPFOChar::setDefault()
   {
     chgendfrac = -9999.f;
     chgfracspread = -9999.f;
