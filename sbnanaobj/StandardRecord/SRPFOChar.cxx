@@ -1,10 +1,10 @@
 ////////////////////////////////////////////////////////////////////////
-// \file    SRPfoChar.cxx
-// \brief   SRPfoChar object for Pfo Characterisation (track vs shower) features (MVA inputs).
+// \file    SRPFOChar.cxx
+// \brief   SRPFOChar object for PFO Characterisation (track vs shower) features (MVA inputs).
 // \author  howard@fnal.gov
 ////////////////////////////////////////////////////////////////////////
 
-#include "sbnanaobj/StandardRecord/SRPfoChar.h"
+#include "sbnanaobj/StandardRecord/SRPFOChar.h"
 
 namespace caf
 {

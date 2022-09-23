@@ -1,6 +1,6 @@
 ////////////////////////////////////////////////////////////////////////
-// \file    SRPfoChar.h
-// \brief   SRPfoChar object for Pfo Characterisation (track vs shower) features (MVA inputs).
+// \file    SRPFOChar.h
+// \brief   SRPFOChar object for PFO Characterisation (track vs shower) features (MVA inputs).
 // \author  howard@fnal.gov
 ////////////////////////////////////////////////////////////////////////
 #ifndef SBNANAOBJ_STANDARDRECORD_SRPFOCHAR_H

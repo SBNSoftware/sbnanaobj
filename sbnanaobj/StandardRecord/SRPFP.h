@@ -4,7 +4,7 @@
 #ifndef SRPFP_H
 #define SRPFP_H
 
-#include "sbnanaobj/StandardRecord/SRPfoChar.h"
+#include "sbnanaobj/StandardRecord/SRPFOChar.h"
 
 #include <vector>
 
