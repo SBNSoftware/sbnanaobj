@@ -54,7 +54,7 @@ namespace caf {
     SRCRUMBSResult();
     ~SRCRUMBSResult() {}
 
-    float score;                         //!< CRUMBS result
+    float score;                         //!< CRUMBS result, for inclusive neutrino signal
     float ccnumuscore;                   //!< CRUMBS result, for CCNuMu signal
     float ccnuescore;                    //!< CRUMBS result, for CCNuE signal
     float ncscore;                       //!< CRUMBS result, for NC signal
