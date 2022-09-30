@@ -9,6 +9,7 @@
 #include "sbnanaobj/StandardRecord/SRBNBInfo.h"
 #include "sbnanaobj/StandardRecord/SRNuMIInfo.h"
 #include "sbnanaobj/StandardRecord/SREXTInfo.h"
+#include "sbnanaobj/StandardRecord/SRTrigger.h"
 
 #include <vector>
 
@@ -45,6 +46,8 @@ namespace caf
       std::vector<caf::SRNuMIInfo> numiinfo; ///< storing beam information per subrun
       size_t         nextinfo;
       std::vector<caf::SREXTInfo> extinfo;
+      size_t         ntriggerinfo; ///< Number of Trigger objects
+      std::vector<caf::SRTrigger> triggerinfo; ///< storing trigger information per event
 
 
       /// If true, this record has been filterd out, and only remains as a
