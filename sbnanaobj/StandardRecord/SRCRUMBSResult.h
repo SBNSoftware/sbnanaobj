@@ -54,8 +54,13 @@ namespace caf {
     SRCRUMBSResult();
     ~SRCRUMBSResult() {}
 
-    float score;                         //!< CRUMBS result
-  
+    float score;                         //!< CRUMBS result, for inclusive neutrino signal
+    float ccnumuscore;                   //!< CRUMBS result, for CCNuMu signal
+    float ccnuescore;                    //!< CRUMBS result, for CCNuE signal
+    float ncscore;                       //!< CRUMBS result, for NC signal
+    float bestscore;                     //!< Best score from the three signal-specific versions
+    int   bestid;                        //!< ID corresponding to the bestscore, 14 for CCNuMu, 12 for CCNuE, 1 for NC
+
     SRCRUMBSTPCVars tpc;                 //!< TPC input variables
     SRCRUMBSPDSVars pds;                 //!< PDS input variables
     SRCRUMBSCRTVars crt;                 //!< CRT input variables

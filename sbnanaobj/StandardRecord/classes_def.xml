@@ -236,8 +236,8 @@
   <class name="caf::SREXTInfo" ClassVersion="10">
    <version ClassVersion="10" checksum="850665470"/>
   </class>
-
-  <class name="caf::SRCRUMBSResult" ClassVersion="10">
+  <class name="caf::SRCRUMBSResult" ClassVersion="11">
+   <version ClassVersion="11" checksum="2106876613"/>
    <version ClassVersion="10" checksum="783958853"/>
   </class>
 
