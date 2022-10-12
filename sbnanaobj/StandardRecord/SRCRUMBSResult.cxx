@@ -39,6 +39,11 @@ namespace caf {
 
   SRCRUMBSResult::SRCRUMBSResult()
     : score(std::numeric_limits<float>::signaling_NaN())
+    , ccnumuscore(std::numeric_limits<float>::signaling_NaN())
+    , ccnuescore(std::numeric_limits<float>::signaling_NaN())
+    , ncscore(std::numeric_limits<float>::signaling_NaN())
+    , bestscore(std::numeric_limits<float>::signaling_NaN())
+    , bestid(std::numeric_limits<int>::max())
     , tpc()
     , pds()
     , crt()
