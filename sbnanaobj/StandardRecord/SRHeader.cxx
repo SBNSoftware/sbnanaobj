@@ -19,6 +19,7 @@ namespace caf
   evt(0),
   subevt(0),
   ismc(false),
+  isblind(false),
   fno(0),
   ngenevt(0),
   pot(0.),
