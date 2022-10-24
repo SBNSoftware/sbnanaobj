@@ -26,6 +26,7 @@ class SRPFP {
   SRPFOChar pfochar; ///< The MVA inputs (features) in determination of the track score (PFO Characterisation)
 
   int slcID; // ID of the slice that this PFP belongs to
+  float t0; // T0 assigned by TPC reco, if any
 };
 
 } // end namespace
