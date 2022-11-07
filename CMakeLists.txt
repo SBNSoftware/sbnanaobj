@@ -11,10 +11,10 @@
 #  make install
 #  make package (builds distribution tarfile)
 # ======================================================================
-cmake_minimum_required(VERSION 3.19 FATAL_ERROR)
+cmake_minimum_required(VERSION 3.20 FATAL_ERROR)
 
 
-find_package(cetmodules 3.19.02 REQUIRED)
+find_package(cetmodules 3.20.00 REQUIRED)
 project(sbnanaobj VERSION 09.19.06 LANGUAGES CXX)
 
 message(STATUS "\n\n  ==========================   ${PROJECT_NAME}   ==========================")
