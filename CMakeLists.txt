@@ -11,18 +11,13 @@
 #  make install
 #  make package (builds distribution tarfile)
 # ======================================================================
+cmake_minimum_required(VERSION 3.20 FATAL_ERROR)
 
 
-cmake_minimum_required(VERSION 3.19 FATAL_ERROR)
-
-
-project(sbnanaobj VERSION 09.19.06 LANGUAGES CXX)
-
+find_package(cetmodules 3.20.00 REQUIRED)
+project(sbnanaobj VERSION 09.20.00 LANGUAGES CXX)
 
 message(STATUS "\n\n  ==========================   ${PROJECT_NAME}   ==========================")
-
-# cetbuildtools contains our cmake modules
-find_package(cetbuildtools REQUIRED)
 
 include(CetCMakeEnv)
 cet_cmake_env()
@@ -39,15 +34,14 @@ cet_set_compiler_flags(DIAGS CAUTIOUS
   EXTRA_FLAGS -pedantic -Wno-unused-local-typedefs -Wno-undefined-var-template -I $ENV{CLANG_FQ_DIR}/include/c++/v1
 )
 
-cet_report_compiler_flags()
+cet_report_compiler_flags(REPORT_THRESHOLD VERBOSE)
 
 # these are minimum required versions, not the actual product versions
-find_ups_root(v6_00_00)
+find_package(ROOT REQUIRED)
 
 include(BuildDictionary)
 
 add_subdirectory(sbnanaobj)
-add_subdirectory(ups)
 
 # packaging utility
-include(UseCPack)
+cet_cmake_config()

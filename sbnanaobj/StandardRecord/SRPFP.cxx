@@ -14,6 +14,7 @@ SRPFP::SRPFP()
     , parent_is_primary(false)
     , trackScore(-5.f)
     , slcID(-5)
+    , t0(kSignalingNaN)
 {
 }
 

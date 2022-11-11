@@ -13,6 +13,9 @@ include_directories($ENV{SRPROXY_INC})
 
 cet_make_library(LIBRARY_NAME sbnanaobj_StandardRecordProxy
                  SOURCE       SRProxy.cxx Instantiations.cxx
-                 LIBRARIES    ${ROOT_BASIC_LIB_LIST} ROOT::TreePlayer)
-
-install_headers(EXTRAS $ENV{MRB_BUILDDIR}/sbnanaobj/sbnanaobj/StandardRecord/Proxy/SRProxy.h $ENV{MRB_BUILDDIR}/sbnanaobj/sbnanaobj/StandardRecord/Proxy/FwdDeclare.h)
+                 LIBRARIES    ROOT::TreePlayer)
+if (DEFINED ENV{MRB_BUILDDIR})
+  install_headers(EXTRAS $ENV{MRB_BUILDDIR}/sbnanaobj/sbnanaobj/StandardRecord/Proxy/SRProxy.h $ENV{MRB_BUILDDIR}/sbnanaobj/sbnanaobj/StandardRecord/Proxy/FwdDeclare.h)
+else()
+  install_headers(EXTRAS ${CMAKE_BINARY_DIR}/sbnanaobj/StandardRecord/Proxy/SRProxy.h ${CMAKE_BINARY_DIR}/sbnanaobj/StandardRecord/Proxy/FwdDeclare.h)
+endif()
