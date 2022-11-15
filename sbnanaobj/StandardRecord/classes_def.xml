@@ -10,7 +10,8 @@
    <version ClassVersion="10" checksum="2569909752"/>
   </class>
 
-  <class name="caf::SRHeader" ClassVersion="16">
+  <class name="caf::SRHeader" ClassVersion="17">
+   <version ClassVersion="17" checksum="2390355049"/>
    <version ClassVersion="16" checksum="2130480854"/>
    <version ClassVersion="15" checksum="2023063203"/>
    <version ClassVersion="14" checksum="381900980"/>
@@ -110,7 +111,8 @@
     <![CDATA[{ energy = onfile.energy; }]]>
   </ioread>
 
-  <class name="caf::SRCaloPoint" ClassVersion="11">
+  <class name="caf::SRCaloPoint" ClassVersion="12">
+   <version ClassVersion="12" checksum="3873035196"/>
    <version ClassVersion="11" checksum="3357014269"/>
    <version ClassVersion="10" checksum="3748600600"/>
   </class>
@@ -205,7 +207,8 @@
    <version ClassVersion="10" checksum="839301601"/>
   </class>
 
-  <class name="caf::SRPFP" ClassVersion="11">
+  <class name="caf::SRPFP" ClassVersion="12">
+   <version ClassVersion="12" checksum="2470467174"/>
    <version ClassVersion="11" checksum="1837341006"/>
    <version ClassVersion="10" checksum="1732359397"/>
   </class>

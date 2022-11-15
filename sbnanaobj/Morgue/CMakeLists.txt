@@ -6,7 +6,7 @@ FILE( GLOB src_files *.cxx )
 
 cet_make_library( LIBRARY_NAME sbnanaobj_Morgue
                   SOURCE       ${src_files}
-                  LIBRARIES    ${ROOT_BASIC_LIB_LIST}
+                  LIBRARIES    ROOT::Core
                 )
 
 build_dictionary( sbnanaobj_Morgue
