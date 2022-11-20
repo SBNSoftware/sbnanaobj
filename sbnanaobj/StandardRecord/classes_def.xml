@@ -274,6 +274,11 @@
    <version ClassVersion="10" checksum="2672302824"/>
   </class>
 
+  <class name="caf::SROpFlash" ClassVersion="11">
+    <version ClassVersion="11" checksum="2756572285"/>
+    <version ClassVersion="10" checksum="2672302824"/>
+  </class>
+
   <enum name="caf::Det_t" ClassVersion="10"/>
   <enum name="caf::Plane_t" ClassVersion="10"/>
   <enum name="caf::Wall_t" ClassVersion="10"/>
