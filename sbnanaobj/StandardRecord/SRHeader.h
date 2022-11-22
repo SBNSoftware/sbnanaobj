@@ -28,6 +28,7 @@ namespace caf
       unsigned int   evt;       ///< ART event number, indexes trigger windows.
       unsigned short subevt;    ///< slice number within spill
       bool           ismc;      ///< data or MC?  True if MC
+      bool           isblind;   ///< is this a blinded or prescaled file? true if so
       unsigned int   fno;       ///< Index of file processed by CAFMaker
       unsigned int   ngenevt;   ///< Number of events generated in input file associated with this record (before any filters)
       float          pot;       ///< POT of the subrun associated with this record
