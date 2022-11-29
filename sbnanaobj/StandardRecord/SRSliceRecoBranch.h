@@ -9,6 +9,7 @@
 #include "sbnanaobj/StandardRecord/SRPFP.h"
 
 #include <vector>
+#include <unordered_map>
 
 namespace caf
 {
@@ -21,7 +22,7 @@ namespace caf
     
     std::vector<SRPFP> pfp;        ///< Vector of pfps
     size_t             npfp;       ///< Number of pfps
-   
+            
     std::vector<SRHit> hit;        ///< Vector of hits
     size_t            nhit;        ///< Number of hits
  
