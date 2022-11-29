@@ -210,14 +210,10 @@
    <version ClassVersion="10" checksum="839301601"/>
   </class>
 
-<<<<<<< HEAD
-  <class name="caf::SRPFP" ClassVersion="12">
+  <class name="caf::SRPFP" ClassVersion="13">
+   <version ClassVersion="13" checksum="2132348118"/>
    <version ClassVersion="12" checksum="2470467174"/>
    <version ClassVersion="11" checksum="1837341006"/>
-=======
-  <class name="caf::SRPFP" ClassVersion="11">
-   <version ClassVersion="11" checksum="4069884459"/>
->>>>>>> e2ea18a (Removed commented out code and added comments.)
    <version ClassVersion="10" checksum="1732359397"/>
   </class>
 

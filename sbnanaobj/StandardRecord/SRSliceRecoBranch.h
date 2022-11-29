@@ -21,7 +21,10 @@ namespace caf
     
     std::vector<SRPFP> pfp;        ///< Vector of pfps
     size_t             npfp;       ///< Number of pfps
-    
+   
+    std::vector<SRHit> hit;        ///< Vector of hits
+    size_t            nhit;        ///< Number of hits
+ 
     std::vector<SRStub> stub;      ///< Vector of stubs
     size_t             nstub;      ///< Number of stubs
 
