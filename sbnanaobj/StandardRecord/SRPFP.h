@@ -4,6 +4,7 @@
 #ifndef SRPFP_H
 #define SRPFP_H
 
+#include "sbnanaobj/StandardRecord/SRPFOChar.h"
 #include "sbnanaobj/StandardRecord/SRTrack.h"
 #include "sbnanaobj/StandardRecord/SRShower.h"
 
@@ -27,10 +28,10 @@ class SRPFP {
   SRPFOChar pfochar; ///< The MVA inputs (features) in determination of the track score (PFO Characterisation)
 
   int slcID; // ID of the slice that this PFP belongs to
+  float t0; // T0 assigned by TPC reco, if any
 
   SRTrack trk; // Track reconstructed from this PFP
-  SRShower shw; // Shower reoconstructed from this PFP
-
+  SRShower shw; // Shower reconstructed from this PFP
 };
 
 } // end namespace
