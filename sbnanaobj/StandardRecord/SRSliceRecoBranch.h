@@ -9,7 +9,6 @@
 #include "sbnanaobj/StandardRecord/SRPFP.h"
 
 #include <vector>
-#include <unordered_map>
 
 namespace caf
 {
