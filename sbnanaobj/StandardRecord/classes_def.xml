@@ -10,7 +10,8 @@
    <version ClassVersion="10" checksum="2569909752"/>
   </class>
 
-  <class name="caf::SRHeader" ClassVersion="17">
+  <class name="caf::SRHeader" ClassVersion="18">
+   <version ClassVersion="18" checksum="1724302139"/>
    <version ClassVersion="17" checksum="2390355049"/>
    <version ClassVersion="16" checksum="2130480854"/>
    <version ClassVersion="15" checksum="2023063203"/>
@@ -41,7 +42,8 @@
    <version ClassVersion="10" checksum="4180347773"/>
   </class>
 
-  <class name="caf::SRShower" ClassVersion="14">
+  <class name="caf::SRShower" ClassVersion="15">
+   <version ClassVersion="15" checksum="3211336966"/>
    <version ClassVersion="14" checksum="3720936031"/>
    <version ClassVersion="13" checksum="150649609"/>
    <version ClassVersion="12" checksum="2025293789"/>
@@ -60,12 +62,14 @@
    <version ClassVersion="11" checksum="3227898381"/>
   </class>
 
-  <class name="caf::SRFlashMatch" ClassVersion="11">
+  <class name="caf::SRFlashMatch" ClassVersion="12">
+   <version ClassVersion="12" checksum="2334957166"/>
    <version ClassVersion="11" checksum="1429601394"/>
   </class>
 
-  <class name="caf::SRSliceRecoBranch" ClassVersion="12">
-   <version ClassVersion="12" checksum="2959836900"/>
+  <class name="caf::SRSliceRecoBranch" ClassVersion="13">
+   <version ClassVersion="13" checksum="4211357366"/>
+   <version ClassVersion="12" checksum="1302849020"/>
    <version ClassVersion="11" checksum="1272564698"/>
    <version ClassVersion="10" checksum="1432916981"/>
   </class>
@@ -82,7 +86,8 @@
    <version ClassVersion="10" checksum="3777054621"/>
   </class>
 
-  <class name="caf::SRTrack" ClassVersion="13">
+  <class name="caf::SRTrack" ClassVersion="14">
+   <version ClassVersion="14" checksum="3934033130"/>
    <version ClassVersion="13" checksum="522362999"/>
    <version ClassVersion="12" checksum="3952974887"/>
    <version ClassVersion="11" checksum="1319166397"/>
@@ -206,7 +211,8 @@
    <version ClassVersion="10" checksum="839301601"/>
   </class>
 
-  <class name="caf::SRPFP" ClassVersion="12">
+  <class name="caf::SRPFP" ClassVersion="13">
+   <version ClassVersion="13" checksum="2132348118"/>
    <version ClassVersion="12" checksum="2470467174"/>
    <version ClassVersion="11" checksum="1837341006"/>
    <version ClassVersion="10" checksum="1732359397"/>
@@ -253,7 +259,8 @@
    <version ClassVersion="10" checksum="1010873394"/>
   </class>
 
-  <class name="caf::SRTrigger" ClassVersion="10">
+  <class name="caf::SRTrigger" ClassVersion="11">
+   <version ClassVersion="11" checksum="3162219101"/>
    <version ClassVersion="10" checksum="3388549490"/>
   </class>
 
