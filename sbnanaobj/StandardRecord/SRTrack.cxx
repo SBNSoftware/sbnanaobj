@@ -20,8 +20,7 @@ namespace caf
     npts(-1),
     len(kInvalid),
     costh(kInvalid),
-    phi(kInvalid),
-    ID(INT_MIN)
+    phi(kInvalid)
   {
   }
 } // end namespace caf

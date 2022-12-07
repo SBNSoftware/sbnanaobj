@@ -43,8 +43,7 @@ namespace caf
       std::vector<caf::SRBNBInfo> bnbinfo; ///< storing beam information per subrun
       size_t                       nnumiinfo; ///< Number of NuMIInfo objects
       std::vector<caf::SRNuMIInfo> numiinfo; ///< storing beam information per subrun
-      size_t         ntriggerinfo; ///< Number of Trigger objects
-      std::vector<caf::SRTrigger> triggerinfo; ///< storing trigger information per event
+      caf::SRTrigger triggerinfo; ///< storing trigger information per event
 
 
       /// If true, this record has been filterd out, and only remains as a
