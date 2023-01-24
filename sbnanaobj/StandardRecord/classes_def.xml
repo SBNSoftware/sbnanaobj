@@ -115,7 +115,12 @@
     <![CDATA[{ energy = onfile.energy; }]]>
   </ioread>
 
-  <class name="caf::SRCaloPoint" ClassVersion="12">
+  <class name="caf::SRTrueCaloPoint" ClassVersion="10">
+   <version ClassVersion="10" checksum="1988182149"/>
+  </class>
+
+  <class name="caf::SRCaloPoint" ClassVersion="13">
+   <version ClassVersion="13" checksum="3767802286"/>
    <version ClassVersion="12" checksum="3873035196"/>
    <version ClassVersion="11" checksum="3357014269"/>
    <version ClassVersion="10" checksum="3748600600"/>
@@ -281,6 +286,7 @@
   <class name="std::vector<caf::SRMultiverse>" />
   <class name="std::vector<caf::SRTrueParticle>" />
   <class name="std::vector<caf::SRParticleMatch>" />
+  <class name="std::vector<caf::SRTrueCaloPoint>" />
   <class name="std::vector<caf::SRCaloPoint>" />
   <class name="std::vector<caf::SRMeVPrtl>" />
   <class name="std::vector<caf::SRStub>" />
