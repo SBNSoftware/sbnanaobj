@@ -290,6 +290,7 @@
   <class name="std::vector<caf::SRNuMIInfo>" />
   <class name="std::vector<caf::SRCRUMBSResult>" />
   <class name="std::vector<caf::SRTrigger>" />
+  <class name="std::vector<caf::SRPFP>" />
 
   <class name="caf::SRCRTHit" ClassVersion="11">
    <version ClassVersion="11" checksum="3268314487"/>
