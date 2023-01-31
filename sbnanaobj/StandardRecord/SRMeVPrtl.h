@@ -31,7 +31,8 @@ namespace caf
     double ray_weight; //!< Weight associated with the Portal hitting the detector
     double decay_weight; //!< Weight associated with the Portal decaying
 
-    double decay_length; //!< Mean decay length  of particle
+    double decay_length; //!< Mean decay length  of particle (all decays)
+    double allowed_decay_fraction; //!< Fraction of decay width into allowed decays (by the MC)
     caf::SRVector3D enter; //!< Entry position of particle into Active Volume
     caf::SRVector3D exit; //!< Exit position of particle into Active Volume
     caf::SRVector3D start; //!< Start position of Portal in detector coordinates [cm]
