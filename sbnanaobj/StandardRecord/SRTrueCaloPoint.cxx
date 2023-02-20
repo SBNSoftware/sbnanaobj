@@ -10,8 +10,10 @@ namespace caf
 {
 
   SRTrueCaloPoint::SRTrueCaloPoint():
-    nelec(std::numeric_limits<float>::signaling_NaN()),
-    e(std::numeric_limits<float>::signaling_NaN()),
+    h_nelec(std::numeric_limits<float>::signaling_NaN()),
+    h_e(std::numeric_limits<float>::signaling_NaN()),
+    p_nelec(std::numeric_limits<float>::signaling_NaN()),
+    p_e(std::numeric_limits<float>::signaling_NaN()),
     x(std::numeric_limits<float>::signaling_NaN()),
     y(std::numeric_limits<float>::signaling_NaN()),
     z(std::numeric_limits<float>::signaling_NaN()),

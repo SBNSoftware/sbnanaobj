@@ -15,13 +15,15 @@ namespace caf
       SRTrueCaloPoint();
       virtual ~SRTrueCaloPoint() {}
 
-      float nelec; //!< Charge / number of electrons
-      float e; //!< Energy [MeV]
-      float x; //!< X-Position of deposition [cm]
-      float y; //!< Y-Position of deposition [cm]
-      float z; //!< Z-Position of deposition [cm]
-      float rr; //!< Residual Range [cm]
-      float pitch; //!< Pitch [cm]
+      float h_nelec; //!< Charge / number of electrons by hit
+      float h_e; //!< Energy by hit [MeV]
+      float p_nelec; //!< Charge / number of electrons by particle
+      float p_e; //!< Energy by particle [MeV]
+      float x; //!< X-Position of deposition by particle [cm]
+      float y; //!< Y-Position of deposition by particle [cm]
+      float z; //!< Z-Position of deposition by particle [cm]
+      float rr; //!< Residual Range by particle [cm]
+      float pitch; //!< Pitch by particle [cm]
   };
 } // end namespace
 

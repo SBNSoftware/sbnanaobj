@@ -32,6 +32,8 @@ namespace caf
       short mult; //!< Hit multiplicity
       short wire; //!< Wire of Calo-Point
       short tpc; //!< TPC of Calo-Point
+      short start; //!< start tick of hit
+      short end; //!< end tick of hit
       unsigned channel; //!< Channel of Calo-Point
 
       SRTrueCaloPoint truth; //!< Truth information
