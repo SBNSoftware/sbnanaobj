@@ -8,6 +8,7 @@
 #include "sbnanaobj/StandardRecord/SRShowerSelection.h"
 #include "sbnanaobj/StandardRecord/SRTrackTruth.h"
 #include "sbnanaobj/StandardRecord/SRShowerRazzle.h"
+#include "sbnanaobj/StandardRecord/SRCNNScore.h"
 
 namespace caf
 {
@@ -42,6 +43,7 @@ namespace caf
       SRVector3D end;               ///< shower end point (start+len*dir) in detector coordinates [cm]
       float cosmicDist;             ///< Distance of closest approach to cosmic ray [cm]
 
+      SRCNNScore cnnscore;
       SRShowerRazzle razzle; ///< Results from the shower PID MVA
       SRShowerSelection selVars;
       SRTrackTruth   truth;        ///< truth information TODO: make seperate showe info class

@@ -42,7 +42,8 @@
    <version ClassVersion="10" checksum="4180347773"/>
   </class>
 
-  <class name="caf::SRShower" ClassVersion="15">
+  <class name="caf::SRShower" ClassVersion="16">
+   <version ClassVersion="16" checksum="1701581833"/>
    <version ClassVersion="15" checksum="3211336966"/>
    <version ClassVersion="14" checksum="3720936031"/>
    <version ClassVersion="13" checksum="150649609"/>
@@ -86,7 +87,8 @@
    <version ClassVersion="10" checksum="3777054621"/>
   </class>
 
-  <class name="caf::SRTrack" ClassVersion="14">
+  <class name="caf::SRTrack" ClassVersion="15">
+   <version ClassVersion="15" checksum="3521182205"/>
    <version ClassVersion="14" checksum="3934033130"/>
    <version ClassVersion="13" checksum="522362999"/>
    <version ClassVersion="12" checksum="3952974887"/>
@@ -319,6 +321,10 @@
   </class>
   <class name="std::vector<caf::SROpFlash>" />
   
+  <class name="caf::SRCNNScore" ClassVersion="10">
+   <version ClassVersion="10" checksum="3999650528"/>
+  </class>
+
   <enum name="caf::Det_t" ClassVersion="10"/>
   <enum name="caf::Plane_t" ClassVersion="10"/>
   <enum name="caf::Wall_t" ClassVersion="10"/>

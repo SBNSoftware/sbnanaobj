@@ -16,6 +16,7 @@
 #include "sbnanaobj/StandardRecord/SRTrackDazzle.h"
 #include "sbnanaobj/StandardRecord/SRTrackScatterClosestApproach.h"
 #include "sbnanaobj/StandardRecord/SRTrackStoppingChi2Fit.h"
+#include "sbnanaobj/StandardRecord/SRCNNScore.h"
 
 #include "sbnanaobj/StandardRecord/SRVector3D.h"
 #include "sbnanaobj/StandardRecord/SREnums.h"
@@ -48,6 +49,8 @@ namespace caf
 
       SRTrkMCS       mcsP;
       SRTrkRange     rangeP;
+
+      SRCNNScore     cnnscore;
 
       SRTrackTruth   truth;        ///< truth information
       SRCRTHitMatch  crthit;       ///< CRT Hit match
