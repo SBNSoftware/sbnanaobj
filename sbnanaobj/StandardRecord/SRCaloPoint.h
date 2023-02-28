@@ -14,7 +14,6 @@ namespace caf
     public:
 
       SRCaloPoint();
-      virtual ~SRCaloPoint() {}
 
       float rr; //!< Residual Range [cm]
       float dqdx; //!< dE/dx [MeV/cm]

@@ -13,7 +13,6 @@ namespace caf
     public:
 
       SRTrueCaloPoint();
-      virtual ~SRTrueCaloPoint() {}
 
       float h_nelec; //!< Charge / number of electrons by hit
       float h_e; //!< Energy by hit [MeV]
