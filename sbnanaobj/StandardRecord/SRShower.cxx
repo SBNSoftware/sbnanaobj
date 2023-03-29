@@ -25,12 +25,12 @@ namespace caf
 
   SRShower::SRShower():
     bestplane(-5),
-    bestplane_dEdx(kInvalid),
-    bestplane_energy(kInvalid),
-    conversion_gap(kInvalid),
-    density(kInvalid),
-    len(kInvalid),
-    open_angle(kInvalid),
+    bestplane_dEdx(-5.0),
+    bestplane_energy(-5.0),
+    conversion_gap(-5.0),
+    density(-5.0),
+    len(-5.0),
+    open_angle(-5.0),
     dir(kInvalid, kInvalid, kInvalid),
     start(kInvalid, kInvalid, kInvalid),
     end(kInvalid, kInvalid, kInvalid),
