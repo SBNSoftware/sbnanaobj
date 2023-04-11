@@ -31,9 +31,9 @@ namespace caf
     density(-5.0),
     len(-5.0),
     open_angle(-5.0),
-    dir(-5.0, -5.0, -5.0),
-    start(-5.0, -5.0, -5.0),
-    end(-5.0, -5.0, -5.0),
+    dir(kInvalid, kInvalid, kInvalid),
+    start(kInvalid, kInvalid, kInvalid),
+    end(kInvalid, kInvalid, kInvalid),
     cosmicDist(-5.f)
   {
   }
