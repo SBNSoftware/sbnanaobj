@@ -55,7 +55,9 @@
    <version ClassVersion="10" checksum="83320005"/>
   </class>
 
-  <class name="caf::SRSlice" ClassVersion="14">
+  <class name="caf::SRSlice" ClassVersion="16">
+   <version ClassVersion="16" checksum="1375558426"/>
+   <version ClassVersion="15" checksum="1626566090"/>
    <version ClassVersion="14" checksum="740791578"/>
    <version ClassVersion="13" checksum="1378484383"/>
    <version ClassVersion="12" checksum="3783103871"/>
@@ -270,6 +272,10 @@
    <version ClassVersion="10" checksum="3388549490"/>
   </class>
 
+  <class name="caf::SRFRAMSScore" ClassVersion="11">
+   <version ClassVersion="11" checksum="3426125837"/>
+   <version ClassVersion="10" checksum="4195883872"/>
+  </class>
   <!--<class name="caf::SRLorentzVector" /> -->
 
   <class name="std::vector<caf::SRSlice>" />
@@ -298,6 +304,7 @@
   <class name="std::vector<caf::SRCRUMBSResult>" />
   <class name="std::vector<caf::SRTrigger>" />
   <class name="std::vector<caf::SRPFP>" />
+  <class name="std::vector<caf::SRFRAMSScore>" />
 
   <class name="caf::SRCRTHit" ClassVersion="11">
    <version ClassVersion="11" checksum="3268314487"/>

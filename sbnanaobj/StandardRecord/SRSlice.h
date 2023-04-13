@@ -15,6 +15,7 @@
 #include "sbnanaobj/StandardRecord/SRVector3D.h"
 #include "sbnanaobj/StandardRecord/SRNuID.h"
 #include "sbnanaobj/StandardRecord/SRConstants.h"
+#include "sbnanaobj/StandardRecord/SRFRAMSScore.h"
 
 #include <climits>
 
@@ -46,7 +47,10 @@ namespace caf
       bool is_clear_cosmic { false };         //!< Whether pandora marks the slice as a "clear" cosmic
       int nu_pdg           { INT_MIN };       //!< PDG assigned to the PFParticle Neutrino
       float nu_score       { kSignalingNaN }; //!< Score of how neutrino-like the slice is according to pandora
+      
       SRCRUMBSResult crumbs_result;  //!< Score of how neutrino-like the slice is according to the CRUMBS ID
+
+      SRFRAMSScore frams_score;  //FRANS BDT score
 
       SRNuID nuid; //!< Neutrino ID Features (BDT inputs) going into nu_score calculation
 
