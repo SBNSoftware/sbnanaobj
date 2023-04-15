@@ -50,7 +50,8 @@ namespace caf
       
       SRCRUMBSResult crumbs_result;  //!< Score of how neutrino-like the slice is according to the CRUMBS ID
 
-      SRFRAMSScore frams_score;  //FRANS BDT score
+      SRFRAMSScore framsscore_true;  //FRANS BDT score true
+      SRFRAMSScore framsscore_reco;  //FRANS BDT score reco
 
       SRNuID nuid; //!< Neutrino ID Features (BDT inputs) going into nu_score calculation
 
