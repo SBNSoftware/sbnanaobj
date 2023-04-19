@@ -18,8 +18,6 @@ namespace caf
   void SRSlice::setDefault()
   {
     charge         = -5;
-    charge_center  = SRVector3D(-9999.f, -9999.f, -9999.f);
-    charge_width   = SRVector3D(-9999.f, -9999.f, -9999.f);
   }
 
 
