@@ -31,8 +31,8 @@ namespace caf
       unsigned producer { UINT_MAX };     ///< Index of the producer that produced this object. 
                                           ///< In ICARUS, this is the same as the cryostat.
       float    charge { kSignalingNaN };  ///< Calorimetric energy
-      SRVector3D charge_center;           ///< Weighted mean of hit positions in XYZ, COLLECTION PLANE ONLY [cm]
-      SRVector3D charge_width;            ///< Weighted standard deviation of hit positions in XYZ, COLLECTION PLANE ONLY [cm]
+      SRVector3D charge_center;           ///< Weighted mean of hit positions in XYZ [cm]
+      SRVector3D charge_width;            ///< Weighted standard deviation of hit positions in XYZ [cm]
       SRVector3D vertex;                  ///< Candidate neutrino vertex in local detector coordinates [cm]
 
       SRTrueInteraction truth; //!< Truth information on the slice
