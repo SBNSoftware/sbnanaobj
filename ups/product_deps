@@ -252,8 +252,8 @@ libdir	fq_dir		lib
 #
 ####################################
 product		version		qual	flags		<table_format=2>
-root		v6_22_08d	-
-srproxy		v00.40		-
+root		v6_26_06a	-
+srproxy		v00.39		-
 cetmodules	v3_20_00	-	only_for_build
 end_product_list
 ####################################
