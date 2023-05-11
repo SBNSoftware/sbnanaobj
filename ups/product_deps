@@ -310,10 +310,10 @@ end_product_list
 #
 ####################################
 qualifier	root		srproxy	notes
-c7:debug	c7:p392:debug	py3913	-nq-
-c7:prof		c7:p392:prof	py3913	-nq-
-e20:debug	e20:p392:debug	py3913	-nq-
-e20:prof	e20:p392:prof	py3913	-nq-
+c7:debug	c7:p3913:debug	py3913	-nq-
+c7:prof		c7:p3913:prof	py3913	-nq-
+e20:debug	e20:p3913:debug	py3913	-nq-
+e20:prof	e20:p3913:prof	py3913	-nq-
 end_qualifier_list
 ####################################
 
