@@ -11,6 +11,8 @@
 #include "sbnanaobj/StandardRecord/SRTrigger.h"
 
 #include <vector>
+#include <string>
+#include <limits> // std::numeric_limits
 
 namespace caf
 {
@@ -18,6 +20,9 @@ namespace caf
   class SRHeader
     {
     public:
+      static constexpr unsigned int NoSourceIndex
+        = std::numeric_limits<unsigned int>::max();
+      
       SRHeader();
       ~SRHeader();
 
@@ -45,6 +50,8 @@ namespace caf
       std::vector<caf::SRNuMIInfo> numiinfo; ///< storing beam information per subrun
       caf::SRTrigger triggerinfo; ///< storing trigger information per event
 
+      std::string    sourceName; ///< Name of the file or source this event comes from.
+      unsigned int   sourceIndex = NoSourceIndex; ///< Index of this event within the source (zero-based).
 
       /// If true, this record has been filterd out, and only remains as a
       /// receptacle for exposure information. It should be skipped in any
