@@ -36,9 +36,21 @@ namespace caf
       SRTrueInteraction truth; //!< Truth information on the slice
       SRTruthMatch tmatch; //!< Matching information between truth and reco objects
 
-      SRFlashMatch fmatch;   //!< Optical flash-match for this slice of TPC charge
-      SRFlashMatch fmatch_a; //!< Optical flash-match for this slice of TPC charge
-      SRFlashMatch fmatch_b; //!< Optical flash-match for this slice of TPC charge
+      SRFlashMatch fmatch;   //!< PMT Simple flash-match for this slice of TPC charge
+      SRFlashMatch fmatch_a; //!< PMT Simple  flash-match for this slice of TPC charge
+      SRFlashMatch fmatch_b; //!< PMT Simple flash-match for this slice of TPC charge
+
+      SRFlashMatch fmatchop;   //!< PMT Simple flash-match for this slice of TPC charge (OpFlash)
+      SRFlashMatch fmatchop_a; //!< PMT Simple  flash-match for this slice of TPC charge (OpFlash)
+      SRFlashMatch fmatchop_b; //!< PMT Simple flash-match for this slice of TPC charge (OpFlash)
+
+      SRFlashMatch fmatchara;   //!< PMT Simple flash-match for this slice of TPC charge (XARAPUCA, SBND only)
+      SRFlashMatch fmatchara_a; //!< PMT Simple  flash-match for this slice of TPC charge (XARAPUCA, SBND only)
+      SRFlashMatch fmatchara_b; //!< PMT Simple flash-match for this slice of TPC charge (XARAPUCA, SBND only)
+
+      SRFlashMatch fmatchopara;   //!< PMT Simple flash-match for this slice of TPC charge (XARAPUCA OpFlash, SBND only)
+      SRFlashMatch fmatchopara_a; //!< PMT Simple  flash-match for this slice of TPC charge (XARAPUCA OpFlash, SBND only)
+      SRFlashMatch fmatchopara_b; //!< PMT Simple flash-match for this slice of TPC charge (XARAPUCA OpFlash, SBND only)
 
       SRFakeReco fake_reco;
 
