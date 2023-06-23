@@ -325,9 +325,14 @@
    <version ClassVersion="10" checksum="2672302824"/>
   </class>
   <class name="std::vector<caf::SROpFlash>" />
-  <class name="caf::SRCRTPMTMatch" ClassVersion="10" />
+  <class name="caf::SRCRTPMTMatch" ClassVersion="11" >
+   <version ClassVersion="11" checksum="1965728222"/>
+   <version ClassVersion="10" checksum="2059576953"/>
+  </class>
   <class name="std::vector<caf::SRCRTPMTMatch>"/>
-  <class name="caf::SRMatchedCRT" ClassVersion="10" />
+  <class name="caf::SRMatchedCRT" ClassVersion="10" >
+   <version ClassVersion="10" checksum="4053405227"/>
+  </class>
   <class name="std::vector<caf::SRMatchedCRT>"/>
   <enum name="caf::Det_t" ClassVersion="10"/>
   <enum name="caf::Plane_t" ClassVersion="10"/>

@@ -17,7 +17,7 @@ namespace caf
 
   SRCRTPMTMatch::SRCRTPMTMatch():
     flashID(std::numeric_limits<int>::min()),
-    flashTime_us(std::numeric_limits<double>::signaling_NaN())
+    flashTime(std::numeric_limits<double>::signaling_NaN())
     
 
     //flashGateTime_ns(std::numeric_limits<double>::signaling_NaN())
