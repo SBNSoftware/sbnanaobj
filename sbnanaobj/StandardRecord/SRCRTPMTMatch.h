@@ -26,7 +26,7 @@ namespace caf
       int flashID; ///< ID of the optical flash. 
       double flashTime; ///< Time of the optical flash w.r.t. the global trigger in us.
       
-      double flashGateTime; ///< Time of the optical flash w.r.t. the beam gate opening in ns (-> us?).
+      double flashGateTime; ///< Time of the optical flash w.r.t. the beam gate opening in us.
       double       firstOpHitPeakTime; ///< Time of the first optical hit peak time w.r.t. the global trigger 
       double       firstOpHitStartTime;  ///< Time of the first optical hit start time w.r.t. the global trigger [us]
       bool flashInGate; ///< Flash within gate or not.
