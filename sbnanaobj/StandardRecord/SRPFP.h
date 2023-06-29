@@ -7,6 +7,7 @@
 #include "sbnanaobj/StandardRecord/SRPFOChar.h"
 #include "sbnanaobj/StandardRecord/SRTrack.h"
 #include "sbnanaobj/StandardRecord/SRShower.h"
+#include "sbnanaobj/StandardRecord/SRCNNScore.h"
 
 #include <vector>
 
@@ -29,6 +30,8 @@ class SRPFP {
 
   int slcID; // ID of the slice that this PFP belongs to
   float t0; // T0 assigned by TPC reco, if any
+
+  SRCNNScore cnnscore;
 
   SRTrack trk; // Track reconstructed from this PFP
   SRShower shw; // Shower reconstructed from this PFP

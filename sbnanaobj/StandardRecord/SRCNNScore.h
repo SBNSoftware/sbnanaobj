@@ -1,3 +1,6 @@
+////////////////////////////////////////////////////////////////////////
+// \file    SRCNNScore.h
+////////////////////////////////////////////////////////////////////////
 #ifndef SRCNNSCORE_H
 #define SRCNNSCORE_H
 
@@ -11,7 +14,6 @@ namespace caf {
     float track; 
     float shower; 
     float noise; 
-    float michel; 
     int ncluster; 
   };
 }
