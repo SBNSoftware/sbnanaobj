@@ -34,7 +34,6 @@ namespace caf
   {
     public: 
       SRMatchedCRT();
-      ~SRMatchedCRT() {}
       //struct MatchedCRT {
       /// Special value to indicate no information on the hit location.
       //static constexpr int NoLocation = -1;
@@ -49,7 +48,6 @@ namespace caf
     {
     public:
       SRCRTPMTMatch();
-      virtual ~SRCRTPMTMatch() {}
       int flashID; ///< ID of the optical flash. 
       double flashTime_us; ///< Time of the optical flash w.r.t. the global trigger in us.
       
