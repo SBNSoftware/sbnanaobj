@@ -11,7 +11,9 @@
 #include "sbnanaobj/StandardRecord/SRTrigger.h"
 
 #include <vector>
-#include <string>
+#ifndef __castxml_major__
+# include <string>
+#endif
 #include <limits> // std::numeric_limits
 
 namespace caf
@@ -50,7 +52,9 @@ namespace caf
       std::vector<caf::SRNuMIInfo> numiinfo; ///< storing beam information per subrun
       caf::SRTrigger triggerinfo; ///< storing trigger information per event
 
+#ifndef __castxml_major__
       std::string    sourceName; ///< Name of the file or source this event comes from.
+#endif
       unsigned int   sourceIndex = NoSourceIndex; ///< Index of this event within the source (zero-based).
 
       /// If true, this record has been filterd out, and only remains as a
