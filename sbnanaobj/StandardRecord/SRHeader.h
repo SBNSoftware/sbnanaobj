@@ -43,6 +43,8 @@ namespace caf
       std::vector<caf::SRBNBInfo> bnbinfo; ///< storing beam information per subrun
       size_t                       nnumiinfo; ///< Number of NuMIInfo objects
       std::vector<caf::SRNuMIInfo> numiinfo; ///< storing beam information per subrun
+      unsigned int   noffbeambnb; ///< Number of offbeam BNB gates
+      unsigned int   noffbeamnumi; ///< Number of offbeam NuMI gates
       caf::SRTrigger triggerinfo; ///< storing trigger information per event
 
 
