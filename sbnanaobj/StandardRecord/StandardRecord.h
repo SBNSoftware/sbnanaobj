@@ -10,12 +10,12 @@
 #include "sbnanaobj/StandardRecord/SRCRTHit.h"
 #include "sbnanaobj/StandardRecord/SRCRTTrack.h"
 #include "sbnanaobj/StandardRecord/SRHeader.h"
+#include "sbnanaobj/StandardRecord/SRCRTPMTMatch.h"
 #include "sbnanaobj/StandardRecord/SRSlice.h"
 #include "sbnanaobj/StandardRecord/SRSliceRecoBranch.h"
 #include "sbnanaobj/StandardRecord/SRTruthBranch.h"
 #include "sbnanaobj/StandardRecord/SRFakeReco.h"
 #include "sbnanaobj/StandardRecord/SROpFlash.h"
-
 
 /// Common Analysis Files
 namespace caf
@@ -48,7 +48,9 @@ namespace caf
     std::vector<SRCRTTrack>     crt_tracks; ///< CRT tracks in event
     int                        nopflashes; ///< Number of OpFlashes in spill
     std::vector<SROpFlash>      opflashes; ///< List of OpFlashes in spill
-
+    
+    int                        ncrtpmt_matches; ///<Number of CRT-PMT Matches in event 
+    std::vector<SRCRTPMTMatch> crtpmt_matches;  ///< CRT-PMT matches in event 
     bool pass_flashtrig;     ///< Whether this Record passed the Flash Trigger requirement
 
   };
