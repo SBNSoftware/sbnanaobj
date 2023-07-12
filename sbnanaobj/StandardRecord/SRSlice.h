@@ -9,6 +9,7 @@
 #include "sbnanaobj/StandardRecord/SRCRUMBSResult.h"
 #include "sbnanaobj/StandardRecord/SRFakeReco.h"
 #include "sbnanaobj/StandardRecord/SRFlashMatch.h"
+#include "sbnanaobj/StandardRecord/SROpT0Finder.h"
 #include "sbnanaobj/StandardRecord/SRSliceRecoBranch.h"
 #include "sbnanaobj/StandardRecord/SRTrueInteraction.h"
 #include "sbnanaobj/StandardRecord/SRTruthMatch.h"
@@ -42,8 +43,10 @@ namespace caf
       SRFlashMatch fmatch_a; //!< Optical flash-match for this slice of TPC charge
       SRFlashMatch fmatch_b; //!< Optical flash-match for this slice of TPC charge
 
-      SRFakeReco fake_reco;
+      SROpT0Finder opt0;       //!< OpT0Finder (flash-match and Q->L); filled with the **highest OpT0 score** assoc. to the slice 
+      SROpT0Finder opt0_sec;   //!< Secondary OpT0Finder (flash-match and Q->L); filled with the **second highest OpT0 score**  assoc. to the slice 
 
+      SRFakeReco fake_reco;
 
       bool is_clear_cosmic { false };         //!< Whether pandora marks the slice as a "clear" cosmic
       int nu_pdg           { INT_MIN };       //!< PDG assigned to the PFParticle Neutrino
