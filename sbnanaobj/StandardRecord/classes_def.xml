@@ -71,8 +71,7 @@
    <version ClassVersion="11" checksum="1429601394"/>
   </class>
 
-  <class name="caf::SROpT0Finder">
-  </class>
+  <class name="caf::SROpT0Finder" />
 
   <class name="caf::SRSliceRecoBranch" ClassVersion="13">
    <version ClassVersion="13" checksum="4211357366"/>
@@ -303,6 +302,7 @@
   <class name="std::vector<caf::SRBNBInfo>" />
   <class name="std::vector<caf::SRNuMIInfo>" />
   <class name="std::vector<caf::SRCRUMBSResult>" />
+  <class name="std::vector<caf::SROpT0Finder>" />
   <class name="std::vector<caf::SRTrigger>" />
   <class name="std::vector<caf::SRPFP>" />
 
