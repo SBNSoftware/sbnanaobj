@@ -13,6 +13,12 @@
 #include <vector>
 #ifndef __castxml_major__
 # include <string>
+#else
+// This header is processed by CASTXML to extract information for the flat CAF;
+// CASTXML uses Clang 7.0 to parse it, and Clang 7.0 does not understand GCC's
+// <string> header. So we cheat. TO BE REMOVED on CASTXML/pygccxml update:
+// https://github.com/CastXML/CastXML/issues/178
+namespace std { class string {}; }
 #endif
 #include <limits> // std::numeric_limits
 
@@ -52,9 +58,7 @@ namespace caf
       std::vector<caf::SRNuMIInfo> numiinfo; ///< storing beam information per subrun
       caf::SRTrigger triggerinfo; ///< storing trigger information per event
 
-#ifndef __castxml_major__
       std::string    sourceName; ///< Name of the file or source this event comes from.
-#endif
       unsigned int   sourceIndex = NoSourceIndex; ///< Index of this event within the source (zero-based).
 
       /// If true, this record has been filterd out, and only remains as a
