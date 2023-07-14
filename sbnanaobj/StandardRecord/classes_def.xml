@@ -5,7 +5,8 @@
 <!-- art::Wrappers for these products are defined in CAFMaker -->
 
 <lcgdict>
-  <class name="caf::StandardRecord" ClassVersion="11">
+  <class name="caf::StandardRecord" ClassVersion="12">
+   <version ClassVersion="12" checksum="3984422068"/>
    <version ClassVersion="11" checksum="483883398"/>
    <version ClassVersion="10" checksum="2569909752"/>
   </class>
@@ -57,7 +58,8 @@
    <version ClassVersion="10" checksum="83320005"/>
   </class>
 
-  <class name="caf::SRSlice" ClassVersion="14">
+  <class name="caf::SRSlice" ClassVersion="15">
+   <version ClassVersion="15" checksum="2724994355"/>
    <version ClassVersion="14" checksum="740791578"/>
    <version ClassVersion="13" checksum="1378484383"/>
    <version ClassVersion="12" checksum="3783103871"/>
@@ -119,7 +121,12 @@
     <![CDATA[{ energy = onfile.energy; }]]>
   </ioread>
 
-  <class name="caf::SRCaloPoint" ClassVersion="12">
+  <class name="caf::SRTrueCaloPoint" ClassVersion="10">
+   <version ClassVersion="10" checksum="4052698249"/>
+  </class>
+
+  <class name="caf::SRCaloPoint" ClassVersion="13">
+   <version ClassVersion="13" checksum="930755035"/>
    <version ClassVersion="12" checksum="3873035196"/>
    <version ClassVersion="11" checksum="3357014269"/>
    <version ClassVersion="10" checksum="3748600600"/>
@@ -287,6 +294,7 @@
   <class name="std::vector<caf::SRMultiverse>" />
   <class name="std::vector<caf::SRTrueParticle>" />
   <class name="std::vector<caf::SRParticleMatch>" />
+  <class name="std::vector<caf::SRTrueCaloPoint>" />
   <class name="std::vector<caf::SRCaloPoint>" />
   <class name="std::vector<caf::SRMeVPrtl>" />
   <class name="std::vector<caf::SRStub>" />
@@ -324,12 +332,20 @@
   </class>
   <class name="std::vector<caf::SROpFlash>" />
   
-
   <class name="caf::SRCNNScore" ClassVersion="11">
    <version ClassVersion="11" checksum="1892208326"/>
    <version ClassVersion="10" checksum="3999650528"/>
   </class>
 
+  <class name="caf::SRCRTPMTMatch" ClassVersion="10" >
+   <version ClassVersion="10" checksum="2059576953"/>
+  </class>
+  <class name="std::vector<caf::SRCRTPMTMatch>"/>
+  <class name="caf::SRMatchedCRT" ClassVersion="10" >
+   <version ClassVersion="10" checksum="4053405227"/>
+  </class>
+  
+  <class name="std::vector<caf::SRMatchedCRT>"/>
 
   <enum name="caf::Det_t" ClassVersion="10"/>
   <enum name="caf::Plane_t" ClassVersion="10"/>
