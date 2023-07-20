@@ -100,6 +100,9 @@ namespace caf
     int                        nprim;       ///< Number of primary daughters
     std::vector<SRTrueParticle> prim;       ///< Primary daughters, lepton comes first in vector.
 
+    int                        nghepptl;       ///< Number of GHEP particles
+    std::vector<SRTrueParticle> ghepptl;       ///< GHEP particles
+
     /// \brief Systematic weights
     ///
     /// The first index is the parameter set, the second the universe. The
