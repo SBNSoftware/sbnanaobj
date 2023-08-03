@@ -32,9 +32,15 @@ namespace caf
   class SRHeader
     {
     public:
-      static constexpr unsigned int NoSourceIndex
-        = std::numeric_limits<unsigned int>::max();
-      
+      // --- BEGIN FIXME ---------------------------------------------------
+      // the commit that introduced the following change should be REVERTED,
+      // together with the related commit 9712afa6 of sbncode,
+      // as soon as the branch can be built with SRProxy v. 0.41 or later,
+      // which supports constants in classes.
+      static constexpr unsigned int NoSourceIndex()
+        { return std::numeric_limits<unsigned int>::max(); }
+      // --- END - FIXME ---------------------------------------------------
+
       SRHeader();
       ~SRHeader();
 
@@ -65,7 +71,7 @@ namespace caf
       caf::SRTrigger triggerinfo; ///< storing trigger information per event
 
       std::string    sourceName; ///< Name of the file or source this event comes from.
-      unsigned int   sourceIndex = NoSourceIndex; ///< Index of this event within the source (zero-based).
+      unsigned int   sourceIndex = NoSourceIndex(); ///< Index of this event within the source (zero-based).
 
       /// If true, this record has been filterd out, and only remains as a
       /// receptacle for exposure information. It should be skipped in any
