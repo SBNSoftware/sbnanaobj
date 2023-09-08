@@ -64,8 +64,10 @@ namespace caf
       // bool           blind;     ///< if true, record has been corrupted for blindness
       size_t                      nbnbinfo; ///< Number of BNBInfo objects
       std::vector<caf::SRBNBInfo> bnbinfo; ///< storing beam information per subrun
+      caf::SRBNBInfo              spillbnbinfo; ///< storing beam information for given event's spill
       size_t                       nnumiinfo; ///< Number of NuMIInfo objects
       std::vector<caf::SRNuMIInfo> numiinfo; ///< storing beam information per subrun
+      caf::SRNuMIInfo              spillnumiinfo; ///< storing beam information for given event's spill
       unsigned int   noffbeambnb; ///< Number of offbeam BNB gates
       unsigned int   noffbeamnumi; ///< Number of offbeam NuMI gates
       caf::SRTrigger triggerinfo; ///< storing trigger information per event
