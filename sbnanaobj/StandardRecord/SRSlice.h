@@ -40,20 +40,9 @@ namespace caf
       SRTruthMatch tmatch; //!< Matching information between truth and reco objects
 
       SRFlashMatch fmatch;   //!< PMT Simple flash-match for this slice of TPC charge
-      SRFlashMatch fmatch_a; //!< PMT Simple  flash-match for this slice of TPC charge
-      SRFlashMatch fmatch_b; //!< PMT Simple flash-match for this slice of TPC charge
-
       SRFlashMatch fmatchop;   //!< PMT Simple flash-match for this slice of TPC charge (OpFlash)
-      SRFlashMatch fmatchop_a; //!< PMT Simple  flash-match for this slice of TPC charge (OpFlash)
-      SRFlashMatch fmatchop_b; //!< PMT Simple flash-match for this slice of TPC charge (OpFlash)
-
       SRFlashMatch fmatchara;   //!< PMT Simple flash-match for this slice of TPC charge (XARAPUCA, SBND only)
-      SRFlashMatch fmatchara_a; //!< PMT Simple  flash-match for this slice of TPC charge (XARAPUCA, SBND only)
-      SRFlashMatch fmatchara_b; //!< PMT Simple flash-match for this slice of TPC charge (XARAPUCA, SBND only)
-
       SRFlashMatch fmatchopara;   //!< PMT Simple flash-match for this slice of TPC charge (XARAPUCA OpFlash, SBND only)
-      SRFlashMatch fmatchopara_a; //!< PMT Simple  flash-match for this slice of TPC charge (XARAPUCA OpFlash, SBND only)
-      SRFlashMatch fmatchopara_b; //!< PMT Simple flash-match for this slice of TPC charge (XARAPUCA OpFlash, SBND only)
 
       SROpT0Finder opt0;       //!< OpT0Finder (flash-match and Q->L); filled with the **highest OpT0 score** assoc. to the slice 
       SROpT0Finder opt0_sec;   //!< Secondary OpT0Finder (flash-match and Q->L); filled with the **second highest OpT0 score**  assoc. to the slice 

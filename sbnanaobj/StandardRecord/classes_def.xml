@@ -57,7 +57,9 @@
    <version ClassVersion="10" checksum="83320005"/>
   </class>
 
-  <class name="caf::SRSlice" ClassVersion="17">
+  <class name="caf::SRSlice" ClassVersion="19">
+   <version ClassVersion="19" checksum="3108582545"/>
+   <version ClassVersion="18" checksum="3464825901"/>
    <version ClassVersion="17" checksum="939002953"/>
    <version ClassVersion="16" checksum="2418184640"/>
    <version ClassVersion="15" checksum="2724994355"/>
