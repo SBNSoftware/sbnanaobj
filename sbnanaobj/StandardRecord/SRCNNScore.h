@@ -14,6 +14,7 @@ namespace caf {
     float track; 
     float shower; 
     float noise; 
+    float michel;
     float endmichel;
     int nclusters; 
   };

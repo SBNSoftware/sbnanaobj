@@ -32,7 +32,8 @@
    <version ClassVersion="10" checksum="1756876186"/>
   </class>
 
-  <class name="caf::SRCNNScore" ClassVersion="10" >
+  <class name="caf::SRCNNScore" ClassVersion="11" >
+   <version ClassVersion="11" checksum="769924360"/>
    <version ClassVersion="10" checksum="3242119722"/>
   </class>
 
