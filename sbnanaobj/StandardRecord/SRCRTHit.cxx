@@ -14,7 +14,8 @@ namespace caf
     t0(std::numeric_limits<float>::signaling_NaN()),
     t1(std::numeric_limits<float>::signaling_NaN()),
     pe(std::numeric_limits<float>::signaling_NaN()),
-    plane(INT_MIN)
+    plane(INT_MIN),
+    flag(INT_MIN)
   {}
 } // end namespace caf
 ////////////////////////////////////////////////////////////////////////

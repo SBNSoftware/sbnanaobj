@@ -22,6 +22,7 @@ namespace caf
       float t1; //!< Relatvie time w.r.t. beam early warning (from T1 module) [us]
       float pe; // The number of PhotoElectrons in the hit
       int plane; //!< Plane that the CRT hit is on
+      int flag; //!< CRT Hit flag to help classify ICARUS Side CRT reco
       void setDefault();
     };
 
