@@ -44,10 +44,10 @@ namespace caf
     genie_interaction_mode_ genie_mode;   //!< Interaction mode (as for LArSoft MCNeutrino::Mode() )
     genie_interaction_type_ genie_inttype; //!< Following LARSoft MCNeutrino::InteractionType()
 
-    bool    isnc;              //!< same as LArSoft "ccnc" - 0=CC, 1=NC
-    bool    iscc;              //!< CC (true) or NC/interference (false)
-    bool    isvtxcont;         //!< If true vertex is within TPC
-    bool    is_numucc_primary; //!< Whether this is the "primary" reco neutrino slice as defined by the numu CC analysis
+    bool isnc;              //!< same as LArSoft "ccnc" - 0=CC, 1=NC
+    bool iscc;              //!< CC (true) or NC/interference (false)
+    bool isvtxcont;         //!< If true vertex is within TPC
+    bool is_numucc_primary; //!< Whether this is the "primary" reco neutrino slice as defined by the numu CC analysis
 
     float      E;             ///< True energy [GeV]
 
