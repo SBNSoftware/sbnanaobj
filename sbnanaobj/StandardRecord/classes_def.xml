@@ -172,7 +172,9 @@
    <version ClassVersion="10" checksum="3963837747"/>
   </class>
 
-  <class name="caf::SRTrueInteraction" ClassVersion="13">
+  <class name="caf::SRTrueInteraction" ClassVersion="15">
+   <version ClassVersion="15" checksum="2387159424"/>
+   <version ClassVersion="14" checksum="556586108"/>
    <version ClassVersion="13" checksum="2387159424"/>
    <version ClassVersion="12" checksum="671928574"/>
    <version ClassVersion="11" checksum="1242940498"/>
@@ -192,7 +194,8 @@
    <version ClassVersion="10" checksum="2884901936"/>
   </class>
 
-  <class name="caf::SRFakeReco" ClassVersion="11">
+  <class name="caf::SRFakeReco" ClassVersion="12">
+   <version ClassVersion="12" checksum="327524166"/>
    <version ClassVersion="11" checksum="3177120490"/>
    <version ClassVersion="10" checksum="33803094"/>
   </class>
