@@ -15,6 +15,7 @@
 #include "sbnanaobj/StandardRecord/SRVector3D.h"
 #include "sbnanaobj/StandardRecord/SRNuID.h"
 #include "sbnanaobj/StandardRecord/SRConstants.h"
+#include "sbnanaobj/StandardRecord/SROpFlash.h"
 
 #include <climits>
 
@@ -41,6 +42,9 @@ namespace caf
       SRFlashMatch fmatch;   //!< Optical flash-match for this slice of TPC charge
       SRFlashMatch fmatch_a; //!< Optical flash-match for this slice of TPC charge
       SRFlashMatch fmatch_b; //!< Optical flash-match for this slice of TPC charge
+
+      SROpFlash nearest_flash;
+      SROpFlash earliest_flash;
 
       SRFakeReco fake_reco;
 
