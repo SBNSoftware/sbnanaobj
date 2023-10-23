@@ -27,6 +27,8 @@ namespace caf
     float      flashTime          { kSignalingNaN }; ///< Matched OpFlash time (us)
     float      flashFirstHit      { kSignalingNaN }; ///< Time of first OpHit in matched OpFlash (us)
     float      flashAsymmetry     { kSignalingNaN }; ///< East-West asymmetry of PEs in matched flash
+    SRVector3D flashCenter;                          ///< Weighted mean ophit position in X,Y,Z [no meaingful X info for ophits] (cm)
+    SRVector3D flashWidth;                           ///< Weighted standard devitation of ophit position in X,Y,Z [no meaingful X info for ophits] (cm)
 
     /// Data members related to quality of match
     float      deltaY             { kSignalingNaN }; ///< abs( Matched flash Y center - charge Y center ) (cm)

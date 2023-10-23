@@ -25,6 +25,8 @@ namespace caf
     flashTime          =                             -9999.;
     flashFirstHit      =                             -9999.;
     flashAsymmetry     =                             -9999.;
+    flashCenter        = SRVector3D(-9999., -9999., -9999.);
+    flashWidth         = SRVector3D(-9999., -9999., -9999.);
 
     deltaY             =                             -9999.;
     deltaZ             =                             -9999.;
