@@ -340,6 +340,10 @@
    <version ClassVersion="10" checksum="4053405227"/>
   </class>
   <class name="std::vector<caf::SRMatchedCRT>"/>
+
+  <class name="caf::SRBarycenterMatch" />
+  <class name="std::vector<caf::SRBarycenterMatch>"/>
+
   <enum name="caf::Det_t" ClassVersion="10"/>
   <enum name="caf::Plane_t" ClassVersion="10"/>
   <enum name="caf::Wall_t" ClassVersion="10"/>
