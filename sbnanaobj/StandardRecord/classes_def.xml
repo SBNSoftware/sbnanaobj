@@ -343,7 +343,8 @@
   </class>
   <class name="std::vector<caf::SRMatchedCRT>"/>
 
-  <class name="caf::SRBarycenterMatch" ClassVersion="11" >
+  <class name="caf::SRBarycenterMatch" ClassVersion="12" >
+   <version ClassVersion="12" checksum="1911499581"/>
    <version ClassVersion="11" checksum="2264811083"/>
    <version ClassVersion="10" checksum="4053405227"/>
   </class>

@@ -26,6 +26,7 @@ namespace caf
     /// Data members related to matched recob::OpFlash, also reachable by association 
     float      flashTime          { kSignalingNaN }; ///< Matched OpFlash time (us)
     float      flashFirstHit      { kSignalingNaN }; ///< Time of first OpHit in matched OpFlash (us)
+    float      flashPEs           { kSignalingNaN }; ///< Total PEs in matched flash
     float      flashAsymmetry     { kSignalingNaN }; ///< East-West asymmetry of PEs in matched flash
     SRVector3D flashCenter;                          ///< Weighted mean ophit position in X,Y,Z [no meaingful X info for ophits] (cm)
     SRVector3D flashWidth;                           ///< Weighted standard devitation of ophit position in X,Y,Z [no meaingful X info for ophits] (cm)
