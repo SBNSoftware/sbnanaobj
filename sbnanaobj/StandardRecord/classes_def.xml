@@ -5,12 +5,14 @@
 <!-- art::Wrappers for these products are defined in CAFMaker -->
 
 <lcgdict>
-  <class name="caf::StandardRecord" ClassVersion="11">
+  <class name="caf::StandardRecord" ClassVersion="12">
+   <version ClassVersion="12" checksum="3984422068"/>
    <version ClassVersion="11" checksum="483883398"/>
    <version ClassVersion="10" checksum="2569909752"/>
   </class>
 
-  <class name="caf::SRHeader" ClassVersion="18">
+  <class name="caf::SRHeader" ClassVersion="19">
+   <version ClassVersion="19" checksum="1204111507"/>
    <version ClassVersion="18" checksum="1724302139"/>
    <version ClassVersion="17" checksum="2390355049"/>
    <version ClassVersion="16" checksum="2130480854"/>
@@ -56,9 +58,9 @@
   </class>
 
   <class name="caf::SRSlice" ClassVersion="17">
-   <version ClassVersion="17" checksum="1621246981"/>
-   <version ClassVersion="16" checksum="1375558426"/>
-   <version ClassVersion="15" checksum="1626566090"/>
+   <version ClassVersion="17" checksum="939002953"/>
+   <version ClassVersion="16" checksum="2418184640"/>
+   <version ClassVersion="15" checksum="2724994355"/>
    <version ClassVersion="14" checksum="740791578"/>
    <version ClassVersion="13" checksum="1378484383"/>
    <version ClassVersion="12" checksum="3783103871"/>
@@ -69,6 +71,8 @@
    <version ClassVersion="12" checksum="2334957166"/>
    <version ClassVersion="11" checksum="1429601394"/>
   </class>
+
+  <class name="caf::SROpT0Finder" />
 
   <class name="caf::SRSliceRecoBranch" ClassVersion="13">
    <version ClassVersion="13" checksum="4211357366"/>
@@ -303,6 +307,7 @@
   <class name="std::vector<caf::SRBNBInfo>" />
   <class name="std::vector<caf::SRNuMIInfo>" />
   <class name="std::vector<caf::SRCRUMBSResult>" />
+  <class name="std::vector<caf::SROpT0Finder>" />
   <class name="std::vector<caf::SRTrigger>" />
   <class name="std::vector<caf::SRPFP>" />
   <class name="std::vector<caf::SRFRAMSScore>" />
@@ -332,7 +337,14 @@
    <version ClassVersion="10" checksum="2672302824"/>
   </class>
   <class name="std::vector<caf::SROpFlash>" />
-  
+  <class name="caf::SRCRTPMTMatch" ClassVersion="10" >
+   <version ClassVersion="10" checksum="2059576953"/>
+  </class>
+  <class name="std::vector<caf::SRCRTPMTMatch>"/>
+  <class name="caf::SRMatchedCRT" ClassVersion="10" >
+   <version ClassVersion="10" checksum="4053405227"/>
+  </class>
+  <class name="std::vector<caf::SRMatchedCRT>"/>
   <enum name="caf::Det_t" ClassVersion="10"/>
   <enum name="caf::Plane_t" ClassVersion="10"/>
   <enum name="caf::Wall_t" ClassVersion="10"/>

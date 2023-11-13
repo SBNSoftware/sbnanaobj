@@ -15,7 +15,8 @@ cmake_minimum_required(VERSION 3.20 FATAL_ERROR)
 
 
 find_package(cetmodules 3.20.00 REQUIRED)
-project(sbnanaobj VERSION 09.20.05 LANGUAGES CXX)
+project(sbnanaobj VERSION 09.21.04 LANGUAGES CXX)
+
 
 message(STATUS "\n\n  ==========================   ${PROJECT_NAME}   ==========================")
 
