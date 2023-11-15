@@ -11,19 +11,7 @@
 #include "sbnanaobj/StandardRecord/SRTrigger.h"
 
 #include <vector>
-#if defined(__castxml_major__) && !defined(__clang__)
-// This header is processed by CASTXML to extract information for the flat CAF;
-// CASTXML uses Clang 7.0 to parse it, and Clang 7.0 does not understand GCC's
-// <string> header. So we cheat. TO BE REMOVED on CASTXML/pygccxml update:
-// https://github.com/CastXML/CastXML/issues/178
-// In addition, when using CASTXML with Clang, the build seems to include
-// <string> header somewhere else (via <iosfwd.h> in SRHeader.h),
-// so this mock-up definition would conflict with the one in that <string>
-// header: therefore, when using Clang we don't use this trick.
-namespace std { class string {}; }
-#else
-# include <string>
-#endif
+#include <string>
 #include <limits> // std::numeric_limits
 
 namespace caf

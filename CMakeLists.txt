@@ -15,7 +15,7 @@ cmake_minimum_required(VERSION 3.20 FATAL_ERROR)
 
 
 find_package(cetmodules 3.20.00 REQUIRED)
-project(sbnanaobj VERSION 09.21.04 LANGUAGES CXX)
+project(sbnanaobj VERSION 09.21.05 LANGUAGES CXX)
 
 message(STATUS "\n\n  ==========================   ${PROJECT_NAME}   ==========================")
 
@@ -31,7 +31,7 @@ cet_set_compiler_flags(DIAGS CAUTIOUS
   WERROR
   NO_UNDEFINED
   ALLOW_DEPRECATIONS
-  EXTRA_FLAGS -pedantic -Wno-unused-local-typedefs -Wno-undefined-var-template -I $ENV{CLANG_FQ_DIR}/include/c++/v1
+  EXTRA_FLAGS -pedantic -Wno-unused-local-typedefs -Wno-undefined-var-template
 )
 
 cet_report_compiler_flags(REPORT_THRESHOLD VERBOSE)
