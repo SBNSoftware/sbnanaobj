@@ -15,7 +15,6 @@ namespace caf
   class SRBarycenterMatch
   {
   public:
-    SRBarycenterMatch();
 
     /// Data members related to the slice barycetner determination
     float      chargeTotal        { kSignalingNaN }; ///< Total charge in slice contributing to barycenter
