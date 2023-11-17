@@ -11,9 +11,6 @@
 namespace caf
 {
 
-  SRBarycenterMatch::SRBarycenterMatch()
-  {}
-
   void SRBarycenterMatch::setDefault()
   {
 
