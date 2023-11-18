@@ -57,9 +57,8 @@
    <version ClassVersion="10" checksum="83320005"/>
   </class>
 
-  <class name="caf::SRSlice" ClassVersion="19">
-   <version ClassVersion="19" checksum="1283304168"/>
-   <version ClassVersion="18" checksum="3832461214"/>
+  <class name="caf::SRSlice" ClassVersion="18">
+   <version ClassVersion="18" checksum="3516119632"/>
    <version ClassVersion="17" checksum="939002953"/>
    <version ClassVersion="16" checksum="2418184640"/>
    <version ClassVersion="15" checksum="2724994355"/>
@@ -343,13 +342,10 @@
   </class>
   <class name="std::vector<caf::SRMatchedCRT>"/>
 
-  <class name="caf::SRBarycenterMatch" ClassVersion="13" >
-   <version ClassVersion="13" checksum="2617845264"/>
-   <version ClassVersion="12" checksum="1911499581"/>
-   <version ClassVersion="11" checksum="2264811083"/>
-   <version ClassVersion="10" checksum="4053405227"/>
+  <class name="caf::SRTPCPMTBarycenterMatch" ClassVersion="10" >
+   <version ClassVersion="10" checksum="119776448"/>
   </class>
-  <class name="std::vector<caf::SRBarycenterMatch>"/>
+  <class name="std::vector<caf::SRTPCPMTBarycenterMatch>"/>
 
   <enum name="caf::Det_t" ClassVersion="10"/>
   <enum name="caf::Plane_t" ClassVersion="10"/>

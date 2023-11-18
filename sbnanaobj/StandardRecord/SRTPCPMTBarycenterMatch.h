@@ -1,5 +1,5 @@
 ////////////////////////////////////////////////////////////////////////
-// \file    SRBarycenterMatch.h
+// \file    SRTPCPMTBarycenterMatch.h
 // \brief   Slice-level match info for barycenter flash matching, including best match OpFlash and matching to trigger
 // \author  jsmedley@fnal.gov
 ////////////////////////////////////////////////////////////////////////
@@ -12,7 +12,7 @@
 
 namespace caf
 {
-  class SRBarycenterMatch
+  class SRTPCPMTBarycenterMatch
   {
   public:
 

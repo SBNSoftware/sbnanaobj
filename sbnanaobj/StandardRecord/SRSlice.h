@@ -10,7 +10,7 @@
 #include "sbnanaobj/StandardRecord/SRFakeReco.h"
 #include "sbnanaobj/StandardRecord/SRFlashMatch.h"
 #include "sbnanaobj/StandardRecord/SROpT0Finder.h"
-#include "sbnanaobj/StandardRecord/SRBarycenterMatch.h"
+#include "sbnanaobj/StandardRecord/SRTPCPMTBarycenterMatch.h"
 #include "sbnanaobj/StandardRecord/SRSliceRecoBranch.h"
 #include "sbnanaobj/StandardRecord/SRTrueInteraction.h"
 #include "sbnanaobj/StandardRecord/SRTruthMatch.h"
@@ -47,7 +47,7 @@ namespace caf
       SROpT0Finder opt0;       //!< OpT0Finder (flash-match and Q->L); filled with the **highest OpT0 score** assoc. to the slice 
       SROpT0Finder opt0_sec;   //!< Secondary OpT0Finder (flash-match and Q->L); filled with the **second highest OpT0 score**  assoc. to the slice 
 
-      SRBarycenterMatch barycenterFM; //!< Matching this slice to the OpFlash nearest to its charge center in YZ and to the triggering flash
+      SRTPCPMTBarycenterMatch barycenterFM; //!< Matching this slice to the OpFlash nearest to its charge center in YZ and to the triggering flash
 
       SRFakeReco fake_reco;
 

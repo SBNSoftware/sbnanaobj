@@ -1,17 +1,17 @@
 ////////////////////////////////////////////////////////////////////////
-// \file    SRBarycenterMatch.cxx
+// \file    SRTPCPMTBarycenterMatch.cxx
 // \brief   Slice-level match info for barycenter flash matching, including best match OpFlash and matching to triggger
 // \author  jsmedley@fnal.gov
 ////////////////////////////////////////////////////////////////////////
 
-#include "sbnanaobj/StandardRecord/SRBarycenterMatch.h"
+#include "sbnanaobj/StandardRecord/SRTPCPMTBarycenterMatch.h"
 
 #include <climits>
 
 namespace caf
 {
 
-  void SRBarycenterMatch::setDefault()
+  void SRTPCPMTBarycenterMatch::setDefault()
   {
 
     chargeTotal        =                             -9999.;
@@ -32,7 +32,9 @@ namespace caf
     deltaT             =                             -9999.;
     overlapY           =                             -9999.;
     overlapZ           =                             -9999.;
+    deltaY_Trigger     =                             -9999.;
     deltaZ_Trigger     =                             -9999.;
+    radius_Trigger     =                             -9999.;
 
   }
 
