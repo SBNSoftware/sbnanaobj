@@ -9,6 +9,7 @@
 #include "sbnanaobj/StandardRecord/SRCRUMBSResult.h"
 #include "sbnanaobj/StandardRecord/SRFakeReco.h"
 #include "sbnanaobj/StandardRecord/SRFlashMatch.h"
+#include "sbnanaobj/StandardRecord/SRTPCPMTBarycenterMatch.h"
 #include "sbnanaobj/StandardRecord/SRSliceRecoBranch.h"
 #include "sbnanaobj/StandardRecord/SRTrueInteraction.h"
 #include "sbnanaobj/StandardRecord/SRTruthMatch.h"
@@ -41,6 +42,8 @@ namespace caf
       SRFlashMatch fmatch;   //!< Optical flash-match for this slice of TPC charge
       SRFlashMatch fmatch_a; //!< Optical flash-match for this slice of TPC charge
       SRFlashMatch fmatch_b; //!< Optical flash-match for this slice of TPC charge
+
+      SRTPCPMTBarycenterMatch barycenterFM; //!< Matching this slice to the OpFlash nearest to its charge center in YZ and to the triggering flash
 
       SRFakeReco fake_reco;
 
