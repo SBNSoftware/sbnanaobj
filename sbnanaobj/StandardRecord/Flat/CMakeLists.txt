@@ -13,7 +13,7 @@ cet_make_library(LIBRARY_NAME sbnanaobj_StandardRecordFlat
                  LIBRARIES    ROOT::TreePlayer
                  )
 if (DEFINED ENV{MRB_BUILDDIR})
-  install_headers(EXTRAS $ENV{MRB_BUILDDIR}/sbnanaobj/sbnanaobj/StandardRecord/Proxy/SRProxy.h $ENV{MRB_BUILDDIR}/sbnanaobj/sbnanaobj/StandardRecord/Proxy/FwdDeclare.h)
+  install_headers(EXTRAS $ENV{MRB_BUILDDIR}/sbnanaobj/sbnanaobj/StandardRecord/Flat/FlatRecord.h $ENV{MRB_BUILDDIR}/sbnanaobj/sbnanaobj/StandardRecord/Flat/FwdDeclare.h)
 else()
   install_headers(EXTRAS ${CMAKE_BINARY_DIR}/sbnanaobj/StandardRecord/Flat/FlatRecord.h ${CMAKE_BINARY_DIR}/sbnanaobj/StandardRecord/Flat/FwdDeclare.h)
 endif()
