@@ -12,7 +12,7 @@ namespace caf
     {
     public:
       SRSBNDCRTTrackMatch();
-      ~SRSBNDCRTTrackMatch() {}
+      virtual ~SRSBNDCRTTrackMatch() {}
       
       SRSBNDCRTTrack track; // the track
       float          score; // assessment of quality of matching (depends on alg configuration)

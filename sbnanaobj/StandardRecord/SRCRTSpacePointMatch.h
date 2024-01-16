@@ -12,7 +12,7 @@ namespace caf
     {
     public:
       SRCRTSpacePointMatch();
-      ~SRCRTSpacePointMatch() {}
+      virtual ~SRCRTSpacePointMatch() {}
 
       SRCRTSpacePoint spacepoint; // the spacepoint
       float           score;      // assessment of quality of matching (depends on alg configuration)

@@ -49,7 +49,7 @@ namespace caf
     int                         ncrt_tracks; ///< Number of CRT tracks in event (ICARUS)
     std::vector<SRCRTTrack>      crt_tracks; ///< CRT tracks in event (ICARUS)
     int                         ncrt_spacepoints; ///< Number of CRT spacepoints in event (SBND)
-    std::vector<SRCRTSpacePoint> crt_spacePoints; ///< CRT spacepoints in event (SBND)
+    std::vector<SRCRTSpacePoint> crt_spacepoints; ///< CRT spacepoints in event (SBND)
     int                         nsbnd_crt_tracks; ///< Number of CRT tracks in event (SBND)
     std::vector<SRSBNDCRTTrack>  sbnd_crt_tracks; ///< CRT tracks in event (SBND)
     int                         nopflashes; ///< Number of OpFlashes in spill
