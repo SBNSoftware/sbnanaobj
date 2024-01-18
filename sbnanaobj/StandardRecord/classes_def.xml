@@ -229,7 +229,8 @@
    <version ClassVersion="10" checksum="839301601"/>
   </class>
 
-  <class name="caf::SRPFP" ClassVersion="13">
+  <class name="caf::SRPFP" ClassVersion="14">
+   <version ClassVersion="14" checksum="3475019355"/>
    <version ClassVersion="13" checksum="2132348118"/>
    <version ClassVersion="12" checksum="2470467174"/>
    <version ClassVersion="11" checksum="1837341006"/>
@@ -250,6 +251,10 @@
 
   <class name="caf::SRShowerRazzle" ClassVersion="10">
    <version ClassVersion="10" checksum="133600353"/>
+  </class>
+
+  <class name="caf::SRPFPRazzled" ClassVersion="10">
+   <version ClassVersion="10" checksum="3379238512"/>
   </class>
 
   <class name="caf::SRBNBInfo" ClassVersion="10">

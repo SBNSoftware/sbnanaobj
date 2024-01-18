@@ -7,6 +7,7 @@
 #include "sbnanaobj/StandardRecord/SRPFOChar.h"
 #include "sbnanaobj/StandardRecord/SRTrack.h"
 #include "sbnanaobj/StandardRecord/SRShower.h"
+#include "sbnanaobj/StandardRecord/SRPFPRazzled.h"
 
 #include <vector>
 
@@ -32,6 +33,8 @@ class SRPFP {
 
   SRTrack trk; // Track reconstructed from this PFP
   SRShower shw; // Shower reconstructed from this PFP
+
+  SRPFPRazzled razzled; // Results from the PFP MVA
 };
 
 } // end namespace
