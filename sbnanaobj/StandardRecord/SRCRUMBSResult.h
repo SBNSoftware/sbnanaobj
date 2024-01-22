@@ -45,9 +45,9 @@ namespace caf {
     ~SRCRUMBSCRTVars() {}
 
     float trackscore;                //!< a combination of the DCA and angle between the best matched TPC & CRT tracks
-    float hitscore;                  //!< the best distance from an extrapolated TPC track to a CRT hit [cm]
+    float spscore;                   //!< the best distance from an extrapolated TPC track to a CRT spacepoint [cm]
     float tracktime;                 //!< the time associated with the matched CRT track [us]
-    float hittime;                   //!< the time associated with the matched CRT hit [us]
+    float sptime;                    //!< the time associated with the matched CRT spacepoint [us]
   };
 
   //!< Result of the CRUMBS slice ID MVA
