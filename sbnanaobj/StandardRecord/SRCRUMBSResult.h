@@ -34,6 +34,8 @@ namespace caf {
     float fmtotalscore;              //!< the total flash match score
     float fmpe;                      //!< the total number of photoelectrons in the associated flash
     float fmtime;                    //!< the time associated with the flash [us]
+    float opt0score;                 //!< the agreement score from the OpT0 falsh matcher
+    float opt0measuredpe;            //!< the PE of the reconstructed flash matched by OpT0
   };
 
   //!< CRT input variables for CRUMBS
