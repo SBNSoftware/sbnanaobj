@@ -5,7 +5,8 @@
 <!-- art::Wrappers for these products are defined in CAFMaker -->
 
 <lcgdict>
-  <class name="caf::StandardRecord" ClassVersion="12">
+  <class name="caf::StandardRecord" ClassVersion="13">
+   <version ClassVersion="13" checksum="1979816256"/>
    <version ClassVersion="12" checksum="3984422068"/>
    <version ClassVersion="11" checksum="483883398"/>
    <version ClassVersion="10" checksum="2569909752"/>
@@ -101,7 +102,8 @@
    <version ClassVersion="10" checksum="3777054621"/>
   </class>
 
-  <class name="caf::SRTrack" ClassVersion="14">
+  <class name="caf::SRTrack" ClassVersion="15">
+   <version ClassVersion="15" checksum="175611744"/>
    <version ClassVersion="14" checksum="3934033130"/>
    <version ClassVersion="13" checksum="522362999"/>
    <version ClassVersion="12" checksum="3952974887"/>
@@ -355,9 +357,29 @@
   </class>
   <class name="std::vector<caf::SRTPCPMTBarycenterMatch>"/>
 
+  <class name="caf::SRCRTSpacePoint" ClassVersion="10">
+   <version ClassVersion="10" checksum="3912601582"/>
+  </class>
+
+  <class name="caf::SRCRTSpacePointMatch" ClassVersion="10">
+   <version ClassVersion="10" checksum="382456729"/>
+  </class>
+
+  <class name="caf::SRSBNDCRTTrack" ClassVersion="10">
+   <version ClassVersion="10" checksum="1967800431"/>
+  </class>
+
+  <class name="caf::SRSBNDCRTTrackMatch" ClassVersion="10">
+   <version ClassVersion="10" checksum="2486605052"/>
+  </class>
+
+  <class name="std::vector<caf::SRCRTSpacePoint>" />
+  <class name="std::vector<caf::SRSBNDCRTTrack>" />
+
   <enum name="caf::Det_t" ClassVersion="10"/>
   <enum name="caf::Plane_t" ClassVersion="10"/>
   <enum name="caf::Wall_t" ClassVersion="10"/>
+  <enum name="caf::SBNDCRTTagger_t" ClassVersion="10"/>
   <enum name="caf::MCType_t" ClassVersion="10"/>
   <enum name="caf::generator_" ClassVersion="10"/>
   <enum name="caf::mevprtlchannel_" ClassVersion="10"/>
