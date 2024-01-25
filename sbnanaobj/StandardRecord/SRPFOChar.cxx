@@ -23,6 +23,9 @@ namespace caf
     pca2ratio = -9999.f;
     pca3ratio = -9999.f;
     vtxdist = -9999.f;
+    halototratio = -9999.f;
+    concentration = -9999.f;
+    conicalness = -9999.f;
   }
 
 
