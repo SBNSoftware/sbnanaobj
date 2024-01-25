@@ -29,8 +29,14 @@
    <version ClassVersion="10" checksum="1379012114"/>
   </class>
 
-  <class name="caf::SRPFOChar" ClassVersion="10" >
+  <class name="caf::SRPFOChar" ClassVersion="11" >
+   <version ClassVersion="11" checksum="1471728789"/>
    <version ClassVersion="10" checksum="1756876186"/>
+  </class>
+
+  <class name="caf::SRCNNScore" ClassVersion="11" >
+   <version ClassVersion="11" checksum="769924360"/>
+   <version ClassVersion="10" checksum="3242119722"/>
   </class>
 
   <class name="caf::SRHit" ClassVersion="10">
@@ -229,7 +235,8 @@
    <version ClassVersion="10" checksum="839301601"/>
   </class>
 
-  <class name="caf::SRPFP" ClassVersion="13">
+  <class name="caf::SRPFP" ClassVersion="14">
+   <version ClassVersion="14" checksum="635023057"/>
    <version ClassVersion="13" checksum="2132348118"/>
    <version ClassVersion="12" checksum="2470467174"/>
    <version ClassVersion="11" checksum="1837341006"/>
