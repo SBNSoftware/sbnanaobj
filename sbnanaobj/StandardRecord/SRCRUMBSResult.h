@@ -34,6 +34,8 @@ namespace caf {
     float fmtotalscore;              //!< the total flash match score
     float fmpe;                      //!< the total number of photoelectrons in the associated flash
     float fmtime;                    //!< the time associated with the flash [us]
+    float opt0score;                 //!< the agreement score from the OpT0 falsh matcher
+    float opt0measuredpe;            //!< the PE of the reconstructed flash matched by OpT0
   };
 
   //!< CRT input variables for CRUMBS
@@ -43,9 +45,9 @@ namespace caf {
     ~SRCRUMBSCRTVars() {}
 
     float trackscore;                //!< a combination of the DCA and angle between the best matched TPC & CRT tracks
-    float hitscore;                  //!< the best distance from an extrapolated TPC track to a CRT hit [cm]
+    float spscore;                   //!< the best distance from an extrapolated TPC track to a CRT spacepoint [cm]
     float tracktime;                 //!< the time associated with the matched CRT track [us]
-    float hittime;                   //!< the time associated with the matched CRT hit [us]
+    float sptime;                    //!< the time associated with the matched CRT spacepoint [us]
   };
 
   //!< Result of the CRUMBS slice ID MVA

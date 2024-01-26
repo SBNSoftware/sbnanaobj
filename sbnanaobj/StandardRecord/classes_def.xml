@@ -277,11 +277,13 @@
    <version ClassVersion="10" checksum="1693619771"/>
   </class>
 
-  <class name="caf::SRCRUMBSPDSVars" ClassVersion="10">
+  <class name="caf::SRCRUMBSPDSVars" ClassVersion="11">
+   <version ClassVersion="11" checksum="330635714"/>
    <version ClassVersion="10" checksum="2282974103"/>
   </class>
 
-  <class name="caf::SRCRUMBSCRTVars" ClassVersion="10">
+  <class name="caf::SRCRUMBSCRTVars" ClassVersion="11">
+   <version ClassVersion="11" checksum="1654400576"/>
    <version ClassVersion="10" checksum="1010873394"/>
   </class>
 
