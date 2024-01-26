@@ -26,6 +26,9 @@ namespace caf
     float pca2ratio     { kSignalingNaN }; // LArThreeDPCAFeatureTool_SecondaryPCARatio feature
     float pca3ratio     { kSignalingNaN }; // LArThreeDPCAFeatureTool_TertiaryPCARatio feature
     float vtxdist       { kSignalingNaN }; // LArThreeDVertexDistanceFeatureTool_VertexDistance feature
+    float halototratio  { kSignalingNaN }; // LArConeChargeFeatureTool_HaloTotalRatio feature
+    float concentration { kSignalingNaN }; // LArConeChargeFeatureTool_Concentration feature
+    float conicalness   { kSignalingNaN }; // LArConeChargeFeatureTool_Conicalness feature
 
     void setDefault();
   };

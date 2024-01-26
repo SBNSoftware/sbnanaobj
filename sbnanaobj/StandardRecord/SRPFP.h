@@ -8,6 +8,7 @@
 #include "sbnanaobj/StandardRecord/SRTrack.h"
 #include "sbnanaobj/StandardRecord/SRShower.h"
 #include "sbnanaobj/StandardRecord/SRPFPRazzled.h"
+#include "sbnanaobj/StandardRecord/SRCNNScore.h"
 
 #include <vector>
 
@@ -27,6 +28,8 @@ class SRPFP {
 
   float trackScore;  ///< The MVA score that determines how track/shower like a PFP is
   SRPFOChar pfochar; ///< The MVA inputs (features) in determination of the track score (PFO Characterisation)
+
+  SRCNNScore cnnscore; // CNN scores for this PFP
 
   int slcID; // ID of the slice that this PFP belongs to
   float t0; // T0 assigned by TPC reco, if any

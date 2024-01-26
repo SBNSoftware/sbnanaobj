@@ -31,9 +31,9 @@ namespace caf {
 
   SRCRUMBSCRTVars::SRCRUMBSCRTVars()
     : trackscore(std::numeric_limits<float>::signaling_NaN())
-    , hitscore(std::numeric_limits<float>::signaling_NaN())
+    , spscore(std::numeric_limits<float>::signaling_NaN())
     , tracktime(std::numeric_limits<float>::signaling_NaN())
-    , hittime(std::numeric_limits<float>::signaling_NaN())
+    , sptime(std::numeric_limits<float>::signaling_NaN())
   {
   }
 
