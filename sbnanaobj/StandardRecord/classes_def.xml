@@ -5,13 +5,15 @@
 <!-- art::Wrappers for these products are defined in CAFMaker -->
 
 <lcgdict>
-  <class name="caf::StandardRecord" ClassVersion="12">
+  <class name="caf::StandardRecord" ClassVersion="13">
+   <version ClassVersion="13" checksum="1979816256"/>
    <version ClassVersion="12" checksum="3984422068"/>
    <version ClassVersion="11" checksum="483883398"/>
    <version ClassVersion="10" checksum="2569909752"/>
   </class>
 
-  <class name="caf::SRHeader" ClassVersion="19">
+  <class name="caf::SRHeader" ClassVersion="20">
+   <version ClassVersion="20" checksum="185218613"/>
    <version ClassVersion="19" checksum="1204111507"/>
    <version ClassVersion="18" checksum="1724302139"/>
    <version ClassVersion="17" checksum="2390355049"/>
@@ -28,8 +30,14 @@
    <version ClassVersion="10" checksum="1379012114"/>
   </class>
 
-  <class name="caf::SRPFOChar" ClassVersion="10" >
+  <class name="caf::SRPFOChar" ClassVersion="11" >
+   <version ClassVersion="11" checksum="1471728789"/>
    <version ClassVersion="10" checksum="1756876186"/>
+  </class>
+
+  <class name="caf::SRCNNScore" ClassVersion="11" >
+   <version ClassVersion="11" checksum="769924360"/>
+   <version ClassVersion="10" checksum="3242119722"/>
   </class>
 
   <class name="caf::SRHit" ClassVersion="10">
@@ -96,7 +104,8 @@
    <version ClassVersion="10" checksum="3777054621"/>
   </class>
 
-  <class name="caf::SRTrack" ClassVersion="14">
+  <class name="caf::SRTrack" ClassVersion="15">
+   <version ClassVersion="15" checksum="175611744"/>
    <version ClassVersion="14" checksum="3934033130"/>
    <version ClassVersion="13" checksum="522362999"/>
    <version ClassVersion="12" checksum="3952974887"/>
@@ -227,7 +236,9 @@
    <version ClassVersion="10" checksum="839301601"/>
   </class>
 
-  <class name="caf::SRPFP" ClassVersion="13">
+  <class name="caf::SRPFP" ClassVersion="15">
+   <version ClassVersion="15" checksum="3226426358"/>
+   <version ClassVersion="14" checksum="635023057"/>
    <version ClassVersion="13" checksum="2132348118"/>
    <version ClassVersion="12" checksum="2470467174"/>
    <version ClassVersion="11" checksum="1837341006"/>
@@ -250,6 +261,10 @@
    <version ClassVersion="10" checksum="133600353"/>
   </class>
 
+  <class name="caf::SRPFPRazzled" ClassVersion="10">
+   <version ClassVersion="10" checksum="3379238512"/>
+  </class>
+
   <class name="caf::SRBNBInfo" ClassVersion="10">
    <version ClassVersion="10" checksum="2143749817"/>
   </class>
@@ -267,11 +282,13 @@
    <version ClassVersion="10" checksum="1693619771"/>
   </class>
 
-  <class name="caf::SRCRUMBSPDSVars" ClassVersion="10">
+  <class name="caf::SRCRUMBSPDSVars" ClassVersion="11">
+   <version ClassVersion="11" checksum="330635714"/>
    <version ClassVersion="10" checksum="2282974103"/>
   </class>
 
-  <class name="caf::SRCRUMBSCRTVars" ClassVersion="10">
+  <class name="caf::SRCRUMBSCRTVars" ClassVersion="11">
+   <version ClassVersion="11" checksum="1654400576"/>
    <version ClassVersion="10" checksum="1010873394"/>
   </class>
 
@@ -349,9 +366,29 @@
   </class>
   <class name="std::vector<caf::SRTPCPMTBarycenterMatch>"/>
 
+  <class name="caf::SRCRTSpacePoint" ClassVersion="10">
+   <version ClassVersion="10" checksum="3912601582"/>
+  </class>
+
+  <class name="caf::SRCRTSpacePointMatch" ClassVersion="10">
+   <version ClassVersion="10" checksum="382456729"/>
+  </class>
+
+  <class name="caf::SRSBNDCRTTrack" ClassVersion="10">
+   <version ClassVersion="10" checksum="1967800431"/>
+  </class>
+
+  <class name="caf::SRSBNDCRTTrackMatch" ClassVersion="10">
+   <version ClassVersion="10" checksum="2486605052"/>
+  </class>
+
+  <class name="std::vector<caf::SRCRTSpacePoint>" />
+  <class name="std::vector<caf::SRSBNDCRTTrack>" />
+
   <enum name="caf::Det_t" ClassVersion="10"/>
   <enum name="caf::Plane_t" ClassVersion="10"/>
   <enum name="caf::Wall_t" ClassVersion="10"/>
+  <enum name="caf::SBNDCRTTagger_t" ClassVersion="10"/>
   <enum name="caf::MCType_t" ClassVersion="10"/>
   <enum name="caf::generator_" ClassVersion="10"/>
   <enum name="caf::mevprtlchannel_" ClassVersion="10"/>
