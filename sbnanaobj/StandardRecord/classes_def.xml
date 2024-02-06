@@ -11,7 +11,9 @@
    <version ClassVersion="10" checksum="2569909752"/>
   </class>
 
-  <class name="caf::SRHeader" ClassVersion="19">
+  <class name="caf::SRHeader" ClassVersion="21">
+   <version ClassVersion="21" checksum="861604402"/>
+   <version ClassVersion="20" checksum="185218613"/>
    <version ClassVersion="19" checksum="1204111507"/>
    <version ClassVersion="18" checksum="1724302139"/>
    <version ClassVersion="17" checksum="2390355049"/>
