@@ -30,6 +30,20 @@ namespace caf
     kWallBack=6
   };
 
+  enum SBNDCRTTagger_t {
+    kUndefinedSBNDTagger = -1,
+    kBottomSBNDTagger,
+    kSouthSBNDTagger,
+    kNorthSBNDTagger,
+    kWestSBNDTagger,
+    kEastSBNDTagger,
+    kTopLowSBNDTagger,
+    kTopHighSBNDTagger,
+
+    kUpstreamSBNDTagger   = kSouthSBNDTagger,
+    kDownstreamSBNDTagger = kNorthSBNDTagger
+  };
+
   /// Which type of MC?
   enum MCType_t
   {
