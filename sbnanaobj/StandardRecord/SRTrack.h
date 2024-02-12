@@ -12,6 +12,8 @@
 #include "sbnanaobj/StandardRecord/SRTrkRange.h"
 #include "sbnanaobj/StandardRecord/SRCRTHitMatch.h"
 #include "sbnanaobj/StandardRecord/SRCRTTrackMatch.h"
+#include "sbnanaobj/StandardRecord/SRCRTSpacePointMatch.h"
+#include "sbnanaobj/StandardRecord/SRSBNDCRTTrackMatch.h"
 #include "sbnanaobj/StandardRecord/SRTrackCalo.h"
 #include "sbnanaobj/StandardRecord/SRTrackDazzle.h"
 #include "sbnanaobj/StandardRecord/SRTrackScatterClosestApproach.h"
@@ -49,9 +51,11 @@ namespace caf
       SRTrkMCS       mcsP;
       SRTrkRange     rangeP;
 
-      SRTrackTruth   truth;        ///< truth information
-      SRCRTHitMatch  crthit;       ///< CRT Hit match
-      SRCRTTrackMatch  crttrack;   ///< CRT Track match
+      SRTrackTruth         truth;         ///< truth information
+      SRCRTHitMatch        crthit;        ///< CRT Hit match (ICARUS)
+      SRCRTTrackMatch      crttrack;      ///< CRT Track match (ICARUS)
+      SRCRTSpacePointMatch crtspacepoint; ///< CRT SpacePoint match (SBND)
+      SRSBNDCRTTrackMatch  crtsbndtrack;  ///< CRT Track match (SBND)
 
       SRTrackScatterClosestApproach scatterClosestApproach; ///< Scattering variables relating to spread about interpolated track
       SRTrackStoppingChi2Fit stoppingChi2Fit;               ///< Fit results from Pol0 and Exp to dEdx vs res. range
