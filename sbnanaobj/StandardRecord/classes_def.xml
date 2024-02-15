@@ -12,7 +12,8 @@
    <version ClassVersion="10" checksum="2569909752"/>
   </class>
 
-  <class name="caf::SRHeader" ClassVersion="20">
+  <class name="caf::SRHeader" ClassVersion="21">
+   <version ClassVersion="21" checksum="861604402"/>
    <version ClassVersion="20" checksum="185218613"/>
    <version ClassVersion="19" checksum="1204111507"/>
    <version ClassVersion="18" checksum="1724302139"/>
@@ -154,7 +155,8 @@
    <version ClassVersion="10" checksum="3162028429"/>
   </class>
 
-  <class name="caf::SRTrkMCS" ClassVersion="10">
+  <class name="caf::SRTrkMCS" ClassVersion="11">
+   <version ClassVersion="11" checksum="2241616344"/>
    <version ClassVersion="10" checksum="4182678053"/>
   </class>
 
