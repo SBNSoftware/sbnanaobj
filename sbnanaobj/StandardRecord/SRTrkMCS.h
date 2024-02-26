@@ -4,6 +4,8 @@
 #ifndef SRTRKMCS_H
 #define SRTRKMCS_H
 
+#include <vector>
+
 namespace caf
 {
   /// Representation of the reco momentum and PID a recob::Track for 
@@ -14,6 +16,9 @@ namespace caf
 
       SRTrkMCS();
       virtual ~SRTrkMCS();
+
+      std::vector<float> seg_scatter_angles; //!< Scatter angles between segments on track, in mrad
+      std::vector<float> seg_length; //!< Length of segments on track, in units of radiation lengths
 
       float fwdP_muon; //!< Momentum from start->end fit for muon [GeV/c]
       float fwdP_pion; //!< Momentum from start->end fit for pion [GeV/c]
