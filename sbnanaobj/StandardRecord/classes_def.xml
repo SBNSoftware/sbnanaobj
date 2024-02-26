@@ -5,12 +5,15 @@
 <!-- art::Wrappers for these products are defined in CAFMaker -->
 
 <lcgdict>
-  <class name="caf::StandardRecord" ClassVersion="11">
+  <class name="caf::StandardRecord" ClassVersion="12">
+   <version ClassVersion="12" checksum="3984422068"/>
    <version ClassVersion="11" checksum="483883398"/>
    <version ClassVersion="10" checksum="2569909752"/>
   </class>
 
-  <class name="caf::SRHeader" ClassVersion="18">
+  <class name="caf::SRHeader" ClassVersion="20">
+   <version ClassVersion="20" checksum="2820677622"/>
+   <version ClassVersion="19" checksum="3510140996"/>
    <version ClassVersion="18" checksum="1724302139"/>
    <version ClassVersion="17" checksum="2390355049"/>
    <version ClassVersion="16" checksum="2130480854"/>
@@ -55,7 +58,9 @@
    <version ClassVersion="10" checksum="83320005"/>
   </class>
 
-  <class name="caf::SRSlice" ClassVersion="14">
+  <class name="caf::SRSlice" ClassVersion="16">
+   <version ClassVersion="16" checksum="1077147770"/>
+   <version ClassVersion="15" checksum="2724994355"/>
    <version ClassVersion="14" checksum="740791578"/>
    <version ClassVersion="13" checksum="1378484383"/>
    <version ClassVersion="12" checksum="3783103871"/>
@@ -325,7 +330,21 @@
    <version ClassVersion="10" checksum="2672302824"/>
   </class>
   <class name="std::vector<caf::SROpFlash>" />
-  
+  <class name="caf::SRCRTPMTMatch" ClassVersion="11" >
+   <version ClassVersion="11" checksum="1965728222"/>
+   <version ClassVersion="10" checksum="2059576953"/>
+  </class>
+  <class name="std::vector<caf::SRCRTPMTMatch>"/>
+  <class name="caf::SRMatchedCRT" ClassVersion="10" >
+   <version ClassVersion="10" checksum="4053405227"/>
+  </class>
+  <class name="std::vector<caf::SRMatchedCRT>"/>
+
+  <class name="caf::SRTPCPMTBarycenterMatch" ClassVersion="10" >
+   <version ClassVersion="10" checksum="119776448"/>
+  </class>
+  <class name="std::vector<caf::SRTPCPMTBarycenterMatch>"/>
+
   <enum name="caf::Det_t" ClassVersion="10"/>
   <enum name="caf::Plane_t" ClassVersion="10"/>
   <enum name="caf::Wall_t" ClassVersion="10"/>

@@ -30,6 +30,8 @@ namespace caf
   // blind(false),
   nbnbinfo(0),
   nnumiinfo(0),
+  noffbeambnb(0),
+  noffbeamnumi(0),
   husk(false)
   {  }
 

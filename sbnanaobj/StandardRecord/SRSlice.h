@@ -9,6 +9,7 @@
 #include "sbnanaobj/StandardRecord/SRCRUMBSResult.h"
 #include "sbnanaobj/StandardRecord/SRFakeReco.h"
 #include "sbnanaobj/StandardRecord/SRFlashMatch.h"
+#include "sbnanaobj/StandardRecord/SRTPCPMTBarycenterMatch.h"
 #include "sbnanaobj/StandardRecord/SRSliceRecoBranch.h"
 #include "sbnanaobj/StandardRecord/SRTrueInteraction.h"
 #include "sbnanaobj/StandardRecord/SRTruthMatch.h"
@@ -31,6 +32,8 @@ namespace caf
       unsigned producer { UINT_MAX };     ///< Index of the producer that produced this object. 
                                           ///< In ICARUS, this is the same as the cryostat.
       float    charge { kSignalingNaN };  ///< Calorimetric energy
+      SRVector3D charge_center;           ///< Weighted mean of hit positions in XYZ [cm]
+      SRVector3D charge_width;            ///< Weighted standard deviation of hit positions in XYZ [cm]
       SRVector3D vertex;                  ///< Candidate neutrino vertex in local detector coordinates [cm]
 
       SRTrueInteraction truth; //!< Truth information on the slice
@@ -39,6 +42,8 @@ namespace caf
       SRFlashMatch fmatch;   //!< Optical flash-match for this slice of TPC charge
       SRFlashMatch fmatch_a; //!< Optical flash-match for this slice of TPC charge
       SRFlashMatch fmatch_b; //!< Optical flash-match for this slice of TPC charge
+
+      SRTPCPMTBarycenterMatch barycenterFM; //!< Matching this slice to the OpFlash nearest to its charge center in YZ and to the triggering flash
 
       SRFakeReco fake_reco;
 
