@@ -71,6 +71,7 @@ namespace caf
       caf::SRTrigger triggerinfo; ///< storing trigger information per event
 
       std::string    sourceName; ///< Name of the file or source this event comes from.
+      size_t         sourceNameHash; ///< hash of sourceName; std::hash<std::string>(sourceName)
       unsigned int   sourceIndex = NoSourceIndex(); ///< Index of this event within the source (zero-based).
 
       /// If true, this record has been filterd out, and only remains as a
