@@ -43,6 +43,7 @@ namespace caf
     int   hitnuc;
     genie_interaction_mode_ genie_mode;   //!< Interaction mode (as for LArSoft MCNeutrino::Mode() )
     genie_interaction_type_ genie_inttype; //!< Following LARSoft MCNeutrino::InteractionType()
+    size_t genie_evtrec_idx; //!< Index in the genie::NtpMCEventRecord
 
     bool    isnc;              //!< same as LArSoft "ccnc" - 0=CC, 1=NC
     bool    iscc;              //!< CC (true) or NC/interference (false)
