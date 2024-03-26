@@ -56,7 +56,7 @@ namespace caf
 
       std::string    sourceName; ///< Name of the file or source this event comes from.
       unsigned int   sourceIndex = NoSourceIndex; ///< Index of this event within the source (zero-based).
-      size_t         sourceNameHash; ///< hash of sourceName; std::hash<std::string>(sourceName)
+      unsigned int   sourceNameHash; ///< hash of sourceName; std::hash<std::string>(sourceName)
 
       /// If true, this record has been filterd out, and only remains as a
       /// receptacle for exposure information. It should be skipped in any
