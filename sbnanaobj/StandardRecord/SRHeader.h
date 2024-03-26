@@ -10,6 +10,7 @@
 #include "sbnanaobj/StandardRecord/SRNuMIInfo.h"
 #include "sbnanaobj/StandardRecord/SRTrigger.h"
 
+#include <cstdint>
 #include <vector>
 #include <string>
 #include <limits> // std::numeric_limits
@@ -56,7 +57,7 @@ namespace caf
 
       std::string    sourceName; ///< Name of the file or source this event comes from.
       unsigned int   sourceIndex = NoSourceIndex; ///< Index of this event within the source (zero-based).
-      unsigned int   sourceNameHash; ///< hash of sourceName; std::hash<std::string>(sourceName)
+      std::uint32_t  sourceNameHash; ///< hash of sourceName, std::hash<std::string>(sourceName), then truncated to std::uint32_t. Should be 32-bit integer to be used as TTreeIndex (https://root.cern/doc/master/classTTreeIndex.html#a08aac749ab22fd5c8ab792a0061a4b0f)
 
       /// If true, this record has been filterd out, and only remains as a
       /// receptacle for exposure information. It should be skipped in any
