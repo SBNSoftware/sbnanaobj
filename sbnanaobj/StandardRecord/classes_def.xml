@@ -11,7 +11,9 @@
    <version ClassVersion="10" checksum="2569909752"/>
   </class>
 
-  <class name="caf::SRHeader" ClassVersion="20">
+  <class name="caf::SRHeader" ClassVersion="22">
+   <version ClassVersion="22" checksum="4065646786"/>
+   <version ClassVersion="21" checksum="755284079"/>
    <version ClassVersion="20" checksum="2820677622"/>
    <version ClassVersion="19" checksum="3510140996"/>
    <version ClassVersion="18" checksum="1724302139"/>
@@ -177,7 +179,8 @@
    <version ClassVersion="10" checksum="3963837747"/>
   </class>
 
-  <class name="caf::SRTrueInteraction" ClassVersion="13">
+  <class name="caf::SRTrueInteraction" ClassVersion="14">
+   <version ClassVersion="14" checksum="2387261293"/>
    <version ClassVersion="13" checksum="2387159424"/>
    <version ClassVersion="12" checksum="671928574"/>
    <version ClassVersion="11" checksum="1242940498"/>
