@@ -10,6 +10,7 @@
 #include "sbnanaobj/StandardRecord/SRNuMIInfo.h"
 #include "sbnanaobj/StandardRecord/SRTrigger.h"
 
+#include <cstdint>
 #include <vector>
 #if defined(__castxml_major__) && !defined(__clang__)
 // This header is processed by CASTXML to extract information for the flat CAF;
@@ -73,6 +74,7 @@ namespace caf
       caf::SRTrigger triggerinfo; ///< storing trigger information per event
 
       std::string    sourceName; ///< Name of the file or source this event comes from.
+      std::uint32_t  sourceNameHash; ///< hash of sourceName, std::hash<std::string>(sourceName), then truncated to std::uint32_t. Should be 32-bit integer to be used as TTreeIndex (https://root.cern/doc/master/classTTreeIndex.html#a08aac749ab22fd5c8ab792a0061a4b0f)
       unsigned int   sourceIndex = NoSourceIndex(); ///< Index of this event within the source (zero-based).
 
       /// If true, this record has been filterd out, and only remains as a
