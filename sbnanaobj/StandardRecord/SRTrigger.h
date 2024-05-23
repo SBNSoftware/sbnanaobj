@@ -2,6 +2,7 @@
 #define SRTRIGGER_h
 
 #include <cstdlib>
+#include <cstdint>
 
 namespace caf
 {
