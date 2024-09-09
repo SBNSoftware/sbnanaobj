@@ -242,6 +242,26 @@ namespace caf
     kFixed = 2,
     kMultiSigma = 3
   };
+
+  enum Shape_t{
+    kUnknown = -1,
+    kShower = 0,
+    kTrack = 1,
+    kMichel = 2,
+    kDelta = 3,
+    kLowEnergy = 4,
+    kGhost = 5    
+  };
+
+  enum Pid_t{
+    kUnknown = -1,
+    kPhoton = 0,
+    kElectron = 1,
+    kMuon = 2,
+    kPion = 3,
+    kProton = 4,
+    kKaon = 5
+  };
 }
 
 #endif
