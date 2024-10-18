@@ -1,60 +1,63 @@
-//  SRInteractionDLP.h
-// \author  mueller@fnal.gov
-////////////////////////////////////////////////////////////////////////
+/**
+ * @file SRInteractionDLP.h
+ * @brief Definition of the SRInteractionDLP class.
+ * @author mueller@fnal.gov
+*/
 #ifndef SRINTERACTIONDLP_H
 #define SRINTERACTIONDLP_H
 
 #include <vector>
+#include <array>
 #include <string>
 #include <stdint.h>
 #include "SRParticleDLP.h"
 
 namespace caf
 {
-  /// The SRInteractionDLP is a representation of an interaction as
-  /// defined/reconstructed by the Deep Learn Physics Machine Learning
-  /// reconstruction.
-  class SRInteractionDLP
-  {
-  public:
-    SRInteractionDLP();
-    ~SRInteractionDLP() {  }
+    /**
+     * @brief The SRInteractionDLP class is a representation of an interaction
+     * as defined/reconstructed by the SPINE (Deep Learn Physics)
+     * reconstruction. It encapsulates reconstructed information about the
+     * interaction itself and some high-level information about the particles
+     * in the interaction.
+    */
+    class SRInteractionDLP
+    {
+        public:
+        SRInteractionDLP();
+        ~SRInteractionDLP();
 
-    double coffset;                         //!< 
-    int64_t crthit_id;                      //!<
-    uint8_t crthit_matched;                 //!<
-    int64_t crthit_matched_particle_id;     //!<
-    double flash_hypothesis;                //!<
-    int64_t flash_id;                       //!<
-    double flash_time;                      //!<
-    double flash_total_pe;                  //!<
-    uint8_t fmatched;                       //!<
-    int64_t id;                             //!<
-    int64_t image_id;                       //!<
-    bool is_ccrosser;                       //!<
-    bool is_contained;                      //!<
-    bool is_fiducial;                       //!<
-    bool is_neutrino;                       //!<
-    bool is_principal_match;                //!<
-    std::vector<int64_t> match;             //!<
-    std::vector<float> match_overlap;       //!<
-    uint8_t matched;                        //!<
-    int64_t nu_id;                          //!<
-    int64_t num_particles;                  //!<
-    int64_t num_primaries;                  //!<
-    std::vector<SRParticleDLP> particles;   //!<
-    int64_t particle_counts[7];             //!<
-    std::vector<int64_t> particle_ids;      //!<
-    int64_t primary_counts[7];              //!<
-    int64_t size;                           //!<
-    std::string topology;                   //!<
-    std::string units;                      //!<
-    float vertex[3];                        //!<
-    std::string vertex_mode;                //!<
-    int64_t volume_id;                      //!<
+        double cathode_offset;                              //!< Distance from the cathode.
+	float depositions_sum;                              //!< TO DO.
+        double flash_hypo_pe;                               //!< Total PE of the hypothesized flash.
+        int64_t flash_id;                                   //!< Flash ID for the matched flash.
+        double flash_time;                                  //!< Time of the matched flash.
+        double flash_total_pe;                              //!< Total PE of the matched flash.
+        int64_t id;                                         //!< Interaction ID.
+        std::vector<int64_t> index;                         //!< List of coordinate indices that comprise the interaction.
+        bool is_cathode_crosser;                            //!< Whether the interaction is a cathode-crosser.
+        bool is_contained;                                  //!< Whether the interaction is contained.
+        bool is_fiducial;                                   //!< Whether the interaction has an interaction in the fiducial volume.
+        bool is_flash_matched;                              //!< Whether the flash is matched to the interaction.
+        bool is_matched;                                    //!< Whether the interaction is matched to a true interaction.
+        bool is_truth;                                      //!< Whether the interaction is a truth interaction.
+        std::vector<int64_t> match_ids;                     //!< Interaction IDs of the considered matches (correspond to true interactions).
+        std::vector<float> match_overlaps;                  //!< Intersection over union (IoU) of the considered matches.
+        std::vector<int64_t> module_ids;                    //!< Module IDs of the interaction.
+	int64_t num_particles;                              //!< TO DO.
+	int64_t nu_id;                                      //!< TO DO.
+	//std::array<int64_t, 6> particle_counts;             //!< TO DO.
+	int64_t particle_counts[6];
+        std::vector<int64_t> particle_ids;                  //!< Particle IDs in the interaction.
+	//std::array<int64_t, 6> primary_particle_counts;     //!< TO DO.
+	int64_t primary_particle_counts[6];
+	int64_t size;                                       //!< TO DO.
+        std::string topology;                               //!< Topology of the interaction (e.g. "0g0e1mu0pi2p") considering only primaries.
+        std::string units;                                  //!< Units in which the position coordinates are expressed.
+        //std::array<float, 3> vertex;                        //!< Vertex of the interaction in detector coordinates.
+	float vertex[3];
+
+        std::vector<SRParticleDLP> particles;               //!< Particles in the interaction.
   };
-
-} // end namespace
-
+} // namespace caf
 #endif // SRINTERACTIONDLP_H
-////////////////////////////////////////////////////////////////////////

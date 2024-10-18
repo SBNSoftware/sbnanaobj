@@ -1,53 +1,52 @@
-////////////////////////////////////////////////////////////////////////
-// \file    SRParticleDLP.cxx
-// \brief   SRParticleDLP holds ML particle information.
-// \author  mueller@fnal.gov
-////////////////////////////////////////////////////////////////////////
-
+/**
+ * @file SRParticleDLP.cxx
+ * @brief Implementation of the SRParticleDLP class.
+ * @author mueller@fnal.gov
+*/
 #include <limits>
 #include <vector>
 #include "SRParticleDLP.h"
+#include "SREnums.h"
 
 namespace caf
 {
-  SRParticleDLP::SRParticleDLP():
-    calo_ke(-1.0),
-    coffset(-1.0),
-    csda_ke(-1.0),
-    depositions_sum(-1.0),
-    end_dir{std::numeric_limits<float>::signaling_NaN(), std::numeric_limits<float>::signaling_NaN(), std::numeric_limits<float>::signaling_NaN()},
-    end_point{std::numeric_limits<float>::signaling_NaN(), std::numeric_limits<float>::signaling_NaN(), std::numeric_limits<float>::signaling_NaN()},
-    fragment_ids(std::vector<int64_t>()),
-    id(-1),
-    image_id(-1),
-    index(std::vector<int64_t>()),
-    interaction_id(-1),
-    is_ccrosser(false),
-    is_contained(true),
-    is_primary(true),
-    is_principal_match(true),
-    is_valid(true),
-    ke(-1),
-    length(-1),
-    match(std::vector<int64_t>()),
-    match_overlap(std::vector<float>()),
-    matched(std::numeric_limits<uint8_t>::signaling_NaN()),
-    mcs_ke(-1),
-    momentum{},
-    nu_id(-1),
-    num_fragments(-1),
-    pdg_code(0),
-    pid(-1),
-    pid_scores{},
-    primary_scores{},
-    semantic_type(-1),
-    size(0),
-    start_dir{std::numeric_limits<float>::signaling_NaN(), std::numeric_limits<float>::signaling_NaN(), std::numeric_limits<float>::signaling_NaN()},
-    start_point{std::numeric_limits<float>::signaling_NaN(), std::numeric_limits<float>::signaling_NaN(), std::numeric_limits<float>::signaling_NaN()},
-    units(),
-    volume_id(-1)
-  {  }
+    SRParticleDLP::SRParticleDLP():
+        calo_ke(std::numeric_limits<double>::signaling_NaN()),
+        cathode_offset(std::numeric_limits<double>::signaling_NaN()),
+        csda_ke(std::numeric_limits<double>::signaling_NaN()),
+	depositions_sum(std::numeric_limits<float>::signaling_NaN()),
+        end_dir{std::numeric_limits<float>::signaling_NaN(), std::numeric_limits<float>::signaling_NaN(), std::numeric_limits<float>::signaling_NaN()},
+        end_point{std::numeric_limits<float>::signaling_NaN(), std::numeric_limits<float>::signaling_NaN(), std::numeric_limits<float>::signaling_NaN()},
+        fragment_ids(),
+        id(std::numeric_limits<int64_t>::signaling_NaN()),
+        index(),
+        interaction_id(std::numeric_limits<int64_t>::signaling_NaN()),
+        is_cathode_crosser(false),
+        is_contained(false),
+        is_matched(false),    
+        is_primary(false),
+        is_truth(false),
+        is_valid(false),
+        ke(std::numeric_limits<double>::signaling_NaN()),
+        length(std::numeric_limits<double>::signaling_NaN()),
+        mass(std::numeric_limits<double>::signaling_NaN()),
+        match_ids(),
+        match_overlaps(),
+        mcs_ke(std::numeric_limits<double>::signaling_NaN()),
+        module_ids(),
+        momentum{std::numeric_limits<float>::signaling_NaN(), std::numeric_limits<float>::signaling_NaN(), std::numeric_limits<float>::signaling_NaN()},
+        num_fragments(std::numeric_limits<int64_t>::signaling_NaN()),
+        p(std::numeric_limits<float>::signaling_NaN()),
+        pdg_code(std::numeric_limits<int64_t>::signaling_NaN()),
+        pid((int64_t)-1),
+        pid_scores(),
+        ppn_ids(),
+        primary_scores(),
+        shape((int64_t)-1),
+        size(std::numeric_limits<int64_t>::signaling_NaN()),
+        start_dir{std::numeric_limits<float>::signaling_NaN(), std::numeric_limits<float>::signaling_NaN(), std::numeric_limits<float>::signaling_NaN()},
+        start_point{std::numeric_limits<float>::signaling_NaN(), std::numeric_limits<float>::signaling_NaN(), std::numeric_limits<float>::signaling_NaN()},
+        units() { }
 
-} // end namespace caf
-////////////////////////////////////////////////////////////////////////
-
+    SRParticleDLP::~SRParticleDLP() { }
+} // namespace caf

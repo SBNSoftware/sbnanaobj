@@ -1,5 +1,6 @@
 #ifndef SRENUMS_H
 #define SRENUMS_H
+#include <cstdint>
 
 namespace caf
 {
@@ -241,6 +242,28 @@ namespace caf
     kPMNSigma = 1,
     kFixed = 2,
     kMultiSigma = 3
+  };
+
+  enum class Shape_t : int64_t
+  {
+    kShapeUnknown = -1,
+    kShower = 0,
+    kTrack = 1,
+    kMichel = 2,
+    kDelta = 3,
+    kLowEnergy = 4,
+    kGhost = 5    
+  };
+
+  enum class Pid_t : int64_t 
+  {
+    kPidUnknown = -1,
+    kPhoton = 0,
+    kElectron = 1,
+    kMuon = 2,
+    kPion = 3,
+    kProton = 4,
+    kKaon = 5
   };
 }
 
