@@ -252,9 +252,9 @@ libdir	fq_dir		lib
 #
 ####################################
 product		version		qual	flags		<table_format=2>
-root		v6_22_08d	-
-srproxy		v00.39		-
-cetmodules	v3_20_00	-	only_for_build
+root		v6_26_06b	-
+srproxy		v00.42		-
+cetmodules	v3_21_01	-	only_for_build
 end_product_list
 ####################################
 
@@ -310,10 +310,10 @@ end_product_list
 #
 ####################################
 qualifier	root		srproxy	notes
-c7:debug	c7:p392:debug	py3	-nq-
-c7:prof		c7:p392:prof	py3	-nq-
-e20:debug	e20:p392:debug	py3	-nq-
-e20:prof	e20:p392:prof	py3	-nq-
+c7:debug	c7:p3913:debug	py3913	-nq-
+c7:prof		c7:p3913:prof	py3913	-nq-
+e20:debug	e20:p3913:debug	py3913	-nq-
+e20:prof	e20:p3913:prof	py3913	-nq-
 end_qualifier_list
 ####################################
 
