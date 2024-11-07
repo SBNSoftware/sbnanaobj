@@ -64,25 +64,20 @@ namespace caf
         std::vector<float> match_overlaps;                  //!< Intersection over union (IoU) of the considered matches.
         int64_t mct_index;                                  //!< Index of the neutrino in the original MCTruth array.
         std::vector<int64_t> module_ids;                    //!< Module IDs of the interaction.
-        //std::array<float, 3> momentum;                      //!< Momentum (vector) of the neutrino.
-	float momentum[3];
+	float momentum[3];                                  //!< Momentum (vector) of the neutrino.
         double momentum_transfer;                           //!< Momentum transfer (Q^2) of the neutrino interaction.
         double momentum_transfer_mag;                       //!< Momentum transfer (Q3) of the neutrino interaction.
         int64_t nu_id;                                      //!< Neutrino ID (-1 = not a neutrino, 0 = first neutrino, 1 = second neutrino, etc.).
         int64_t nucleon;                                    //!< Nucleon in the neutrino interaction.
 	int64_t num_particles;                              //!< TO DO.
         int64_t orig_id;                                    //!< Original ID of the interaction.
-	//std::array<int64_t, 6> particle_counts;             //!< TO DO.
-	int64_t particle_counts[6];
+	int64_t particle_counts[6];                         //!< TO DO.
         std::vector<int64_t> particle_ids;                  //!< Particle IDs in the interaction.
         int64_t pdg_code;                                   //!< PDG code of the neutrino.
-        //std::array<float, 3> position;                      //!< Position of the neutrino interaction.
-	float position[3];
-	//std::array<int64_t, 6> primary_particle_counts;     //!< TO DO.
-	int64_t primary_particle_counts[6];
+	float position[3];                                  //!< Position of the neutrino interaction.
+	int64_t primary_particle_counts[6];                 //!< TO DO.
         int64_t quark;                                      //!< Quark in the neutrino interaction.
-        //std::array<float, 3> reco_vertex;                   //!< Vertex of the interaction in detector coordinates (reco).
-	float reco_vertex[3];
+	float reco_vertex[3];                               //!< Vertex of the interaction in detector coordinates (reco).
 	int64_t size;                                       //!< TO DO.
 	int64_t size_adapt;                                 //!< TO DO.
 	int64_t size_g4;                                    //!< TO DO.
@@ -91,9 +86,7 @@ namespace caf
         std::string topology;                               //!< Topology of the interaction (e.g. "0g0e1mu0pi2p") considering only primaries.
         int64_t track_id;                                   //!< Track ID of the neutrino interaction.
 	std::string units;                                  //!< Units in which the position coordinates are expressed.
-        //std::array<float, 3> vertex;                        //!< Vertex of the interaction in detector coordinates (truth).
-	float vertex[3];
-
+	float vertex[3];                                    //!< Vertex of the interaction in detector coordinates (truth).
         std::vector<SRParticleTruthDLP> particles;          //!< Particles in the interaction.
   };
 } // namespace caf

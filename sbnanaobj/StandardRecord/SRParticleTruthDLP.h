@@ -21,100 +21,87 @@ namespace caf
     SRParticleTruthDLP();
     ~SRParticleTruthDLP() {  }
 
-    std::string ancestor_creation_process; //!<
-    int64_t ancestor_pdg_code;             //!<
-    //std::array<float, 3> ancestor_position;//!<
-    float ancestor_position[3];
-    double ancestor_t;                     //!<
-    int64_t ancestor_track_id;             //!<
-    double calo_ke;                        //!<
-    std::vector<int64_t> children_counts;  //!<
-    std::vector<int64_t> children_id;      //!<
-    double cathode_offset;                 //!<
-    std::string creation_process;          //!<
-    double csda_ke;                        //!<
-    float depositions_adapt_sum;           //!<
-    float depositions_adapt_q_sum;         //!<
-    int64_t depositions_g4_sum;            //!<
-    float depositions_sum;                 //!<
-    double depositions_q_sum;              //!<
-    double distance_travel;                //!<
-    //std::array<float, 3> end_dir;          //!<
-    float end_dir[3];
-    //std::array<float, 3> end_momentum;     //!<
-    float end_momentum[3];
-    float end_p;                           //!<
-    //std::array<float, 3> end_point;        //!<
-    float end_point[3];
-    //std::array<float, 3> end_position;     //!<
-    float end_position[3];
-    double end_t;                          //!<
-    double energy_deposit;                 //!<
-    double energy_init;                    //!<
-    //std::array<float, 3> first_step;       //!<
-    float first_step[3];
-    std::vector<int32_t> fragment_ids;     //!<
-    int64_t gen_id;                        //!<
-    int64_t group_id;                      //!<
-    int64_t group_primary;                 //!<
-    int64_t id;                            //!<
-    std::vector<int64_t> index;            //!<
-    std::vector<int64_t> index_adapt;      //!<
-    std::vector<int64_t> index_g4;         //!<
-    int64_t interaction_id;                //!<
-    int64_t interaction_primary;           //!<
-    bool is_cathode_crosser;               //!<
-    bool is_contained;                     //!<
-    bool is_matched;                       //!<
-    bool is_primary;                       //!<
-    bool is_truth;                         //!<
-    bool is_valid;                         //!<
-    double ke;                             //!<
-    //std::array<float, 3> last_step;        //!<
-    float last_step[3];
-    double length;                         //!<
-    double mass;                           //!<
-    std::vector<int64_t> match_ids;        //!<
-    std::vector<float> match_overlaps;     //!<
-    double mcs_ke;                         //!<
-    int64_t mcst_index;                    //!<
-    int64_t mct_index;                     //!<
-    std::vector<int64_t> module_ids;       //!<
-    //std::array<float, 3> momentum;         //!<
-    float momentum[3];
-    int64_t nu_id;                         //!<
-    int64_t num_fragments;                 //!<
-    int64_t num_voxels;                    //!<
-    int64_t orig_id;                       //!<
-    int64_t orig_interaction_id;           //!<
-    double p;                              //!<
-    std::string parent_creation_process;   //!<
-    int64_t parent_id;                     //!<
-    int64_t parent_pdg_code;               //!<
-    //std::array<float, 3> parent_position;  //!<
-    float parent_position[3];
-    double parent_t;                       //!<
-    double parent_track_id;                //!<
-    int64_t pdg_code;                      //!<
-    int64_t pid;                           //!<
-    //std::array<float, 3> position;         //!<
-    float position[3];
-    //std::array<float, 3> reco_end_dir;     //!<
-    float reco_end_dir[3];
-    double reco_length;                    //!<
-    //std::array<float, 3> reco_start_dir;   //!<
-    float reco_start_dir[3];
-    int64_t shape;                         //!<
-    int64_t size;                          //!<
-    int64_t size_adapt;                    //!<
-    int64_t size_g4;                       //!<
-    //std::array<float, 3> start_dir;        //!<
-    float start_dir[3];
-    //std::array<float, 3> start_point;      //!<
-    float start_point[3];
-    double t;                              //!<
-    int64_t track_id;                      //!<
-    std::string units;                     //!<
+    std::string ancestor_creation_process;         //!< Geant4 creation process of the ancestor particle.
+    int64_t ancestor_pdg_code;                     //!< PDG code of the ancestor particle.
+    float ancestor_position[3];                    //!< Position of the ancestor particle.
+    double ancestor_t;                             //!< Time of the ancestor particle.
+    int64_t ancestor_track_id;                     //!< Track ID of the ancestor particle.
+    double calo_ke;                                //!< Calorimetric kinetic energy.
+    double cathode_offset;                         //!< Distance from the cathode.
+    std::vector<int64_t> children_counts;          //!< Number of children of the particle.
+    std::vector<int64_t> children_id;              //!< List of particle ID of children particles.
+    std::string creation_process;                  //!< Geant4 creation process of the particle.
+    double csda_ke;                                //!< Continuous-slowing-down-approximation kinetic energy.
+    float depositions_adapt_sum;                   //!< TO DO.
+    float depositions_adapt_q_sum;                 //!< TO DO.
+    int64_t depositions_g4_sum;                    //!< TO DO.
+    float depositions_sum;                         //!< TO DO.
+    double depositions_q_sum;                      //!< TO DO.
+    double distance_travel;                        //!< TO DO.
+    //std::array<float, 3> end_dir;                //!< TO DO.
+    float end_dir[3];                              //!< Unit direction vector calculated at the particle end point.
+    float end_momentum[3];                         //!< Momentum (vector) of the particle at the end.
+    float end_p;                                   //!< Momentum magnitude of the particle at the end.
+    float end_point[3];                            //!< End point (vector) of the particle.
+    float end_position[3];                         //!< End position (vector) of the particle.
+    double end_t;                                  //!< TO DO.
+    double energy_deposit;                         //!< Energy deposited by the particle.
+    double energy_init;                            //!< Initial energy of the particle. 
+    float first_step[3];                           //!< Coordinates of the first step of the particle.
+    std::vector<int32_t> fragment_ids;             //!< Fragment IDs comprising the particle.
+    int64_t gen_id;                                //!< Generator ID of the particle (may differ from Geant4 or Supera ID).
+    int64_t group_id;                              //!< Group ID of the particle.
+    int64_t group_primary;                         //!< Whether the particle is a primary within its group.
+    int64_t id;                                    //!< Particle ID.
+    std::vector<int64_t> index;                    //!< List of coordinate indices that comprise the particle.
+    std::vector<int64_t> index_adapt;              //!< Index corresponding to the true particle in the adapted cluster label points.
+    std::vector<int64_t> index_g4;                 //!< Index corresponding to the true particle in the G4 points (effectively SED).
+    int64_t interaction_id;                        //!< Parent interaction ID.
+    int64_t interaction_primary;                   //!< Whether the particle is a primary within its interaction (equivalent to is_primary).
+    bool is_cathode_crosser;                       //!< Whether the particle is a cathode-crosser.
+    bool is_contained;                             //!< Whether the particle is contained.
+    bool is_matched;                               //!< Whether the particle is matched.
+    bool is_primary;                               //!< Whether the particle is a primary particle.
+    bool is_truth;                                 //!< Whether the particle is a truth particle.
+    bool is_valid;                                 //!< Whether the particle passes thresholds and counts towards topology.
+    double ke;                                     //!< Kinetic energy from best energy estimator (CSDA, calorimetric, or MCS). 
+    float last_step[3];                            //!< Coordinates of the last step of the particle.
+    double length;                                 //!< Length of the particle.
+    double mass;                                   //!< Mass of the particle.
+    std::vector<int64_t> match_ids;                //!< Particle match IDs.
+    std::vector<float> match_overlaps;             //!< Particle match overlaps.
+    double mcs_ke;                                 //!< Multiple Coulomb scattering kinetic energy.
+    int64_t mcst_index;                            //!< MCST index.
+    int64_t mct_index;                             //!< Index of the particle in the original MCTruth array.
+    std::vector<int64_t> module_ids;               //!< Module IDs of the particle. 
+    float momentum[3];                             //!< Momentum (vector) of the particle.
+    int64_t nu_id;                                 //!< Neutrino ID (-1 = not a neutrino, 0 = first neutrino, 1 = second neutrino, etc.).
+    int64_t num_fragments;                         //!< Number of particle fragments.
+    int64_t num_voxels;                            //!< Number of voxels comprising the particle.
+    int64_t orig_id;                               //!< Original ID of the particle.
+    int64_t orig_interaction_id;                   //!< Interaction ID as it was stored in the parent LArCV file under the interaction_id attribute.
+    double p;                                      //!< Momentum magnitude.
+    std::string parent_creation_process;           //!< Geant4 creation process of the parent particle.
+    int64_t parent_id;                             //!< Parent particle ID.
+    int64_t parent_pdg_code;                       //!< PDG code of the parent particle. 
+    float parent_position[3];                      //!< Position of the parent particle.
+    double parent_t;                               //!< Time of the parent particle.
+    double parent_track_id;                        //!< Track ID of the parent particle.
+    int64_t pdg_code;                              //!< PDG code of the particle.
+    int64_t pid;                                   //!< Particle ID (see Pid enumeration).
+    float position[3];                             //!< Position of the particle.
+    float reco_end_dir[3];                         //!< TO DO.
+    double reco_length;                            //!< TO DO.
+    float reco_start_dir[3];                       //!< TO DO.
+    int64_t shape;                                 //!< Semantic type of the particle (see SemanticType enumeration).
+    int64_t size;                                  //!< TO DO.
+    int64_t size_adapt;                            //!< TO DO.
+    int64_t size_g4;                               //!< TO DO.
+    float start_dir[3];                            //!< Unit direction vector calculated at the particle start point.
+    float start_point[3];                          //!< Start point (vector) of the particle.
+    double t;                                      //!< Time of the particle.
+    int64_t track_id;                              //!< Track ID of the particle.
+    std::string units;                             //!< Units in which the position coordinates are expressed.
   };
 
 } // end namespace
