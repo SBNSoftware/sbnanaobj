@@ -1,50 +1,42 @@
-////////////////////////////////////////////////////////////////////////
-// \file    SRInteractionDLP.cxx
-// \brief   SRInteractionDLP holds ML interaction information.
-// \author  mueller@fnal.gov
-////////////////////////////////////////////////////////////////////////
-
+/**
+ * @file SRInteractionDLP.cxx
+ * @brief Implementation of the SRInteractionDLP class.
+ * @author mueller@fnal.gov
+*/
 #include <limits>
 #include <vector>
 #include "sbnanaobj/StandardRecord/SRInteractionDLP.h"
 
 namespace caf
 {
-  SRInteractionDLP::SRInteractionDLP():
-    coffset(-1.0),
-    crthit_id(-1),
-    crthit_matched(-1),
-    crthit_matched_particle_id(-1),
-    flash_hypothesis(std::numeric_limits<double>::signaling_NaN()),
-    flash_id(-1),
-    flash_time(std::numeric_limits<double>::signaling_NaN()),
-    flash_total_pe(std::numeric_limits<double>::signaling_NaN()),
-    fmatched(-1),
-    id(-1),
-    image_id(-1),
-    is_ccrosser(false),
-    is_contained(true),
-    is_fiducial(true),
-    is_neutrino(false),
-    is_principal_match(false),
-    match(std::vector<int64_t>()),
-    match_overlap(std::vector<float>()),
-    matched(-1),
-    nu_id(-1),
-    num_particles(0),
-    num_primaries(0),
-    particles(std::vector<SRParticleDLP>()),
-    particle_counts{},
-    particle_ids(std::vector<int64_t>()),
-    primary_counts{},
-    size(0),
-    topology(),
-    units(),
-    vertex{std::numeric_limits<float>::signaling_NaN(), std::numeric_limits<float>::signaling_NaN(), std::numeric_limits<float>::signaling_NaN()},
-    vertex_mode(),
-    volume_id(-1)
-  {  }
+    SRInteractionDLP::SRInteractionDLP():
+        cathode_offset(std::numeric_limits<double>::signaling_NaN()),
+	depositions_sum(std::numeric_limits<float>::signaling_NaN()),
+        flash_hypo_pe(std::numeric_limits<double>::signaling_NaN()),
+        flash_id(std::numeric_limits<int64_t>::signaling_NaN()),
+        flash_time(std::numeric_limits<double>::signaling_NaN()),
+        flash_total_pe(std::numeric_limits<double>::signaling_NaN()),
+        id(std::numeric_limits<int64_t>::signaling_NaN()),
+	index(std::vector<int64_t>()),
+        is_cathode_crosser(false),
+        is_contained(true),
+        is_fiducial(true),
+        is_flash_matched(false),
+        is_matched(false),
+        is_truth(false),
+        match_ids(std::vector<int64_t>()),
+        match_overlaps(std::vector<float>()),
+        module_ids(std::vector<int64_t>()),
+        num_particles(std::numeric_limits<int64_t>::signaling_NaN()),
+        nu_id(std::numeric_limits<int64_t>::signaling_NaN()),
+        particle_counts{std::numeric_limits<int64_t>::signaling_NaN(), std::numeric_limits<int64_t>::signaling_NaN(), std::numeric_limits<int64_t>::signaling_NaN()},
+        particle_ids(std::vector<int64_t>()),
+        primary_particle_counts{std::numeric_limits<int64_t>::signaling_NaN(), std::numeric_limits<int64_t>::signaling_NaN(), std::numeric_limits<int64_t>::signaling_NaN()},
+        size(std::numeric_limits<int64_t>::signaling_NaN()),
+        topology(),
+        units(),
+        vertex{std::numeric_limits<float>::signaling_NaN(), std::numeric_limits<float>::signaling_NaN(), std::numeric_limits<float>::signaling_NaN()},
+        particles(std::vector<SRParticleDLP>()) { }
 
-} // end namespace caf
-////////////////////////////////////////////////////////////////////////
-
+    SRInteractionDLP::~SRInteractionDLP() { }
+} // namespace caf
