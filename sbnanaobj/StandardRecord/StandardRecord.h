@@ -18,6 +18,8 @@
 #include "sbnanaobj/StandardRecord/SRTruthBranch.h"
 #include "sbnanaobj/StandardRecord/SRFakeReco.h"
 #include "sbnanaobj/StandardRecord/SROpFlash.h"
+#include "sbnanaobj/StandardRecord/SRInteractionDLP.h"
+#include "sbnanaobj/StandardRecord/SRInteractionTruthDLP.h"
 
 /// Common Analysis Files
 namespace caf
@@ -59,6 +61,10 @@ namespace caf
     std::vector<SRCRTPMTMatch> crtpmt_matches;  ///< CRT-PMT matches in event 
     bool pass_flashtrig;     ///< Whether this Record passed the Flash Trigger requirement
 
+    int                                ndlp;       ///< Number of reco DLP (ML) interactions.
+    std::vector<SRInteractionDLP>      dlp;        ///< Reco DLP (ML) interactions.  
+    int                                ndlp_true;  ///< Number of true DLP (ML) interactions.
+    std::vector<SRInteractionTruthDLP> dlp_true;   ///< True DLP (ML) interactions.
   };
 
 } // end namespace
