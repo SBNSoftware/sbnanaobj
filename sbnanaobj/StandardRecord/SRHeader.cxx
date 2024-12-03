@@ -32,6 +32,7 @@ namespace caf
   noffbeambnb(0.0),
   nnumiinfo(0),
   noffbeamnumi(0.0),
+  sourceNameHash(0),
   husk(false)
   {  }
 
