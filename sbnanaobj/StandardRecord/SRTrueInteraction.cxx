@@ -24,7 +24,7 @@ namespace caf
     hitnuc(-999),
     genie_mode(kUnknownInteractionMode),
     genie_inttype(kUnknownInteractionType),
-    genie_evtrec_idx(99999),
+    genie_evtrec_idx(0),
     isnc(false),
     iscc(false),
     isvtxcont(false),
