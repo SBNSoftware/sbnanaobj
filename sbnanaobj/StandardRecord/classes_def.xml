@@ -67,7 +67,8 @@
    <version ClassVersion="10" checksum="83320005"/>
   </class>
 
-  <class name="caf::SRSlice" ClassVersion="20">
+  <class name="caf::SRSlice" ClassVersion="21">
+   <version ClassVersion="21" checksum="3825441135"/>
    <version ClassVersion="20" checksum="1917004696"/>
    <version ClassVersion="19" checksum="3108582545"/>
    <version ClassVersion="18" checksum="3464825901"/>
@@ -300,6 +301,11 @@
    <version ClassVersion="13" checksum="1642667704"/>
    <version ClassVersion="12" checksum="2557689850"/>
    <version ClassVersion="11" checksum="3162219101"/>
+   <version ClassVersion="10" checksum="3388549490"/>
+  </class>
+
+  <class name="caf::SRCVNScore" ClassVersion="11" >
+   <version ClassVersion="11" checksum="4159815756"/>
    <version ClassVersion="10" checksum="3388549490"/>
   </class>
 
