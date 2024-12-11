@@ -338,6 +338,7 @@
   <class name="std::vector<caf::SROpT0Finder>" />
   <class name="std::vector<caf::SRTrigger>" />
   <class name="std::vector<caf::SRPFP>" />
+  <class name="std::vector<caf::SRCVNScore>" />
 
   <class name="caf::SRCRTHit" ClassVersion="11">
    <version ClassVersion="11" checksum="3268314487"/>
