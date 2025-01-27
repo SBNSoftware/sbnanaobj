@@ -9,7 +9,6 @@ namespace caf {
   class SRCVNScore {
   public:
     SRCVNScore();
-    ~SRCVNScore() {}
 
     float cosmicscore; 
     float ncscore; 
