@@ -6,14 +6,13 @@
 
 namespace caf {
 
-  class SRCVNScore {
-  public:
-    SRCVNScore();
-
-    float cosmicscore; 
-    float ncscore; 
-    float numuscore; 
-    float nuescore;
+  struct SRCVNScore {
+    
+    static constexpr float NoScore = std::numeric_limits<float>::signaling_NaN();
+    float cosmicscore = NoScore; 
+    float ncscore = NoScore; 
+    float numuscore = NoScore; 
+    float nuescore = NoScore;
 
   };
 }
