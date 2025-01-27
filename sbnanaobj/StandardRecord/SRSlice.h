@@ -65,7 +65,7 @@ namespace caf
 
       SRSliceRecoBranch   reco; //!< TPC reco information for the slice
 
-      SRCVNScore          cvn;  //!< CVN scores for the slice
+      SRCVNScore          cvn;  //!< Interaction type classification scores for the slice
 
       void setDefault();
 
