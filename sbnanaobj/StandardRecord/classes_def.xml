@@ -67,7 +67,8 @@
    <version ClassVersion="10" checksum="83320005"/>
   </class>
 
-  <class name="caf::SRSlice" ClassVersion="20">
+  <class name="caf::SRSlice" ClassVersion="21">
+   <version ClassVersion="21" checksum="3825441135"/>
    <version ClassVersion="20" checksum="1917004696"/>
    <version ClassVersion="19" checksum="3108582545"/>
    <version ClassVersion="18" checksum="3464825901"/>
@@ -303,6 +304,10 @@
    <version ClassVersion="10" checksum="3388549490"/>
   </class>
 
+  <class name="caf::SRCVNScore" ClassVersion="10" >
+   <version ClassVersion="10" checksum="4159815756"/>
+  </class>
+
   <!--<class name="caf::SRLorentzVector" /> -->
 
   <class name="std::vector<caf::SRSlice>" />
@@ -332,6 +337,7 @@
   <class name="std::vector<caf::SROpT0Finder>" />
   <class name="std::vector<caf::SRTrigger>" />
   <class name="std::vector<caf::SRPFP>" />
+  <class name="std::vector<caf::SRCVNScore>" />
 
   <class name="caf::SRCRTHit" ClassVersion="11">
    <version ClassVersion="11" checksum="3268314487"/>
