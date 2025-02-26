@@ -17,6 +17,7 @@
 #include "sbnanaobj/StandardRecord/SRVector3D.h"
 #include "sbnanaobj/StandardRecord/SRNuID.h"
 #include "sbnanaobj/StandardRecord/SRConstants.h"
+#include "sbnanaobj/StandardRecord/SRCVNScore.h"
 
 #include <climits>
 
@@ -63,6 +64,8 @@ namespace caf
       int                 self { INT_MIN };    //!< ID of the particle representing this slice
 
       SRSliceRecoBranch   reco; //!< TPC reco information for the slice
+
+      SRCVNScore          cvn;  //!< Interaction type classification scores for the slice
 
       void setDefault();
 

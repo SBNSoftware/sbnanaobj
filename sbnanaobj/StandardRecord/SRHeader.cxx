@@ -29,7 +29,10 @@ namespace caf
   cluster(-1),
   // blind(false),
   nbnbinfo(0),
+  noffbeambnb(0.0),
   nnumiinfo(0),
+  noffbeamnumi(0.0),
+  sourceNameHash(0),
   husk(false)
   {  }
 

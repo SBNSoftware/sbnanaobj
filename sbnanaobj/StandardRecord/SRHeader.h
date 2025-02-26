@@ -10,6 +10,7 @@
 #include "sbnanaobj/StandardRecord/SRNuMIInfo.h"
 #include "sbnanaobj/StandardRecord/SRTrigger.h"
 
+#include <cstdint>
 #include <vector>
 #include <string>
 #include <limits> // std::numeric_limits
@@ -47,13 +48,16 @@ namespace caf
       size_t                      nbnbinfo; ///< Number of BNBInfo objects
       std::vector<caf::SRBNBInfo> bnbinfo; ///< storing beam information per subrun
       caf::SRBNBInfo              spillbnbinfo; ///< storing beam information for given event's spill
+      double noffbeambnb; ///< Number of offbeam BNB gates
       size_t                       nnumiinfo; ///< Number of NuMIInfo objects
       std::vector<caf::SRNuMIInfo> numiinfo; ///< storing beam information per subrun
       caf::SRNuMIInfo              spillnumiinfo; ///< storing beam information for given event's spill
+      double noffbeamnumi; ///< Number of offbeam NuMI gates
       caf::SRTrigger triggerinfo; ///< storing trigger information per event
 
       std::string    sourceName; ///< Name of the file or source this event comes from.
       unsigned int   sourceIndex = NoSourceIndex; ///< Index of this event within the source (zero-based).
+      std::uint32_t  sourceNameHash; ///< hash of sourceName, std::hash<std::string>(sourceName), then truncated to std::uint32_t. Should be 32-bit integer to be used as TTreeIndex (https://root.cern/doc/master/classTTreeIndex.html#a08aac749ab22fd5c8ab792a0061a4b0f)
 
       /// If true, this record has been filterd out, and only remains as a
       /// receptacle for exposure information. It should be skipped in any
