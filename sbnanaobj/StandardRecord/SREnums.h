@@ -231,7 +231,9 @@ namespace caf
     kG4Transportation=60,
     kG4msc=61,
     kG4StepLimiter=62,
-    kG4UNKNOWN=63
+    kG4LegacyUNKNOWN=63,
+    kG4RadioactiveDecayBase=64,
+    kG4UNKNOWN=1024
   };// g4_process_
 
   //==== This should be synchronized to rwtype in sbnobj/Common/SBNEventWeight/EventWeightParameterSet.h
