@@ -28,11 +28,15 @@ namespace caf
         SRParticleDLP();
         ~SRParticleDLP();
 
+        float axial_spread;                                 //!< Axial spread of the particle.
         double calo_ke;                                     //!< Calorimetric kinetic energy.
         double cathode_offset;                              //!< Distance from the cathode.
+        double chi2_per_pid[6];                             //!< Chi2 score per PID hypothesis.
+        int64_t chi2_pid;                                   //!< PID from the chi2-based PID.
         double csda_ke;                                     //!< Continuous-slowing-down-approximation kinetic energy.
         double csda_ke_per_pid[6];                          //!< CSDA kinetic energy per PID.
         float depositions_sum;                              //!< TO DO.
+        float directional_spread;                           //!< Directional spread of the particle.
         float end_dir[3];                                   //!< Unit direction vector calculated at the particle end point.
         float end_point[3];                                 //!< End point (vector) of the particle.
         std::vector<int32_t> fragment_ids;                  //!< Fragment IDs comprising the particle.
@@ -46,7 +50,7 @@ namespace caf
         bool is_valid;                                      //!< Whether the particle passes thresholds and counts towards the topology.
         double ke;                                          //!< Kinetic energy from best energy estimator (CSDA, calorimetric, or MCS).
         double length;                                      //!< Length of the particle.
-	    double mass;                                        //!< TO DO.
+	    double mass;                                        //!< Mass of the particle (according to assigned PID).
         std::vector<int64_t> match_ids;                     //!< Match ID.
         std::vector<float> match_overlaps;                  //!< Match overlap.
         double mcs_ke;                                      //!< Multiple Coulomb scattering kinetic energy.
@@ -61,10 +65,11 @@ namespace caf
         std::vector<int32_t> ppn_ids;                       //!< PPN IDs of the particle.
 	    float primary_scores[2];                            //!< Primary softmax scores
         int64_t shape;                                      //!< Semantic type of the particle (see Shape_t enumeration).
-        double shower_split_angle;                          //!< TO DO.
         int64_t size;                                       //!< TO DO.
+        double start_dedx;                                 //!< dE/dx at the start of the particle.
         float start_dir[3];                                 //!< Unit direction vector calculated at the particle start point.
         float start_point[3];                               //!< Start point (vector) of the particle.
+        float start_straightness;                           //!< Straightness at the start of the particle.
         std::string units;                                  //!< Units in which the position coordinates are expressed.
         double vertex_distance;                             //!< Distance from the vertex.
   };
