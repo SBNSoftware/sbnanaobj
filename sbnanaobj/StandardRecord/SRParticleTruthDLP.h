@@ -41,12 +41,12 @@ namespace caf
         std::string creation_process;                  //!< Geant4 creation process of the particle.
         double csda_ke;                                //!< Continuous-slowing-down-approximation kinetic energy.
         double csda_ke_per_pid[6];                     //!< CSDA kinetic energy per PID.
-        float depositions_adapt_q_sum;                 //!< TO DO.
-        float depositions_adapt_sum;                   //!< TO DO.
-        int64_t depositions_g4_sum;                    //!< TO DO.
-        double depositions_q_sum;                      //!< TO DO.
-        float depositions_sum;                         //!< TO DO.
-        double distance_travel;                        //!< TO DO.
+        float depositions_adapt_q_sum;                 //!< Total tagged (reco non-ghost) charge deposited [ADC].
+        float depositions_adapt_sum;                   //!< Total tagged (reco non-ghost) energy deposited [MeV].
+        int64_t depositions_g4_sum;                    //!< Total energy deposited energy at the G4 level [MeV].
+        float depositions_q_sum;                       //!< Total tagged (true non-ghost) charge deposited [ADC].
+        float depositions_sum;                         //!< Total tagged (true non-ghost) energy deposited [MeV].
+        double distance_travel;                        //!< Distance traveled by the neutrino from production to the interaction.
         float end_dir[3];                              //!< Unit direction vector calculated at the particle end point.
         float end_momentum[3];                         //!< Momentum (vector) of the particle at the end.
         float end_p;                                   //!< Momentum magnitude of the particle at the end.
@@ -57,7 +57,6 @@ namespace caf
         double energy_init;                            //!< Initial energy of the particle. 
         float first_step[3];                           //!< Coordinates of the first step of the particle.
         std::vector<int32_t> fragment_ids;             //!< Fragment IDs comprising the particle.
-        int64_t gen_id;                                //!< Generator ID of the particle (may differ from Geant4 or Supera ID).
         int64_t group_id;                              //!< Group ID of the particle.
         int64_t group_primary;                         //!< Whether the particle is a primary within its group.
         int64_t id;                                    //!< Particle ID.
@@ -84,8 +83,11 @@ namespace caf
         int64_t nu_id;                                 //!< Neutrino ID (-1 = not a neutrino, 0 = first neutrino, 1 = second neutrino, etc.).
         int64_t num_fragments;                         //!< Number of particle fragments.
         int64_t num_voxels;                            //!< Number of voxels comprising the particle.
+        std::vector<int64_t> orig_children_id;         //!< Original ID of the children particles.
+        int64_t orig_group_id;                         //!< Original group ID of the particle.
         int64_t orig_id;                               //!< Original ID of the particle.
         int64_t orig_interaction_id;                   //!< Interaction ID as it was stored in the parent LArCV file under the interaction_id attribute.
+        int64_t orig_parent_id;                        //!< Parent ID as it was stored in the parent LArCV file under the parent_id attribute.
         double p;                                      //!< Momentum magnitude.
         std::string parent_creation_process;           //!< Geant4 creation process of the parent particle.
         int64_t parent_id;                             //!< Parent particle ID.
