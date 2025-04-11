@@ -31,6 +31,14 @@ class SRPFP {
 
   SRCNNScore cnnscore; // CNN scores for this PFP
 
+  int   ng_sem_cat;    ///< NuGraph semantic category with largest hit fraction
+  float ng_mip_frac; ///< Fraction of PFP hits labeled by NuGraph as MIP
+  float ng_hip_frac; ///< Fraction of PFP hits labeled by NuGraph as HIP
+  float ng_shr_frac; ///< Fraction of PFP hits labeled by NuGraph as shower
+  float ng_mhl_frac; ///< Fraction of PFP hits labeled by NuGraph as Michel
+  float ng_dif_frac; ///< Fraction of PFP hits labeled by NuGraph as diffuse
+  float ng_bkg_frac; ///< Fraction of PFP hits labeled by NuGraph as background
+
   int slcID; // ID of the slice that this PFP belongs to
   float t0; // T0 assigned by TPC reco, if any
 
