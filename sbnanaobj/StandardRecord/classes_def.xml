@@ -350,7 +350,8 @@
   </class>
   <class name="std::vector<caf::SRCRTTrack>" />
 
-  <class name="caf::SRCRTHitMatch" ClassVersion="10">
+  <class name="caf::SRCRTHitMatch" ClassVersion="11">
+   <version ClassVersion="11" checksum="900891432"/>
    <version ClassVersion="10" checksum="1521467565"/>
   </class>
 
