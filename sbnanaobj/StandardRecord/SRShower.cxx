@@ -34,7 +34,8 @@ namespace caf
     dir(kInvalid, kInvalid, kInvalid),
     start(kInvalid, kInvalid, kInvalid),
     end(kInvalid, kInvalid, kInvalid),
-    cosmicDist(-5.f)
+    cosmicDist(-5.f),
+    producer(9999999)
   {
   }
 
