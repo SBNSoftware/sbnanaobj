@@ -21,6 +21,7 @@ namespace caf
     bool  onbeamtime       { false                        }; //!< Is this in time with beam?
     int   cryo             { kUninitializedInt            }; //!< 0 for SBND/ICARUS East, 1 for ICARUS West.
     int   firstpmt         { kUninitializedInt            }; //!< Channel number of first hit
+    int   tpc              { kUninitializedInt            }; //!< 0 for ICARUS, 0/1 for SBND
     float time             { kSignalingNaN                }; //!< Time on trigger time scale [us].
     float timewidth        { kSignalingNaN                }; //!< Width of the flash in time [us].
     float timemean         { kSignalingNaN                }; //!< Mean time of hits [us].
