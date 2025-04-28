@@ -36,6 +36,9 @@ namespace caf {
     float fmtime;                    //!< the time associated with the flash [us]
     float opt0score;                 //!< the agreement score from the OpT0 falsh matcher
     float opt0measuredpe;            //!< the PE of the reconstructed flash matched by OpT0
+    float pmtbarycentermatchradius;  //!< the radial (YZ) distance between the flash and charge centers from the TPCPDSBarycenter tool
+    float pmtbarycentermatchpe;      //!< the total number of photoelectrons in the matched flash from the TPCPDSBarycenter tool
+    float pmtbarycentermatchtime;    //!< the time of the matched flash from the TPCPDSBarycenter tool
   };
 
   //!< CRT input variables for CRUMBS
