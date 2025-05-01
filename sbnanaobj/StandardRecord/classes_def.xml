@@ -359,11 +359,13 @@
    <version ClassVersion="10" checksum="2672302824"/>
   </class>
 
-  <class name="caf::SROpFlash" ClassVersion="12">
+  <class name="caf::SROpFlash" ClassVersion="13">
+   <version ClassVersion="13" checksum="2333809763"/>
    <version ClassVersion="12" checksum="3122666215"/>
    <version ClassVersion="11" checksum="2756572285"/>
    <version ClassVersion="10" checksum="2672302824"/>
   </class>
+
   <class name="std::vector<caf::SROpFlash>" />
   <class name="caf::SRCRTPMTMatch" ClassVersion="10" >
    <version ClassVersion="10" checksum="2059576953"/>

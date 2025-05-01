@@ -16,9 +16,9 @@ namespace caf
 
   void SROpFlash::setDefault()
   {
-
     onbeamtime       =   false;
     cryo             =      -5;
+    tpc              =      -5;  
     firstpmt         =      -5;
     time             = -9999.f;
     timewidth        =    -5.f;
