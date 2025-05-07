@@ -242,7 +242,8 @@
    <version ClassVersion="10" checksum="839301601"/>
   </class>
 
-  <class name="caf::SRPFP" ClassVersion="16">
+  <class name="caf::SRPFP" ClassVersion="17">
+   <version ClassVersion="17" checksum="2252062519"/>
    <version ClassVersion="16" checksum="135310109"/>
    <version ClassVersion="15" checksum="3226426358"/>
    <version ClassVersion="14" checksum="635023057"/>
