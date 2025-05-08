@@ -6,17 +6,17 @@
 
 #include "sbnanaobj/StandardRecord/SRConstants.h"
 
-/**
- * @brief Categorization of the object/PFP by NuGraph.
- *
- * This object summarizes the results from running NuGraph over hits in a slice
- * (see e.g. [https://sbn-docdb.fnal.gov/cgi-bin/sso/ShowDocument?docid=40585](SBN DocDB 40585).
- *
- * The semantic category is the one that most hits belong to.
- * The fractions describe the categorization of the hits in the object/PFP.
- */
 namespace caf {
 
+  /**
+  * @brief Categorization of the object/PFP by NuGraph.
+  *
+  * This object summarizes the results from running NuGraph over hits in a slice
+  * (see e.g. [https://sbn-docdb.fnal.gov/cgi-bin/sso/ShowDocument?docid=40585](SBN DocDB 40585).
+  *
+  * The semantic category is the one that most hits belong to.
+  * The fractions describe the categorization of the hits in the object/PFP.
+  */
   class SRNuGraphScore {
   public:
 
