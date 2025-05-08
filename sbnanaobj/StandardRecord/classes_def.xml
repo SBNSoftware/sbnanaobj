@@ -42,6 +42,10 @@
    <version ClassVersion="10" checksum="3242119722"/>
   </class>
 
+  <class name="caf::SRNuGraphScore" ClassVersion="10" >
+   <version ClassVersion="10" checksum="705810055"/>
+  </class>
+
   <class name="caf::SRHit" ClassVersion="10">
    <version ClassVersion="10" checksum="1494967532"/>
   </class>
@@ -67,7 +71,8 @@
    <version ClassVersion="10" checksum="83320005"/>
   </class>
 
-  <class name="caf::SRSlice" ClassVersion="21">
+  <class name="caf::SRSlice" ClassVersion="22">
+   <version ClassVersion="22" checksum="2124497341"/>
    <version ClassVersion="21" checksum="3825441135"/>
    <version ClassVersion="20" checksum="1917004696"/>
    <version ClassVersion="19" checksum="3108582545"/>
@@ -241,7 +246,8 @@
    <version ClassVersion="10" checksum="839301601"/>
   </class>
 
-  <class name="caf::SRPFP" ClassVersion="15">
+  <class name="caf::SRPFP" ClassVersion="16">
+   <version ClassVersion="16" checksum="2252062519"/>
    <version ClassVersion="15" checksum="3226426358"/>
    <version ClassVersion="14" checksum="635023057"/>
    <version ClassVersion="13" checksum="2132348118"/>
