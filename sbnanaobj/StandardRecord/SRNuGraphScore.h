@@ -4,7 +4,7 @@
 #ifndef SRNuGraphSCORE_H
 #define SRNuGraphSCORE_H
 
-#include <limits>
+#include "sbnanaobj/StandardRecord/SRConstants.h"
 
 /**
  * @brief Categorization of the object/PFP by NuGraph.
@@ -29,14 +29,13 @@ namespace caf {
       Diffuse = 4 ///< Diffuse activity.
     };
 
-    int sem_cat =  = NuGraphCategory::Unset;
-    static constexpr float kUnassigned = std::numeric_limits<float>::signaling_NaN();
-    float mip_frac = kUnassigned; ///< Fraction of hits that are labeled as `MIP`.
-    float hip_frac = kUnassigned; ///< Fraction of hits that are labeled as `HIP`.
-    float shr_frac = kUnassigned; ///< Fraction of hits that are labeled as `Shower`.
-    float mhl_frac = kUnassigned; ///< Fraction of hits that are labeled as `Michel`.
-    float dif_frac = kUnassigned; ///< Fraction of hits that are labeled as `Diffuse`.
-    float bkg_frac = kUnassigned; ///< Fraction of hits that are labeled as `Background`.
+    int sem_cat = NuGraphCategory::Unset;
+    float mip_frac = caf::kSignalingNaN; ///< Fraction of hits that are labeled as `MIP`.
+    float hip_frac = caf::kSignalingNaN; ///< Fraction of hits that are labeled as `HIP`.
+    float shr_frac = caf::kSignalingNaN; ///< Fraction of hits that are labeled as `Shower`.
+    float mhl_frac = caf::kSignalingNaN; ///< Fraction of hits that are labeled as `Michel`.
+    float dif_frac = caf::kSignalingNaN; ///< Fraction of hits that are labeled as `Diffuse`.
+    float bkg_frac = caf::kSignalingNaN; ///< Fraction of hits that are labeled as `Background`.
   };
 }
 
