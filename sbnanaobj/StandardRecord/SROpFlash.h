@@ -27,7 +27,7 @@ namespace caf
     float timemean         { kSignalingNaN                }; //!< Mean time of hits [us].
     float timesd           { kSignalingNaN                }; //!< Standard deviation of hit times [us].
     float firsttime        { kSignalingNaN                }; //!< Time of first hit [us].
-    float rwmtime          { kSignalingNaN                }; //!< Time of flash wrt RWM Time. 
+    float rwmtime          { kSignalingNaN                }; //!< Time of flash wrt RWM Time [us]. 
     float totalpe          { kSignalingNaN                }; //!< Total number of PE across all PMTs.
     float fasttototal      { kSignalingNaN                }; //!< Fast to total light ratio.
     float peperwall[2] { kSignalingNaN, kSignalingNaN };
