@@ -20,7 +20,8 @@ namespace caf
     npts(-1),
     len(kInvalid),
     costh(kInvalid),
-    phi(kInvalid)
+    phi(kInvalid),
+    bestplane(Plane_t::kUnknown)
   {
   }
 } // end namespace caf

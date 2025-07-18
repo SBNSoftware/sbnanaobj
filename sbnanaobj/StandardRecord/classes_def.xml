@@ -42,6 +42,10 @@
    <version ClassVersion="10" checksum="3242119722"/>
   </class>
 
+  <class name="caf::SRNuGraphScore" ClassVersion="10" >
+   <version ClassVersion="10" checksum="705810055"/>
+  </class>
+
   <class name="caf::SRHit" ClassVersion="10">
    <version ClassVersion="10" checksum="1494967532"/>
   </class>
@@ -67,7 +71,9 @@
    <version ClassVersion="10" checksum="83320005"/>
   </class>
 
-  <class name="caf::SRSlice" ClassVersion="20">
+  <class name="caf::SRSlice" ClassVersion="22">
+   <version ClassVersion="22" checksum="2124497341"/>
+   <version ClassVersion="21" checksum="3825441135"/>
    <version ClassVersion="20" checksum="1917004696"/>
    <version ClassVersion="19" checksum="3108582545"/>
    <version ClassVersion="18" checksum="3464825901"/>
@@ -240,7 +246,8 @@
    <version ClassVersion="10" checksum="839301601"/>
   </class>
 
-  <class name="caf::SRPFP" ClassVersion="15">
+  <class name="caf::SRPFP" ClassVersion="16">
+   <version ClassVersion="16" checksum="2252062519"/>
    <version ClassVersion="15" checksum="3226426358"/>
    <version ClassVersion="14" checksum="635023057"/>
    <version ClassVersion="13" checksum="2132348118"/>
@@ -297,9 +304,15 @@
    <version ClassVersion="10" checksum="1010873394"/>
   </class>
 
-  <class name="caf::SRTrigger" ClassVersion="11">
+  <class name="caf::SRTrigger" ClassVersion="13">
+   <version ClassVersion="13" checksum="1642667704"/>
+   <version ClassVersion="12" checksum="2557689850"/>
    <version ClassVersion="11" checksum="3162219101"/>
    <version ClassVersion="10" checksum="3388549490"/>
+  </class>
+
+  <class name="caf::SRCVNScore" ClassVersion="10" >
+   <version ClassVersion="10" checksum="4159815756"/>
   </class>
 
   <!--<class name="caf::SRLorentzVector" /> -->
@@ -331,6 +344,7 @@
   <class name="std::vector<caf::SROpT0Finder>" />
   <class name="std::vector<caf::SRTrigger>" />
   <class name="std::vector<caf::SRPFP>" />
+  <class name="std::vector<caf::SRCVNScore>" />
 
   <class name="caf::SRCRTHit" ClassVersion="11">
    <version ClassVersion="11" checksum="3268314487"/>
@@ -343,7 +357,8 @@
   </class>
   <class name="std::vector<caf::SRCRTTrack>" />
 
-  <class name="caf::SRCRTHitMatch" ClassVersion="10">
+  <class name="caf::SRCRTHitMatch" ClassVersion="11">
+   <version ClassVersion="11" checksum="900891432"/>
    <version ClassVersion="10" checksum="1521467565"/>
   </class>
 
@@ -351,11 +366,13 @@
    <version ClassVersion="10" checksum="2672302824"/>
   </class>
 
-  <class name="caf::SROpFlash" ClassVersion="12">
+  <class name="caf::SROpFlash" ClassVersion="13">
+   <version ClassVersion="13" checksum="2333809763"/>
    <version ClassVersion="12" checksum="3122666215"/>
    <version ClassVersion="11" checksum="2756572285"/>
    <version ClassVersion="10" checksum="2672302824"/>
   </class>
+
   <class name="std::vector<caf::SROpFlash>" />
   <class name="caf::SRCRTPMTMatch" ClassVersion="10" >
    <version ClassVersion="10" checksum="2059576953"/>
