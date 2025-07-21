@@ -14,6 +14,8 @@ namespace caf
     LM875A(std::numeric_limits<float>::signaling_NaN()),
     LM875B(std::numeric_limits<float>::signaling_NaN()),
     LM875C(std::numeric_limits<float>::signaling_NaN()),
+    HP873(std::numeric_limits<float>::signaling_NaN()),
+    VP873(std::numeric_limits<float>::signaling_NaN()),
     HP875(std::numeric_limits<float>::signaling_NaN()),
     VP875(std::numeric_limits<float>::signaling_NaN()),
     HPTG1(std::numeric_limits<float>::signaling_NaN()),
@@ -22,6 +24,14 @@ namespace caf
     VPTG2(std::numeric_limits<float>::signaling_NaN()),
     BTJT2(std::numeric_limits<float>::signaling_NaN()),
     THCURR(std::numeric_limits<float>::signaling_NaN()),
+    M875HS(std::numeric_limits<float>::signaling_NaN()),
+    M875VS(std::numeric_limits<float>::signaling_NaN()),
+    M875HM(std::numeric_limits<float>::signaling_NaN()),
+    M875VM(std::numeric_limits<float>::signaling_NaN()),
+    M876HS(std::numeric_limits<float>::signaling_NaN()),
+    M876VS(std::numeric_limits<float>::signaling_NaN()),
+    M876HM(std::numeric_limits<float>::signaling_NaN()),
+    M876VM(std::numeric_limits<float>::signaling_NaN()),
     M875BB_spill_time_diff(std::numeric_limits<float>::signaling_NaN()),
     M876BB_spill_time_diff(std::numeric_limits<float>::signaling_NaN()),
     MMBTBB_spill_time_diff(std::numeric_limits<float>::signaling_NaN())
@@ -37,6 +47,8 @@ namespace caf
     LM875A = -999.0;
     LM875B = -999.0;
     LM875C = -999.0;
+    HP873 = -999.0;
+    VP873 = -999.0;
     HP875 = -999.0;
     VP875 = -999.0;
     HPTG1 = -999.0;
@@ -45,6 +57,14 @@ namespace caf
     VPTG2 = -999.0;
     BTJT2 = -999.0;
     THCURR = -999.0;
+    M875HS = -999.0;
+    M875VS = -999.0;
+    M875HM = -999.0;
+    M875VM = -999.0;
+    M876HS = -999.0;
+    M876VS = -999.0;
+    M876HM = -999.0;
+    M876VM = -999.0;
     M875BB_spill_time_diff = -999.0;
     M876BB_spill_time_diff = -999.0;
     MMBTBB_spill_time_diff = -999.0;
