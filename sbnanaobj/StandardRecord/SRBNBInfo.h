@@ -1,6 +1,15 @@
 #ifndef SRBNBINFO_h
 #define SRBNBINFO_h
 
+/**
+ * @brief Readings of the BNB beam monitors.
+ * 
+ * This information is typically fetched from the beam database (IFBeam) 
+ * and matched in time with the acquired event. 
+ * Offsets are applied through subtraction:   RealPositionValue = IFBeamValue - Offset
+ */
+
+
 #include <vector>
 
 namespace caf
