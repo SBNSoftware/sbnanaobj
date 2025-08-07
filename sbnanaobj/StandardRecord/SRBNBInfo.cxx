@@ -14,6 +14,14 @@ namespace caf
     LM875A(std::numeric_limits<float>::signaling_NaN()),
     LM875B(std::numeric_limits<float>::signaling_NaN()),
     LM875C(std::numeric_limits<float>::signaling_NaN()),
+    FOM(std::numeric_limits<float>::signaling_NaN()),
+    HP875Offset(std::numeric_limits<float>::signaling_NaN()),
+    VP875Offset(std::numeric_limits<float>::signaling_NaN()),
+    VP873Offset(std::numeric_limits<float>::signaling_NaN()),
+    HPTG1Offset(std::numeric_limits<float>::signaling_NaN()),
+    HPTG2Offset(std::numeric_limits<float>::signaling_NaN()),
+    VPTG1Offset(std::numeric_limits<float>::signaling_NaN()),
+    VPTG2Offset(std::numeric_limits<float>::signaling_NaN()),
     HP873(std::numeric_limits<float>::signaling_NaN()),
     VP873(std::numeric_limits<float>::signaling_NaN()),
     HP875(std::numeric_limits<float>::signaling_NaN()),
@@ -47,6 +55,14 @@ namespace caf
     LM875A = -999.0;
     LM875B = -999.0;
     LM875C = -999.0;
+    FOM = -999;
+    HP875Offset = -999;
+    VP875Offset = -999;
+    VP873Offset = -999;
+    HPTG1Offset = -999;
+    HPTG2Offset = -999;
+    VPTG1Offset = -999;
+    VPTG2Offset = -999;
     HP873 = -999.0;
     VP873 = -999.0;
     HP875 = -999.0;
