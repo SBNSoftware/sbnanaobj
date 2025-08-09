@@ -17,7 +17,15 @@ namespace caf
       SRCRTHitMatch();
       virtual ~SRCRTHitMatch() {}
       SRCRTHit hit; ///< The CRT hit
-      float distance; ///< Distance from the projected TPC track to the CRT hit [cm]
+      float distance; ///< Distance from the extrapolated TPC track to the CRT hit [cm]
+      int region; ///< region of the matched crt plane
+      int sys; ///< system of the matched crt hit (e.g. ICARUS: Top 0, Side 1, Bottom 2)
+      float deltaX; ///< DeltaX between CRT Hit matched and the track extrapolation onto the CRT plane
+      float deltaY; ///< DeltaY between CRT Hit matched and the track extrapolation onto the CRT plane
+      float deltaZ; ///< DeltaZ between CRT Hit matched and the track extrapolation onto the CRT plane
+      float crossX; ///< Extrapolated track crossing point onto the CRT plane
+      float crossY; ///< Extrapolated track crossing point onto the CRT plane
+      float crossZ; ///< Extrapolated track crossing point onto the CRT plane
     };
 
 } // end namespace
