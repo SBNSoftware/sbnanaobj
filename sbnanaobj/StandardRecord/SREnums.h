@@ -238,7 +238,7 @@ namespace caf
 
   //==== This should be synchronized to rwtype in sbnobj/Common/SBNEventWeight/EventWeightParameterSet.h
   enum ReweightType_t{
-    kDefault = -1,
+    kDefaultRWType = -1,
     kMultiSim = 0,
     kPMNSigma = 1,
     kFixed = 2,
