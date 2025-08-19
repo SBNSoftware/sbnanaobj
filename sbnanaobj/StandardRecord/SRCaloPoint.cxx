@@ -15,6 +15,8 @@ namespace caf
     dedx(std::numeric_limits<float>::signaling_NaN()),
     pitch(std::numeric_limits<float>::signaling_NaN()),
     t(std::numeric_limits<float>::signaling_NaN()),
+    efield(std::numeric_limits<float>::signaling_NaN()),
+    phi(std::numeric_limits<float>::signaling_NaN()),
     x(std::numeric_limits<float>::signaling_NaN()),
     y(std::numeric_limits<float>::signaling_NaN()),
     z(std::numeric_limits<float>::signaling_NaN()),
