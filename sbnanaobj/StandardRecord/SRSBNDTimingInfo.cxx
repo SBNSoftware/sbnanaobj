@@ -9,6 +9,7 @@
 namespace caf
 {
   SRSBNDTimingInfo::SRSBNDTimingInfo():
+    rawDAQHeaderTimestamp(std::numeric_limits<uint64_t>::min()),
     tdcCrtt1(std::numeric_limits<uint64_t>::min()),
     tdcBes(std::numeric_limits<uint64_t>::min()),
     tdcRwm(std::numeric_limits<uint64_t>::min()),

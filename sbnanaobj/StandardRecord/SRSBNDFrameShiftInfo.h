@@ -1,26 +1,27 @@
 ////////////////////////////////////////////////////////////////////////
-// \file    SRSBNDFrame.h
+// \file    SRSBNDFrameShiftInfo.h
 ////////////////////////////////////////////////////////////////////////
-#ifndef SRSBNDFRAME_H
-#define SRSBNDFRAME_H
+#ifndef SRSBNDFRAMESHIFTINFO_H
+#define SRSBNDFRAMESHIFTINFO_H
 
+#include <cstdint>
 namespace caf
 {
-  class SRSBNDFrame
+  class SRSBNDFrameShiftInfo
     {
     public:
-      SRSBNDFrame();
-      virtual ~SRSBNDFrame() {}
+      SRSBNDFrameShiftInfo();
+      virtual ~SRSBNDFrameShiftInfo() {}
 
+      uint16_t timingType;
       double frameTdcCrtt1;
       double frameTdcBes;
       double frameTdcRwm;
       double frameHltCrtt1;
       double frameHltBeamGate;
-      double frameDataToMC;
-      
+      double frameApplyAtCaf;
     };
 } // end namespace
 
-#endif // SRSBNDFRAME_H
+#endif // SRSBNDFRAMESHIFTINFO_H
 //////////////////////////////////////////////////////////////////////////////

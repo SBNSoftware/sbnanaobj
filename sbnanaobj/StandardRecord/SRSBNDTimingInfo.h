@@ -14,6 +14,7 @@ namespace caf
       SRSBNDTimingInfo();
       virtual ~SRSBNDTimingInfo() {}
       
+      uint64_t rawDAQHeaderTimestamp;
       uint64_t tdcCrtt1;
       uint64_t tdcBes;
       uint64_t tdcRwm;
