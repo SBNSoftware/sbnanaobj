@@ -5,7 +5,9 @@
 <!-- art::Wrappers for these products are defined in CAFMaker -->
 
 <lcgdict>
-  <class name="caf::StandardRecord" ClassVersion="15">
+  <class name="caf::StandardRecord" ClassVersion="17">
+   <version ClassVersion="17" checksum="1860171062"/>
+   <version ClassVersion="16" checksum="3807540114"/>
    <version ClassVersion="15" checksum="3946743153"/>
    <version ClassVersion="14" checksum="3798313791"/>
    <version ClassVersion="13" checksum="1979816256"/>
@@ -407,6 +409,16 @@
 
   <class name="std::vector<caf::SRCRTSpacePoint>" />
   <class name="std::vector<caf::SRSBNDCRTTrack>" />
+
+  <class name="caf::SRSBNDFrameShiftInfo" ClassVersion="11">
+   <version ClassVersion="11" checksum="2564414428"/>
+   <version ClassVersion="10" checksum="1967800431"/>
+  </class>
+
+  <class name="caf::SRSBNDTimingInfo" ClassVersion="11">
+   <version ClassVersion="11" checksum="4144120809"/>
+   <version ClassVersion="10" checksum="1967800431"/>
+  </class>
 
   <enum name="caf::Det_t" ClassVersion="10"/>
   <enum name="caf::Plane_t" ClassVersion="10"/>
