@@ -1,6 +1,10 @@
-////////////////////////////////////////////////////////////////////////
-// \file    SRSBNDFrame.cxx
-////////////////////////////////////////////////////////////////////////
+/*
+ * @file   /sbnanaobj/StandardRecord/SRSBNDFrameShiftInfo.cxx
+ * @brief  Defines CAF data structures to store sbnd::timing::FrameShiftInfo (docdb#43090).
+ * @author Vu Chi Lan Nguyen
+ * @date   August 29, 2025
+ *
+ */
 
 #include "sbnanaobj/StandardRecord/SRSBNDFrameShiftInfo.h"
 
