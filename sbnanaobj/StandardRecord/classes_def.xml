@@ -278,7 +278,8 @@
    <version ClassVersion="10" checksum="3379238512"/>
   </class>
 
-  <class name="caf::SRBNBInfo" ClassVersion="10">
+  <class name="caf::SRBNBInfo" ClassVersion="11">
+   <version ClassVersion="11" checksum="4021053031"/>
    <version ClassVersion="10" checksum="2143749817"/>
   </class>
 
