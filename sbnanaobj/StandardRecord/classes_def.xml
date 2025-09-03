@@ -146,7 +146,8 @@
    <version ClassVersion="10" checksum="4052698249"/>
   </class>
 
-  <class name="caf::SRCaloPoint" ClassVersion="13">
+  <class name="caf::SRCaloPoint" ClassVersion="14">
+   <version ClassVersion="14" checksum="3313115741"/>
    <version ClassVersion="13" checksum="930755035"/>
    <version ClassVersion="12" checksum="3873035196"/>
    <version ClassVersion="11" checksum="3357014269"/>
