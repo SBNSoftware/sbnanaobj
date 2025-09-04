@@ -24,6 +24,7 @@ namespace caf
         is_fiducial(true),
         is_flash_matched(false),
         is_matched(false),
+        is_time_contained(true),
         is_truth(false),
         match_ids(std::vector<int64_t>()),
         match_overlaps(std::vector<float>()),

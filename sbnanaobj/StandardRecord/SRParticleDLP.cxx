@@ -29,6 +29,7 @@ namespace caf
         is_contained(false),
         is_matched(false),    
         is_primary(false),
+        is_time_contained(true),
         is_truth(false),
         is_valid(false),
         ke(std::numeric_limits<double>::signaling_NaN()),

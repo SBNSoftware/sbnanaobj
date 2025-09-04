@@ -46,6 +46,7 @@ namespace caf
         bool is_contained;                                  //!< Whether the particle is contained.
         bool is_matched;                                    //!< Whether the particle is matched.
         bool is_primary;                                    //!< Whether the particle is a primary particle.
+        bool is_time_contained;                             //!< Whether the particle is time-contained (within the "in-time" region of the drift window).
         bool is_truth;                                      //!< Whether the particle is a truth particle.
         bool is_valid;                                      //!< Whether the particle passes thresholds and counts towards the topology.
         double ke;                                          //!< Kinetic energy from best energy estimator (CSDA, calorimetric, or MCS).
@@ -66,7 +67,7 @@ namespace caf
 	    float primary_scores[2];                            //!< Primary softmax scores
         int64_t shape;                                      //!< Semantic type of the particle (see Shape_t enumeration).
         int64_t size;                                       //!< TO DO.
-        double start_dedx;                                 //!< dE/dx at the start of the particle.
+        double start_dedx;                                  //!< dE/dx at the start of the particle.
         float start_dir[3];                                 //!< Unit direction vector calculated at the particle start point.
         float start_point[3];                               //!< Start point (vector) of the particle.
         float start_straightness;                           //!< Straightness at the start of the particle.

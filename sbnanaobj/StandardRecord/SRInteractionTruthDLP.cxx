@@ -38,6 +38,7 @@ namespace caf
         is_fiducial(false),
         is_flash_matched(false),
         is_matched(false),
+        is_time_contained(true),
         is_truth(false),
         lepton_p(std::numeric_limits<double>::signaling_NaN()),
         lepton_pdg_code(std::numeric_limits<int64_t>::signaling_NaN()),

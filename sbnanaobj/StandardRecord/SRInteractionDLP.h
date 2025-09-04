@@ -44,6 +44,7 @@ namespace caf
         bool is_fiducial;                                   //!< Whether the interaction has an interaction in the fiducial volume.
         bool is_flash_matched;                              //!< Whether the flash is matched to the interaction.
         bool is_matched;                                    //!< Whether the interaction is matched to a true interaction.
+        bool is_time_contained;                             //!< Whether the particle is time-contained (within the "in-time" region of the drift window).
         bool is_truth;                                      //!< Whether the interaction is a truth interaction.
         std::vector<int64_t> match_ids;                     //!< Interaction IDs of the considered matches (correspond to true interactions).
         std::vector<float> match_overlaps;                  //!< Intersection over union (IoU) of the considered matches.

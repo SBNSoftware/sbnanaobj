@@ -66,6 +66,7 @@ namespace caf
         bool is_contained;                             //!< Whether the particle is contained.
         bool is_matched;                               //!< Whether the particle is matched.
         bool is_primary;                               //!< Whether the particle is a primary particle.
+        bool is_time_contained;                        //!< Whether the particle is time-contained (within the "in-time" region of the drift window).
         bool is_truth;                                 //!< Whether the particle is a truth particle.
         bool is_valid;                                 //!< Whether the particle passes thresholds and counts towards topology.
         double ke;                                     //!< Kinetic energy from best energy estimator (CSDA, calorimetric, or MCS). 
