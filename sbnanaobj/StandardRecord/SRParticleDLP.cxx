@@ -5,8 +5,9 @@
 */
 #include <limits>
 #include <vector>
-#include "SRParticleDLP.h"
-#include "SREnums.h"
+#include "sbnanaobj/StandardRecord/SRConstants.h"
+#include "sbnanaobj/StandardRecord/SREnums.h"
+#include "sbnanaobj/StandardRecord/SRParticleDLP.h"
 
 namespace caf
 {

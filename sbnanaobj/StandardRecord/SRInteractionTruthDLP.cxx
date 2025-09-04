@@ -5,6 +5,7 @@
 */
 #include <limits>
 #include <vector>
+#include "sbnanaobj/StandardRecord/SRConstants.h"
 #include "sbnanaobj/StandardRecord/SRInteractionTruthDLP.h"
 
 namespace caf

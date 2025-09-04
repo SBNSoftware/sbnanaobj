@@ -8,7 +8,7 @@
 
 #include <vector>
 #include <stdint.h>
-#include "SRParticleDLP.h"
+#include "sbnanaobj/StandardRecord/SRParticleDLP.h"
 
 #if defined(__castxml_major__) && !defined(__clang__)
 #else

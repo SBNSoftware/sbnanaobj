@@ -5,7 +5,7 @@
  */
 #include <limits>
 #include <vector>
-#include "SRParticleTruthDLP.h"
+#include "sbnanaobj/StandardRecord/SRConstants.h"
 
 namespace caf
 {
