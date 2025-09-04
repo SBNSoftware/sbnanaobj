@@ -18,7 +18,7 @@ namespace caf
         chi2_pid(std::numeric_limits<int64_t>::signaling_NaN()),
         csda_ke(std::numeric_limits<double>::signaling_NaN()),
         csda_ke_per_pid{std::numeric_limits<double>::signaling_NaN(), std::numeric_limits<double>::signaling_NaN(), std::numeric_limits<double>::signaling_NaN(), std::numeric_limits<double>::signaling_NaN(), std::numeric_limits<double>::signaling_NaN(), std::numeric_limits<double>::signaling_NaN()},
-	    depositions_sum(std::numeric_limits<float>::signaling_NaN()),
+        depositions_sum(std::numeric_limits<float>::signaling_NaN()),
         directional_spread(std::numeric_limits<float>::signaling_NaN()),
         end_dir{std::numeric_limits<float>::signaling_NaN(), std::numeric_limits<float>::signaling_NaN(), std::numeric_limits<float>::signaling_NaN()},
         end_point{std::numeric_limits<float>::signaling_NaN(), std::numeric_limits<float>::signaling_NaN(), std::numeric_limits<float>::signaling_NaN()},

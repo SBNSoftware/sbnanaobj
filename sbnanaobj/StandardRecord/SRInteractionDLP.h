@@ -31,7 +31,7 @@ namespace caf
         ~SRInteractionDLP();
 
         double cathode_offset;                              //!< Distance from the cathode.
-	    float depositions_sum;                              //!< TO DO.
+        float depositions_sum;                              //!< TO DO.
         double flash_hypo_pe;                               //!< Total PE of the hypothesized flash.
         std::vector<int64_t> flash_ids;                     //!< Flash IDs for the matched flashes.
         std::vector<float> flash_scores;                    //!< Score of the matched flashes.
@@ -49,16 +49,16 @@ namespace caf
         std::vector<int64_t> match_ids;                     //!< Interaction IDs of the considered matches (correspond to true interactions).
         std::vector<float> match_overlaps;                  //!< Intersection over union (IoU) of the considered matches.
         std::vector<int64_t> module_ids;                    //!< Module IDs of the interaction.
-	    int64_t num_particles;                              //!< The number of particles in the interaction.
+        int64_t num_particles;                              //!< The number of particles in the interaction.
         int64_t num_primary_particles;                      //!< The number of primary particles in the interaction.
-	    int64_t particle_counts[6];                         //!< The number of particles of each type in the interaction.
+        int64_t particle_counts[6];                         //!< The number of particles of each type in the interaction.
         std::vector<int64_t> particle_ids;                  //!< Particle IDs in the interaction.
         int64_t primary_particle_counts[6];                 //!< The number of primary particles of each type in the interaction.
         std::vector<int64_t> primary_particle_ids;          //!< Primary particle IDs in the interaction.
         int64_t size;                                       //!< The size of the interaction (number of voxels).
         std::string topology;                               //!< Topology of the interaction (e.g. "0g0e1mu0pi2p") considering only primaries.
         std::string units;                                  //!< Units in which the position coordinates are expressed.
-	    float vertex[3];                                    //!< Vertex of the interaction in detector coordinates.
+        float vertex[3];                                    //!< Vertex of the interaction in detector coordinates.
         std::vector<SRParticleDLP> particles;               //!< Particles in the interaction.
   };
 } // namespace caf

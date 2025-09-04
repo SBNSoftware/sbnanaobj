@@ -11,7 +11,7 @@ namespace caf
 {
     SRInteractionDLP::SRInteractionDLP():
         cathode_offset(std::numeric_limits<double>::signaling_NaN()),
-	    depositions_sum(std::numeric_limits<float>::signaling_NaN()),
+        depositions_sum(std::numeric_limits<float>::signaling_NaN()),
         flash_hypo_pe(std::numeric_limits<double>::signaling_NaN()),
         flash_ids(std::vector<int64_t>()),
         flash_scores(std::vector<float>()),
