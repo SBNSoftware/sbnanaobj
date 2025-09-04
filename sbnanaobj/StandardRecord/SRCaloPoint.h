@@ -21,7 +21,7 @@ namespace caf
       float pitch; //!< Track pitch [cm]
       float t; //!< Time of deposition [ticks]
       float efield; //! |E| [kV/cm]
-      float phi; //! angle between the E-field and track dir for the hit, used in the GnocchiCalorimetry module
+      float phi; //! angle (radian) between the E-field and track dir for the hit, used in the GnocchiCalorimetry module
       // NOTE: flatten-caf seems to have trouble with nesting the point
       // inside a SRVector3D -- so just expose x/y/z out here
       float x; //!< X-Position of deposition [cm]
