@@ -42,7 +42,7 @@ namespace caf
         mcs_ke_per_pid{std::numeric_limits<double>::signaling_NaN(), std::numeric_limits<double>::signaling_NaN(), std::numeric_limits<double>::signaling_NaN(), std::numeric_limits<double>::signaling_NaN(), std::numeric_limits<double>::signaling_NaN(), std::numeric_limits<double>::signaling_NaN()},
         module_ids(),
         momentum{std::numeric_limits<float>::signaling_NaN(), std::numeric_limits<float>::signaling_NaN(), std::numeric_limits<float>::signaling_NaN()},
-        num_fragments(caf::kUninitializedInt)),
+        num_fragments(caf::kUninitializedInt),
         p(std::numeric_limits<float>::signaling_NaN()),
         pdg_code(caf::kUninitializedInt)
         pid(caf::kUninitializedInt),

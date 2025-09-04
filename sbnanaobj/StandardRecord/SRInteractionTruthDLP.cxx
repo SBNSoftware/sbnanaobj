@@ -23,11 +23,11 @@ namespace caf
         energy_init(std::numeric_limits<double>::signaling_NaN()),
         energy_transfer(std::numeric_limits<double>::signaling_NaN()),
         flash_hypo_pe(std::numeric_limits<double>::signaling_NaN()),
-        flash_ids(std::vector<int64_t>()),
-        flash_scores(std::vector<float>()),
-        flash_times(std::vector<float>()),
+        flash_ids(),
+        flash_scores(),
+        flash_times(),
         flash_total_pe(std::numeric_limits<double>::signaling_NaN()),
-        flash_volume_ids(std::vector<int64_t>()),
+        flash_volume_ids(),
         hadronic_invariant_mass(std::numeric_limits<double>::signaling_NaN()),
         id(caf::kUninitializedInt),
         inelasticity(std::numeric_limits<double>::signaling_NaN()),
@@ -45,7 +45,7 @@ namespace caf
         lepton_pdg_code(caf::kUninitializedInt),
         lepton_track_id(caf::kUninitializedInt),
         mct_index(caf::kUninitializedInt),
-        module_ids(std::vector<int64_t>()),
+        module_ids(),
         momentum{std::numeric_limits<float>::signaling_NaN(), std::numeric_limits<float>::signaling_NaN(), std::numeric_limits<float>::signaling_NaN()},
         momentum_transfer(std::numeric_limits<double>::signaling_NaN()),
         momentum_transfer_mag(std::numeric_limits<double>::signaling_NaN()),
@@ -71,7 +71,7 @@ namespace caf
         track_id(caf::kUninitializedInt),
         units(),
         vertex{std::numeric_limits<float>::signaling_NaN(), std::numeric_limits<float>::signaling_NaN(), std::numeric_limits<float>::signaling_NaN()},
-        particles(std::vector<SRParticleTruthDLP>()) { }
+        particles() { }
 
     SRInteractionTruthDLP::~SRInteractionTruthDLP() { }
 } // namespace caf
