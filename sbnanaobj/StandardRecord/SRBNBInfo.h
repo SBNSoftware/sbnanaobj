@@ -4,6 +4,7 @@
 #include <vector>
 
 namespace caf
+{
 /**
  * @brief Readings of the BNB beam monitors.
  * 
@@ -11,7 +12,6 @@ namespace caf
  * and matched in time with the acquired event. 
  * Offsets are applied through subtraction:   RealPositionValue = IFBeamValue - Offset
  */
-{
   class SRBNBInfo
   {
   public:
