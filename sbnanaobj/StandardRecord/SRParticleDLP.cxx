@@ -16,7 +16,7 @@ namespace caf
         calo_ke(std::numeric_limits<double>::signaling_NaN()),
         cathode_offset(std::numeric_limits<double>::signaling_NaN()),
         chi2_per_pid{std::numeric_limits<double>::signaling_NaN(), std::numeric_limits<double>::signaling_NaN(), std::numeric_limits<double>::signaling_NaN(), std::numeric_limits<double>::signaling_NaN(), std::numeric_limits<double>::signaling_NaN(), std::numeric_limits<double>::signaling_NaN()},
-        chi2_pid(std::numeric_limits<int64_t>::signaling_NaN()),
+        chi2_pid(caf::kUninitializedInt)
         csda_ke(std::numeric_limits<double>::signaling_NaN()),
         csda_ke_per_pid{std::numeric_limits<double>::signaling_NaN(), std::numeric_limits<double>::signaling_NaN(), std::numeric_limits<double>::signaling_NaN(), std::numeric_limits<double>::signaling_NaN(), std::numeric_limits<double>::signaling_NaN(), std::numeric_limits<double>::signaling_NaN()},
         depositions_sum(std::numeric_limits<float>::signaling_NaN()),
@@ -24,8 +24,8 @@ namespace caf
         end_dir{std::numeric_limits<float>::signaling_NaN(), std::numeric_limits<float>::signaling_NaN(), std::numeric_limits<float>::signaling_NaN()},
         end_point{std::numeric_limits<float>::signaling_NaN(), std::numeric_limits<float>::signaling_NaN(), std::numeric_limits<float>::signaling_NaN()},
         fragment_ids(),
-        id(std::numeric_limits<int64_t>::signaling_NaN()),
-        interaction_id(std::numeric_limits<int64_t>::signaling_NaN()),
+        id(caf::kUninitializedInt)
+        interaction_id(caf::kUninitializedInt),
         is_cathode_crosser(false),
         is_contained(false),
         is_matched(false),    
@@ -42,15 +42,15 @@ namespace caf
         mcs_ke_per_pid{std::numeric_limits<double>::signaling_NaN(), std::numeric_limits<double>::signaling_NaN(), std::numeric_limits<double>::signaling_NaN(), std::numeric_limits<double>::signaling_NaN(), std::numeric_limits<double>::signaling_NaN(), std::numeric_limits<double>::signaling_NaN()},
         module_ids(),
         momentum{std::numeric_limits<float>::signaling_NaN(), std::numeric_limits<float>::signaling_NaN(), std::numeric_limits<float>::signaling_NaN()},
-        num_fragments(std::numeric_limits<int64_t>::signaling_NaN()),
+        num_fragments(caf::kUninitializedInt)),
         p(std::numeric_limits<float>::signaling_NaN()),
-        pdg_code(std::numeric_limits<int64_t>::signaling_NaN()),
+        pdg_code(caf::kUninitializedInt)
         pid(caf::kUninitializedInt),
         pid_scores(),
         ppn_ids(),
         primary_scores(),
         shape(caf::kUninitializedInt),
-        size(std::numeric_limits<int64_t>::signaling_NaN()),
+        size(caf::kUninitializedInt)
         start_dedx(std::numeric_limits<double>::signaling_NaN()),
         start_dir{std::numeric_limits<float>::signaling_NaN(), std::numeric_limits<float>::signaling_NaN(), std::numeric_limits<float>::signaling_NaN()},
         start_point{std::numeric_limits<float>::signaling_NaN(), std::numeric_limits<float>::signaling_NaN(), std::numeric_limits<float>::signaling_NaN()},
