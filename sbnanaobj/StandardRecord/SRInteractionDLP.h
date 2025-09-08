@@ -51,9 +51,9 @@ namespace caf
         int64_t num_particles;                              //!< The number of particles in the interaction.
         int64_t num_primary_particles;                      //!< The number of primary particles in the interaction.
         int64_t particle_counts[6];                         //!< The number of particles of each type in the interaction (photon, electron, muon, pion, proton, kaon).
-        std::vector<int64_t> particle_ids;                  //!< Particle IDs in the interaction.
+        std::vector<int64_t> particle_ids;                  //!< Particle IDs in the interaction (see 'id' attribute of SRParticleDLP).
         int64_t primary_particle_counts[6];                 //!< The number of primary particles of each type in the interaction (photon, electron, muon, pion, proton, kaon).
-        std::vector<int64_t> primary_particle_ids;          //!< Primary particle IDs in the interaction.
+        std::vector<int64_t> primary_particle_ids;          //!< Primary particle IDs in the interaction (see 'id' attribute of SRParticleDLP).
         int64_t size;                                       //!< The size of the interaction (number of voxels).
         std::string topology;                               //!< Topology of the interaction (e.g. "0g0e1mu0pi2p") considering only primaries.
         float vertex[3];                                    //!< Vertex of the interaction in detector coordinates.
