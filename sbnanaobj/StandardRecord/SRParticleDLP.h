@@ -26,7 +26,6 @@ namespace caf
     {
         public:
         SRParticleDLP();
-        ~SRParticleDLP();
 
         float axial_spread;                                 //!< Axial spread of the particle.
         double calo_ke;                                     //!< Calorimetric kinetic energy.

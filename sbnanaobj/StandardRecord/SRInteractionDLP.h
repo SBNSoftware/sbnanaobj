@@ -28,7 +28,6 @@ namespace caf
     {
         public:
         SRInteractionDLP();
-        ~SRInteractionDLP();
 
         double cathode_offset;                              //!< Distance from the cathode.
         float depositions_sum;                              //!< TO DO.

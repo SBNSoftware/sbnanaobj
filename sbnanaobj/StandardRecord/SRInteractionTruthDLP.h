@@ -28,7 +28,6 @@ namespace caf
     {
         public:
         SRInteractionTruthDLP();
-        ~SRInteractionTruthDLP();
 
         double bjorken_x;                                   //!< Bjorken x of the neutrino interaction.
         double cathode_offset;                              //!< Distance from the cathode.

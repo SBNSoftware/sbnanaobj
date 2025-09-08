@@ -27,7 +27,6 @@ namespace caf
     {
         public:
         SRParticleTruthDLP();
-        ~SRParticleTruthDLP();
         
         std::string ancestor_creation_process;         //!< Geant4 creation process of the ancestor particle.
         int64_t ancestor_pdg_code;                     //!< PDG code of the ancestor particle.
