@@ -70,7 +70,7 @@ namespace caf
         float start_dir[3];                                 //!< Unit direction vector calculated at the particle start point.
         float start_point[3];                               //!< Start point (vector) of the particle.
         float start_straightness;                           //!< Straightness at the start of the particle.
-        std::string units;                                  //!< Units in which the position coordinates are expressed.
+        std::string units;                                  //!< Units in which the position coordinates are expressed (default: "cm").
         double vertex_distance;                             //!< Distance from the vertex.
   };
 } // namespace caf
