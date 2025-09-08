@@ -70,7 +70,7 @@ namespace caf
         double momentum_transfer;                           //!< Momentum transfer (Q^2) of the neutrino interaction.
         double momentum_transfer_mag;                       //!< Momentum transfer (Q3) of the neutrino interaction.
         int64_t nu_id;                                      //!< Neutrino ID (-1 = not a neutrino, 0 = first neutrino, 1 = second neutrino, etc.).
-        int64_t nucleon;                                    //!< Nit nucleon in the neutrino interaction (see MCNeutrino).
+        int64_t nucleon;                                    //!< Hit nucleon in the neutrino interaction (see MCNeutrino).
         int64_t num_particles;                              //!< Number of particles in the interaction.
         int64_t num_primary_particles;                      //!< Number of primary particles in the interaction.
         int64_t orig_id;                                    //!< Original ID of the interaction.
@@ -80,7 +80,7 @@ namespace caf
         float position[3];                                  //!< Position of the neutrino interaction.
         int64_t primary_particle_counts[6];                 //!< Number of primary particles of each type in the interaction (photon, electron, muon, pion, proton, kaon).
         std::vector<int64_t> primary_particle_ids;          //!< Primary particle IDs in the interaction (see 'id' attribute of SRParticleTruthDLP).
-        int64_t quark;                                      //!< Quark in the neutrino interaction.
+        int64_t quark;                                      //!< Hit quark in the neutrino interaction (see MCNeutrino).
         float reco_vertex[3];                               //!< Vertex of the interaction in detector coordinates (reco).
         int64_t size;                                       //!< Number of true non-ghost true-tagged space points.
         int64_t size_adapt;                                 //!< Number of reco non-ghost true-tagged space points.
