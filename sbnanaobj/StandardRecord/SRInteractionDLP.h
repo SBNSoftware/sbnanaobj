@@ -32,16 +32,16 @@ namespace caf
         double cathode_offset;                              //!< Distance from the cathode [cm].
         float depositions_sum;                              //!< Sum of deposited (de-ghosted) energy [MeV].
         double flash_hypo_pe;                               //!< Total PE of the hypothesized flash from OpT0Finder.
-        std::vector<int64_t> flash_ids;                     //!< Flash IDs for the matched flashes.
-        std::vector<float> flash_scores;                    //!< Score of the matched flashes.
-        std::vector<float> flash_times;                     //!< Time of the matched flashes.
-        double flash_total_pe;                              //!< Total PE of the matched flash.
-        std::vector<int64_t> flash_volume_ids;              //!< Volume IDs of the matched flashes.
+        std::vector<int64_t> flash_ids;                     //!< Flash IDs for the matched flashes (uses OpT0Finder).
+        std::vector<float> flash_scores;                    //!< Score of the matched flashes (uses OpT0Finder).
+        std::vector<float> flash_times;                     //!< Time of the matched flashes (uses OpT0Finder).
+        double flash_total_pe;                              //!< Total PE of the matched flash (uses OpT0Finder).
+        std::vector<int64_t> flash_volume_ids;              //!< Volume IDs of the matched flashes (uses OpT0Finder).
         int64_t id;                                         //!< Interaction ID.
         bool is_cathode_crosser;                            //!< Whether the interaction is a cathode-crosser.
         bool is_contained;                                  //!< Whether the interaction is contained.
         bool is_fiducial;                                   //!< Whether the interaction has an interaction in the fiducial volume.
-        bool is_flash_matched;                              //!< Whether the flash is matched to the interaction.
+        bool is_flash_matched;                              //!< Whether the flash is matched to the interaction (uses OpT0Finder).
         bool is_matched;                                    //!< Whether the interaction is matched to a true interaction.
         bool is_time_contained;                             //!< Whether the particle is time-contained (within the "in-time" region of the drift window).
         bool is_truth;                                      //!< Whether the interaction is a truth interaction.
