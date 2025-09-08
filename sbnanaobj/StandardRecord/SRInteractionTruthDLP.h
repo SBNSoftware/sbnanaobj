@@ -70,7 +70,7 @@ namespace caf
         double momentum_transfer;                           //!< Momentum transfer (Q^2) of the neutrino interaction.
         double momentum_transfer_mag;                       //!< Momentum transfer (Q3) of the neutrino interaction.
         int64_t nu_id;                                      //!< Neutrino ID (-1 = not a neutrino, 0 = first neutrino, 1 = second neutrino, etc.).
-        int64_t nucleon;                                    //!< Nucleon in the neutrino interaction.
+        int64_t nucleon;                                    //!< Nit nucleon in the neutrino interaction (see MCNeutrino).
         int64_t num_particles;                              //!< Number of particles in the interaction.
         int64_t num_primary_particles;                      //!< Number of primary particles in the interaction.
         int64_t orig_id;                                    //!< Original ID of the interaction.
