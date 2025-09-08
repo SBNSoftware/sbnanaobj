@@ -62,8 +62,8 @@ namespace caf
         double lepton_p;                                    //!< Momentum of the lepton in the interaction.
         int64_t lepton_pdg_code;                            //!< PDG code of the lepton in the interaction.
         int64_t lepton_track_id;                            //!< Track ID of the lepton in the neutrino interaction.
-        std::vector<int64_t> match_ids;                     //!< Interaction IDs of the considered matches (correspond to true interactions).
-        std::vector<float> match_overlaps;                  //!< Intersection over union (IoU) of the considered matches.
+        std::vector<int64_t> match_ids;                     //!< Interaction IDs of the considered matches (correspond to reco interaction IDs).
+        std::vector<float> match_overlaps;                  //!< Intersection over union (IoU) of space points of the considered matches.
         int64_t mct_index;                                  //!< Index of the neutrino in the original MCTruth array.
         std::vector<int64_t> module_ids;                    //!< Module IDs of the interaction.
         float momentum[3];                                  //!< Momentum (vector) of the neutrino.

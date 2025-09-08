@@ -51,8 +51,8 @@ namespace caf
         double ke;                                          //!< Kinetic energy from best energy estimator (CSDA, calorimetric, or MCS).
         double length;                                      //!< Length of the particle.
         double mass;                                        //!< Mass of the particle (according to assigned PID).
-        std::vector<int64_t> match_ids;                     //!< Match ID.
-        std::vector<float> match_overlaps;                  //!< Match overlap.
+        std::vector<int64_t> match_ids;                     //!< Particle IDs of the considered matches (correspond to true particle IDs).
+        std::vector<float> match_overlaps;                  //!< Intersection over union (IoU) of space points of the considered matches.
         double mcs_ke;                                      //!< Multiple Coulomb scattering kinetic energy.
         double mcs_ke_per_pid[6];                           //!< MCS kinetic energy per PID.
         std::vector<int64_t> module_ids;                    //!< Module IDs of the particle.

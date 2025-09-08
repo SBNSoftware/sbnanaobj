@@ -45,8 +45,8 @@ namespace caf
         bool is_matched;                                    //!< Whether the interaction is matched to a true interaction.
         bool is_time_contained;                             //!< Whether the particle is time-contained (within the "in-time" region of the drift window).
         bool is_truth;                                      //!< Whether the interaction is a truth interaction.
-        std::vector<int64_t> match_ids;                     //!< Interaction IDs of the considered matches (correspond to true interactions).
-        std::vector<float> match_overlaps;                  //!< Intersection over union (IoU) of the considered matches.
+        std::vector<int64_t> match_ids;                     //!< Interaction IDs of the considered matches (correspond to true interaction IDs).
+        std::vector<float> match_overlaps;                  //!< Intersection over union (IoU) of space points of the considered matches.
         std::vector<int64_t> module_ids;                    //!< Module IDs of the interaction.
         int64_t num_particles;                              //!< The number of particles in the interaction.
         int64_t num_primary_particles;                      //!< The number of primary particles in the interaction.

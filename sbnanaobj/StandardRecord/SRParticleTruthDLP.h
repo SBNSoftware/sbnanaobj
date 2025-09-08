@@ -72,8 +72,8 @@ namespace caf
         float last_step[3];                            //!< Coordinates of the last step of the particle.
         double length;                                 //!< Length of the particle.
         double mass;                                   //!< Mass of the particle.
-        std::vector<int64_t> match_ids;                //!< Particle match IDs.
-        std::vector<float> match_overlaps;             //!< Particle match overlaps.
+        std::vector<int64_t> match_ids;                //!< Particle IDs of the considered matches (correspond to reco particle IDs).
+        std::vector<float> match_overlaps;             //!< Intersection over union (IoU) of space points of the considered matches.
         double mcs_ke;                                 //!< Multiple Coulomb scattering kinetic energy.
         double mcs_ke_per_pid[6];                      //!< MCS kinetic energy per PID.
         int64_t mcst_index;                            //!< MCST index.
