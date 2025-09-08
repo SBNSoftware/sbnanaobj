@@ -50,8 +50,8 @@ namespace caf
         double hadronic_invariant_mass;                     //!< Hadronic invariant mass of the neutrino.
         int64_t id;                                         //!< Interaction ID (dense enumeration starting from 0 within the event).
         double inelasticity;                                //!< Inelasticity of the neutrino interaction.
-        int64_t interaction_mode;                           //!< Interaction mode of the neutrino.
-        int64_t interaction_type;                           //!< Interaction type of the neutrino.
+        int64_t interaction_mode;                           //!< Interaction mode of the neutrino (see MCNeutrino).
+        int64_t interaction_type;                           //!< Interaction type of the neutrino (see MCNeutrino).
         bool is_cathode_crosser;                            //!< Whether the interaction is a cathode-crosser (some particle crosses the cathode).
         bool is_contained;                                  //!< Whether the interaction is contained within some margin from the detector walls.
         bool is_fiducial;                                   //!< Whether the interaction is in the fiducial volume (see SPINE configuration).
