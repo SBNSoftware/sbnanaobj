@@ -31,7 +31,7 @@ namespace caf
 
         double bjorken_x;                                   //!< Bjorken x of the neutrino interaction.
         double cathode_offset;                              //!< Distance from the cathode [cm].
-        std::string creation_process;                       //!< Creation process of the neutrino.
+        std::string creation_process;                       //!< Creation process associated with the neutrino (see MCParticle).
         int64_t current_type;                               //!< Current type of the neutrino.
         float depositions_adapt_q_sum;                      //!< Total tagged (reco non-ghost) charge deposited [ADC].
         float depositions_adapt_sum;                        //!< Total tagged (reco non-ghost) energy deposited [MeV].

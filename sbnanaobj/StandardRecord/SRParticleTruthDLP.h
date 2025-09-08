@@ -37,7 +37,7 @@ namespace caf
         double cathode_offset;                         //!< Distance from the cathode [cm].
         std::vector<int64_t> children_counts;          //!< Number of children of the particle.
         std::vector<int64_t> children_id;              //!< List of particle ID of children particles.
-        std::string creation_process;                  //!< Geant4 creation process of the particle.
+        std::string creation_process;                  //!< Geant4 creation process associated with the particle (see MCParticle).
         double csda_ke;                                //!< Continuous-slowing-down-approximation kinetic energy.
         double csda_ke_per_pid[6];                     //!< CSDA kinetic energy per PID.
         float depositions_adapt_q_sum;                 //!< Total tagged (reco non-ghost) charge deposited [ADC].
