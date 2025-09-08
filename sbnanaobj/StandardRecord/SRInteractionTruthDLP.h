@@ -74,11 +74,11 @@ namespace caf
         int64_t num_particles;                              //!< Number of particles in the interaction.
         int64_t num_primary_particles;                      //!< Number of primary particles in the interaction.
         int64_t orig_id;                                    //!< Original ID of the interaction.
-        int64_t particle_counts[6];                         //!< Number of particles of each type in the interaction.
+        int64_t particle_counts[6];                         //!< Number of particles of each type in the interaction (photon, electron, muon, pion, proton, kaon).
         std::vector<int64_t> particle_ids;                  //!< Particle IDs in the interaction.
         int64_t pdg_code;                                   //!< PDG code of the neutrino.
         float position[3];                                  //!< Position of the neutrino interaction.
-        int64_t primary_particle_counts[6];                 //!< Number of primary particles of each type in the interaction.
+        int64_t primary_particle_counts[6];                 //!< Number of primary particles of each type in the interaction (photon, electron, muon, pion, proton, kaon).
         std::vector<int64_t> primary_particle_ids;          //!< Primary particle IDs in the interaction.
         int64_t quark;                                      //!< Quark in the neutrino interaction.
         float reco_vertex[3];                               //!< Vertex of the interaction in detector coordinates (reco).
