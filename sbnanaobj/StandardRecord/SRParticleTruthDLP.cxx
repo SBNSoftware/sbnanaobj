@@ -6,6 +6,7 @@
 #include <limits>
 #include <vector>
 #include "sbnanaobj/StandardRecord/SRConstants.h"
+#include "sbnanaobj/StandardRecord/SRParticleTruthDLP.h"
 
 namespace caf
 {
@@ -77,7 +78,7 @@ namespace caf
         parent_t(std::numeric_limits<double>::signaling_NaN()),
         parent_track_id(caf::kUninitializedInt),
         pdg_code(caf::kUninitializedInt),
-        pid(caf::kUninitializedInt)
+        pid(caf::kUninitializedInt),
         position{std::numeric_limits<float>::signaling_NaN(), std::numeric_limits<float>::signaling_NaN(), std::numeric_limits<float>::signaling_NaN()},
         reco_end_dir{std::numeric_limits<float>::signaling_NaN(), std::numeric_limits<float>::signaling_NaN(), std::numeric_limits<float>::signaling_NaN()},
         reco_ke(std::numeric_limits<double>::signaling_NaN()),

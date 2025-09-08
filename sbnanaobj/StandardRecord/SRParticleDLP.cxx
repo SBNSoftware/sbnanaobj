@@ -16,7 +16,7 @@ namespace caf
         calo_ke(std::numeric_limits<double>::signaling_NaN()),
         cathode_offset(std::numeric_limits<double>::signaling_NaN()),
         chi2_per_pid{std::numeric_limits<double>::signaling_NaN(), std::numeric_limits<double>::signaling_NaN(), std::numeric_limits<double>::signaling_NaN(), std::numeric_limits<double>::signaling_NaN(), std::numeric_limits<double>::signaling_NaN(), std::numeric_limits<double>::signaling_NaN()},
-        chi2_pid(caf::kUninitializedInt)
+        chi2_pid(caf::kUninitializedInt),
         csda_ke(std::numeric_limits<double>::signaling_NaN()),
         csda_ke_per_pid{std::numeric_limits<double>::signaling_NaN(), std::numeric_limits<double>::signaling_NaN(), std::numeric_limits<double>::signaling_NaN(), std::numeric_limits<double>::signaling_NaN(), std::numeric_limits<double>::signaling_NaN(), std::numeric_limits<double>::signaling_NaN()},
         depositions_sum(std::numeric_limits<float>::signaling_NaN()),
@@ -24,7 +24,7 @@ namespace caf
         end_dir{std::numeric_limits<float>::signaling_NaN(), std::numeric_limits<float>::signaling_NaN(), std::numeric_limits<float>::signaling_NaN()},
         end_point{std::numeric_limits<float>::signaling_NaN(), std::numeric_limits<float>::signaling_NaN(), std::numeric_limits<float>::signaling_NaN()},
         fragment_ids(),
-        id(caf::kUninitializedInt)
+        id(caf::kUninitializedInt),
         interaction_id(caf::kUninitializedInt),
         is_cathode_crosser(false),
         is_contained(false),
@@ -44,13 +44,13 @@ namespace caf
         momentum{std::numeric_limits<float>::signaling_NaN(), std::numeric_limits<float>::signaling_NaN(), std::numeric_limits<float>::signaling_NaN()},
         num_fragments(caf::kUninitializedInt),
         p(std::numeric_limits<float>::signaling_NaN()),
-        pdg_code(caf::kUninitializedInt)
+        pdg_code(caf::kUninitializedInt),
         pid(caf::kUninitializedInt),
         pid_scores(),
         ppn_ids(),
         primary_scores(),
         shape(caf::kUninitializedInt),
-        size(caf::kUninitializedInt)
+        size(caf::kUninitializedInt),
         start_dedx(std::numeric_limits<double>::signaling_NaN()),
         start_dir{std::numeric_limits<float>::signaling_NaN(), std::numeric_limits<float>::signaling_NaN(), std::numeric_limits<float>::signaling_NaN()},
         start_point{std::numeric_limits<float>::signaling_NaN(), std::numeric_limits<float>::signaling_NaN(), std::numeric_limits<float>::signaling_NaN()},
