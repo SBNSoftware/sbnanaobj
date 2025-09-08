@@ -58,7 +58,7 @@ namespace caf
         std::vector<int32_t> fragment_ids;             //!< Fragment IDs comprising the particle.
         int64_t group_id;                              //!< Group ID of the particle.
         int64_t group_primary;                         //!< Whether the particle is a primary within its group.
-        int64_t id;                                    //!< Particle ID (dense enumeration starting from 0 within the interaction).
+        int64_t id;                                    //!< Particle ID (dense enumeration starting from 0 within the event).
         int64_t interaction_id;                        //!< Parent interaction ID.
         int64_t interaction_primary;                   //!< Whether the particle is a primary within its interaction (equivalent to is_primary).
         bool is_cathode_crosser;                       //!< Whether the particle is a cathode-crosser.

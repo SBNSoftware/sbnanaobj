@@ -39,7 +39,7 @@ namespace caf
         float end_dir[3];                                   //!< Unit direction vector calculated at the particle end point.
         float end_point[3];                                 //!< End point (vector) of the particle.
         std::vector<int32_t> fragment_ids;                  //!< Fragment IDs comprising the particle.
-        int64_t id;                                         //!< Particle ID (dense enumeration starting from 0 within the interaction).
+        int64_t id;                                         //!< Particle ID (dense enumeration starting from 0 within the event).
         int64_t interaction_id;                             //!< Parent interaction ID.
         bool is_cathode_crosser;                            //!< Whether the particle is a cathode-crosser.
         bool is_contained;                                  //!< Whether the particle is contained within some margin from the detector walls (see SPINE configuration).
