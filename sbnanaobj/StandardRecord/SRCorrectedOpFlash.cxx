@@ -17,6 +17,8 @@ namespace caf
     UpstreamTime_lightonly =                             -9999.;
     UpstreamTime_tpczcorr  =                             -9999.;
     UpstreamTime_propcorr_tpczcorr =                     -9999.;
+    SliceNuScore          =                             -9999.;
+    FMScore               =                             -9999.;
   }
 
 } // end namespace caf

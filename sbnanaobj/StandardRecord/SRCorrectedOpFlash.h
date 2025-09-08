@@ -21,6 +21,8 @@ namespace caf
     float        UpstreamTime_lightonly             {  -9999.  };      ///< | Nu upstream wall time reconstructed using light only | (ns)
     float        UpstreamTime_tpczcorr             {  -9999.  };       ///< | Nu upstream wall time reconstructed using light and Z from tpc vertex | (ns)
     float        UpstreamTime_propcorr_tpczcorr    {  -9999.  };       ///< | Nu upstream wall time reconstructed using light propagation correction from tpc information and z correction from tpc vertex | (ns)
+    float        SliceNuScore             {  -9999.  };                   ///< | Slice Nu Score |
+    float        FMScore             {  -9999.  };                   ///< | Flash Match Score |
     /// @}
 
     void setDefault();
