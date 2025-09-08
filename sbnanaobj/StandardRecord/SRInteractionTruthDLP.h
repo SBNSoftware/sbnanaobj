@@ -42,11 +42,11 @@ namespace caf
         double energy_init;                                 //!< Initial energy of the neutrino.
         double energy_transfer;                             //!< Energy transfer (Q0) of the neutrino interaction.
         double flash_hypo_pe;                               //!< Total PE of the hypothesized flash.
-        std::vector<int64_t> flash_ids;                     //!< Flash ID for the matched flashes.
-        std::vector<float> flash_scores;                    //!< Flash score for the matched flashes.
-        std::vector<float> flash_times;                     //!< Time of the matched flashes.
+        std::vector<int64_t> flash_ids;                     //!< Flash IDs for the matched flashes (uses OpT0Finder, lowest score first).
+        std::vector<float> flash_scores;                    //!< Flash score for the matched flashes (uses OpT0Finder, same order as flash_ids).
+        std::vector<float> flash_times;                     //!< Time of the matched flashes (uses OpT0Finder, same order as flash_ids).
         double flash_total_pe;                              //!< Total PE of the matched flash.
-        std::vector<int64_t> flash_volume_ids;              //!< Volume IDs of the matched flashes.
+        std::vector<int64_t> flash_volume_ids;              //!< Volume IDs of the matched flashes (uses OpT0Finder, same order as flash_ids).
         double hadronic_invariant_mass;                     //!< Hadronic invariant mass of the neutrino.
         int64_t id;                                         //!< Interaction ID (dense enumeration starting from 0 within the event).
         double inelasticity;                                //!< Inelasticity of the neutrino interaction.

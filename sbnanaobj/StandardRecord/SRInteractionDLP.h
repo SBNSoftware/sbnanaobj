@@ -32,11 +32,11 @@ namespace caf
         double cathode_offset;                              //!< Distance from the cathode [cm].
         float depositions_sum;                              //!< Sum of deposited (de-ghosted) energy [MeV].
         double flash_hypo_pe;                               //!< Total PE of the hypothesized flash from OpT0Finder.
-        std::vector<int64_t> flash_ids;                     //!< Flash IDs for the matched flashes (uses OpT0Finder).
-        std::vector<float> flash_scores;                    //!< Score of the matched flashes (uses OpT0Finder).
-        std::vector<float> flash_times;                     //!< Time of the matched flashes (uses OpT0Finder).
-        double flash_total_pe;                              //!< Total PE of the matched flash (uses OpT0Finder).
-        std::vector<int64_t> flash_volume_ids;              //!< Volume IDs of the matched flashes (uses OpT0Finder).
+        std::vector<int64_t> flash_ids;                     //!< Flash IDs for the matched flashes (uses OpT0Finder, lowest score first).
+        std::vector<float> flash_scores;                    //!< Score of the matched flashes (uses OpT0Finder, same order as flash_ids).
+        std::vector<float> flash_times;                     //!< Time of the matched flashes (uses OpT0Finder, same order as flash_ids).
+        double flash_total_pe;                              //!< Total PE of the matched flash (uses OpT0Finder, same order as flash_ids).
+        std::vector<int64_t> flash_volume_ids;              //!< Volume IDs of the matched flashes (uses OpT0Finder, same order as flash_ids).
         int64_t id;                                         //!< Interaction ID (dense enumeration starting from 0 within the event).
         bool is_cathode_crosser;                            //!< Whether the interaction is a cathode-crosser (some particle crosses the cathode).
         bool is_contained;                                  //!< Whether the interaction is contained within some margin from the detector walls (see SPINE configuration)
