@@ -87,7 +87,7 @@ namespace caf
         int64_t size_adapt;                                 //!< Number of reco non-ghost true-tagged space points.
         int64_t size_g4;                                    //!< Number of (rasterized) g4 energy depositions (no detector effects).
         int64_t target;                                     //!< Target in the neutrino interaction.
-        double theta;                                       //!< Angle of the neutrino interaction.
+        double theta;                                       //!< Angle between the neutrino and the outgoing lepton [radians].
         std::string topology;                               //!< Topology of the interaction (e.g. "0g0e1mu0pi2p") considering only primaries.
         int64_t track_id;                                   //!< Track ID of the neutrino interaction.
         std::string units;                                  //!< Units in which the position coordinates are expressed.
