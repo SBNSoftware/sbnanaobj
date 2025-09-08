@@ -55,6 +55,5 @@ namespace caf
         start_dir{std::numeric_limits<float>::signaling_NaN(), std::numeric_limits<float>::signaling_NaN(), std::numeric_limits<float>::signaling_NaN()},
         start_point{std::numeric_limits<float>::signaling_NaN(), std::numeric_limits<float>::signaling_NaN(), std::numeric_limits<float>::signaling_NaN()},
         start_straightness(std::numeric_limits<float>::signaling_NaN()),
-        units(),
         vertex_distance(std::numeric_limits<double>::signaling_NaN()) { }
 } // namespace caf

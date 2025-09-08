@@ -92,6 +92,5 @@ namespace caf
         start_dir{std::numeric_limits<float>::signaling_NaN(), std::numeric_limits<float>::signaling_NaN(), std::numeric_limits<float>::signaling_NaN()},
         start_point{std::numeric_limits<float>::signaling_NaN(), std::numeric_limits<float>::signaling_NaN(), std::numeric_limits<float>::signaling_NaN()},
         t(std::numeric_limits<double>::signaling_NaN()),
-        track_id(caf::kUninitializedInt),
-        units() { }
+        track_id(caf::kUninitializedInt) { }
 } // namespace caf

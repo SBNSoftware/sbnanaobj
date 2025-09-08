@@ -32,13 +32,12 @@ namespace caf
         module_ids(),
         num_particles(caf::kUninitializedInt),
         num_primary_particles(caf::kUninitializedInt),
-        particle_counts{caf::kUninitializedInt, caf::kUninitializedInt, caf::kUninitializedInt},
+        particle_counts{6, caf::kUninitializedInt},
         particle_ids(),
-        primary_particle_counts{caf::kUninitializedInt, caf::kUninitializedInt, caf::kUninitializedInt},
+        primary_particle_counts{6, caf::kUninitializedInt},
         primary_particle_ids(),
         size(caf::kUninitializedInt),
         topology(),
-        units(),
         vertex{std::numeric_limits<float>::signaling_NaN(), std::numeric_limits<float>::signaling_NaN(), std::numeric_limits<float>::signaling_NaN()},
         particles() { }
 } // namespace caf
