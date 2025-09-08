@@ -56,7 +56,6 @@ namespace caf
         std::vector<int64_t> primary_particle_ids;          //!< Primary particle IDs in the interaction.
         int64_t size;                                       //!< The size of the interaction (number of voxels).
         std::string topology;                               //!< Topology of the interaction (e.g. "0g0e1mu0pi2p") considering only primaries.
-        std::string units;                                  //!< Units in which the position coordinates are expressed.
         float vertex[3];                                    //!< Vertex of the interaction in detector coordinates.
         std::vector<SRParticleDLP> particles;               //!< Particles in the interaction.
   };

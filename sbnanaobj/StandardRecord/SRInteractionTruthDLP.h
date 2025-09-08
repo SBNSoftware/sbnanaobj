@@ -50,7 +50,6 @@ namespace caf
         double hadronic_invariant_mass;                     //!< Hadronic invariant mass of the neutrino.
         int64_t id;                                         //!< Interaction ID (dense enumeration starting from 0 within the event).
         double inelasticity;                                //!< Inelasticity of the neutrino interaction.
-        int64_t interaction_id;                             //!< Deprecated.
         int64_t interaction_mode;                           //!< Interaction mode of the neutrino.
         int64_t interaction_type;                           //!< Interaction type of the neutrino.
         bool is_cathode_crosser;                            //!< Whether the interaction is a cathode-crosser (some particle crosses the cathode).
@@ -90,7 +89,6 @@ namespace caf
         double theta;                                       //!< Angle between the neutrino and the outgoing lepton [radians].
         std::string topology;                               //!< Topology of the interaction (e.g. "0g0e1mu0pi2p") considering only primaries.
         int64_t track_id;                                   //!< Track ID of the neutrino interaction.
-        std::string units;                                  //!< Units in which the position coordinates are expressed.
         float vertex[3];                                    //!< Vertex of the interaction in detector coordinates (truth).
         std::vector<SRParticleTruthDLP> particles;          //!< Particles in the interaction.
   };

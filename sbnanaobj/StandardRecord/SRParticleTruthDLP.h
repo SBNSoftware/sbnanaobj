@@ -111,7 +111,6 @@ namespace caf
         float start_point[3];                          //!< Start point (vector) of the particle.
         double t;                                      //!< Time of the particle.
         int64_t track_id;                              //!< Track ID of the particle.
-        std::string units;                             //!< Units in which the position coordinates are expressed (default: "cm").
     };
 } // namespace caf
 #endif // SRPARTICLETRUTHDLP_H
