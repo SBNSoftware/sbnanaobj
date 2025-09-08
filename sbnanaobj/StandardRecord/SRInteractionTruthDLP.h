@@ -65,7 +65,7 @@ namespace caf
         std::vector<int64_t> match_ids;                     //!< Interaction IDs of the considered matches (correspond to reco interaction IDs).
         std::vector<float> match_overlaps;                  //!< Intersection over union (IoU) of space points of the considered matches.
         int64_t mct_index;                                  //!< Index of the neutrino in the original MCTruth array.
-        std::vector<int64_t> module_ids;                    //!< Module IDs of the interaction.
+        std::vector<int64_t> module_ids;                    //!< Module IDs (cryostat) of the interaction.
         float momentum[3];                                  //!< Momentum (vector) of the neutrino.
         double momentum_transfer;                           //!< Momentum transfer (Q^2) of the neutrino interaction.
         double momentum_transfer_mag;                       //!< Momentum transfer (Q3) of the neutrino interaction.

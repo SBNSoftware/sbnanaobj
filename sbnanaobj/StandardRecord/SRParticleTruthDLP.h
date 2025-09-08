@@ -78,7 +78,7 @@ namespace caf
         double mcs_ke_per_pid[6];                      //!< MCS kinetic energy per PID.
         int64_t mcst_index;                            //!< MCST index.
         int64_t mct_index;                             //!< Index of the particle in the original MCTruth array.
-        std::vector<int64_t> module_ids;               //!< Module IDs of the particle. 
+        std::vector<int64_t> module_ids;               //!< Module IDs (cryostat) of the particle. 
         float momentum[3];                             //!< Momentum (vector) of the particle.
         int64_t nu_id;                                 //!< Neutrino ID (-1 = not a neutrino, 0 = first neutrino, 1 = second neutrino, etc.).
         int64_t num_fragments;                         //!< Number of particle fragments.

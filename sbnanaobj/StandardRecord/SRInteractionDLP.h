@@ -47,7 +47,7 @@ namespace caf
         bool is_truth;                                      //!< Whether the interaction is a truth interaction.
         std::vector<int64_t> match_ids;                     //!< Interaction IDs of the considered matches (correspond to true interaction IDs).
         std::vector<float> match_overlaps;                  //!< Intersection over union (IoU) of space points of the considered matches.
-        std::vector<int64_t> module_ids;                    //!< Module IDs of the interaction.
+        std::vector<int64_t> module_ids;                    //!< Module IDs (cryostat) of the interaction.
         int64_t num_particles;                              //!< The number of particles in the interaction.
         int64_t num_primary_particles;                      //!< The number of primary particles in the interaction.
         int64_t particle_counts[6];                         //!< The number of particles of each type in the interaction (photon, electron, muon, pion, proton, kaon).

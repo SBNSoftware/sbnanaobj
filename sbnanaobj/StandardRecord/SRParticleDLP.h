@@ -55,7 +55,7 @@ namespace caf
         std::vector<float> match_overlaps;                  //!< Intersection over union (IoU) of space points of the considered matches.
         double mcs_ke;                                      //!< Multiple Coulomb scattering kinetic energy.
         double mcs_ke_per_pid[6];                           //!< MCS kinetic energy per PID.
-        std::vector<int64_t> module_ids;                    //!< Module IDs of the particle.
+        std::vector<int64_t> module_ids;                    //!< Module IDs (cryostat) of the particle.
         float momentum[3];                                  //!< Momentum (vector) of the particle.
         int64_t num_fragments;                              //!< Number of fragments comprising the particle.
         float p;                                            //!< Momentum magnitude.
