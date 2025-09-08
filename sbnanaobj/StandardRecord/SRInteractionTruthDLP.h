@@ -73,7 +73,7 @@ namespace caf
         int64_t nucleon;                                    //!< Hit nucleon in the neutrino interaction (see MCNeutrino).
         int64_t num_particles;                              //!< Number of particles in the interaction.
         int64_t num_primary_particles;                      //!< Number of primary particles in the interaction.
-        int64_t orig_id;                                    //!< Original ID of the interaction.
+        int64_t orig_id;                                    //!< Original ID of the interaction (from Geant4).
         int64_t particle_counts[6];                         //!< Number of particles of each type in the interaction (photon, electron, muon, pion, proton, kaon).
         std::vector<int64_t> particle_ids;                  //!< Particle IDs in the interaction (see 'id' attribute of SRParticleTruthDLP).
         int64_t pdg_code;                                   //!< PDG code of the neutrino.
