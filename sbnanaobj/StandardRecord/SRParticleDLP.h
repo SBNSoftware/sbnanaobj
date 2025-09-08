@@ -29,12 +29,12 @@ namespace caf
 
         float axial_spread;                                 //!< Axial spread of the particle.
         double calo_ke;                                     //!< Calorimetric kinetic energy.
-        double cathode_offset;                              //!< Distance from the cathode.
+        double cathode_offset;                              //!< Distance from the cathode [cm].
         double chi2_per_pid[6];                             //!< Chi2 score per PID hypothesis.
         int64_t chi2_pid;                                   //!< PID from the chi2-based PID.
         double csda_ke;                                     //!< Continuous-slowing-down-approximation kinetic energy.
         double csda_ke_per_pid[6];                          //!< CSDA kinetic energy per PID.
-        float depositions_sum;                              //!< TO DO.
+        float depositions_sum;                              //!< Sum of deposited (de-ghosted) energy [MeV].
         float directional_spread;                           //!< Directional spread of the particle.
         float end_dir[3];                                   //!< Unit direction vector calculated at the particle end point.
         float end_point[3];                                 //!< End point (vector) of the particle.
@@ -57,7 +57,7 @@ namespace caf
         double mcs_ke_per_pid[6];                           //!< MCS kinetic energy per PID.
         std::vector<int64_t> module_ids;                    //!< Module IDs of the particle.
         float momentum[3];                                  //!< Momentum (vector) of the particle.
-        int64_t num_fragments;                              //!< TO DO.
+        int64_t num_fragments;                              //!< Number of fragments comprising the particle.
         float p;                                            //!< Momentum magnitude.
         int64_t pdg_code;                                   //!< PDG code of the particle.
         int64_t pid;                                        //!< Particle ID (see Pid_t enumeration).
@@ -65,7 +65,7 @@ namespace caf
         std::vector<int32_t> ppn_ids;                       //!< PPN IDs of the particle.
         float primary_scores[2];                            //!< Primary softmax scores
         int64_t shape;                                      //!< Semantic type of the particle (see Shape_t enumeration).
-        int64_t size;                                       //!< TO DO.
+        int64_t size;                                       //!< The size of the particle (number of voxels).
         double start_dedx;                                  //!< dE/dx at the start of the particle.
         float start_dir[3];                                 //!< Unit direction vector calculated at the particle start point.
         float start_point[3];                               //!< Start point (vector) of the particle.

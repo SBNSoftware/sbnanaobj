@@ -29,9 +29,9 @@ namespace caf
         public:
         SRInteractionDLP();
 
-        double cathode_offset;                              //!< Distance from the cathode.
-        float depositions_sum;                              //!< TO DO.
-        double flash_hypo_pe;                               //!< Total PE of the hypothesized flash.
+        double cathode_offset;                              //!< Distance from the cathode [cm].
+        float depositions_sum;                              //!< Sum of deposited (de-ghosted) energy [MeV].
+        double flash_hypo_pe;                               //!< Total PE of the hypothesized flash from OpT0Finder.
         std::vector<int64_t> flash_ids;                     //!< Flash IDs for the matched flashes.
         std::vector<float> flash_scores;                    //!< Score of the matched flashes.
         std::vector<float> flash_times;                     //!< Time of the matched flashes.

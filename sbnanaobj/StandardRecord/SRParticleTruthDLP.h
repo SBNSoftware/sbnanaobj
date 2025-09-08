@@ -34,7 +34,7 @@ namespace caf
         double ancestor_t;                             //!< Time of the ancestor particle.
         int64_t ancestor_track_id;                     //!< Track ID of the ancestor particle.
         double calo_ke;                                //!< Calorimetric kinetic energy.
-        double cathode_offset;                         //!< Distance from the cathode.
+        double cathode_offset;                         //!< Distance from the cathode [cm].
         std::vector<int64_t> children_counts;          //!< Number of children of the particle.
         std::vector<int64_t> children_id;              //!< List of particle ID of children particles.
         std::string creation_process;                  //!< Geant4 creation process of the particle.
@@ -51,7 +51,7 @@ namespace caf
         float end_p;                                   //!< Momentum magnitude of the particle at the end.
         float end_point[3];                            //!< End point (vector) of the particle.
         float end_position[3];                         //!< End position (vector) of the particle.
-        double end_t;                                  //!< TO DO.
+        double end_t;                                  //!< Time of the particle at the end.
         double energy_deposit;                         //!< Energy deposited by the particle.
         double energy_init;                            //!< Initial energy of the particle. 
         float first_step[3];                           //!< Coordinates of the first step of the particle.
@@ -98,15 +98,15 @@ namespace caf
         int64_t pdg_code;                              //!< PDG code of the particle.
         int64_t pid;                                   //!< Particle ID (see Pid enumeration).
         float position[3];                             //!< Position of the particle.
-        float reco_end_dir[3];                         //!< TO DO.
-        double reco_ke;                                //!< TO DO.
-        double reco_length;                            //!< TO DO.
-        double reco_momentum[3];                       //!< TO DO.
-        float reco_start_dir[3];                       //!< TO DO.
+        float reco_end_dir[3];                         //!< Direction vector at the reconstructed end point of the particle.
+        double reco_ke;                                //!< Kinetic energy estimator using reconstructed information.
+        double reco_length;                            //!< Reconstructed length of the particle.
+        double reco_momentum[3];                       //!< Reconstructed momentum (vector) of the particle.
+        float reco_start_dir[3];                       //!< Direction vector at the reconstructed start point of the particle.
         int64_t shape;                                 //!< Semantic type of the particle (see SemanticType enumeration).
-        int64_t size;                                  //!< TO DO.
-        int64_t size_adapt;                            //!< TO DO.
-        int64_t size_g4;                               //!< TO DO.
+        int64_t size;                                  //!< Size of the particle (number of voxels).
+        int64_t size_adapt;                            //!< Size of the particle using adaptive thresholds (number of voxels).
+        int64_t size_g4;                               //!< Size of the particle at the G4 level (number of voxels).
         float start_dir[3];                            //!< Unit direction vector calculated at the particle start point.
         float start_point[3];                          //!< Start point (vector) of the particle.
         double t;                                      //!< Time of the particle.
