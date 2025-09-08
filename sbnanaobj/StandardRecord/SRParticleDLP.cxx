@@ -57,6 +57,4 @@ namespace caf
         start_straightness(std::numeric_limits<float>::signaling_NaN()),
         units(),
         vertex_distance(std::numeric_limits<double>::signaling_NaN()) { }
-
-    SRParticleDLP::~SRParticleDLP() { }
 } // namespace caf

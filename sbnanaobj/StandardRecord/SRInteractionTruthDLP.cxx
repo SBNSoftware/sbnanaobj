@@ -72,6 +72,4 @@ namespace caf
         units(),
         vertex{std::numeric_limits<float>::signaling_NaN(), std::numeric_limits<float>::signaling_NaN(), std::numeric_limits<float>::signaling_NaN()},
         particles() { }
-
-    SRInteractionTruthDLP::~SRInteractionTruthDLP() { }
 } // namespace caf

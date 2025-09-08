@@ -93,6 +93,4 @@ namespace caf
         t(std::numeric_limits<double>::signaling_NaN()),
         track_id(caf::kUninitializedInt),
         units() { }
-
-    SRParticleTruthDLP::~SRParticleTruthDLP() { }
 } // namespace caf
