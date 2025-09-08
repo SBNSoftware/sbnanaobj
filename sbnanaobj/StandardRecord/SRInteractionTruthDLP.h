@@ -48,14 +48,14 @@ namespace caf
         double flash_total_pe;                              //!< Total PE of the matched flash.
         std::vector<int64_t> flash_volume_ids;              //!< Volume IDs of the matched flashes.
         double hadronic_invariant_mass;                     //!< Hadronic invariant mass of the neutrino.
-        int64_t id;                                         //!< Interaction ID.
+        int64_t id;                                         //!< Interaction ID (dense enumeration starting from 0 within the event).
         double inelasticity;                                //!< Inelasticity of the neutrino interaction.
         int64_t interaction_id;                             //!< Deprecated.
         int64_t interaction_mode;                           //!< Interaction mode of the neutrino.
         int64_t interaction_type;                           //!< Interaction type of the neutrino.
-        bool is_cathode_crosser;                            //!< Whether the interaction is a cathode-crosser.
-        bool is_contained;                                  //!< Whether the interaction is contained.
-        bool is_fiducial;                                   //!< Whether the interaction has an interaction in the fiducial volume.
+        bool is_cathode_crosser;                            //!< Whether the interaction is a cathode-crosser (some particle crosses the cathode).
+        bool is_contained;                                  //!< Whether the interaction is contained within some margin from the detector walls.
+        bool is_fiducial;                                   //!< Whether the interaction is in the fiducial volume (see SPINE configuration).
         bool is_flash_matched;                              //!< Whether the flash is matched to the interaction.
         bool is_matched;                                    //!< Whether the interaction is matched to a true interaction.
         bool is_time_contained;                             //!< Whether the particle is time-contained (within the "in-time" region of the drift window).
