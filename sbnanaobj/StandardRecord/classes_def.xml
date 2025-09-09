@@ -421,13 +421,25 @@
   <enum name="caf::g4_process_" ClassVersion="10"/>
   <enum name="caf::ReweightType_t" ClassVersion="10"/>
 
-  <class name="caf::SRInteractionDLP"/>
+  <class name="caf::SRParticleDLP" ClassVersion="10">
+   <version ClassVersion="10" checksum="645076472"/>
+  </class>
+
+  <class name="caf::SRParticleTruthDLP" ClassVersion="10">
+   <version ClassVersion="10" checksum="2779095606"/>
+  </class>
+
+  <class name="caf::SRInteractionDLP" ClassVersion="10">
+   <version ClassVersion="10" checksum="2111034330"/>
+  </class>
+
+  <class name="caf::SRInteractionTruthDLP" ClassVersion="10">
+   <version ClassVersion="10" checksum="3723117796"/>
+  </class>
+
   <class name="std::vector<caf::SRInteractionDLP>"/>
-  <class name="caf::SRParticleDLP"/>
   <class name="std::vector<caf::SRParticleDLP>"/>
-  <class name="caf::SRInteractionTruthDLP"/>
   <class name="std::vector<caf::SRInteractionTruthDLP>"/>
-  <class name="caf::SRParticleTruthDLP"/>
   <class name="std::vector<caf::SRParticleTruthDLP>"/>
 
   <!-- Kept for now as a deprecated name, may be needed for opening old files -->
