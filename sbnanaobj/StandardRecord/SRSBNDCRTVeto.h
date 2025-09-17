@@ -4,7 +4,9 @@
 #ifndef SRSBNDCRTVETO_H
 #define SRSBNDCRTVETO_H
 
+#include "sbnanaobj/StandardRecord/SRVector3D.h"
 #include "sbnanaobj/StandardRecord/SREnums.h"
+#include "sbnanaobj/StandardRecord/SRCRTSpacePoint.h"
 
 #include <vector>
 
@@ -41,6 +43,16 @@ namespace caf
       bool V2;    
       bool V3;    
       bool V4; 
+
+      
+      // The CRT Space Points that fired the CRT Veto --> Can be empty
+      //std::vector<SRCRTSpacePoint> crtveto_points;
+
+      // Add Select SpacePoint Info Associated with the Veto
+      std::vector<SRVector3D>   sp_position;
+      std::vector<double>       sp_time;
+      std::vector<double>       sp_pe;
+
 
     };
 } // end namespace

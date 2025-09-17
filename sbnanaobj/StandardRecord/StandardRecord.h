@@ -61,14 +61,6 @@ namespace caf
     std::vector<SRCRTPMTMatch> crtpmt_matches;  ///< CRT-PMT matches in event 
     bool pass_flashtrig;     ///< Whether this Record passed the Flash Trigger requirement
 
-    // CRT Veto Header Variables
-    // TODO ugly, but use for now to test
-    bool sbnd_crtveto_v0;
-    bool sbnd_crtveto_v1;
-    bool sbnd_crtveto_v2;
-    bool sbnd_crtveto_v3;
-    bool sbnd_crtveto_v4;
-
   };
 
 } // end namespace
