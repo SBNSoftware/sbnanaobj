@@ -44,14 +44,10 @@ namespace caf
       bool V3;    
       bool V4; 
 
-      
-      // The CRT Space Points that fired the CRT Veto --> Can be empty
-      //std::vector<SRCRTSpacePoint> crtveto_points;
-
       // Add Select SpacePoint Info Associated with the Veto
-      std::vector<SRVector3D>   sp_position;
-      std::vector<double>       sp_time;
-      std::vector<double>       sp_pe;
+      std::vector<SRVector3D>   sp_position; // x, y, z in detector coordinates
+      std::vector<double>       sp_time; // Ts0 time
+      std::vector<double>       sp_pe; // Number of Photoelectrons
 
 
     };
