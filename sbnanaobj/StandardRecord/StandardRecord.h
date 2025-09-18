@@ -12,6 +12,8 @@
 #include "sbnanaobj/StandardRecord/SRCRTSpacePoint.h"
 #include "sbnanaobj/StandardRecord/SRSBNDCRTTrack.h"
 #include "sbnanaobj/StandardRecord/SRSBNDCRTVeto.h"
+#include "sbnanaobj/StandardRecord/SRSBNDFrameShiftInfo.h"
+#include "sbnanaobj/StandardRecord/SRSBNDTimingInfo.h"
 #include "sbnanaobj/StandardRecord/SRHeader.h"
 #include "sbnanaobj/StandardRecord/SRCRTPMTMatch.h"
 #include "sbnanaobj/StandardRecord/SRSlice.h"
@@ -56,10 +58,11 @@ namespace caf
     SRSBNDCRTVeto                sbnd_crt_veto; // crt veto flags for each event
     int                         nopflashes; ///< Number of OpFlashes in spill
     std::vector<SROpFlash>       opflashes; ///< List of OpFlashes in spill
-    
     int                        ncrtpmt_matches; ///<Number of CRT-PMT Matches in event 
     std::vector<SRCRTPMTMatch> crtpmt_matches;  ///< CRT-PMT matches in event 
     bool pass_flashtrig;     ///< Whether this Record passed the Flash Trigger requirement
+    SRSBNDFrameShiftInfo sbnd_frames; ///< List of Frame Shift in event in unit [ns] (SBND)
+    SRSBNDTimingInfo sbnd_timings; ///< List of Timing Info in event in UNIX timestamp format(SBND)
 
   };
 

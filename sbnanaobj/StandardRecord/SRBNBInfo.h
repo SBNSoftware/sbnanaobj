@@ -5,6 +5,13 @@
 
 namespace caf
 {
+/**
+ * @brief Readings of the BNB beam monitors.
+ * 
+ * This information is typically fetched from the beam database (IFBeam) 
+ * and matched in time with the acquired event. 
+ * Offsets are applied through subtraction:   RealPositionValue = IFBeamValue - Offset
+ */
   class SRBNBInfo
   {
   public:
@@ -17,9 +24,12 @@ namespace caf
     float TOR860;  
     float TOR875; //!< Value used for POT accounting
 
+    float FOM; //!< Figure of Merit for BNB ([SBN DocDB 41901](https://sbn-docdb.fnal.gov/cgi-bin/sso/ShowDocument?docid=41901))
+
     float LM875A; //!< Loss Monitor before the RWM, unit R/s
     float LM875B; //!< Loss Monitor after the RWM, unit R/s
     float LM875C; //!< Loss Monitor after the RWM, unit R/s
+
     float HP873; //!< Horizontal Position Monitor after Mag 873, units mm
     float VP873; //!< Vertical Position Monitor after Mag 873, units mm
     float HP875; //!< Horizontal Position Monitor after Mag 875, units mm
@@ -30,6 +40,14 @@ namespace caf
 
     float HPTG2; //!< Horizontal Position Monitor at Target Station 2, closest to target, units mm
     float VPTG2; //!< Horizontal Position Monitor at Target Station 2, closest to target, units mm
+
+    float HP875Offset;//units mm
+    float VP875Offset;//units mm
+    float VP873Offset;//units mm
+    float HPTG1Offset;//units mm
+    float HPTG2Offset;//units mm
+    float VPTG1Offset;//units mm
+    float VPTG2Offset;//units mm
     
     float BTJT2; //!< Temperature of air exiting target, units Deg C
 
