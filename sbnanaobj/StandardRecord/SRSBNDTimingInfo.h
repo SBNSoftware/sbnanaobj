@@ -24,7 +24,7 @@ namespace caf
 
   struct SRSBNDTimingInfo
     {
-      static constexpr uint64_t NoTimestamp = std::numeric_limits<uint64_t>::max();
+      static constexpr uint64_t NoTimestamp = std::numeric_limits<uint32_t>::max();
       
       uint64_t rawDAQHeaderTimestamp = NoTimestamp; ///< Timestamp when the event is built by the event builder at DAQ-level
       uint64_t tdcCrtt1 = NoTimestamp; ///< Timestamp of BNB stream CRT T1 Reset recorded by the SPEC-TDC
