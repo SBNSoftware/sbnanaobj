@@ -11,13 +11,13 @@
 namespace caf
 {
     SRInteractionDLP::SRInteractionDLP():
-        cathode_offset(std::numeric_limits<double>::signaling_NaN()),
-        depositions_sum(std::numeric_limits<float>::signaling_NaN()),
-        flash_hypo_pe(std::numeric_limits<double>::signaling_NaN()),
+        cathode_offset(caf::kSignalingNaN),
+        depositions_sum(caf::kSignalingNaN),
+        flash_hypo_pe(caf::kSignalingNaN),
         flash_ids(),
         flash_scores(),
         flash_times(),
-        flash_total_pe(std::numeric_limits<double>::signaling_NaN()),
+        flash_total_pe(caf::kSignalingNaN),
         flash_volume_ids(),
         id(caf::kUninitializedInt),
         is_cathode_crosser(false),
@@ -38,6 +38,6 @@ namespace caf
         primary_particle_ids(),
         size(caf::kUninitializedInt),
         topology(),
-        vertex{std::numeric_limits<float>::signaling_NaN(), std::numeric_limits<float>::signaling_NaN(), std::numeric_limits<float>::signaling_NaN()},
+        vertex{caf::kSignalingNaN, caf::kSignalingNaN, caf::kSignalingNaN},
         particles() { }
 } // namespace caf
