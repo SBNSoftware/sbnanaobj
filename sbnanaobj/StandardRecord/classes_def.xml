@@ -6,7 +6,7 @@
 
 <lcgdict>
   <class name="caf::StandardRecord" ClassVersion="14">
-   <version ClassVersion="14" checksum="390457353"/>
+   <version ClassVersion="14" checksum="1860171062"/>
    <version ClassVersion="13" checksum="1979816256"/>
    <version ClassVersion="12" checksum="3984422068"/>
    <version ClassVersion="11" checksum="483883398"/>
@@ -72,7 +72,8 @@
    <version ClassVersion="10" checksum="83320005"/>
   </class>
 
-  <class name="caf::SRSlice" ClassVersion="22">
+  <class name="caf::SRSlice" ClassVersion="23">
+   <version ClassVersion="23" checksum="3825810478"/>
    <version ClassVersion="22" checksum="2124497341"/>
    <version ClassVersion="21" checksum="3825441135"/>
    <version ClassVersion="20" checksum="1917004696"/>
@@ -277,7 +278,8 @@
    <version ClassVersion="10" checksum="3379238512"/>
   </class>
 
-  <class name="caf::SRBNBInfo" ClassVersion="11">
+  <class name="caf::SRBNBInfo" ClassVersion="12">
+   <version ClassVersion="12" checksum="586440482"/>
    <version ClassVersion="11" checksum="4021053031"/>
    <version ClassVersion="10" checksum="2143749817"/>
   </class>
@@ -367,6 +369,13 @@
    <version ClassVersion="10" checksum="2672302824"/>
   </class>
 
+  <class name="caf::SRCorrectedOpFlash" ClassVersion="13">
+   <version ClassVersion="13" checksum="3257300089"/>
+   <version ClassVersion="12" checksum="1558889595"/>
+   <version ClassVersion="11" checksum="755718921"/>
+   <version ClassVersion="10" checksum="2672302824"/>
+  </class>
+
   <class name="caf::SROpFlash" ClassVersion="14">
    <version ClassVersion="14" checksum="1680515282"/>
    <version ClassVersion="13" checksum="2333809763"/>
@@ -385,7 +394,8 @@
   </class>
   <class name="std::vector<caf::SRMatchedCRT>"/>
 
-  <class name="caf::SRTPCPMTBarycenterMatch" ClassVersion="10" >
+  <class name="caf::SRTPCPMTBarycenterMatch" ClassVersion="11" >
+   <version ClassVersion="11" checksum="1199290836"/>
    <version ClassVersion="10" checksum="119776448"/>
   </class>
   <class name="std::vector<caf::SRTPCPMTBarycenterMatch>"/>
@@ -408,6 +418,13 @@
 
   <class name="std::vector<caf::SRCRTSpacePoint>" />
   <class name="std::vector<caf::SRSBNDCRTTrack>" />
+
+  <class name="caf::SRSBNDFrameShiftInfo" ClassVersion="10">
+   <version ClassVersion="10" checksum="2564414428"/>
+  </class>
+  <class name="caf::SRSBNDTimingInfo" ClassVersion="10">
+   <version ClassVersion="10" checksum="4144120809"/>
+  </class>
 
   <enum name="caf::Det_t" ClassVersion="10"/>
   <enum name="caf::Plane_t" ClassVersion="10"/>
