@@ -3,6 +3,7 @@
 
 #include <cstdlib>
 #include <cstdint>
+#include <vector>
 
 namespace caf
 {
@@ -27,6 +28,10 @@ namespace caf
     unsigned gate_count; ///< count of gate in this stream
     int gate_delta; ///< Number of gates since previous trigger in this stream (gate of this event included)
     
+    bool passed_trigger; ///< if the event passed the trigger
+    int num_pairs_over_threshold; ///< number of pmt pairs over trigger threshold
+    std::vector<int> monpulses_flat; ///< trigger responses for all of the waveforms in the event (flattened from a vector of vectors of ints)
+    std::vector<int> monpulse_sizes; ///< length of each triggered waveform to un-flatten the trigger responses
   };
 }
 
