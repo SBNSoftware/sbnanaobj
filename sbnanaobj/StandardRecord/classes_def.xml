@@ -6,7 +6,7 @@
 
 <lcgdict>
   <class name="caf::StandardRecord" ClassVersion="14">
-   <version ClassVersion="14" checksum="1860171062"/>
+   <version ClassVersion="14" checksum="2636549707"/>
    <version ClassVersion="13" checksum="1979816256"/>
    <version ClassVersion="12" checksum="3984422068"/>
    <version ClassVersion="11" checksum="483883398"/>
@@ -443,7 +443,8 @@
    <version ClassVersion="10" checksum="645076472"/>
   </class>
 
-  <class name="caf::SRParticleTruthDLP" ClassVersion="10">
+  <class name="caf::SRParticleTruthDLP" ClassVersion="11">
+   <version ClassVersion="11" checksum="284698024"/>
    <version ClassVersion="10" checksum="2779095606"/>
   </class>
 
@@ -451,7 +452,8 @@
    <version ClassVersion="10" checksum="2111034330"/>
   </class>
 
-  <class name="caf::SRInteractionTruthDLP" ClassVersion="10">
+  <class name="caf::SRInteractionTruthDLP" ClassVersion="11">
+   <version ClassVersion="11" checksum="2909471694"/>
    <version ClassVersion="10" checksum="3723117796"/>
   </class>
 

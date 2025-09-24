@@ -17,7 +17,7 @@ namespace caf
         current_type(caf::kUninitializedInt),
         depositions_adapt_q_sum(caf::kSignalingNaN),
         depositions_adapt_sum(caf::kSignalingNaN),
-        depositions_g4_sum(caf::kUninitializedInt),
+        depositions_g4_sum(caf::kSignalingNaN),
         depositions_q_sum(caf::kSignalingNaN),
         depositions_sum(caf::kSignalingNaN),
         energy_init(caf::kSignalingNaN),
