@@ -1,5 +1,11 @@
 ////////////////////////////////////////////////////////////////////////
-// \file    SRSBNDCRTVeto.h
+/**
+ * @file   sbnanaobj/StandardRecord/SRSBNDCRTVeto.h
+ * @brief  Definition of event veto from CRT information.
+ * @author Alexander Antonakis
+ * @email: aantonakis@ucsb.edu
+ * @see    sbnanaobj/StandardRecord/SRSBNDCRTVeto.cxx
+ */
 ////////////////////////////////////////////////////////////////////////
 #ifndef SRSBNDCRTVETO_H
 #define SRSBNDCRTVETO_H
@@ -15,39 +21,40 @@ namespace caf
   class SRSBNDCRTVeto
     {
     public:
+      /**
+       * @brief Veto flags from CRT information.
+       * 
+       * CRT activity that is used to veto lies within a FHiCL-configurable time window.
+       * This window is chosen to be a narrow window around the 1.6 &micro;s beam window
+       * in the nominal configuration.
+       *
+       * A list of select space points associated with the veto is included:
+       * three "parallel" arrays report for each point its hit location, time
+       * and photoelectrons.
+       */
       SRSBNDCRTVeto();
-      virtual ~SRSBNDCRTVeto() {}
-/* 
-    * Brief Description of Veto Variables:
-    **
-    ** V0 --> veto on any CRT activity minus the CRT bottom tagger
-    **
-    ** V1 --> Same as V0 but require that both Top Taggers were hit to veto 
-    ** on the CRT Top 
-    **
-    ** V2 --> Same as V0 but do not veto on the North CRT Wall
-    **
-    ** V3 --> Same as V2 but require that both Top Taggers were hit to veto 
-    ** on the CRT Top
-    **
-    ** V4 --> Only Veto on the South CRT Wall 
-    **
-    ** CRT activity that is used to veto lies within a fcl configureable time
-    ** window. This Window is chosen to be a narrow window around the 1.6 us beam 
-    ** window in the nominal configuration
-    *                                                                     
-*/
 
-      bool V0;    
-      bool V1;   
-      bool V2;    
-      bool V3;    
+      /// Veto on any CRT activity minus the CRT bottom tagger
+      bool V0;
+    
+      /// Same as `V0` but require that both Top Taggers were hit to veto 
+      /// on the CRT Top    
+      bool V1;
+   
+      /// Same as `V0` but do not veto on the downstream CRT Wall   
+      bool V2;
+    
+      /// Same as `V2` but require that both Top Taggers were hit to veto 
+      /// on the CRT Top
+      bool V3;
+    
+      /// Only veto on the upstream CRT Wall
       bool V4; 
 
-      // Add Select SpacePoint Info Associated with the Veto
-      std::vector<SRVector3D>   sp_position; // x, y, z in detector coordinates
-      std::vector<double>       sp_time; // Ts0 time
-      std::vector<double>       sp_pe; // Number of Photoelectrons
+      /// Add Select SpacePoint Info Associated with the Veto
+      std::vector<SRVector3D>   sp_position; /// x, y, z in detector coordinates [cm]
+      std::vector<float>        sp_time; ///< Ts0 time [&micro;s]
+      std::vector<float>        sp_pe; /// Number of Photoelectrons
 
 
     };

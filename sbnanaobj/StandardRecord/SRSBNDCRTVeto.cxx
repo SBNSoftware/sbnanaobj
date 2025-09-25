@@ -1,5 +1,11 @@
 ////////////////////////////////////////////////////////////////////////
-// \file    SRSBNDCRTVeto.cxx
+/**
+ * @file   sbnanaobj/StandardRecord/SRSBNDCRTVeto.cxx
+ * @brief  Definition of event veto from CRT information.
+ * @author Alexander Antonakis
+ * @email: aantonakis@ucsb.edu
+ * @see    sbnanaobj/StandardRecord/SRSBNDCRTVeto.h
+ */
 ////////////////////////////////////////////////////////////////////////
 
 #include "sbnanaobj/StandardRecord/SRSBNDCRTVeto.h"

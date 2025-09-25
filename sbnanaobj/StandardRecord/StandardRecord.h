@@ -55,7 +55,7 @@ namespace caf
     std::vector<SRCRTSpacePoint> crt_spacepoints; ///< CRT spacepoints in event (SBND)
     int                         nsbnd_crt_tracks; ///< Number of CRT tracks in event (SBND)
     std::vector<SRSBNDCRTTrack>  sbnd_crt_tracks; ///< CRT tracks in event (SBND)
-    SRSBNDCRTVeto                sbnd_crt_veto; // crt veto flags for each event
+    SRSBNDCRTVeto                sbnd_crt_veto; ///< crt veto flags for each event
     int                         nopflashes; ///< Number of OpFlashes in spill
     std::vector<SROpFlash>       opflashes; ///< List of OpFlashes in spill
     int                        ncrtpmt_matches; ///<Number of CRT-PMT Matches in event 
