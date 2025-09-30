@@ -21,6 +21,8 @@
 #include "sbnanaobj/StandardRecord/SRFakeReco.h"
 #include "sbnanaobj/StandardRecord/SROpFlash.h"
 #include "sbnanaobj/StandardRecord/SRTrigger.h"
+#include "sbnanaobj/StandardRecord/SRInteractionDLP.h"
+#include "sbnanaobj/StandardRecord/SRInteractionTruthDLP.h"
 
 /// Common Analysis Files
 namespace caf
@@ -63,6 +65,10 @@ namespace caf
     SRSBNDFrameShiftInfo sbnd_frames; ///< List of Frame Shift in event in unit [ns] (SBND)
     SRSBNDTimingInfo sbnd_timings; ///< List of Timing Info in event in UNIX timestamp format(SBND)
 
+    int                                ndlp;       ///< Number of reco DLP (ML) interactions.
+    std::vector<SRInteractionDLP>      dlp;        ///< Reco DLP (ML) interactions.  
+    int                                ndlp_true;  ///< Number of true DLP (ML) interactions.
+    std::vector<SRInteractionTruthDLP> dlp_true;   ///< True DLP (ML) interactions.
   };
 
 } // end namespace
