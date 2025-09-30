@@ -26,6 +26,8 @@ namespace caf {
     : fmtotalscore(std::numeric_limits<float>::signaling_NaN())
     , fmpe(std::numeric_limits<float>::signaling_NaN())
     , fmtime(std::numeric_limits<float>::signaling_NaN())
+    , opt0score(std::numeric_limits<float>::signaling_NaN())
+    , opt0measuredpe(std::numeric_limits<float>::signaling_NaN())
   {
   }
 

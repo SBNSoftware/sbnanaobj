@@ -5,7 +5,8 @@
 <!-- art::Wrappers for these products are defined in CAFMaker -->
 
 <lcgdict>
-  <class name="caf::StandardRecord" ClassVersion="13">
+  <class name="caf::StandardRecord" ClassVersion="14">
+   <version ClassVersion="14" checksum="1860171062"/>
    <version ClassVersion="13" checksum="1979816256"/>
    <version ClassVersion="12" checksum="3984422068"/>
    <version ClassVersion="11" checksum="483883398"/>
@@ -42,6 +43,10 @@
    <version ClassVersion="10" checksum="3242119722"/>
   </class>
 
+  <class name="caf::SRNuGraphScore" ClassVersion="10" >
+   <version ClassVersion="10" checksum="705810055"/>
+  </class>
+
   <class name="caf::SRHit" ClassVersion="10">
    <version ClassVersion="10" checksum="1494967532"/>
   </class>
@@ -67,7 +72,8 @@
    <version ClassVersion="10" checksum="83320005"/>
   </class>
 
-  <class name="caf::SRSlice" ClassVersion="21">
+  <class name="caf::SRSlice" ClassVersion="22">
+   <version ClassVersion="22" checksum="2124497341"/>
    <version ClassVersion="21" checksum="3825441135"/>
    <version ClassVersion="20" checksum="1917004696"/>
    <version ClassVersion="19" checksum="3108582545"/>
@@ -141,7 +147,8 @@
    <version ClassVersion="10" checksum="4052698249"/>
   </class>
 
-  <class name="caf::SRCaloPoint" ClassVersion="13">
+  <class name="caf::SRCaloPoint" ClassVersion="14">
+   <version ClassVersion="14" checksum="3313115741"/>
    <version ClassVersion="13" checksum="930755035"/>
    <version ClassVersion="12" checksum="3873035196"/>
    <version ClassVersion="11" checksum="3357014269"/>
@@ -241,7 +248,8 @@
    <version ClassVersion="10" checksum="839301601"/>
   </class>
 
-  <class name="caf::SRPFP" ClassVersion="15">
+  <class name="caf::SRPFP" ClassVersion="16">
+   <version ClassVersion="16" checksum="2252062519"/>
    <version ClassVersion="15" checksum="3226426358"/>
    <version ClassVersion="14" checksum="635023057"/>
    <version ClassVersion="13" checksum="2132348118"/>
@@ -270,7 +278,9 @@
    <version ClassVersion="10" checksum="3379238512"/>
   </class>
 
-  <class name="caf::SRBNBInfo" ClassVersion="10">
+  <class name="caf::SRBNBInfo" ClassVersion="12">
+   <version ClassVersion="12" checksum="586440482"/>
+   <version ClassVersion="11" checksum="4021053031"/>
    <version ClassVersion="10" checksum="2143749817"/>
   </class>
 
@@ -351,7 +361,8 @@
   </class>
   <class name="std::vector<caf::SRCRTTrack>" />
 
-  <class name="caf::SRCRTHitMatch" ClassVersion="10">
+  <class name="caf::SRCRTHitMatch" ClassVersion="11">
+   <version ClassVersion="11" checksum="900891432"/>
    <version ClassVersion="10" checksum="1521467565"/>
   </class>
 
@@ -359,11 +370,13 @@
    <version ClassVersion="10" checksum="2672302824"/>
   </class>
 
-  <class name="caf::SROpFlash" ClassVersion="12">
+  <class name="caf::SROpFlash" ClassVersion="13">
+   <version ClassVersion="13" checksum="2333809763"/>
    <version ClassVersion="12" checksum="3122666215"/>
    <version ClassVersion="11" checksum="2756572285"/>
    <version ClassVersion="10" checksum="2672302824"/>
   </class>
+
   <class name="std::vector<caf::SROpFlash>" />
   <class name="caf::SRCRTPMTMatch" ClassVersion="10" >
    <version ClassVersion="10" checksum="2059576953"/>
@@ -397,6 +410,13 @@
 
   <class name="std::vector<caf::SRCRTSpacePoint>" />
   <class name="std::vector<caf::SRSBNDCRTTrack>" />
+
+  <class name="caf::SRSBNDFrameShiftInfo" ClassVersion="10">
+   <version ClassVersion="10" checksum="2564414428"/>
+  </class>
+  <class name="caf::SRSBNDTimingInfo" ClassVersion="10">
+   <version ClassVersion="10" checksum="4144120809"/>
+  </class>
 
   <enum name="caf::Det_t" ClassVersion="10"/>
   <enum name="caf::Plane_t" ClassVersion="10"/>
