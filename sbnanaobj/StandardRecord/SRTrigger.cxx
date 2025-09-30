@@ -18,7 +18,11 @@ namespace caf
     gate_id(0),
     trigger_count(0),
     gate_count(0),
-    gate_delta(-1)
+    gate_delta(-1),
+    passed_trigger(false),
+    num_pairs_over_threshold(-1),
+    monpulses_flat(),
+    monpulse_sizes()
   {}
     
 

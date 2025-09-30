@@ -30,8 +30,8 @@ namespace caf
     
     bool passed_trigger; ///< if the event passed the trigger
     int num_pairs_over_threshold; ///< number of pmt pairs over trigger threshold
-    std::vector<int> monpulses_flat; ///< trigger responses for all of the waveforms in the event (flattened from a vector of vectors of ints)
-    std::vector<int> monpulse_sizes; ///< length of each triggered waveform to un-flatten the trigger responses
+    std::vector<int> monpulses_flat; ///< trigger responses (number of PMT pairs above threshold for all channels) for all flashes (flattened to include all flashes in a single vector)
+    std::vector<int> monpulse_sizes; ///< length of each trigger responses to un-flatten the trigger responses (to a vector of trigger responses)
   };
 }
 

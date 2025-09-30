@@ -20,6 +20,7 @@
 #include "sbnanaobj/StandardRecord/SRTruthBranch.h"
 #include "sbnanaobj/StandardRecord/SRFakeReco.h"
 #include "sbnanaobj/StandardRecord/SROpFlash.h"
+#include "sbnanaobj/StandardRecord/SRTrigger.h"
 
 /// Common Analysis Files
 namespace caf
