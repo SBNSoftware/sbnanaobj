@@ -349,7 +349,8 @@
   <class name="std::vector<caf::SRPFP>" />
   <class name="std::vector<caf::SRCVNScore>" />
 
-  <class name="caf::SRCRTHit" ClassVersion="11">
+  <class name="caf::SRCRTHit" ClassVersion="12">
+   <version ClassVersion="12" checksum="3525669106"/>
    <version ClassVersion="11" checksum="3268314487"/>
    <version ClassVersion="10" checksum="3162534166"/>
   </class>
