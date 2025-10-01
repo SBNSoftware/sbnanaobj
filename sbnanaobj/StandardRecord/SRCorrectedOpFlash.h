@@ -17,10 +17,10 @@ namespace caf
 
     /// @name Data members related to the opflash corrected time
     /// @{
-    float        OpFlashT0             { -9999. };                   ///< | OpFlash Time wrt RWM time | (ns)
-    float        NuToFLight             {  -9999.  };      ///< | Nu ToF using light only | (ns)
-    float        NuToFCharge             {  -9999.  };       ///< | Nu ToF Z from tpc vertex | (ns)
-    float        OpFlashT0Corrected    {  -9999.  };       ///< | OpFlash Time wrt RWM time after light propagation corrections | (ns)
+    float        OpFlashT0             { -9999. };                   ///< | OpFlash Time wrt RWM time | (us)
+    float        NuToFLight             {  -9999.  };      ///< | Nu ToF using light only | (us)
+    float        NuToFCharge             {  -9999.  };       ///< | Nu ToF Z from tpc vertex | (us)
+    float        OpFlashT0Corrected    {  -9999.  };       ///< | OpFlash Time wrt RWM time after light propagation corrections | (us)
     /// @}
 
     void setDefault();
