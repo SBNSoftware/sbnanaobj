@@ -307,7 +307,8 @@
    <version ClassVersion="10" checksum="1010873394"/>
   </class>
 
-  <class name="caf::SRTrigger" ClassVersion="13">
+  <class name="caf::SRTrigger" ClassVersion="14">
+   <version ClassVersion="14" checksum="592461663"/>
    <version ClassVersion="13" checksum="1642667704"/>
    <version ClassVersion="12" checksum="2557689850"/>
    <version ClassVersion="11" checksum="3162219101"/>
@@ -349,7 +350,8 @@
   <class name="std::vector<caf::SRPFP>" />
   <class name="std::vector<caf::SRCVNScore>" />
 
-  <class name="caf::SRCRTHit" ClassVersion="11">
+  <class name="caf::SRCRTHit" ClassVersion="12">
+   <version ClassVersion="12" checksum="3525669106"/>
    <version ClassVersion="11" checksum="3268314487"/>
    <version ClassVersion="10" checksum="3162534166"/>
   </class>
