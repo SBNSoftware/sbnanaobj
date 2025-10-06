@@ -5,6 +5,7 @@
 #define SRCRTHIT_H
 
 #include "sbnanaobj/StandardRecord/SRVector3D.h"
+#include "sbnanaobj/StandardRecord/SRCRTHitTruth.h"
 
 namespace caf
 {
@@ -22,6 +23,7 @@ namespace caf
       float t1; //!< Relatvie time w.r.t. beam early warning (from T1 module) [us]
       float pe; // The number of PhotoElectrons in the hit
       int plane; //!< Plane that the CRT hit is on
+      SRCRTHitTruth truth; //!< Truth matching information
       void setDefault();
     };
 
