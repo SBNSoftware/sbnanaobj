@@ -373,7 +373,8 @@
   </class>
   <class name="std::vector<caf::SRMatchedCRT>"/>
 
-  <class name="caf::SRTPCPMTBarycenterMatch" ClassVersion="10" >
+  <class name="caf::SRTPCPMTBarycenterMatch" ClassVersion="11" >
+   <version ClassVersion="11" checksum="2624457099"/>
    <version ClassVersion="10" checksum="119776448"/>
   </class>
   <class name="std::vector<caf::SRTPCPMTBarycenterMatch>"/>

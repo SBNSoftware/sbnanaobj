@@ -25,6 +25,7 @@ namespace caf
     flashAsymmetry     =                             -9999.;
     flashCenter        = SRVector3D(-9999., -9999., -9999.);
     flashWidth         = SRVector3D(-9999., -9999., -9999.);
+    flashClassification =                             -9999;
 
     deltaY             =                             -9999.;
     deltaZ             =                             -9999.;
