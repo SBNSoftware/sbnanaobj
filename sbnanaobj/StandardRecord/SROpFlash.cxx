@@ -16,15 +16,16 @@ namespace caf
 
   void SROpFlash::setDefault()
   {
-
     onbeamtime       =   false;
     cryo             =      -5;
+    tpc              =      -5;  
     firstpmt         =      -5;
     time             = -9999.f;
     timewidth        =    -5.f;
     timemean         = -9999.f;
     timesd           =    -5.f;
     firsttime        = -9999.f;
+    rwmtime          = -9999.f;
     totalpe          =    -5.f;
     fasttototal      =    -5.f;
     peperwall[0] = -5.f;
