@@ -303,9 +303,8 @@
    <version ClassVersion="10" checksum="1010873394"/>
   </class>
 
-  <class name="caf::SRTrigger" ClassVersion="15">
-   <version ClassVersion="15" checksum="1921176215"/>
-   <version ClassVersion="14" checksum="592461663"/>
+  <class name="caf::SRTrigger" ClassVersion="14">
+   <version ClassVersion="14" checksum="1448234080"/>
    <version ClassVersion="13" checksum="1642667704"/>
    <version ClassVersion="12" checksum="2557689850"/>
    <version ClassVersion="11" checksum="3162219101"/>

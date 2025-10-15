@@ -30,11 +30,6 @@ namespace caf
     unsigned int trigger_logic_bits;   ///< Whether the trigger was from adder logic, PMT-majority logic or both, straight from the trigger hardware. Provided for the first cryostat in time.
     unsigned int beam_to_trigger_time; ///< Nanoseconds from the beam gate opening to the first trigger in the cryostat, straight from the trigger hardware. Provided for the first cryostat in time.
     unsigned int trigger_cryo_source;  ///< First cryostat that had the trigger in the trigger hardware.
-
-    bool passed_trigger;              ///< If the event passed the trigger
-    int num_pairs_over_threshold;     ///< Number of PMT pairs over trigger threshold
-    std::vector<int> monpulses_flat;  ///< Trigger responses (number of PMT pairs above threshold for all channels) for all flashes (flattened to include all flashes in a single vector)
-    std::vector<int> monpulse_sizes;  ///< Length of each trigger responses to un-flatten the trigger responses (to a vector of trigger responses)
   };
 }
 
