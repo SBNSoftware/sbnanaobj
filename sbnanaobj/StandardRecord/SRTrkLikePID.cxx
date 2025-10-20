@@ -1,7 +1,7 @@
 ////////////////////////////////////////////////////////////////////////
 // \file    SRTrkLikePID.cxx
 // \brief   An SRTrkLikePID is a high level track ParticlePID object for
-//          for larana Chi2ParticleID results. 
+//          for larana LikelihoodPIDAlg results.
 ////////////////////////////////////////////////////////////////////////
 
 #include "sbnanaobj/StandardRecord/SRTrkLikePID.h"
@@ -16,7 +16,7 @@ namespace caf
     pid_ndof(-99),
     lambda_muon(std::numeric_limits<float>::signaling_NaN()),
     lambda_pion(std::numeric_limits<float>::signaling_NaN()),
-    lambda_proton(std::numeric_limits<float>::signaling_NaN()),
+    lambda_proton(std::numeric_limits<float>::signaling_NaN())
   {  }
 
   SRTrkLikePID::~SRTrkLikePID(){  }
