@@ -1,18 +1,18 @@
 ////////////////////////////////////////////////////////////////////////
-// \file    SRTrkLikePID.h
+// \file    SRTrkLikelihoodPID.h
 ////////////////////////////////////////////////////////////////////////
-#ifndef SRTRKLIKEPID_H
-#define SRTRKLIKEPID_H
+#ifndef SRTRKLIKELIHOODPID_H
+#define SRTRKLIKELIHOODPID_H
 
 namespace caf
 {
   /// Track PID from dE/dx v. likelihood from dE/dx PDF measured with residual range-based kinetic energy and hit pitch
-  class SRTrkLikePID
+  class SRTrkLikelihoodPID
     {
     public:
 
-      SRTrkLikePID();
-      virtual ~SRTrkLikePID();
+      SRTrkLikelihoodPID();
+      virtual ~SRTrkLikelihoodPID();
 
       int            pdg;          ///< Likelihood PID pdg
       int            pid_ndof;    ///< Number of degress of freedom in likelihood PID
@@ -25,5 +25,5 @@ namespace caf
 
 } // end namespace
 
-#endif // SRTRKLIKEPID_H
+#endif // SRTRKLIKELIHOODPID_H
 //////////////////////////////////////////////////////////////////////////////

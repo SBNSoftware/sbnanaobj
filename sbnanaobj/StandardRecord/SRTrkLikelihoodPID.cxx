@@ -1,17 +1,17 @@
 ////////////////////////////////////////////////////////////////////////
-// \file    SRTrkLikePID.cxx
-// \brief   An SRTrkLikePID is a high level track ParticlePID object for
+// \file    SRTrkLikelihoodPID.cxx
+// \brief   An SRTrkLikelihoodPID is a high level track ParticlePID object for
 //          for larana LikelihoodPIDAlg results.
 ////////////////////////////////////////////////////////////////////////
 
-#include "sbnanaobj/StandardRecord/SRTrkLikePID.h"
+#include "sbnanaobj/StandardRecord/SRTrkLikelihoodPID.h"
 
 #include <limits>
 
 namespace caf
 {
 
-  SRTrkLikePID::SRTrkLikePID():
+  SRTrkLikelihoodPID::SRTrkLikelihoodPID():
     pdg(-999),
     pid_ndof(-99),
     lambda_muon(std::numeric_limits<float>::signaling_NaN()),
@@ -19,9 +19,9 @@ namespace caf
     lambda_proton(std::numeric_limits<float>::signaling_NaN())
   {  }
 
-  SRTrkLikePID::~SRTrkLikePID(){  }
+  SRTrkLikelihoodPID::~SRTrkLikelihoodPID(){  }
 
-  void SRTrkLikePID::setDefault()
+  void SRTrkLikelihoodPID::setDefault()
   {
     pdg           = -5;
     pid_ndof      = -5;
