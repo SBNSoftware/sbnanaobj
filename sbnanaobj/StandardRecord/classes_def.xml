@@ -115,7 +115,8 @@
    <version ClassVersion="10" checksum="3777054621"/>
   </class>
 
-  <class name="caf::SRTrack" ClassVersion="16">
+  <class name="caf::SRTrack" ClassVersion="17">
+   <version ClassVersion="17" checksum="4075719476"/>
    <version ClassVersion="16" checksum="2837285941"/>
    <version ClassVersion="15" checksum="175611744"/>
    <version ClassVersion="14" checksum="3934033130"/>
@@ -164,6 +165,10 @@
 
   <class name="caf::SRTrkChi2PID" ClassVersion="10">
    <version ClassVersion="10" checksum="3162028429"/>
+  </class>
+
+  <class name="caf::SRTrkLikelihoodPID" ClassVersion="10">
+   <version ClassVersion="10" checksum="2386830952"/>
   </class>
 
   <class name="caf::SRTrkMCS" ClassVersion="11">
