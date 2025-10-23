@@ -21,14 +21,5 @@ namespace caf
 
   SRTrkLikelihoodPID::~SRTrkLikelihoodPID(){  }
 
-  void SRTrkLikelihoodPID::setDefault()
-  {
-    pdg           = -5;
-    pid_ndof      = -5;
-    lambda_muon   = -5.0;
-    lambda_pion   = -5.0;
-    lambda_proton = -5.0;
-  }
-
 } // end namespace caf
 ////////////////////////////////////////////////////////////////////////
