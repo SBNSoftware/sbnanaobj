@@ -53,7 +53,7 @@ namespace caf
 
       /// Add Select SpacePoint Info Associated with the Veto
       std::vector<SRVector3D>   sp_position; /// x, y, z in detector coordinates [cm]
-      std::vector<float>        sp_time; ///< Ts0 time [&micro;s]
+      std::vector<float>        sp_time; ///< Ts0 time [ns]
       std::vector<float>        sp_pe; /// Number of Photoelectrons
 
 
