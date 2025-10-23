@@ -20,7 +20,7 @@ namespace caf
     gate_count(0),
     gate_delta(-1),
     trigger_logic_bits(std::numeric_limits<unsigned int>::max()),
-    beam_to_trigger_time(std::numeric_limits<unsigned int>::max()),
+    gate_to_trigger_time(std::numeric_limits<float>::signaling_NaN()),
     trigger_cryo_source(std::numeric_limits<unsigned int>::max())
   {}
 }

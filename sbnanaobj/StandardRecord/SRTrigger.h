@@ -27,9 +27,17 @@ namespace caf
     unsigned gate_count;    ///< Count of gate in this stream
     int gate_delta;         ///< Number of gates since previous trigger in this stream (gate of this event included)
     
-    unsigned int trigger_logic_bits;   ///< Whether the trigger was from adder logic, PMT-majority logic or both, straight from the trigger hardware. Provided for the first cryostat in time.
-    unsigned int beam_to_trigger_time; ///< Nanoseconds from the beam gate opening to the first trigger in the cryostat, straight from the trigger hardware. Provided for the first cryostat in time.
-    unsigned int trigger_cryo_source;  ///< First cryostat that had the trigger in the trigger hardware.
+    /// Logic of the trigger(s) that fired.
+    /// ICARUS: from adder logic (`1`), PMT-majority logic (`2`) or both (`3`),
+    /// straight from the trigger hardware. Provided for the first cryostat in time.    
+    unsigned int trigger_logic_bits;   
+
+    /// Time from the beam gate opening to the first trigger [us].
+    /// ICARUS: straight from the trigger hardware.
+    /// Provided for the first cryostat in time.    
+    float gate_to_trigger_time; 
+    
+    unsigned int trigger_cryo_source;  ///< ICARUS: first cryostat that had the trigger in the trigger hardware.
   };
 }
 
