@@ -20,7 +20,6 @@ namespace caf
       float          lambda_pion;   ///< Sum of -lnL/L_max (charged pion hypothesis)
       float          lambda_proton; ///< Sum of -lnL/L_max (proton hypothesis)
 
-      void setDefault();
     };
 
 } // end namespace
