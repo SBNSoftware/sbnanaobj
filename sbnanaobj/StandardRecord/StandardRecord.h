@@ -20,6 +20,7 @@
 #include "sbnanaobj/StandardRecord/SRTruthBranch.h"
 #include "sbnanaobj/StandardRecord/SRFakeReco.h"
 #include "sbnanaobj/StandardRecord/SROpFlash.h"
+#include "sbnanaobj/StandardRecord/SRTrigger.h"
 #include "sbnanaobj/StandardRecord/SRInteractionDLP.h"
 #include "sbnanaobj/StandardRecord/SRInteractionTruthDLP.h"
 
@@ -42,31 +43,31 @@ namespace caf
     SRSliceRecoBranch reco;   ///< Slice reco branch: tracks, showers, etc.
     SRTruthBranch     mc;     ///< Truth branch for all interactions
 
-    int                         nslc;    ///< Number of slices in list
+    int                         nslc = 0;    ///< Number of slices in list
     std::vector<SRSlice>         slc;    ///< Slice branch.
-    int                         nfake_reco; ///< Number of Fake-Reco's in list
+    int                         nfake_reco = 0; ///< Number of Fake-Reco's in list
     std::vector<SRFakeReco>      fake_reco; ///< List of fake-reco slices
-    int                         ntrue_particles; ///< Number of true particles in list
+    int                         ntrue_particles = 0; ///< Number of true particles in list
     std::vector<SRTrueParticle>  true_particles; ///< True particles in spill
-    int                         ncrt_hits; ///< Number of CRT hits in event (ICARUS)
+    int                         ncrt_hits = 0; ///< Number of CRT hits in event (ICARUS)
     std::vector<SRCRTHit>        crt_hits; ///< CRT hits in event (ICARUS)
-    int                         ncrt_tracks; ///< Number of CRT tracks in event (ICARUS)
+    int                         ncrt_tracks = 0; ///< Number of CRT tracks in event (ICARUS)
     std::vector<SRCRTTrack>      crt_tracks; ///< CRT tracks in event (ICARUS)
-    int                         ncrt_spacepoints; ///< Number of CRT spacepoints in event (SBND)
+    int                         ncrt_spacepoints = 0; ///< Number of CRT spacepoints in event (SBND)
     std::vector<SRCRTSpacePoint> crt_spacepoints; ///< CRT spacepoints in event (SBND)
-    int                         nsbnd_crt_tracks; ///< Number of CRT tracks in event (SBND)
+    int                         nsbnd_crt_tracks = 0; ///< Number of CRT tracks in event (SBND)
     std::vector<SRSBNDCRTTrack>  sbnd_crt_tracks; ///< CRT tracks in event (SBND)
-    int                         nopflashes; ///< Number of OpFlashes in spill
+    int                         nopflashes = 0; ///< Number of OpFlashes in spill
     std::vector<SROpFlash>       opflashes; ///< List of OpFlashes in spill
-    int                        ncrtpmt_matches; ///<Number of CRT-PMT Matches in event 
+    int                        ncrtpmt_matches = 0; ///<Number of CRT-PMT Matches in event 
     std::vector<SRCRTPMTMatch> crtpmt_matches;  ///< CRT-PMT matches in event 
-    bool pass_flashtrig;     ///< Whether this Record passed the Flash Trigger requirement
+    bool pass_flashtrig = false;     ///< Whether this Record passed the Flash Trigger requirement
     SRSBNDFrameShiftInfo sbnd_frames; ///< List of Frame Shift in event in unit [ns] (SBND)
     SRSBNDTimingInfo sbnd_timings; ///< List of Timing Info in event in UNIX timestamp format(SBND)
 
-    int                                ndlp;       ///< Number of reco DLP (ML) interactions.
+    int                                ndlp = 0;       ///< Number of reco DLP (ML) interactions.
     std::vector<SRInteractionDLP>      dlp;        ///< Reco DLP (ML) interactions.  
-    int                                ndlp_true;  ///< Number of true DLP (ML) interactions.
+    int                                ndlp_true = 0;  ///< Number of true DLP (ML) interactions.
     std::vector<SRInteractionTruthDLP> dlp_true;   ///< True DLP (ML) interactions.
   };
 

@@ -5,8 +5,9 @@
 <!-- art::Wrappers for these products are defined in CAFMaker -->
 
 <lcgdict>
-  <class name="caf::StandardRecord" ClassVersion="14">
-   <version ClassVersion="14" checksum="2636549707"/>
+  <class name="caf::StandardRecord" ClassVersion="15">
+   <version ClassVersion="15" checksum="2636549707"/>
+   <version ClassVersion="14" checksum="1860171062"/>
    <version ClassVersion="13" checksum="1979816256"/>
    <version ClassVersion="12" checksum="3984422068"/>
    <version ClassVersion="11" checksum="483883398"/>
@@ -307,7 +308,8 @@
    <version ClassVersion="10" checksum="1010873394"/>
   </class>
 
-  <class name="caf::SRTrigger" ClassVersion="13">
+  <class name="caf::SRTrigger" ClassVersion="14">
+   <version ClassVersion="14" checksum="592461663"/>
    <version ClassVersion="13" checksum="1642667704"/>
    <version ClassVersion="12" checksum="2557689850"/>
    <version ClassVersion="11" checksum="3162219101"/>
@@ -349,7 +351,8 @@
   <class name="std::vector<caf::SRPFP>" />
   <class name="std::vector<caf::SRCVNScore>" />
 
-  <class name="caf::SRCRTHit" ClassVersion="11">
+  <class name="caf::SRCRTHit" ClassVersion="12">
+   <version ClassVersion="12" checksum="3525669106"/>
    <version ClassVersion="11" checksum="3268314487"/>
    <version ClassVersion="10" checksum="3162534166"/>
   </class>
