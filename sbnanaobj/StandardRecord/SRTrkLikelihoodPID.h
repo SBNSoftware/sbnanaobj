@@ -1,6 +1,9 @@
-////////////////////////////////////////////////////////////////////////
-// \file    SRTrkLikelihoodPID.h
-////////////////////////////////////////////////////////////////////////
+/**
+ * @file   sbnanaobj/StandardRecord/SRTrkLikelihoodPID.h
+ * @brief  An `SRTrkLikelihoodPID` is a high level track ParticlePID object for
+ *         for larana LikelihoodPIDAlg results.
+ * @author Sungbin Oh (sungbino@fnal.gov)
+ */
 #ifndef SRTRKLIKELIHOODPID_H
 #define SRTRKLIKELIHOODPID_H
 
@@ -12,14 +15,14 @@ namespace caf
     public:
 
       SRTrkLikelihoodPID();
-      virtual ~SRTrkLikelihoodPID();
 
       int            pdg;          ///< Likelihood PID pdg
-      int            pid_ndof;    ///< Number of degress of freedom in likelihood PID
+      int            pid_ndof;     ///< Number of degress of freedom in likelihood PID
       float          lambda_muon;   ///< Sum of -lnL/L_max (muon hypothesis)
       float          lambda_pion;   ///< Sum of -lnL/L_max (charged pion hypothesis)
       float          lambda_proton; ///< Sum of -lnL/L_max (proton hypothesis)
 
+      void setDefault();
     };
 
 } // end namespace
