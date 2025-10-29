@@ -108,5 +108,5 @@ namespace caf
         caf::HitClust clusters[kNplanes]; // Plane/cluster-specific information
         caf::TrueBlip truthBlip; // Truth-matched energy deposition
 
-    }
+    };
 }
