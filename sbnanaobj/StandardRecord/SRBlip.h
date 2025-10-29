@@ -26,7 +26,7 @@ namespace caf
     float     Time          = -9;     // time of particle interaction
     int       TimeTick      = -9;     // time tick
     float     DriftTime     = -9;     // drift time [us]
-    float     Energy        = 0;      // energy dep [MeV]
+    float     Energy        = 0;      // energy dep [GeV]
     int       DepElectrons  = 0;      // deposited electrons
     int       NumElectrons  = 0;      // electrons reaching wires
     int       LeadG4ID      = -9;     // lead G4 track ID
@@ -92,9 +92,9 @@ namespace caf
         float     TimeTick        = -999;       // Readout time [ticks]
         float     Time            = -999;       // Drift time [us]
         float     Charge          = -9;         // Charge on calorimetry plane
-        float     Energy          = -999;       // Energy (const dE/dx, fcl-configurable)
-        float     EnergyESTAR     = -999;       // Energy (ESTAR method from ArgoNeuT)
-        float     EnergyPSTAR     = -999;       // Energy (PSTAR method similar with ESTAR method from ArgoNeuT)
+        float     Energy          = -999;       // Energy (const dE/dx, fcl-configurable) [GeV]
+        float     EnergyESTAR     = -999;       // Energy (ESTAR method from ArgoNeuT) [GeV]
+        float     EnergyPSTAR     = -999;       // Energy (PSTAR method similar with ESTAR method from ArgoNeuT) [GeV]
         float     ProxTrkDist     = -9;         // Distance to cloest track
         int       ProxTrkID       = -9;         // ID of closest track
         bool      inCylinder      = false;      // Is it in a cone/cylinder region? 
@@ -102,8 +102,8 @@ namespace caf
         float     SigmaYZ         = -9.;        // Uncertainty in YZ intersect [cm]
         float     dX              = -9;         // Equivalent length along drift direction [cm] 
         float     dYZ             = -9;         // Approximate length scale in YZ space [cm]
-        blip::HitClust clusters[kNplanes]; // Plane/cluster-specific information
-        blip::TrueBlip truthBlip; // Truth-matched energy deposition
+        caf::HitClust clusters[kNplanes]; // Plane/cluster-specific information
+        caf::TrueBlip truthBlip; // Truth-matched energy deposition
 
     }
 }
