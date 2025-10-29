@@ -7,6 +7,9 @@
 #define SRBLIP_H
 
 #include <vector>
+#include <map>
+#include <set>
+#include "TVector3.h"
 
 typedef std::vector<int>        vint_t;
 typedef std::vector<bool>       vbool_t;
