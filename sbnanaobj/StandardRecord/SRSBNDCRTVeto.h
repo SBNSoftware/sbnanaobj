@@ -17,20 +17,20 @@
 
 namespace caf
 {
+  /**
+   * @brief Veto flags from CRT information.
+   * 
+   * CRT activity that is used to veto lies within a FHiCL-configurable time window.
+   * This window is chosen to be a narrow window around the 1.6 &micro;s beam window
+   * in the nominal configuration.
+   *
+   * A list of select space points associated with the veto is included:
+   * three "parallel" arrays report for each point its hit location, time
+   * and photoelectrons.
+   */
   class SRSBNDCRTVeto
     {
     public:
-      /**
-       * @brief Veto flags from CRT information.
-       * 
-       * CRT activity that is used to veto lies within a FHiCL-configurable time window.
-       * This window is chosen to be a narrow window around the 1.6 &micro;s beam window
-       * in the nominal configuration.
-       *
-       * A list of select space points associated with the veto is included:
-       * three "parallel" arrays report for each point its hit location, time
-       * and photoelectrons.
-       */
       SRSBNDCRTVeto();
 
       /// Veto on any CRT activity minus the CRT bottom tagger
@@ -54,7 +54,6 @@ namespace caf
       std::vector<SRVector3D>   sp_position; /// x, y, z in detector coordinates [cm]
       std::vector<float>        sp_time; ///< Ts0 time [ns]
       std::vector<float>        sp_pe; /// Number of Photoelectrons
-
 
     };
 } // end namespace
