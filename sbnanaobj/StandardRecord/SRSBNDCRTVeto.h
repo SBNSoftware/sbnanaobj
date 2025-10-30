@@ -2,8 +2,7 @@
 /**
  * @file   sbnanaobj/StandardRecord/SRSBNDCRTVeto.h
  * @brief  Definition of event veto from CRT information.
- * @author Alexander Antonakis
- * @email: aantonakis@ucsb.edu
+ * @author Alexander Antonakis (aantonakis@ucsb.edu)
  * @see    sbnanaobj/StandardRecord/SRSBNDCRTVeto.cxx
  */
 ////////////////////////////////////////////////////////////////////////
