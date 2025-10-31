@@ -33,8 +33,8 @@ namespace caf
         dX              = -9;         // Equivalent length along drift direction [cm] 
         dYZ             = -9;         // Approximate length scale in YZ space [cm]
     }
-    SRBlip::~SRBlip()
-    {
-    }
+    //SRBlip::~SRBlip()
+    //{
+    //}
 
 }

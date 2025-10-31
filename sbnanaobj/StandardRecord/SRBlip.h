@@ -85,7 +85,7 @@ namespace caf
     {
     public:
         SRBlip();
-        virtual ~SRBlip();
+        //virtual ~SRBlip();
         int       ID              = -9;         // Blip ID / index
         bool      isValid         = false;      // Blip passes basic checks
         int       Cryostat        = -9;         // Cryostat
