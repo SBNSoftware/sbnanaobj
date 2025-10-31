@@ -11,11 +11,11 @@
 #include <set>
 #include "TVector3.h"
 
-typedef std::vector<int>        vint_t;
-typedef std::vector<bool>       vbool_t;
-typedef std::vector<float>      vfloat_t;
-typedef std::set<int>           si_t;
-typedef std::map<int,float>     mif_t;
+//typedef std::vector<int>        vint_t;
+//typedef std::vector<bool>       vbool_t;
+//typedef std::vector<float>      vfloat_t;
+//typedef std::set<int>           si_t;
+//typedef std::map<int,float>     mif_t;
 
 const int kNplanes    = 3; 
 
@@ -37,8 +37,8 @@ namespace caf
     int       LeadG4PDG     = -9;     // lead G4 PDG
     float     LeadCharge    = -9;     // lead G4 charge dep
     TVector3  Position;               // XYZ position
-    mif_t     G4ChargeMap;          
-    mif_t     G4PDGMap;
+    std::map<int,float>     G4ChargeMap;          
+    std::map<int,float>     G4PDGMap;
   };
  
    struct HitClust {
@@ -73,10 +73,10 @@ namespace caf
     float   GoodnessOfFit   = -999;
     int     BlipID          = -9;
     int     EdepID          = -9;
-    si_t    HitIDs;
-    si_t    Wires;
-    si_t    Chans;
-    si_t    G4IDs;
+    std::set<int>    HitIDs;
+    std::set<int>    Wires;
+    std::set<int>    Chans;
+    std::set<int>    G4IDs;
     
     std::map<int,TVector3> IntersectLocations;
   };
