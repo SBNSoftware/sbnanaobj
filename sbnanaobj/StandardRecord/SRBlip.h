@@ -10,6 +10,8 @@
 #include <map>
 #include <set>
 #include "TVector3.h"
+#include "SRBlipHitClust.h"
+#include "SRBlipTrueBlip.h"
 
 //typedef std::vector<int>        vint_t;
 //typedef std::vector<bool>       vbool_t;
@@ -21,66 +23,6 @@ const int kNplanes    = 3;
 
 namespace caf
 {
-
-    struct TrueBlip {
-    int       ID            = -9;     // unique blip ID
-    int       Cryostat      = -9;     // Cryostat ID
-    int       TPC           = -9;     // TPC ID
-    float     Time          = -9;     // time of particle interaction
-    int       TimeTick      = -9;     // time tick
-    float     DriftTime     = -9;     // drift time [us]
-    float     Energy        = 0;      // energy dep [GeV]
-    int       DepElectrons  = 0;      // deposited electrons
-    int       NumElectrons  = 0;      // electrons reaching wires
-    int       LeadG4ID      = -9;     // lead G4 track ID
-    int       LeadG4Index   = -9;     // lead G4 track index
-    int       LeadG4PDG     = -9;     // lead G4 PDG
-    float     LeadCharge    = -9;     // lead G4 charge dep
-    TVector3  Position;               // XYZ position
-    std::map<int,float>     G4ChargeMap;          
-    std::map<int,float>     G4PDGMap;
-  };
- 
-   struct HitClust {
-    int     ID              = -9;
-    bool    isValid         = false;
-    int     CenterChan      = -999;
-    int     CenterWire      = -999;
-    bool    isTruthMatched  = false;
-    bool    isMerged        = false;
-    bool    isMatched       = false;
-    int     DeadWireSep     = 99;
-    int     Cryostat        = -9;
-    int     TPC             = -9;
-    int     Plane           = -9;
-    int     NHits           = -9;
-    int     NWires          = -9;
-    float   ADCs            = -999;
-    float   Amplitude       = -999;
-    float   Charge          = -999;
-    float   SigmaCharge     = -999;
-    float   TimeTick        = -999;
-    float   Time            = -999;
-    float   StartHitTime    = -999;
-    float   EndHitTime      = -999;
-    float   StartTime       = -999;
-    float   EndTime         = -999;
-    float   Timespan        = -999;
-    float   RMS             = -999;
-    int     StartWire       = -999;
-    int     EndWire         = -999;
-    int     NPulseTrainHits = -9;
-    float   GoodnessOfFit   = -999;
-    int     BlipID          = -9;
-    int     EdepID          = -9;
-    std::set<int>    HitIDs;
-    std::set<int>    Wires;
-    std::set<int>    Chans;
-    std::set<int>    G4IDs;
-    
-    std::map<int,TVector3> IntersectLocations;
-  };
- 
     class SRBlip
     {
     public:
