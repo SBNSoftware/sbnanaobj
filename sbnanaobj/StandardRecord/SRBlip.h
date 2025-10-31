@@ -105,9 +105,8 @@ namespace caf
         float     SigmaYZ         = -9.;        // Uncertainty in YZ intersect [cm]
         float     dX              = -9;         // Equivalent length along drift direction [cm] 
         float     dYZ             = -9;         // Approximate length scale in YZ space [cm]
-        caf::HitClust clusters[kNplanes]; // Plane/cluster-specific information
-        caf::TrueBlip truthBlip; // Truth-matched energy deposition
-
+        HitClust clusters[kNplanes]; // Plane/cluster-specific information
+        TrueBlip truthBlip; // Truth-matched energy deposition
     };
 }
 #endif
