@@ -3,8 +3,8 @@
 // \brief   SRBlipTrueBlip struct for localized energy deposits in bulk LAr. MC Truth information
 // \author  $Author: jmclaughlin2@illinoistech.edu
 ////////////////////////////////////////////////////////////////////////
-#ifndef SRBLIPTRUEBLIP_H
-#define SRBLIPTRUEBLIP_H
+#ifndef SBNANAOBJ_STANDARDRECORD_SRBLIPTRUEBLIP_H
+#define SBNANAOBJ_STANDARDRECORD_SRBLIPTRUEBLIP_H
 #include <map>
 #include "sbnanaobj/StandardRecord/SRVector3D.h"
 

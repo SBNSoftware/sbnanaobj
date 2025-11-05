@@ -3,8 +3,8 @@
 // \brief   SRBlipHitClust struct contains information on hit clusters on each plane used to form a SRBlip
 // \author  $Author: jmclaughlin2@illinoistech.edu
 ////////////////////////////////////////////////////////////////////////
-#ifndef SRBLIPHITCLUST_H
-#define SRBLIPHITCLUST_H
+#ifndef SBNANAOBJ_STANDARDRECORD_SRBLIPHITCLUST_H
+#define SBNANAOBJ_STANDARDRECORD_SRBLIPHITCLUST_H
 #include <map>
 #include <set>
 #include "sbnanaobj/StandardRecord/SRVector3D.h"
