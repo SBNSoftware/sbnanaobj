@@ -10,8 +10,8 @@
 #include <map>
 #include <set>
 #include "TVector3.h"
-#include "SRBlipHitClust.h"
-#include "SRBlipTrueBlip.h"
+//#include "SRBlipHitClust.h"
+//#include "SRBlipTrueBlip.h"
 
 //typedef std::vector<int>        vint_t;
 //typedef std::vector<bool>       vbool_t;
@@ -47,8 +47,8 @@ namespace caf
         float     SigmaYZ         = -9.;        // Uncertainty in YZ intersect [cm]
         float     dX              = -9;         // Equivalent length along drift direction [cm] 
         float     dYZ             = -9;         // Approximate length scale in YZ space [cm]
-        HitClust clusters[kNplanes]; // Plane/cluster-specific information
-        TrueBlip truthBlip; // Truth-matched energy deposition
+        //HitClust clusters[kNplanes]; // Plane/cluster-specific information
+        //TrueBlip truthBlip; // Truth-matched energy deposition
     };
 }
 #endif
