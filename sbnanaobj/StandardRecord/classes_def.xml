@@ -5,7 +5,8 @@
 <!-- art::Wrappers for these products are defined in CAFMaker -->
 
 <lcgdict>
-  <class name="caf::StandardRecord" ClassVersion="15">
+  <class name="caf::StandardRecord" ClassVersion="16">
+   <version ClassVersion="16" checksum="3738947418"/>
    <version ClassVersion="15" checksum="2636549707"/>
    <version ClassVersion="14" checksum="1860171062"/>
    <version ClassVersion="13" checksum="1979816256"/>
@@ -320,8 +321,8 @@
    <version ClassVersion="10" checksum="4159815756"/>
   </class>
 
-  <class name="caf::SRBlip" ClassVersion="10">
-    <version ClassVersion="10" checksum=""> 
+  <class name="caf::SRBlip" ClassVersion="10"> 
+   <version ClassVersion="10" checksum="3940407790"/>
   </class>
 
   <!--<class name="caf::SRBlipHitClust" ClassVersion="10">
