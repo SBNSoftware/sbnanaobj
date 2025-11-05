@@ -5,19 +5,10 @@
 ////////////////////////////////////////////////////////////////////////
 #ifndef SRBLIP_H
 #define SRBLIP_H
-
-#include <vector>
-#include <map>
-#include <set>
 #include "sbnanaobj/StandardRecord/SRVector3D.h"
-//#include "SRBlipHitClust.h"
-//#include "SRBlipTrueBlip.h"
+#include "SRBlipHitClust.h"
+#include "SRBlipTrueBlip.h"
 
-//typedef std::vector<int>        vint_t;
-//typedef std::vector<bool>       vbool_t;
-//typedef std::vector<float>      vfloat_t;
-//typedef std::set<int>           si_t;
-//typedef std::map<int,float>     mif_t;
 
 const int kNplanes    = 3; 
 
@@ -47,8 +38,8 @@ namespace caf
         float     SigmaYZ         = -9.;        // Uncertainty in YZ intersect [cm]
         float     dX              = -9;         // Equivalent length along drift direction [cm] 
         float     dYZ             = -9;         // Approximate length scale in YZ space [cm]
-        //HitClust clusters[kNplanes]; // Plane/cluster-specific information
-        //TrueBlip truthBlip; // Truth-matched energy deposition
+        HitClust clusters[kNplanes]; // Plane/cluster-specific information
+        TrueBlip truthBlip; // Truth-matched energy deposition
     };
 }
 #endif

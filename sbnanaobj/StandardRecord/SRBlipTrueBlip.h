@@ -5,11 +5,8 @@
 ////////////////////////////////////////////////////////////////////////
 #ifndef SRBLIPTRUEBLIP_H
 #define SRBLIPTRUEBLIP_H
-
-#include <vector>
 #include <map>
-#include <set>
-#include "TVector3.h"
+#include "sbnanaobj/StandardRecord/SRVector3D.h"
 
 namespace caf
 {
@@ -28,7 +25,7 @@ namespace caf
     int       LeadG4Index   = -9;     // lead G4 track index
     int       LeadG4PDG     = -9;     // lead G4 PDG
     float     LeadCharge    = -9;     // lead G4 charge dep
-    TVector3  Position;               // XYZ position
+    SRVector3D  Position;               // XYZ position
     std::map<int,float>     G4ChargeMap;          
     std::map<int,float>     G4PDGMap;
   };

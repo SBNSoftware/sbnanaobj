@@ -5,11 +5,8 @@
 ////////////////////////////////////////////////////////////////////////
 #ifndef SRBLIPHITCLUST_H
 #define SRBLIPHITCLUST_H
-
-#include <vector>
 #include <map>
 #include <set>
-#include "TVector3.h"
 
 namespace caf
 {
