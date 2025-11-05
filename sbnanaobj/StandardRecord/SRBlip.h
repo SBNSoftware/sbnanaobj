@@ -38,7 +38,7 @@ namespace caf
         float     SigmaYZ         = -9.;        // Uncertainty in YZ intersect [cm]
         float     dX              = -9;         // Equivalent length along drift direction [cm] 
         float     dYZ             = -9;         // Approximate length scale in YZ space [cm]
-        SRBlipHitClust clusters[kNplanes]; // Plane/cluster-specific information
+        std::vector<SRBlipHitClust> clusters(3); // Plane/cluster-specific information
         SRBlipTrueBlip truthBlip; // Truth-matched energy deposition
     };
 }
