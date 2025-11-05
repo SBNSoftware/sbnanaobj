@@ -320,7 +320,16 @@
    <version ClassVersion="10" checksum="4159815756"/>
   </class>
 
-  <class name="caf::SRBlip">
+  <class name="caf::SRBlip" ClassVersion="10">
+    <version ClassVersion="10" checksum=""> 
+  </class>
+
+  <class name="caf::SRBlipHitClust" ClassVersion="10">
+    <version ClassVersion="10" checksum="">  
+  </class>
+
+  <class name="caf::SRBlipTrueBlip" ClassVersion="10">
+    <version ClassVersion="10" checksum="">
   </class>
 
   <!--<class name="caf::SRLorentzVector" /> -->
