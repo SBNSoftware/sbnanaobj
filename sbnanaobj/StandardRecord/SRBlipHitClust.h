@@ -5,7 +5,7 @@
 ////////////////////////////////////////////////////////////////////////
 #ifndef SBNANAOBJ_STANDARDRECORD_SRBLIPHITCLUST_H
 #define SBNANAOBJ_STANDARDRECORD_SRBLIPHITCLUST_H
-//#include <map>
+#include <map>
 #include <set>
 #include "sbnanaobj/StandardRecord/SRVector3D.h"
 
@@ -47,7 +47,7 @@ namespace caf
     std::set<int>    Wires;
     std::set<int>    Chans;
     std::set<int>    G4IDs;
-    //std::map<int,SRVector3D> IntersectLocations;
+    std::map<int,SRVector3D> IntersectLocations;
   };
 }
 #endif
