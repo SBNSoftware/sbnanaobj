@@ -326,10 +326,12 @@
   </class>
 
   <class name="caf::SRBlipHitClust" ClassVersion="10">
+   <version ClassVersion="10" checksum="2687741322"/>
     
   </class>
 
   <class name="caf::SRBlipTrueBlip" ClassVersion="10">
+   <version ClassVersion="10" checksum="4145628897"/>
 
   </class>
 
