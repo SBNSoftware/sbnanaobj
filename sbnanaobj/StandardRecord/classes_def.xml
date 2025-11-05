@@ -321,7 +321,7 @@
   </class>
 
   <class name="caf::SRBlip" ClassVersion="10">
-    <version ClassVersion="10" checksum="0"> 
+    <version ClassVersion="10" checksum=""> 
   </class>
 
   <!--<class name="caf::SRBlipHitClust" ClassVersion="10">
