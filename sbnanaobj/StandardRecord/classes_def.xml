@@ -328,8 +328,8 @@
   <class name="caf::SRBlipHitClust" ClassVersion="10">
   </class>
 
-  <!--<class name="caf::SRBlipTrueBlip" ClassVersion="10">
-  </class>-->
+  <class name="caf::SRBlipTrueBlip" ClassVersion="10">
+  </class>
 
   <!--<class name="caf::SRLorentzVector" /> -->
 

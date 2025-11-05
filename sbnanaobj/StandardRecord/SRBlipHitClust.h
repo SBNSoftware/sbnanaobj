@@ -11,7 +11,7 @@
 
 namespace caf
 {
-     struct HitClust {
+     struct SRBlipHitClust {
     int     ID              = -9;
     bool    isValid         = false;
     int     CenterChan      = -999;

@@ -11,7 +11,7 @@
 namespace caf
 {
 
-    struct TrueBlip {
+    struct SRBlipTrueBlip {
     int       ID            = -9;     // unique blip ID
     int       Cryostat      = -9;     // Cryostat ID
     int       TPC           = -9;     // TPC ID
