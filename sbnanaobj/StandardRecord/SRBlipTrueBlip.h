@@ -5,7 +5,7 @@
 ////////////////////////////////////////////////////////////////////////
 #ifndef SBNANAOBJ_STANDARDRECORD_SRBLIPTRUEBLIP_H
 #define SBNANAOBJ_STANDARDRECORD_SRBLIPTRUEBLIP_H
-#include <map>
+//#include <map>
 #include "sbnanaobj/StandardRecord/SRVector3D.h"
 
 namespace caf
@@ -26,8 +26,8 @@ namespace caf
     int       LeadG4PDG     = -9;     // lead G4 PDG
     float     LeadCharge    = -9;     // lead G4 charge dep
     SRVector3D  Position;               // XYZ position
-    std::map<int,float>     G4ChargeMap;          
-    std::map<int,float>     G4PDGMap;
+    //std::map<int,float>     G4ChargeMap;          
+    //std::map<int,float>     G4PDGMap;
   };
 }
 #endif
