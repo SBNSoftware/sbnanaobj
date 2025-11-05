@@ -39,7 +39,7 @@ namespace caf
         float     dX              = -9;         // Equivalent length along drift direction [cm] 
         float     dYZ             = -9;         // Approximate length scale in YZ space [cm]
         HitClust clusters[kNplanes]; // Plane/cluster-specific information
-        TrueBlip truthBlip; // Truth-matched energy deposition
+        //TrueBlip truthBlip; // Truth-matched energy deposition
     };
 }
 #endif
