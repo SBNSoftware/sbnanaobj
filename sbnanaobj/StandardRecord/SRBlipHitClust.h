@@ -11,7 +11,7 @@
 
 namespace caf
 {
-     struct SRBlipHitClust {
+    struct SRBlipHitClust {
     int     ID              = -9;
     bool    isValid         = false;
     int     CenterChan      = -999;
@@ -47,9 +47,7 @@ namespace caf
     std::set<int>    Wires;
     std::set<int>    Chans;
     std::set<int>    G4IDs;
-    
     std::map<int,SRVector3D> IntersectLocations;
   };
 }
-
 #endif

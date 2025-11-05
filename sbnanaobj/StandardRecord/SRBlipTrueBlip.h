@@ -30,5 +30,4 @@ namespace caf
     std::map<int,float>     G4PDGMap;
   };
 }
-
 #endif
