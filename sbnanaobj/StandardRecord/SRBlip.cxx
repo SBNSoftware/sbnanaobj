@@ -32,11 +32,6 @@ namespace caf
         SigmaYZ         = -9.;        // Uncertainty in YZ intersect [cm]
         dX              = -9;         // Equivalent length along drift direction [cm] 
         dYZ             = -9;         // Approximate length scale in YZ space [cm]
-        const int kNplanes    = 3; 
-        for(int i=0; i<kNplanes; i++){ 
-            SRBlipHitClust TempClust;
-            clusters.push_back(TempClust);
-        }
     }
     SRBlip::~SRBlip()
     {

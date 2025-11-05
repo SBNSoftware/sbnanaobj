@@ -9,6 +9,9 @@
 #include "sbnanaobj/StandardRecord/SRBlipHitClust.h"
 #include "sbnanaobj/StandardRecord/SRBlipTrueBlip.h"
 
+
+const int kNplanes    = 3; 
+
 namespace caf
 {
     class SRBlip
@@ -35,7 +38,7 @@ namespace caf
         float     SigmaYZ         = -9.;        // Uncertainty in YZ intersect [cm]
         float     dX              = -9;         // Equivalent length along drift direction [cm] 
         float     dYZ             = -9;         // Approximate length scale in YZ space [cm]
-        std::vector<SRBlipHitClust> clusters; // Plane/cluster-specific information
+        SRBlipHitClust clusters[kNplanes]; // Plane/cluster-specific information
         SRBlipTrueBlip truthBlip; // Truth-matched energy deposition
     };
 }
