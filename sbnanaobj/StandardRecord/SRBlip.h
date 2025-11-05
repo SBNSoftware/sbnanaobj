@@ -9,7 +9,7 @@
 #include <vector>
 #include <map>
 #include <set>
-#include "TVector3.h"
+#include "sbnanaobj/StandardRecord/SRVector3D.h"
 //#include "SRBlipHitClust.h"
 //#include "SRBlipTrueBlip.h"
 
@@ -43,7 +43,7 @@ namespace caf
         float     ProxTrkDist     = -9;         // Distance to cloest track
         int       ProxTrkID       = -9;         // ID of closest track
         bool      inCylinder      = false;      // Is it in a cone/cylinder region? 
-        TVector3  Position;                     // 3D position TVector3
+        SRVector3D  Position;                     // 3D position TVector3
         float     SigmaYZ         = -9.;        // Uncertainty in YZ intersect [cm]
         float     dX              = -9;         // Equivalent length along drift direction [cm] 
         float     dYZ             = -9;         // Approximate length scale in YZ space [cm]
