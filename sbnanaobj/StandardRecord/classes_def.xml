@@ -321,22 +321,21 @@
    <version ClassVersion="10" checksum="4159815756"/>
   </class>
 
-  <class name="caf::SRBlip" ClassVersion="10"> 
-   <version ClassVersion="10" checksum="3940407790"/>
+  <class name="caf::SRBlip" ClassVersion="10">
+   <version ClassVersion="10" checksum="3364148027"/>
   </class>
 
   <class name="caf::SRBlipHitClust" ClassVersion="10">
-   <version ClassVersion="10" checksum="2687741322"/>
-    
+   <version ClassVersion="10" checksum="1233871129"/>
   </class>
 
   <class name="caf::SRBlipTrueBlip" ClassVersion="10">
-   <version ClassVersion="10" checksum="4145628897"/>
-
+   <version ClassVersion="10" checksum="984259034"/>
   </class>
 
   <!--<class name="caf::SRLorentzVector" /> -->
 
+  <class name="std::vector<int>" />
   <class name="std::vector<caf::SRSlice>" />
   <class name="std::vector<caf::SRFakeReco>" />
   <class name="std::vector<caf::SRFakeRecoParticle>" />

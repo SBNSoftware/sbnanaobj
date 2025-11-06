@@ -8,6 +8,7 @@
 #include "sbnanaobj/StandardRecord/SRVector3D.h"
 #include "sbnanaobj/StandardRecord/SRBlipHitClust.h"
 #include "sbnanaobj/StandardRecord/SRBlipTrueBlip.h"
+#include "sbnanaobj/StandardRecord/SRCVNScore.h"
 
 
 const int kNplanes    = 3; 

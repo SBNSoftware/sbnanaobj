@@ -43,11 +43,11 @@ namespace caf
     float   GoodnessOfFit   = -999;
     int     BlipID          = -9;
     int     EdepID          = -9;
-    std::set<int>    HitIDs;
-    std::set<int>    Wires;
-    std::set<int>    Chans;
-    std::set<int>    G4IDs;
-    std::map<int,SRVector3D> IntersectLocations;
+    std::vector<int>    HitIDs;
+    std::vector<int>    Wires;
+    std::vector<int>    Chans;
+    std::vector<int>    G4IDs;
+      //std::map<int,SRVector3D> IntersectLocations; //intermediate step used for matching
   };
 }
 #endif
