@@ -17,12 +17,10 @@ namespace caf
 
     /// @name Data members related to the opflash corrected time
     /// @{
-    float        OpFlashT0             { -9999. };                   ///< | OpFlash Time wrt RWM time | (ns)
-    float        UpstreamTime_lightonly             {  -9999.  };      ///< | Nu upstream wall time reconstructed using light only | (ns)
-    float        UpstreamTime_tpczcorr             {  -9999.  };       ///< | Nu upstream wall time reconstructed using light and Z from tpc vertex | (ns)
-    float        UpstreamTime_propcorr_tpczcorr    {  -9999.  };       ///< | Nu upstream wall time reconstructed using light propagation correction from tpc information and z correction from tpc vertex | (ns)
-    float        SliceNuScore             {  -9999.  };                   ///< | Slice Nu Score |
-    float        FMScore             {  -9999.  };                   ///< | Flash Match Score |
+    float        OpFlashT0             { -9999. };                   ///< | OpFlash Time wrt RWM time | (us)
+    float        NuToFLight             {  -9999.  };      ///< | Nu ToF using light only | (us)
+    float        NuToFCharge             {  -9999.  };       ///< | Nu ToF Z from tpc vertex | (us)
+    float        OpFlashT0Corrected    {  -9999.  };       ///< | OpFlash Time wrt RWM time after light propagation corrections | (us)
     /// @}
 
     void setDefault();
