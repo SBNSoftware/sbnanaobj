@@ -10,11 +10,9 @@
 #include "sbnanaobj/StandardRecord/SRBlipTrueBlip.h"
 #include "sbnanaobj/StandardRecord/SRCVNScore.h"
 
-
-const int kNplanes    = 3; 
-
 namespace caf
 {
+  const int kNplanes    = 3;
     class SRBlip
     {
     public:
