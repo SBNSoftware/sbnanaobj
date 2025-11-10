@@ -3,6 +3,7 @@
 
 #include <cstdlib>
 #include <cstdint>
+#include <vector>
 
 namespace caf
 {
@@ -38,6 +39,10 @@ namespace caf
     float gate_to_trigger_time; 
     
     unsigned int trigger_cryo_source;  ///< ICARUS: first cryostat that had the trigger in the trigger hardware.
+    bool passed_trigger; ///< if the event passed the trigger
+    int num_pairs_over_threshold; ///< number of pmt pairs over trigger threshold
+    std::vector<int> monpulses_flat; ///< trigger responses (number of PMT pairs above threshold for all channels) for all flashes (flattened to include all flashes in a single vector)
+    std::vector<int> monpulse_sizes; ///< length of each trigger responses to un-flatten the trigger responses (to a vector of trigger responses)
   };
 }
 

@@ -47,6 +47,8 @@ namespace caf
     float        deltaZ_Trigger     { kSignalingNaN }; ///< | Triggering flash Z center - charge Z center | (cm)
     float        deltaY_Trigger     { kSignalingNaN }; ///< | Triggering flash Y center - charge Y center | (cm)
     float        radius_Trigger     { kSignalingNaN }; ///< Hypotenuse of DeltaY_Trigger and DeltaZ_Trigger (cm)
+    float        chi2               { kSignalingNaN }; ///< chi2 to be minimised for performing the match (dimensionless)
+    float        score              { kSignalingNaN }; ///< score to be maximised for performing the match (dimensionless)
     /// @}
 
     void setDefault();
