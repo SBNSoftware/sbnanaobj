@@ -21,7 +21,7 @@ namespace caf
     gate_delta(-1),
     trigger_logic_bits(std::numeric_limits<unsigned int>::max()),
     gate_to_trigger_time(std::numeric_limits<float>::signaling_NaN()),
-    trigger_cryo_source(std::numeric_limits<unsigned int>::max())
+    trigger_cryo_source(std::numeric_limits<unsigned int>::max()),
     passed_trigger(false),
     num_pairs_over_threshold(-1),
     monpulses_flat(),
