@@ -433,6 +433,8 @@
    <version ClassVersion="10" checksum="4144120809"/>
   </class>
 
+  <class name="caf::SRSoftwareTrigger" />
+
   <enum name="caf::Det_t" ClassVersion="10"/>
   <enum name="caf::Plane_t" ClassVersion="10"/>
   <enum name="caf::Wall_t" ClassVersion="10"/>

@@ -21,6 +21,7 @@
 #include "sbnanaobj/StandardRecord/SRFakeReco.h"
 #include "sbnanaobj/StandardRecord/SROpFlash.h"
 #include "sbnanaobj/StandardRecord/SRTrigger.h"
+#include "sbnanaobj/StandardRecord/SRSoftwareTrigger.h"
 #include "sbnanaobj/StandardRecord/SRInteractionDLP.h"
 #include "sbnanaobj/StandardRecord/SRInteractionTruthDLP.h"
 
@@ -64,7 +65,7 @@ namespace caf
     bool pass_flashtrig = false;     ///< Whether this Record passed the Flash Trigger requirement
     SRSBNDFrameShiftInfo sbnd_frames; ///< List of Frame Shift in event in unit [ns] (SBND)
     SRSBNDTimingInfo sbnd_timings; ///< List of Timing Info in event in UNIX timestamp format(SBND)
-
+    SRSoftwareTrigger soft_trig; ///< Software Trigger Info in event
     int                                ndlp = 0;       ///< Number of reco DLP (ML) interactions.
     std::vector<SRInteractionDLP>      dlp;        ///< Reco DLP (ML) interactions.  
     int                                ndlp_true = 0;  ///< Number of true DLP (ML) interactions.
