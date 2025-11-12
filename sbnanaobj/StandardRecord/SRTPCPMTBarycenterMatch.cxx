@@ -35,7 +35,8 @@ namespace caf
     deltaY_Trigger     =                             -9999.;
     deltaZ_Trigger     =                             -9999.;
     radius_Trigger     =                             -9999.;
-
+    chi2               =                             -9999.;
+    score               =                             -9999.;
   }
 
 } // end namespace caf
