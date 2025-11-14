@@ -60,7 +60,8 @@
    <version ClassVersion="10" checksum="4180347773"/>
   </class>
 
-  <class name="caf::SRShower" ClassVersion="15">
+  <class name="caf::SRShower" ClassVersion="16">
+   <version ClassVersion="16" checksum="76339526"/>
    <version ClassVersion="15" checksum="3211336966"/>
    <version ClassVersion="14" checksum="3720936031"/>
    <version ClassVersion="13" checksum="150649609"/>
