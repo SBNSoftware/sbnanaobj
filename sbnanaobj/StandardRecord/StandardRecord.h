@@ -11,6 +11,7 @@
 #include "sbnanaobj/StandardRecord/SRCRTTrack.h"
 #include "sbnanaobj/StandardRecord/SRCRTSpacePoint.h"
 #include "sbnanaobj/StandardRecord/SRSBNDCRTTrack.h"
+#include "sbnanaobj/StandardRecord/SRSBNDCRTVeto.h"
 #include "sbnanaobj/StandardRecord/SRSBNDFrameShiftInfo.h"
 #include "sbnanaobj/StandardRecord/SRSBNDTimingInfo.h"
 #include "sbnanaobj/StandardRecord/SRHeader.h"
@@ -58,6 +59,7 @@ namespace caf
     std::vector<SRCRTSpacePoint> crt_spacepoints; ///< CRT spacepoints in event (SBND)
     int                         nsbnd_crt_tracks = 0; ///< Number of CRT tracks in event (SBND)
     std::vector<SRSBNDCRTTrack>  sbnd_crt_tracks; ///< CRT tracks in event (SBND)
+    SRSBNDCRTVeto                sbnd_crt_veto; ///< crt veto flags for each event
     int                         nopflashes = 0; ///< Number of OpFlashes in spill
     std::vector<SROpFlash>       opflashes; ///< List of OpFlashes in spill
     int                        ncrtpmt_matches = 0; ///<Number of CRT-PMT Matches in event 

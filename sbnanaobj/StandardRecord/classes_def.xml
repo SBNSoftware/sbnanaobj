@@ -5,7 +5,8 @@
 <!-- art::Wrappers for these products are defined in CAFMaker -->
 
 <lcgdict>
-  <class name="caf::StandardRecord" ClassVersion="16">
+  <class name="caf::StandardRecord" ClassVersion="17">
+   <version ClassVersion="17" checksum="3621177915"/>
    <version ClassVersion="16" checksum="3162654488"/>
    <version ClassVersion="15" checksum="2636549707"/>
    <version ClassVersion="14" checksum="1860171062"/>
@@ -377,7 +378,8 @@
    <version ClassVersion="10" checksum="2672302824"/>
   </class>
 
-  <class name="caf::SRCorrectedOpFlash" ClassVersion="13">
+  <class name="caf::SRCorrectedOpFlash" ClassVersion="14">
+   <version ClassVersion="14" checksum="2247699110"/>
    <version ClassVersion="13" checksum="3257300089"/>
    <version ClassVersion="12" checksum="1558889595"/>
    <version ClassVersion="11" checksum="755718921"/>
@@ -422,6 +424,10 @@
 
   <class name="caf::SRSBNDCRTTrackMatch" ClassVersion="10">
    <version ClassVersion="10" checksum="2486605052"/>
+  </class>
+  
+  <class name="caf::SRSBNDCRTVeto" ClassVersion="10">
+   <version ClassVersion="10" checksum="63752094"/>
   </class>
 
   <class name="std::vector<caf::SRCRTSpacePoint>" />
