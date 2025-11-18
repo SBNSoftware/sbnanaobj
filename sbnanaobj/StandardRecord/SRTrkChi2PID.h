@@ -17,7 +17,7 @@ namespace caf
     {
 
       int            pdg          = -999;                 ///< PDG ID of the lowest Chi2.
-      int            pid_ndof     =  -99;                 ///< Number of degress of freedom in Chi2 PID fit.
+      int            pid_ndof     =  -99;                 ///< Number of degrees of freedom in Chi2 PID fit.
       float          chi2_muon    = caf::kSignalingNaN;   ///< dE/dx v. residual range Chi2 (muon hypothesis).
       float          chi2_pion    = caf::kSignalingNaN;   ///< dE/dx v. residual range Chi2 (pion hypothesis).
       float          chi2_kaon    = caf::kSignalingNaN;   ///< dE/dx v. residual range Chi2 (kaon hypothesis).
