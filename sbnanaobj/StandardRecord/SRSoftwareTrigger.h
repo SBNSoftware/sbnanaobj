@@ -9,6 +9,8 @@
 #ifndef SRSOFTWARETRIGGER_H
 #define SRSOFTWARETRIGGER_H
 
+#include "sbnanaobj/StandardRecord/SRConstants.h"
+
 namespace caf{
   
   /**
@@ -16,9 +18,9 @@ namespace caf{
   */
   
   struct SRSoftwareTrigger { 
-    int npmts            = std::numeric_limits<int>::signaling_NaN();
-    float flash_peaktime = std::numeric_limits<float>::signaling_NaN(); 
-    float flash_peakpe   = std::numeric_limits<float>::signaling_NaN();
+    int   npmts          = caf::kUninitializedInt;
+    float flash_peaktime = caf::kSignalingNaN; 
+    float flash_peakpe   = caf::kSignalingNaN;
   };
 }
 
