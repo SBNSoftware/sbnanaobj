@@ -116,8 +116,7 @@
   </class>
 
   <class name="caf::SRTrack" ClassVersion="17">
-   <version ClassVersion="17" checksum="4075719476"/>
-   <version ClassVersion="16" checksum="2837285941"/>
+   <version ClassVersion="16" checksum="4075719476"/>
    <version ClassVersion="15" checksum="175611744"/>
    <version ClassVersion="14" checksum="3934033130"/>
    <version ClassVersion="13" checksum="522362999"/>
