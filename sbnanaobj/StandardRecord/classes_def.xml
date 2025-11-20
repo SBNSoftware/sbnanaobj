@@ -5,10 +5,8 @@
 <!-- art::Wrappers for these products are defined in CAFMaker -->
 
 <lcgdict>
-  <class name="caf::StandardRecord" ClassVersion="17">
-   <version ClassVersion="17" checksum="1651571235"/>
-   <version ClassVersion="16" checksum="3738947418"/>
-   <version ClassVersion="15" checksum="2636549707"/>
+  <class name="caf::StandardRecord" ClassVersion="15">
+   <version ClassVersion="15" checksum="1651571235"/>
    <version ClassVersion="14" checksum="1860171062"/>
    <version ClassVersion="13" checksum="1979816256"/>
    <version ClassVersion="12" checksum="3984422068"/>

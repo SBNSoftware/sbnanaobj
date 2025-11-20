@@ -18,25 +18,25 @@ namespace caf
     public:
         SRBlip();
         virtual ~SRBlip();
-        int       ID              = -9;         // Blip ID / index
-        bool      isValid         = false;      // Blip passes basic checks
-        int       Cryostat        = -9;         // Cryostat
-        int       TPC             = -9;         // TPC
-        int       NPlanes         = -9;         // Num. matched planes
-        int       MaxWireSpan     = -9;         // Maximum span of wires on any plane cluster
-        float     TimeTick        = -999;       // Readout time [ticks]
-        float     Time            = -999;       // Drift time [us]
-        float     Charge          = -9;         // Charge on calorimetry plane
-        float     Energy          = -999;       // Energy (const dE/dx, fcl-configurable) [GeV]
-        float     EnergyESTAR     = -999;       // Energy (ESTAR method from ArgoNeuT) [GeV]
-        float     EnergyPSTAR     = -999;       // Energy (PSTAR method similar with ESTAR method from ArgoNeuT) [GeV]
-        float     ProxTrkDist     = -9;         // Distance to cloest track
-        int       ProxTrkID       = -9;         // ID of closest track
-        bool      inCylinder      = false;      // Is it in a cone/cylinder region? 
+        int       ID;         // Blip ID / index
+        bool      isValid;      // Blip passes basic checks
+        int       Cryostat;         // Cryostat
+        int       TPC;         // TPC
+        int       NPlanes;         // Num. matched planes
+        int       MaxWireSpan;         // Maximum span of wires on any plane cluster
+        float     TimeTick;       // Readout time [ticks]
+        float     Time;       // Drift time [us]
+        float     Charge;         // Charge on calorimetry plane
+        float     Energy;       // Energy (const dE/dx, fcl-configurable) [GeV]
+        float     EnergyESTAR;       // Energy (ESTAR method from ArgoNeuT) [GeV]
+        float     EnergyPSTAR;       // Energy (PSTAR method similar with ESTAR method from ArgoNeuT) [GeV]
+        float     ProxTrkDist;         // Distance to cloest track
+        int       ProxTrkID;         // ID of closest track
+        bool      inCylinder;      // Is it in a cone/cylinder region? 
         SRVector3D  Position;                     // 3D position TVector3
-        float     SigmaYZ         = -9.;        // Uncertainty in YZ intersect [cm]
-        float     dX              = -9;         // Equivalent length along drift direction [cm] 
-        float     dYZ             = -9;         // Approximate length scale in YZ space [cm]
+        float     SigmaYZ;        // Uncertainty in YZ intersect [cm]
+        float     dX;         // Equivalent length along drift direction [cm] 
+        float     dYZ;         // Approximate length scale in YZ space [cm]
         SRBlipHitClust clusters[kNplanes]; // Plane/cluster-specific information
         SRBlipTrueBlip truthBlip; // Truth-matched energy deposition
     };
