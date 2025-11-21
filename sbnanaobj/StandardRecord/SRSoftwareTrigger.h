@@ -17,7 +17,7 @@ namespace caf{
   * @brief A struct to store software trigger information for SBND Data and MC
   */
   
-  struct SRSoftwareTrigger { 
+  struct SRSoftwareTrigger {
     int   npmts          = caf::kUninitializedInt; 
     float flash_peaktime = caf::kSignalingNaN;
     float flash_peakpe   = caf::kSignalingNaN;
