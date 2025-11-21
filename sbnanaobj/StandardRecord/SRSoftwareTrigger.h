@@ -18,9 +18,9 @@ namespace caf{
   */
   
   struct SRSoftwareTrigger { 
-    int   npmts          = caf::kUninitializedInt;
-    float flash_peaktime = caf::kSignalingNaN; 
-    float flash_peakpe   = caf::kSignalingNaN;
+    int   npmts          = caf::kUninitializedInt; ///< In data, number of pmts over threshold; In simulation, number of pmt waveforms used for the trigger sim
+    float flash_peaktime = caf::kSignalingNaN; ///< Peak time of the flash [us]
+    float flash_peakpe   = caf::kSignalingNaN; ///< Peak amplitude of the flash, 1 PE = 12.5 ADC
   };
 }
 
