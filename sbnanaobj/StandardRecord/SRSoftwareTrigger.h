@@ -18,8 +18,8 @@ namespace caf{
   */
   
   struct SRSoftwareTrigger { 
-    int   npmts          = caf::kUninitializedInt;
-    float flash_peaktime = caf::kSignalingNaN; 
+    int   npmts          = caf::kUninitializedInt; 
+    float flash_peaktime = caf::kSignalingNaN;
     float flash_peakpe   = caf::kSignalingNaN;
   };
 }
