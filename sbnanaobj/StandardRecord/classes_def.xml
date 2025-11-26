@@ -422,7 +422,8 @@
   <class name="std::vector<caf::SRCRTSpacePoint>" />
   <class name="std::vector<caf::SRSBNDCRTTrack>" />
 
-  <class name="caf::SRSBNDFrameShiftInfo" ClassVersion="10">
+  <class name="caf::SRSBNDFrameShiftInfo" ClassVersion="11">
+   <version ClassVersion="11" checksum="2340993735"/>
    <version ClassVersion="10" checksum="2564414428"/>
   </class>
   <class name="caf::SRSBNDTimingInfo" ClassVersion="10">
