@@ -28,33 +28,33 @@ namespace caf
         static constexpr int kNplanes = 3;
         int       ID=caf::kUninitializedInt;         ///< Internal index for blip labelling
         bool      isValid=false;    ///< Blip passes basic checks in reco. All blips saved to artRoot file should be valid.
-        int       Cryostat=caf::kUninitializedInt;    ///< Which cryostat the blip was reconstructed to. For SBND this should always be 0.
+        int       cryostat=caf::kUninitializedInt;    ///< Which cryostat the blip was reconstructed to. For SBND this should always be 0.
         int       TPC=caf::kUninitializedInt;         ///< Which tpc the blip was reconstructed to. For SBND this may be 0 or 1. 
-        int       NPlanes=caf::kUninitializedInt;          ///< Number of planes matched to build the blip. Blips must be plane matched so this should be 2+ planes.
-        int       MaxWireSpan=caf::kUninitializedInt;         ///< Maximum span of wires on any plane hit-cluster
-        float     TimeTick=-999;      ///< Average time of hitclusters making up blips. [tpc tick]
+        int       nPlanes=caf::kUninitializedInt;          ///< Number of planes matched to build the blip. Blips must be plane matched so this should be 2+ planes.
+        int       maxWireSpan=caf::kUninitializedInt;         ///< Maximum span of wires on any plane hit-cluster
+        float     timeTick=-999;      ///< Average time of hitclusters making up blips. [tpc tick]
         /*!
         Hit cluster time is the charge-weighted average of the hit-peak times for hits in the cluster 
         */
-        float     Time=-999;        ///< Average time of hitclusters making up blips. [us] 
+        float     time=-999;        ///< Average time of hitclusters making up blips. [us] 
         /*!
           Hit cluster time is the charge-weighted average of the hit-peak times for hits in the cluster 
         */
-        float     Charge=caf::kSignalingNaN;         ///< Charge on calorimetry plane [e-]
-        float     Energy=caf::kSignalingNaN;       ///< Reconstructed energy in the calorimetry plane (const dE/dx, fcl-configurable) [GeV]
-        float     EnergyESTAR=caf::kSignalingNaN;       ///< Reconstructed energy in the calorimetry plane (ESTAR method from ArgoNeuT)    [GeV]
-        float     EnergyPSTAR=caf::kSignalingNaN;       ///< Reconstructed energy in the calorimetry plane (PSTAR method similar with ESTAR method from ArgoNeuT) [GeV]
-        float     ProxTrkDist=caf::kSignalingNaN;       ///< 3-D distance to closest track, assuming the blip was concident with event trigger [cm]
+        float     charge=caf::kSignalingNaN;         ///< Charge on calorimetry plane [e-]
+        float     energy=caf::kSignalingNaN;       ///< Reconstructed energy in the calorimetry plane (const dE/dx, fcl-configurable) [GeV]
+        float     energyESTAR=caf::kSignalingNaN;       ///< Reconstructed energy in the calorimetry plane (ESTAR method from ArgoNeuT)    [GeV]
+        float     energyPSTAR=caf::kSignalingNaN;       ///< Reconstructed energy in the calorimetry plane (PSTAR method similar with ESTAR method from ArgoNeuT) [GeV]
+        float     proxTrkDist=caf::kSignalingNaN;       ///< 3-D distance to closest track, assuming the blip was concident with event trigger [cm]
         /*!
           for properly flash matched out-of-time tracks this distance will be wrong! The blips have no such flash matching ability as of yet
         */
-        int       ProxTrkID=caf::kUninitializedInt;         ///< index of the of closest track, assuming the blip was concident with event trigger
+        int       proxTrkID=caf::kUninitializedInt;         ///< index of the of closest track, assuming the blip was concident with event trigger
         bool      inCylinder=false;      ///< Bool for whether this blip falls in a 45 degree cone relative to any track closer than fcl-set CylinderRadius (15 cm)
         /*!
           please note the blip X position is unreliable, so these distance and 3-d position derived variables may be incorrect
         */
-        SRVector3D  Position;      ///< 3D position vector. Reconstructed with wrong t0! [cm]
-        float     SigmaYZ=caf::kSignalingNaN;        ///< Uncertainty in YZ intersect [cm]
+        SRVector3D  position;      ///< 3D position vector. Reconstructed with wrong t0! [cm]
+        float     sigmaYZ=caf::kSignalingNaN;        ///< Uncertainty in YZ intersect [cm]
         float     dX=caf::kSignalingNaN;         ///< Equivalent length along drift direction [cm] 
         float     dYZ=caf::kSignalingNaN;         ///< Approximate length scale in YZ space [cm]
         std::array<SRBlipHitClust, kNplanes> clusters; ///< Plane/cluster-specific information. Just contains hit clusters making up this blip!
