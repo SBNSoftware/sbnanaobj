@@ -23,6 +23,7 @@ namespace caf
     class SRBlip
     {
     public:
+        SRBlip();
         static constexpr int kNplanes = 3;
         int       ID=-5;         ///< Internal index for blip labelling
         bool      isValid=false;    ///< Blip passes basic checks in reco. All blips saved to artRoot file should be valid.
@@ -52,9 +53,6 @@ namespace caf
           please note the blip X position is unreliable, so these distance and 3-d position derived variables may be incorrect
         */
         SRVector3D  Position;      ///< 3D position vector. Reconstructed with wrong t0! [cm]
-        Position.SetX(-999);
-        Position.SetY(-999);
-        Position.SetZ(-999);
         float     SigmaYZ=-5;        ///< Uncertainty in YZ intersect [cm]
         float     dX=-5;         ///< Equivalent length along drift direction [cm] 
         float     dYZ=-5;         ///< Approximate length scale in YZ space [cm]
