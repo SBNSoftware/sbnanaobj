@@ -57,7 +57,7 @@ namespace caf
         float     sigmaYZ=caf::kSignalingNaN;        ///< Uncertainty in YZ intersect [cm]
         float     dX=caf::kSignalingNaN;         ///< Equivalent length along drift direction [cm] 
         float     dYZ=caf::kSignalingNaN;         ///< Approximate length scale in YZ space [cm]
-        std::array<SRBlipHitClust, kNplanes> clusters; ///< Plane/cluster-specific information. Just contains hit clusters making up this blip!
+        SRBlipHitClust clusters[kNplanes]; ///< Plane/cluster-specific information. Just contains hit clusters making up this blip!
         SRBlipTrueBlip truthBlip; ///< Truth-matched energy deposition. Just contains the relevant MC truth info to this blip!
     };
 }
