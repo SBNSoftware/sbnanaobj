@@ -1,8 +1,8 @@
-////////////////////////////////////////////////////////////////////////
-// \file    SRBlipHitClust.h
-// \brief   SRBlipHitClust struct contains information on hit clusters on each plane used to form a SRBlip
-// \author  $Author: jmclaughlin2@illinoistech.edu
-////////////////////////////////////////////////////////////////////////
+/**
+ * @file    SRBlipHitClust.h
+ * @brief   SRBlipHitClust struct contains information on hit clusters on each plane used to form a SRBlip
+ * @author  Jacob McLaughlin - jmclaughlin2@illinoistech.edu
+ */
 #ifndef SBNANAOBJ_STANDARDRECORD_SRBLIPHITCLUST_H
 #define SBNANAOBJ_STANDARDRECORD_SRBLIPHITCLUST_H
 #include <map>
@@ -11,43 +11,52 @@
 
 namespace caf
 {
+  /** Hit clusters are collections of adjacent hits on a single wire plane.
+   *  They have a fcl-set maximum wire-span (fcl set. Default 10), as well as maximum tick-width (fcl set. Default 50 tick).
+   *  Hit clusters have timestamp and associated wire IDs. 
+   *  Within a hit cluster certain statistical summaries of the collection are saved including:
+   *  Total charge, total charge uncertianty, peak hit amplitude, and charge weighted RMS hit spread
+   */
     struct SRBlipHitClust {
-    int     ID              = -5;
-    bool    isValid         = false;
-    int     CenterChan      = -5;
-    int     CenterWire      = -5;
-    bool    isTruthMatched  = false;
-    bool    isMerged        = false;
-    bool    isMatched       = false;
-    int     DeadWireSep     = -5;
-    int     Cryostat        = -5;
-    int     TPC             = -5;
-    int     Plane           = -5;
-    int     NHits           = -5;
-    int     NWires          = -5;
-    float   ADCs            = -5;
-    float   Amplitude       = -5;
-    float   Charge          = -5;
-    float   SigmaCharge     = -5;
-    float   TimeTick        = -5;
-    float   Time            = -5;
-    float   StartHitTime    = -5;
-    float   EndHitTime      = -5;
-    float   StartTime       = -999;
-    float   EndTime         = -999;
-    float   Timespan        = -5;
-    float   RMS             = -5;
-    int     StartWire       = -5;
-    int     EndWire         = -5;
-    int     NPulseTrainHits = -5;
-    float   GoodnessOfFit   = -5;
-    int     BlipID          = -5;
-    int     EdepID          = -5;
-    std::vector<int>    HitIDs;
-    std::vector<int>    Wires;
-    std::vector<int>    Chans;
-    std::vector<int>    G4IDs;
-      //std::map<int,SRVector3D> IntersectLocations; //intermediate step used for matching
+    int     ID              = -5; ///< Per-plane index for the hit clusters. In SBND we save every collection plane hitcluster but not the induction
+    bool    isValid         = false; ///< Bool check that every hit is in the same cryostat, tpc, plane. Should always be true for saved items
+    int     CenterChan      = -5; ///< Channel ID of the wire in the geometric center of the hit cluster
+    int     CenterWire      = -5; ///< Wire ID of the wire in the geometric center of the hit cluster
+    bool    isTruthMatched  = false; ///< is there a trueBlip with the same leadG4ID as one of the G4IDs making up this cluster
+    bool    isMatched       = false; ///< Is this hit cluster plane-matched into a full 3d blip
+    int     DeadWireSep     = -5; ///< Separation between the extreme ends of the hitcluster and the nearest dead wire. 
+    /*!
+      DeadWireSep can be between 0 and 5 and valid. Larger separations are filled in as 99.
+    */
+    int     Cryostat        = -5; ///< cryostat for this hit cluster
+    int     TPC             = -5; ///< TPC for this hit cluster
+    int     Plane           = -5; ///< Plane index for this hit cluster
+    int     NHits           = -5; ///< Number of hits making up this hit cluster
+    int     NWires          = -5; ///< Wire span of the hit cluster
+    float   ADCs            = -5; ///< ADC integral sum of hits making up the cluster [ADC-tick]
+    float   Amplitude       = -5; ///< Max amplitude of hits making up the hit cluster [ADC]
+    float   Charge          = -5; ///< Total charge of hits making up the hit cluster [e-]
+    /*!
+      Charge is reconstructed from calo::CalorimetryAlg ( "sbnd_calorimetryalgmc" )-> ElectronsFromADCArea function
+      Configuration is in sbndcode/sbndcode/LArSoftConfigurations/calorimetry_sbnd.fcl
+    */
+    float   SigmaCharge     = -5; ///< charge-weighted charge uncertainties for this hit-cluster [e-]
+    float   TimeTick        = -5; ///< charge-weighted average hit-peak-times for this hit-cluster [tick]
+    float   Time            = -5; ///< charge-weighted average hit-peak-times for this hit-cluster [us]
+    float   StartTime       = -999; ///< Minimum -1 sigma time of a hit in this cluster [us]
+    float   EndTime         = -999; ///< Max +1 sigma time of a hit in this cluster [us]
+    float   Timespan        = -5; ///< Hit cluster EndTime - StartTime [us]
+    float   RMS             = -5; ///< Quadrature estimate of charge waveform timespread accounting for varied hit-drift times and internal hit-RMS [us]
+    int     StartWire       = -5; ///< Lowest wireID involved with the hitcluster 
+    int     EndWire         = -5; ///< Highest wireID involved with the hit cluster
+    int     NPulseTrainHits = -5;  ///< Number of hits with a GoodnessOfFit<0 involved in this hit cluster
+    float   GoodnessOfFit   = -5; ///< Charge weighted hit-GoodnessofFit param
+    int     BlipID          = -5; ///< If this hit cluster ended up in a blip, what is its ID
+    int     EdepID          = -5; ///< If this hit cluster is MC-matched what is the trueBlip ID
+    std::vector<int>    HitIDs; ///< Index of the recob::hit objects making up this cluster
+    std::vector<int>    Wires;  ///<  Set of geo::wireIDs contributing hits to this cluster
+    std::vector<int>    Chans;  ///<  Set of raw::ChannelID_t contributing hits to this cluster
+    std::vector<int>    G4IDs;  ///<  simb::MCParticle track ID contributing hits to this cluster
   };
 }
 #endif

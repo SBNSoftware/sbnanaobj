@@ -9,6 +9,7 @@
 
 namespace caf
 {
+    /*
     SRBlip::SRBlip()
     {
         ID              = -5;         // Blip ID / index
@@ -33,8 +34,6 @@ namespace caf
         dX              = -5;         // Equivalent length along drift direction [cm] 
         dYZ             = -5;         // Approximate length scale in YZ space [cm]
     }
-    SRBlip::~SRBlip()
-    {
-    }
+    */
 
 }
