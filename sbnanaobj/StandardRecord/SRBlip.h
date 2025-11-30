@@ -23,7 +23,6 @@ namespace caf
     {
     public:
         static constexpr int kNplanes = 3;
-        SRBlip();
         int       ID=-5;         ///< Internal index for blip labelling
         bool      isValid=false;    ///< Blip passes basic checks in reco. All blips saved to artRoot file should be valid.
         int       Cryostat=-5;    ///< Which cryostat the blip was reconstructed to. For SBND this should always be 0.
