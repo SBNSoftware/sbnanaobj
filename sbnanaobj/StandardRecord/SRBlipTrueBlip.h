@@ -24,16 +24,16 @@ namespace caf
     int       ID            = caf::kUninitializedInt;     ///<  Index of this trueBlip object
     int       cryostat      = caf::kUninitializedInt;     ///<  Cryostat ID the blip reconstructed to
     int       TPC           = caf::kUninitializedInt;     ///<  TPC ID the blip reconstructed to
-    float     time          = caf::kSignalingNaN;     ///<  Charge weighted peak time of TrueBlip energy depositions [tick]
-    float     driftTime     = caf::kSignalingNaN;     ///<  Charge weighted drift time of TrueBlip energy depositions [tick]
-    float     energy        = caf::kSignalingNaN;     ///<  Total energy dep [GeV]
+    float     time          = caf::kSignalingNaN;         ///<  Charge weighted peak time of TrueBlip energy depositions [tick]
+    float     driftTime     = caf::kSignalingNaN;         ///<  Charge weighted drift time of TrueBlip energy depositions [tick]
+    float     energy        = caf::kSignalingNaN;         ///<  Total energy dep [GeV]
     int       depElectrons  = caf::kUninitializedInt;     ///<  Total deposited electrons [e-]
     int       numElectrons  = caf::kUninitializedInt;     ///<  electrons reaching wires [e-]
     int       leadG4ID      = caf::kUninitializedInt;     ///<  G4 track ID depositing the most charge in this deposition 
     int       leadG4Index   = caf::kUninitializedInt;     ///<  G4 track Index depositing the most charge in this deposition 
     int       leadG4PDG     = caf::kUninitializedInt;     ///<  G4 PDG associated with the track depositing the most charge
-    float     leadCharge    = caf::kSignalingNaN;     ///<  Largest charge deposition associated with this True Blip
-    SRVector3D  position;             ///<  Charge weighted true-XYZ position [cm]
+    float     leadCharge    = caf::kSignalingNaN;         ///<  Largest charge deposition associated with this True Blip
+    SRVector3D  position;                                 ///<  Charge weighted true-XYZ position [cm]
   };
 }
 #endif
