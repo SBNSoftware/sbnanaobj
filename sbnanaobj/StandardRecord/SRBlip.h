@@ -8,6 +8,7 @@
 #include "sbnanaobj/StandardRecord/SRVector3D.h"
 #include "sbnanaobj/StandardRecord/SRBlipHitClust.h"
 #include "sbnanaobj/StandardRecord/SRBlipTrueBlip.h"
+#include <array>
 
 namespace caf
 {
@@ -50,7 +51,10 @@ namespace caf
         /*!
           please note the blip X position is unreliable, so these distance and 3-d position derived variables may be incorrect
         */
-        SRVector3D  Position{-999, -999, -999};      ///< 3D position vector. Reconstructed with wrong t0! [cm]
+        SRVector3D  Position;      ///< 3D position vector. Reconstructed with wrong t0! [cm]
+        Position.SetX(-999);
+        Position.SetY(-999);
+        Position.SetZ(-999);
         float     SigmaYZ=-5;        ///< Uncertainty in YZ intersect [cm]
         float     dX=-5;         ///< Equivalent length along drift direction [cm] 
         float     dYZ=-5;         ///< Approximate length scale in YZ space [cm]
