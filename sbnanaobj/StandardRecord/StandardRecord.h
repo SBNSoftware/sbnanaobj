@@ -22,6 +22,7 @@
 #include "sbnanaobj/StandardRecord/SRFakeReco.h"
 #include "sbnanaobj/StandardRecord/SROpFlash.h"
 #include "sbnanaobj/StandardRecord/SRTrigger.h"
+#include "sbnanaobj/StandardRecord/SRSoftwareTrigger.h"
 #include "sbnanaobj/StandardRecord/SRInteractionDLP.h"
 #include "sbnanaobj/StandardRecord/SRInteractionTruthDLP.h"
 #include "sbnanaobj/StandardRecord/SRBlip.h"
@@ -68,7 +69,7 @@ namespace caf
     SRSBNDFrameShiftInfo sbnd_frames; ///< List of Frame Shift in event in unit [ns] (SBND)
     SRSBNDTimingInfo sbnd_timings; ///< List of Timing Info in event in UNIX timestamp format(SBND)
     std::vector<SRBlip>        blips; ///Blips are small O(mm) depositions in LAr, made from recob::hits
-
+    SRSoftwareTrigger soft_trig; ///< Software Trigger Info in event
     int                                ndlp = 0;       ///< Number of reco DLP (ML) interactions.
     std::vector<SRInteractionDLP>      dlp;        ///< Reco DLP (ML) interactions.  
     int                                ndlp_true = 0;  ///< Number of true DLP (ML) interactions.
