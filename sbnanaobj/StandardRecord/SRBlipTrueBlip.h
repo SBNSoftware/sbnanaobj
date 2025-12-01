@@ -20,7 +20,7 @@ namespace caf
    * That blip reconstruction applies cuts to overall blip size/spread
    * A single TrueBlip will be constructed for energy depositions within TrueBlipMergeDist (fcl set 0.3 cm by default)
   */
-    struct SRBlipTrueBlip {
+  struct SRBlipTrueBlip {
     int       ID            = caf::kUninitializedInt;     ///<  Index of this trueBlip object
     int       cryostat      = caf::kUninitializedInt;     ///<  Cryostat ID the blip reconstructed to
     int       TPC           = caf::kUninitializedInt;     ///<  TPC ID the blip reconstructed to

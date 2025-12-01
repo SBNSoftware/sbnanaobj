@@ -5,8 +5,7 @@
  */
 #ifndef SBNANAOBJ_STANDARDRECORD_SRBLIPHITCLUST_H
 #define SBNANAOBJ_STANDARDRECORD_SRBLIPHITCLUST_H
-#include <map>
-#include <set>
+#include <vector>
 #include "sbnanaobj/StandardRecord/SRVector3D.h"
 #include "sbnanaobj/StandardRecord/SRConstants.h"
 
@@ -18,13 +17,13 @@ namespace caf
    *  Within a hit cluster certain statistical summaries of the collection are saved including:
    *  Total charge, total charge uncertianty, peak hit amplitude, and charge weighted RMS hit spread
    */
-    struct SRBlipHitClust {
+  struct SRBlipHitClust {
     int     ID              = caf::kUninitializedInt; ///< Per-plane index for the hit clusters. In SBND we save every collection plane hitcluster but not the induction
     bool    isValid         = false; ///< Bool check that every hit is in the same cryostat, tpc, plane. Should always be true for saved items
-    int     centerChan      = caf::kUninitializedInt; ///< Channel ID of the wire in the geometric center of the hit cluster
-    int     centerWire      = caf::kUninitializedInt; ///< Wire ID of the wire in the geometric center of the hit cluster
     bool    isTruthMatched  = false; ///< is there a trueBlip with the same leadG4ID as one of the G4IDs making up this cluster
     bool    isMatched       = false; ///< Is this hit cluster plane-matched into a full 3d blip
+    int     centerChan      = caf::kUninitializedInt; ///< Channel ID of the wire in the geometric center of the hit cluster
+    int     centerWire      = caf::kUninitializedInt; ///< Wire ID of the wire in the geometric center of the hit cluster
     int     deadWireSep     = caf::kUninitializedInt; ///< Separation between the extreme ends of the hitcluster and the nearest dead wire. 
     /*!
       DeadWireSep can be between 0 and 5 and valid. Larger separations are filled in as 99.
@@ -54,8 +53,8 @@ namespace caf
     float   goodnessOfFit   = caf::kSignalingNaN; ///< Charge weighted hit-GoodnessofFit param
     int     blipID          = caf::kUninitializedInt; ///< If this hit cluster ended up in a blip, what is its ID
     int     edepID          = caf::kUninitializedInt; ///< If this hit cluster is MC-matched what is the trueBlip ID
-    std::vector<int>    hitIDs; ///< Index of the recob::hit objects making up this cluster
-    std::vector<int>    wires;  ///<  Set of geo::wireIDs contributing hits to this cluster
+    std::vector<int>    hitIDs; ///< Index of the recob::hit objects making up this cluster. Size should match nHits
+    std::vector<int>    wires;  ///<  Set of geo::wireIDs contributing hits to this cluster. Size should match nWires
     std::vector<int>    chans;  ///<  Set of raw::ChannelID_t contributing hits to this cluster
     std::vector<int>    G4IDs;  ///<  simb::MCParticle track ID contributing hits to this cluster
   };
