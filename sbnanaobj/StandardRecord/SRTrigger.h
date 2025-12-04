@@ -43,6 +43,15 @@ namespace caf
     int num_pairs_over_threshold; ///< number of pmt pairs over trigger threshold
     std::vector<int> monpulses_flat; ///< trigger responses (number of PMT pairs above threshold for all channels) for all flashes (flattened to include all flashes in a single vector)
     std::vector<int> monpulse_sizes; ///< length of each trigger responses to un-flatten the trigger responses (to a vector of trigger responses)
+    
+    /// PTB (Penn Trigger Board) trigger information for SBND
+    /// SBND: straight from the trigger hardware.
+    /// HLT (High Level Trigger) information - decoded: each set bit in the trigger word becomes a separate entry
+    std::vector<double> ptb_hlt_timestamp;         ///< Current timestamp for each HLT trigger bit [s]
+    std::vector<std::uint64_t> ptb_hlt_bit;       ///< Individual trigger bit number for each HLT trigger (decoded from trigger word)
+    /// LLT (Low Level Trigger) information - decoded: each set bit in the trigger word becomes a separate entry
+    std::vector<double> ptb_llt_timestamp;         ///< Current timestamp for each LLT trigger bit [s]
+    std::vector<std::uint64_t> ptb_llt_bit;       ///< Individual trigger bit number for each LLT trigger (decoded from trigger word)
   };
 }
 
