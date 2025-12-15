@@ -12,7 +12,6 @@
 
 namespace caf
 {
-  const int kNplanes    = 3;
     /** Blips are small, plane-matched, energy deposition in liquid argon with sizes similar to wire separation.
      *  Blips are composed of hit-clusters, which are (time and space) adjacent hits on a single wire plane. 
      *  A single plane, usually the collection, is given a privledged position as the calorimetry plane. 
@@ -22,6 +21,7 @@ namespace caf
      */
     class SRBlip
     {
+      const int kNplanes    = 3;
     public:
         SRBlip();
         static constexpr int kNplanes = 3;

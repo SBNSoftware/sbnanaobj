@@ -1,8 +1,8 @@
-////////////////////////////////////////////////////////////////////////
-// \file    SRBlip.cxx
-// \brief   SRBlip object for localized energy deposits in bulk LAr
-// \author  $Author: jmclaughlin2@illinoistech.edu
-////////////////////////////////////////////////////////////////////////
+/**
+ * @file    SRBlip.h
+ * @brief   SRBlip object for localized energy deposits in bulk LAr
+ * @author  Jacob McLaughlin jmclaughlin2@illinoistech.edu
+ */
 
 #include "sbnanaobj/StandardRecord/SRBlip.h"
 
