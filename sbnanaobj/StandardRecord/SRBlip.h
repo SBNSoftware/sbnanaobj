@@ -21,7 +21,6 @@ namespace caf
      */
     class SRBlip
     {
-      const int kNplanes    = 3;
     public:
         SRBlip();
         static constexpr int kNplanes = 3;
