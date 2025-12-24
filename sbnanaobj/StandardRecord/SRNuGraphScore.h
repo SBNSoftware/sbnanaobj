@@ -5,8 +5,24 @@
 #define SRNuGraphSCORE_H
 
 #include "sbnanaobj/StandardRecord/SRConstants.h"
+#include <climits>
 
 namespace caf {
+
+  /**
+  * @brief Information on the slice by NuGraph.
+  *
+  * This object summarizes the results from running NuGraph over hits in a slice
+  * (see e.g. [https://sbn-docdb.fnal.gov/cgi-bin/sso/ShowDocument?docid=40585](SBN DocDB 40585).
+  *
+  * The number of HIP hits is computed for a circle around the vertex in each plane.
+  */
+  class SRNuGraphSliceInfo {
+  public:
+    SRNuGraphSliceInfo();
+
+    unsigned int ng_vtx_hip_hits;  ///< Number of hits tagged as HIP around the vertex (10 wires, 10 ticks)
+  };
 
   /**
   * @brief Categorization of the object/PFP by NuGraph.
@@ -37,6 +53,7 @@ namespace caf {
     float dif_frac = caf::kSignalingNaN; ///< Fraction of hits that are labeled as `Diffuse`.
     float bkg_frac = caf::kSignalingNaN; ///< Fraction of hits that are labeled as `Background`.
   };
+  
 }
 
 #endif
