@@ -48,10 +48,10 @@ namespace caf
     /// SBND: straight from the trigger hardware.
     /// HLT (High Level Trigger) information - decoded: each set bit in the trigger word becomes a separate entry
     std::vector<double> ptb_hlt_timestamp;         ///< Current timestamp for each HLT trigger bit [s]
-    std::vector<std::uint64_t> ptb_hlt_bit;       ///< Individual trigger bit number for each HLT trigger (decoded from trigger word)
+    std::vector<std::uint8_t> ptb_hlt_bit;       ///< Individual trigger bit number for each HLT trigger (decoded from trigger word)
     /// LLT (Low Level Trigger) information - decoded: each set bit in the trigger word becomes a separate entry
     std::vector<double> ptb_llt_timestamp;         ///< Current timestamp for each LLT trigger bit [s]
-    std::vector<std::uint64_t> ptb_llt_bit;       ///< Individual trigger bit number for each LLT trigger (decoded from trigger word)
+    std::vector<std::uint8_t> ptb_llt_bit;       ///< Individual trigger bit number for each LLT trigger (decoded from trigger word)
   };
 }
 
