@@ -21,7 +21,10 @@ namespace caf {
   public:
     SRNuGraphSliceInfo();
 
-    int ng_vtx_hip_hits;  ///< Number of hits tagged as HIP around the vertex (10 wires, 10 ticks)
+    int ng_vtx_hip_hits;      ///< Number of hits tagged as HIP around the vertex (10 wires, 40 ticks).
+    int shr_hits;             ///< Number of hits tagged as `Shower`.
+    int unclustered_shr_hits; ///< Number of hits tagged as `Shower` not belonging to any PFP object.
+    
   };
 
   /**

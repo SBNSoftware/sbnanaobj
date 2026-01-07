@@ -59,8 +59,8 @@ namespace caf
       float nu_score       { kSignalingNaN }; //!< Score of how neutrino-like the slice is according to pandora
       SRNuID nuid; //!< Neutrino ID Features (BDT inputs) going into nu_score calculation
 
-      float ng_filt_pass_frac { kSignalingNaN };  //!< Fraction of slice hits that pass the nugraph filter decoder
-      SRNuGraphSliceInfo ng_plane[3];  //!< Slice-level nugraph information, provided for each plane
+      float ng_filt_pass_frac { kSignalingNaN };  //!< Fraction of slice hits that pass the NuGraph2 filter decoder
+      SRNuGraphSliceInfo ng_plane[3];  //!< Slice-level NuGraph2 information, provided for each plane
 
       SRCRUMBSResult crumbs_result; //!< Score of how neutrino-like the slice is according to the CRUMBS ID
       
