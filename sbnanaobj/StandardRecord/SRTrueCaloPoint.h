@@ -16,6 +16,8 @@ namespace caf
 
       float h_nelec; //!< Charge / number of electrons by hit
       float h_e; //!< Energy by hit [MeV]
+      float h_nelec_sed; //!< number of electrons from simEnergyDeposit (sed) in wire z +- (wire spacig) / 2, for sed overlapping with the boarder, overlaping fraction is multiplied
+      float h_e_sed; //!< deposited energy [MeV] from simEnergyDeposit (sed) in wire z +- (wire spacig) / 2, for sed overlapping with the boarder, overlaping fraction is multiplied
       float p_nelec; //!< Charge / number of electrons by particle
       float p_e; //!< Energy by particle [MeV]
       float x; //!< X-Position of deposition by particle [cm]
