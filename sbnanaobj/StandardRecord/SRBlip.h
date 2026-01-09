@@ -51,7 +51,7 @@ namespace caf
         /*!
           please note the blip X position is unreliable, so these distance and 3-d position derived variables may be incorrect
         */
-        SRVector3D  position;                         ///< 3D position vector. Reconstructed with wrong t0! [cm]
+        SRVector3D  position{ -9999.9, -9999.9, -9999.9 };                         ///< 3D position vector. Reconstructed with wrong t0! [cm]
         float     sigmaYZ=caf::kSignalingNaN;         ///< Uncertainty in YZ intersect [cm]
         float     dX=caf::kSignalingNaN;              ///< Equivalent length along drift direction [cm] 
         float     dYZ=caf::kSignalingNaN;             ///< Approximate length scale in YZ space [cm]
