@@ -337,7 +337,7 @@
    <version ClassVersion="10" checksum="1544666038"/>
   </class>
 
-  <class name="caf::SRBlipTrueBlip" ClassVersion="10">
+  <class name="caf::SRTrueBlip" ClassVersion="10">
    <version ClassVersion="10" checksum="451846977"/>
   </class>
 
@@ -374,7 +374,7 @@
   <class name="std::vector<caf::SRCVNScore>" />
   <class name="std::vector<caf::SRBlip>" />
   <class name="std::vector<caf::SRBlipHitClust>" />
-  <class name="std::vector<caf::SRBlipTrueBlip>" />
+  <class name="std::vector<caf::SRTrueBlip>" />
 
  <class name="caf::SRCRTHitTruth" ClassVersion="10">
   <version ClassVersion="10" checksum="3618232749"/>
