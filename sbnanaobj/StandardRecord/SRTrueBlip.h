@@ -1,6 +1,6 @@
 /**
- * @file    SRBlipTrueBlip.h
- * @brief   SRBlipTrueBlip struct for localized energy deposits in bulk LAr. MC Truth information
+ * @file    SRTrueBlip.h
+ * @brief   SRTrueBlip struct for localized energy deposits in bulk LAr. MC Truth information
  * @author  Jacob McLaughlin - jmclaughlin2@illinoistech.edu
  */
 
@@ -20,7 +20,7 @@ namespace caf
    * That blip reconstruction applies cuts to overall blip size/spread
    * A single TrueBlip will be constructed for energy depositions within TrueBlipMergeDist (fcl set 0.3 cm by default)
   */
-  struct SRBlipTrueBlip {
+  struct SRTrueBlip {
     int       ID            = caf::kUninitializedInt;     ///<  Index of this trueBlip object
     int       cryostat      = caf::kUninitializedInt;     ///<  Cryostat ID the blip reconstructed to
     int       TPC           = caf::kUninitializedInt;     ///<  TPC ID the blip reconstructed to

@@ -53,10 +53,10 @@ namespace caf
     float   goodnessOfFit   = caf::kSignalingNaN; ///< Charge weighted hit-GoodnessofFit param
     int     blipID          = caf::kUninitializedInt; ///< If this hit cluster ended up in a blip, what is its ID
     int     edepID          = caf::kUninitializedInt; ///< If this hit cluster is MC-matched what is the trueBlip ID
-    std::vector<int>    hitIDs; ///< Index of the recob::hit objects making up this cluster. Size should match nHits
-    std::vector<int>    wires;  ///<  Set of geo::wireIDs contributing hits to this cluster. Size should match nWires
-    std::vector<int>    chans;  ///<  Set of raw::ChannelID_t contributing hits to this cluster
-    std::vector<int>    G4IDs;  ///<  simb::MCParticle track ID contributing hits to this cluster
+    std::vector<int>    hitIDs; ///< Index of the `recob::Hit` objects making up this cluster. Size should match nHits
+    std::vector<int>    wires;  ///<  Set of `geo::WireID` contributing hits to this cluster. Size should match nWires
+    std::vector<int>    chans;  ///<  Set of `raw::ChannelID` contributing hits to this cluster
+    std::vector<int>    G4IDs;  ///<  `simb::MCParticle` track ID contributing hits to this cluster
   };
 }
 #endif
