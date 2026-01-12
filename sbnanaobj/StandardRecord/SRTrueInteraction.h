@@ -92,7 +92,7 @@ namespace caf
     SRVector3D        momentum;        //!< Neutrino three-momentum
     SRVector3D        position;        //!< Neutrino interaction position
 
-    int               cryostat;   //!< Cryostat the the Interaction originates in. -1 if it originates outside a cryostat.
+    int cryostat    = -1;   //!< Cryostat the the Interaction originates in. -1 if it originates outside a cryostat.
     Det_t             det;
 
     generator_        generator;  ///< The generator that created this neutrino interaction
