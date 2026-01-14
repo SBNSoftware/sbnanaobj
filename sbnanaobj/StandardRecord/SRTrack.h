@@ -8,6 +8,7 @@
 
 #include "sbnanaobj/StandardRecord/SRTrackTruth.h"
 #include "sbnanaobj/StandardRecord/SRTrkChi2PID.h"
+#include "sbnanaobj/StandardRecord/SRTrkLikelihoodPID.h"
 #include "sbnanaobj/StandardRecord/SRTrkMCS.h"
 #include "sbnanaobj/StandardRecord/SRTrkRange.h"
 #include "sbnanaobj/StandardRecord/SRCRTHitMatch.h"
@@ -45,6 +46,7 @@ namespace caf
       SRVector3D     end;         ///< End point of track
 
       SRTrkChi2PID chi2pid[3]; ///< Per-plane Chi2 Particle ID
+      SRTrkLikelihoodPID likepid[3]; ///< Per-plane likelihood-based Particle ID variabeles (@f$ \lambda = \sum -\ln L / L_{max} @f$ where @f$\Sigma@f$ is done over hits)
       SRTrackCalo calo[3]; ///< Per-plane Calorimetry information
       Plane_t            bestplane;   ///< Plane index with the most hits. -1 if no calorimetry
 
