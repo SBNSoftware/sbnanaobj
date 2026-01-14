@@ -33,7 +33,7 @@ namespace caf
     int       leadG4Index   = caf::kUninitializedInt;     ///<  G4 track Index depositing the most charge in this deposition 
     int       leadG4PDG     = caf::kUninitializedInt;     ///<  G4 PDG associated with the track depositing the most charge
     float     leadCharge    = caf::kSignalingNaN;         ///<  Largest charge deposition associated with this True Blip
-    SRVector3D  position = SRVector3D( -9999.9, -9999.9, -9999.9 );                                 ///<  Charge weighted true-XYZ position [cm]
+    SRVector3D  position = SRVector3D( float(-9999.9), float(-9999.9), float(-9999.9) );                                 ///<  Charge weighted true-XYZ position [cm]
   };
 }
 #endif
