@@ -18,8 +18,9 @@ namespace caf
   public:
     SRVector3D();
     virtual ~SRVector3D();
-    SRVector3D(float x, float y, float z);
+
 #ifndef __castxml__
+    SRVector3D(float x, float y, float z);
     /// Easy conversion from TVector3
     SRVector3D(const TVector3& v);
 
