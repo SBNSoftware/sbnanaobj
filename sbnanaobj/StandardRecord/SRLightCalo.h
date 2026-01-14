@@ -17,10 +17,10 @@ namespace caf {
    * 
    */
   struct SRLightCalo {
-    float charge  = caf::kSignalingNaN;      // the total charge in the slice (on bestplane) [# electrons]
-    float light   = caf::kSignalingNaN;      // the reconstructed total number of photons  [# photons]
-    float energy  = caf::kSignalingNaN;      // (charge+light)*scaling, [GeV]
-    int bestplane = caf::kUninitializedInt;  // plane with most number of hits 
+    float charge  = caf::kSignalingNaN;      ///< the total charge in the slice (on bestplane) [# electrons]
+    float light   = caf::kSignalingNaN;      ///< the reconstructed total number of photons  [# photons]
+    float energy  = caf::kSignalingNaN;      ///< (charge+light)*scaling, [GeV]
+    int bestplane = caf::kUninitializedInt;  ///< plane with most number of hits 
 };
 }
 
