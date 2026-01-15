@@ -29,7 +29,8 @@ namespace caf
     public:
       SRShower();
       ~SRShower(){  }
-      int bestplane;                ///< shower best reconstructed plane
+      int bestplane_for_energy;     ///< shower best reconstructed plane for purposes of energy reco
+      int bestplane_for_dedx;       ///< shower best reconstructed plane for purposes of dedx reco
       float bestplane_dEdx;         ///< shower dEdx at best plane [MeV/cm]
       float bestplane_energy;       ///< shower energy at best plane [GeV]
       float conversion_gap;         ///< shower start and vertex position difference [cm]
