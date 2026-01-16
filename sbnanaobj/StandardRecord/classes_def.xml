@@ -46,7 +46,8 @@
    <version ClassVersion="10" checksum="705810055"/>
   </class>
 
-  <class name="caf::SRNuGraphSliceInfo" ClassVersion="14" >
+  <class name="caf::SRNuGraphSliceInfo" ClassVersion="15" >
+   <version ClassVersion="15" checksum="2711257956"/>
    <version ClassVersion="14" checksum="809065913"/>
    <version ClassVersion="13" checksum="290910659"/>
    <version ClassVersion="12" checksum="434873519"/>

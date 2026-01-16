@@ -19,12 +19,16 @@ namespace caf {
   */
   class SRNuGraphSliceInfo {
   public:
+  
     SRNuGraphSliceInfo();
 
-    int ng_vtx_hip_hits;      ///< Number of hits tagged as HIP around the vertex.
+    int mip_hits;             ///< Number of hits tagged as `MIP`.
+    int hip_hits;             ///< Number of hits tagged as `HIP`.
     int shr_hits;             ///< Number of hits tagged as `Shower`.
-    int unclustered_shr_hits; ///< Number of hits tagged as `Shower` not belonging to any PFP object.
-    
+    int mhl_hits;             ///< Number of hits tagged as `Michel`.
+    int dif_hits;             ///< Number of hits tagged as `Diffuse`.
+    int ng_vtx_hip_hits;      ///< Number of hits tagged as `HIP` around the reconstructed interaction vertex.
+    int unclustered_shr_hits; ///< Number of hits tagged as `Shower` not belonging to any reconstructed Pandora PFP object.
   };
 
   /**
