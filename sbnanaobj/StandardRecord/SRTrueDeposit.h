@@ -13,13 +13,13 @@
 namespace caf {
 
   /**
-   * @brief A struct to store true deposited energy, charge, and photons for each MCTruth interaction.
+   * @brief A struct to store total true deposited energy, charge, and photons for each MCTruth interaction.
    * 
    */
   struct SRTrueDeposit {
-    float electrons = caf::kSignalingNaN; ///< # of electrons at the site of energy deposition (after recombination, before drift)
-    float photons   = caf::kSignalingNaN; ///< # of photons at the site of energy deposition   (after recombination, before propagation) 
-    float energy    = caf::kSignalingNaN; ///< total **deposited energy** [GeV]
+    float electrons = caf::kSignalingNaN; ///< total # of electrons from the sites of energy deposition, summed per nu interaction (after recombination, before drift)
+    float photons   = caf::kSignalingNaN; ///< total # of photons from the sites of energy deposition, summed per nu interaction   (after recombination, before propagation) 
+    float energy    = caf::kSignalingNaN; ///< total **deposited energy**, summed per nu interaction [GeV]
   };
 }
 
