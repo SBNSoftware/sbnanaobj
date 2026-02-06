@@ -14,11 +14,9 @@ namespace caf
   void SRCorrectedOpFlash::setDefault()
   {
     OpFlashT0             =                             -9999.;
-    UpstreamTime_lightonly =                             -9999.;
-    UpstreamTime_tpczcorr  =                             -9999.;
-    UpstreamTime_propcorr_tpczcorr =                     -9999.;
-    SliceNuScore          =                             -9999.;
-    FMScore               =                             -9999.;
+    NuToFLight            =                             -9999.;
+    NuToFCharge           =                             -9999.;
+    OpFlashT0Corrected    =                             -9999.;
   }
 
 } // end namespace caf
