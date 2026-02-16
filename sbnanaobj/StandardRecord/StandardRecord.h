@@ -68,7 +68,7 @@ namespace caf
     bool pass_flashtrig = false;     ///< Whether this Record passed the Flash Trigger requirement
     SRSBNDFrameShiftInfo sbnd_frames; ///< List of Frame Shift in event in unit [ns] (SBND)
     SRSBNDTimingInfo sbnd_timings; ///< List of Timing Info in event in UNIX timestamp format(SBND)
-    std::vector<SRBlip>        blips; ///Blips are small O(mm) depositions in LAr, made from recob::Hit
+    std::vector<SRBlip>        blips; ///< Blips are small O(mm) depositions in LAr, made from recob::Hit
     SRSoftwareTrigger soft_trig; ///< Software Trigger Info in event
     int                                ndlp = 0;       ///< Number of reco DLP (ML) interactions.
     std::vector<SRInteractionDLP>      dlp;        ///< Reco DLP (ML) interactions.  
