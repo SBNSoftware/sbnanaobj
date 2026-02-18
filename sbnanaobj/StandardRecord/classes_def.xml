@@ -421,7 +421,8 @@
    <version ClassVersion="10" checksum="3912601582"/>
   </class>
 
-  <class name="caf::SRCRTSpacePointMatch" ClassVersion="10">
+  <class name="caf::SRCRTSpacePointMatch" ClassVersion="11">
+   <version ClassVersion="11" checksum="414814289"/>
    <version ClassVersion="10" checksum="382456729"/>
   </class>
 
@@ -430,7 +431,8 @@
    <version ClassVersion="10" checksum="1967800431"/>
   </class>
 
-  <class name="caf::SRSBNDCRTTrackMatch" ClassVersion="10">
+  <class name="caf::SRSBNDCRTTrackMatch" ClassVersion="11">
+   <version ClassVersion="11" checksum="3360963232"/>
    <version ClassVersion="10" checksum="2486605052"/>
   </class>
   
