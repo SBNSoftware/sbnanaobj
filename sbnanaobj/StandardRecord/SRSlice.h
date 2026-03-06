@@ -20,6 +20,7 @@
 #include "sbnanaobj/StandardRecord/SRConstants.h"
 #include "sbnanaobj/StandardRecord/SRCVNScore.h"
 #include "sbnanaobj/StandardRecord/SRLightCalo.h"
+#include "sbnanaobj/StandardRecord/SRNuGraphScore.h"
 
 #include <climits>
 
@@ -62,11 +63,13 @@ namespace caf
       bool is_clear_cosmic { false };         //!< Whether pandora marks the slice as a "clear" cosmic
       int nu_pdg           { INT_MIN };       //!< PDG assigned to the PFParticle Neutrino
       float nu_score       { kSignalingNaN }; //!< Score of how neutrino-like the slice is according to pandora
-      float ng_filt_pass_frac { kSignalingNaN }; //!< Fraction of slice hits that pass the nugraph filter decoder
-      SRCRUMBSResult crumbs_result;  //!< Score of how neutrino-like the slice is according to the CRUMBS ID
-
       SRNuID nuid; //!< Neutrino ID Features (BDT inputs) going into nu_score calculation
 
+      float ng_filt_pass_frac { kSignalingNaN };  //!< Fraction of slice hits that pass the NuGraph2 filter decoder
+      SRNuGraphSliceInfo ng_plane[3];  //!< Slice-level NuGraph2 information, provided for each plane
+
+      SRCRUMBSResult crumbs_result; //!< Score of how neutrino-like the slice is according to the CRUMBS ID
+      
       std::vector<size_t> primary;             //!< ID's of primary tracks and showers in slice
       int                 self { INT_MIN };    //!< ID of the particle representing this slice
 
