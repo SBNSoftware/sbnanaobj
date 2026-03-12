@@ -22,9 +22,7 @@ namespace caf
       float                     time_err; // error in average time [ns]
       float                     pe;       // total PE;
       float                     tof;      // time from first space point to last [ns]
-
-      // TODO: Find way of adding taggers field
-      //      std::set<SBNDCRTTagger_t> taggers;  // which taggers were used to create the track
+      std::vector<int>          taggers;  // the taggers that were used to create the track
     };
 } // end namespace
 
