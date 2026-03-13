@@ -17,12 +17,12 @@ namespace caf
       SRSBNDCRTTrack();
       virtual ~SRSBNDCRTTrack() {}
       
-      std::vector<SRVector3D>   points;   // fitted track points at each tagger [cm]
-      float                     time;     // average time [ns]
-      float                     time_err; // error in average time [ns]
-      float                     pe;       // total PE;
-      float                     tof;      // time from first space point to last [ns]
-      std::vector<int>          taggers;  // the taggers that were used to create the track
+      std::vector<SRVector3D>   points;   ///< fitted track points at each tagger [cm]
+      float                     time;     ///< average time [ns]
+      float                     time_err; ///< error in average time [ns]
+      float                     pe;       ///< total PE;
+      float                     tof;      ///< time from first space point to last [ns]
+      std::vector<int>          taggers;  ///< the taggers that were used to create the track (see docDB #46042, section 2)
     };
 } // end namespace
 
