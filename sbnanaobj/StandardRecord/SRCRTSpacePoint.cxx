@@ -3,6 +3,7 @@
 ////////////////////////////////////////////////////////////////////////
 
 #include "sbnanaobj/StandardRecord/SRCRTSpacePoint.h"
+#include "sbnanaobj/StandardRecord/SRConstants.h"
 
 #include <climits>
 
