@@ -13,8 +13,8 @@ namespace caf
     time(std::numeric_limits<float>::signaling_NaN()),
     time_err(std::numeric_limits<float>::signaling_NaN()),
     complete(false),
-    nhits(std::numeric_limits<int>::lowest()),
-    tagger(std::numeric_limits<int>::lowest())
+    nhits(caf::kUninitializedInt),
+    tagger(caf::kUninitializedInt)
   {}
 } // end namespace caf
 ////////////////////////////////////////////////////////////////////////

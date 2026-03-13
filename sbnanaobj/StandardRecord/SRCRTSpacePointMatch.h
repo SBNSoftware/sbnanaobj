@@ -12,7 +12,6 @@ namespace caf
     {
     public:
       SRCRTSpacePointMatch();
-      virtual ~SRCRTSpacePointMatch() {}
 
       bool            matched;    // whether or not a match was made
       SRCRTSpacePoint spacepoint; // the spacepoint
