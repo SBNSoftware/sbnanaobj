@@ -12,16 +12,15 @@ namespace caf
     {
     public:
       SRCRTSpacePoint();
-      virtual ~SRCRTSpacePoint() {}
       
-      SRVector3D position;     // position [cm]
-      SRVector3D position_err; // positional spread [cm]
-      float      pe;           // total PE
-      float      time;         // time [ns]
-      float      time_err;     // time_err [ns]
-      bool       complete;     // was cluster made from perpendicular & overlapping strips?
-      int        nhits;        // the number of strip hits contributing to the space point
-      int        tagger;       // the tagger the space point is on
+      SRVector3D position;     ///< position [cm]
+      SRVector3D position_err; ///< positional spread [cm]
+      float      pe;           ///< total PE
+      float      time;         ///< time [ns]
+      float      time_err;     ///< time_err [ns]
+      int        nhits;        ///< the number of strip hits contributing to the space point
+      int        tagger;       ///< the tagger the space point is on
+      bool       complete;     ///< was cluster made from perpendicular & overlapping strips?
     };
 } // end namespace
 

@@ -434,12 +434,12 @@
   <class name="std::vector<caf::SRTPCPMTBarycenterMatch>"/>
 
   <class name="caf::SRCRTSpacePoint" ClassVersion="11">
-   <version ClassVersion="11" checksum="2928297658"/>
+   <version ClassVersion="11" checksum="1494823436"/>
    <version ClassVersion="10" checksum="3912601582"/>
   </class>
 
   <class name="caf::SRCRTSpacePointMatch" ClassVersion="11">
-   <version ClassVersion="11" checksum="414814289"/>
+   <version ClassVersion="11" checksum="2257480785"/>
    <version ClassVersion="10" checksum="382456729"/>
   </class>
 
@@ -449,7 +449,7 @@
   </class>
 
   <class name="caf::SRSBNDCRTTrackMatch" ClassVersion="11">
-   <version ClassVersion="11" checksum="3360963232"/>
+   <version ClassVersion="11" checksum="2788704610"/>
    <version ClassVersion="10" checksum="2486605052"/>
   </class>
   

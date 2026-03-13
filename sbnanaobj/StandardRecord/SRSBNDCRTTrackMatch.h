@@ -14,9 +14,9 @@ namespace caf
       SRSBNDCRTTrackMatch();
       virtual ~SRSBNDCRTTrackMatch() {}
       
-      bool           matched; // whether or not a match was made
-      SRSBNDCRTTrack track;   // the track
-      float          score;   // assessment of quality of matching (depends on alg configuration)
+      SRSBNDCRTTrack track;   ///< the track
+      float          score;   ///< assessment of quality of matching (depends on alg configuration)
+      bool           matched; ///< whether or not a match was made
     };
 }
 

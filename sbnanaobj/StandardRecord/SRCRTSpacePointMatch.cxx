@@ -7,8 +7,8 @@
 namespace caf
 {
   SRCRTSpacePointMatch::SRCRTSpacePointMatch():
-    matched(false),
-    score(std::numeric_limits<float>::signaling_NaN())
+    score(std::numeric_limits<float>::signaling_NaN()),
+    matched(false)
   {}
 }
 ////////////////////////////////////////////////////////////////////////
