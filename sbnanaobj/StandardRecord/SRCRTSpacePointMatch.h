@@ -13,9 +13,9 @@ namespace caf
     public:
       SRCRTSpacePointMatch();
 
-      bool            matched;    ///< whether or not a match was made
       SRCRTSpacePoint spacepoint; ///< the spacepoint
       float           score;      ///< assessment of quality of matching (depends on alg configuration)
+      bool            matched;    ///< whether or not a match was made
     };
 }
 
