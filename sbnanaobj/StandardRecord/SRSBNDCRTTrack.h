@@ -15,7 +15,6 @@ namespace caf
     {
     public:
       SRSBNDCRTTrack();
-      virtual ~SRSBNDCRTTrack() {}
       
       std::vector<SRVector3D>   points;   ///< fitted track points at each tagger [cm]
       float                     time;     ///< average time [ns]

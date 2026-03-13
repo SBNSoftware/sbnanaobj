@@ -12,7 +12,6 @@ namespace caf
     {
     public:
       SRCRTSpacePoint();
-      virtual ~SRCRTSpacePoint() {}
       
       SRVector3D position;     ///< position [cm]
       SRVector3D position_err; ///< positional spread [cm]
