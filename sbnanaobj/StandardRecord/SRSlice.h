@@ -19,6 +19,7 @@
 #include "sbnanaobj/StandardRecord/SRNuID.h"
 #include "sbnanaobj/StandardRecord/SRConstants.h"
 #include "sbnanaobj/StandardRecord/SRCVNScore.h"
+#include "sbnanaobj/StandardRecord/SRLightCalo.h"
 
 #include <climits>
 
@@ -53,6 +54,8 @@ namespace caf
       SRTPCPMTBarycenterMatch barycenterFM; //!< Matching this slice to the OpFlash nearest to its charge center in YZ and to the triggering flash
 
       SRCorrectedOpFlash correctedOpFlash; //!< OpFlash corrected with using tpc information matched to this slice
+
+      SRLightCalo  lightcalo; // !< Reconstructed visible energy, light, and charge
 
       SRFakeReco fake_reco;
 

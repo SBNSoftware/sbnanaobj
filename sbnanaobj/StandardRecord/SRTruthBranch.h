@@ -5,6 +5,7 @@
 #define SRTRUTHBRANCH_H
 
 #include "sbnanaobj/StandardRecord/SRTrueInteraction.h"
+#include "sbnanaobj/StandardRecord/SRTrueDeposit.h"
 #include "sbnanaobj/StandardRecord/SRMeVPrtl.h"
 
 #include <vector>
@@ -19,6 +20,7 @@ namespace caf
     ~SRTruthBranch();
             
     std::vector<SRTrueInteraction> nu;   ///< Vector of true nu or cosmic
+    std::vector<SRTrueDeposit>    dep;   ///< Vector of true energy deposits (summed), same size as nu
     size_t                        nnu;   ///< Number of true nu or cosmic
 
     std::vector<SRMeVPrtl>       prtl;   ///< If present -- information on decay of MeV "Portal" particle
