@@ -19,7 +19,8 @@ namespace caf
    * Each timestamp is in UNIX Timestamp Format [ns]
    *
    * For more information, see
-   * [SBN DocDB 43090](https://sbn-docdb.fnal.gov/cgi-bin/sso/ShowDocument?docid=43090).
+   * legacy: [SBN DocDB 43090](https://sbn-docdb.fnal.gov/cgi-bin/sso/ShowDocument?docid=43090)
+   * new: [SBN DocDB 46654](https://sbn-docdb.fnal.gov/cgi-bin/sso/ShowDocument?docid=46654)
    */
 
   struct SRSBNDTimingInfo
