@@ -1,8 +1,7 @@
 /**
  * @file   /sbnanaobj/StandardRecord/SRSBNDTimingInfo.h
- * @brief  Defines CAF data structures to store sbnd::timing::TimingInfo (docdb#43090).
+ * @brief  Defines CAF data structures to store sbnd::timing::TimingInfo
  * @author Vu Chi Lan Nguyen
- * @date   August 29, 2025
  *
  */
     

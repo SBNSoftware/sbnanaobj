@@ -1,8 +1,7 @@
 /**
  * @file   /sbnanaobj/StandardRecord/SRSBNDFrameShiftInfo.h
- * @brief  Defines CAF data structures to store sbnd::timing::FrameShiftInfo (docdb#43090).
+ * @brief  Defines CAF data structures to store sbnd::timing::FrameShiftInfo 
  * @author Vu Chi Lan Nguyen
- * @date   August 29, 2025
  *
  */
 
