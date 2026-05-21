@@ -12,7 +12,7 @@ namespace caf
     public:
 
       SRCRTTrackMatch();
-      virtual ~SRCRTTrackMatch() {}
+
       float time;  ///< Time of the CRT Track [us]
       float angle; ///< Relative angle between the TPC track and CRT track [rad]
     };

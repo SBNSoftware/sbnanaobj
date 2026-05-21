@@ -12,10 +12,10 @@ namespace caf
     {
     public:
       SRCRTSpacePointMatch();
-      virtual ~SRCRTSpacePointMatch() {}
 
-      SRCRTSpacePoint spacepoint; // the spacepoint
-      float           score;      // assessment of quality of matching (depends on alg configuration)
+      SRCRTSpacePoint spacepoint; ///< the spacepoint
+      float           score;      ///< assessment of quality of matching (depends on alg configuration)
+      bool            matched;    ///< whether or not a match was made
     };
 }
 

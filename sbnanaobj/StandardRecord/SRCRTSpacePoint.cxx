@@ -3,6 +3,7 @@
 ////////////////////////////////////////////////////////////////////////
 
 #include "sbnanaobj/StandardRecord/SRCRTSpacePoint.h"
+#include "sbnanaobj/StandardRecord/SRConstants.h"
 
 #include <climits>
 
@@ -12,6 +13,8 @@ namespace caf
     pe(std::numeric_limits<float>::signaling_NaN()),
     time(std::numeric_limits<float>::signaling_NaN()),
     time_err(std::numeric_limits<float>::signaling_NaN()),
+    nhits(caf::kUninitializedInt),
+    tagger(caf::kUninitializedInt),
     complete(false)
   {}
 } // end namespace caf

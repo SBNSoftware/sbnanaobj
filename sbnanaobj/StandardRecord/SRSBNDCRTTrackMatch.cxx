@@ -7,7 +7,8 @@
 namespace caf
 {
   SRSBNDCRTTrackMatch::SRSBNDCRTTrackMatch():
-    score(std::numeric_limits<float>::signaling_NaN())
+    score(std::numeric_limits<float>::signaling_NaN()),
+    matched(false)
   {}
 }
 ////////////////////////////////////////////////////////////////////////
