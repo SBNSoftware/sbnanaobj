@@ -12,6 +12,8 @@ namespace caf
     TOR860(std::numeric_limits<float>::signaling_NaN()),
     TOR875(std::numeric_limits<float>::signaling_NaN()),
     FOM(std::numeric_limits<float>::signaling_NaN()),
+    PreFitFOM(std::numeric_limits<float>::signaling_NaN()),
+    NoMultiWireFOM(std::numeric_limits<float>::signaling_NaN()),
     LM875A(std::numeric_limits<float>::signaling_NaN()),
     LM875B(std::numeric_limits<float>::signaling_NaN()),
     LM875C(std::numeric_limits<float>::signaling_NaN()),

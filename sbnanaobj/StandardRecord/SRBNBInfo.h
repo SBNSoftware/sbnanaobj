@@ -27,6 +27,8 @@ namespace caf
     float TOR875; //!< Value used for POT accounting
 
     float FOM; //!< Figure of Merit for BNB ([SBN DocDB 41901](https://sbn-docdb.fnal.gov/cgi-bin/sso/ShowDocument?docid=41901))
+    float PreFitFOM; //!< Alternative Figure of Merit for BNB using pre-fit beam spill width, based on ICARUS single detector 
+    float NoMultiWireFOM; //!< Alternative Figure of Merit for BNB for calculations without MWR devices, based on MicroBooNE FOM code 
 
     float LM875A; //!< Loss Monitor before the RWM, unit R/s
     float LM875B; //!< Loss Monitor after the RWM, unit R/s
