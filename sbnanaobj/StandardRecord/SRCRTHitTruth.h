@@ -9,16 +9,11 @@
 namespace caf
 {
   /// Truthing information between a TPC Track and a CRT Hit
-  class SRCRTHitTruth
+  struct SRCRTHitTruth
     {
-    public:
-
-      SRCRTHitTruth();
-      virtual ~SRCRTHitTruth() {}
-
       std::vector<int> match_id;
       std::vector<float> match_e;
-      int bestmatch_id;
+      int bestmatch_id = -1;
     };
 
 } // end namespace
