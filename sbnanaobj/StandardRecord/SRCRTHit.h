@@ -15,7 +15,6 @@ namespace caf
     public:
 
       SRCRTHit();
-      virtual ~SRCRTHit() {}
       SRVector3D position;  // Position of CRT hit in detector coordinates [cm]
       SRVector3D position_err; // Error in position of CRT hit [cm]
       float time; // Time of CRT hit [us]

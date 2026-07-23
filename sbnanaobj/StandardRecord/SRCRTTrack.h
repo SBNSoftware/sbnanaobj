@@ -13,7 +13,6 @@ namespace caf
     public:
 
       SRCRTTrack();
-      virtual ~SRCRTTrack() {}
 
       SRCRTHit hita; //!< First hit in CRT track
       SRCRTHit hitb; //!< Second git in CRT Track
