@@ -413,7 +413,8 @@
    <version ClassVersion="10" checksum="2672302824"/>
   </class>
 
-  <class name="caf::SRCorrectedOpFlash" ClassVersion="14">
+  <class name="caf::SRCorrectedOpFlash" ClassVersion="15">
+   <version ClassVersion="15" checksum="2699494482"/>
    <version ClassVersion="14" checksum="2247699110"/>
    <version ClassVersion="13" checksum="3257300089"/>
    <version ClassVersion="12" checksum="1558889595"/>
