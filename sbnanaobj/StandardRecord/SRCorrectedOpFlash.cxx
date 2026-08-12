@@ -17,6 +17,8 @@ namespace caf
     NuToFLight            =                             -9999.;
     NuToFCharge           =                             -9999.;
     OpFlashT0Corrected    =                             -9999.;
+    ParticlePropagationTime =                             -9999.;
+    PhotonPropagationTime   =                             -9999.;
   }
 
 } // end namespace caf

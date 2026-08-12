@@ -21,6 +21,8 @@ namespace caf
     float        NuToFLight             {  -9999.  };      ///< | Nu ToF using light only | (us)
     float        NuToFCharge             {  -9999.  };       ///< | Nu ToF Z from tpc vertex | (us)
     float        OpFlashT0Corrected    {  -9999.  };       ///< | OpFlash Time wrt RWM time after light propagation corrections | (us)
+    float        ParticlePropagationTime {  -9999.  };       ///< | Average particle propagation time from vertex to emission point | (us)
+    float        PhotonPropagationTime   {  -9999.  };       ///< | Average photon propagation time from emission point to PMT| (us)
     /// @}
 
     void setDefault();
