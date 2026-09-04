@@ -221,7 +221,8 @@
    <version ClassVersion="10" checksum="3963837747"/>
   </class>
 
-  <class name="caf::SRTrueInteraction" ClassVersion="14">
+  <class name="caf::SRTrueInteraction" ClassVersion="15">
+   <version ClassVersion="15" checksum="2744064349"/>
    <version ClassVersion="14" checksum="2387261293"/>
    <version ClassVersion="13" checksum="2387159424"/>
    <version ClassVersion="12" checksum="671928574"/>
