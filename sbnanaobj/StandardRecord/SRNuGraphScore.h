@@ -13,9 +13,9 @@ namespace caf {
   * @brief Information on the slice by NuGraph.
   *
   * This object summarizes the results from running NuGraph over hits in a slice
-  * (see e.g. [https://sbn-docdb.fnal.gov/cgi-bin/sso/ShowDocument?docid=40585](SBN DocDB 40585).
+  * (see e.g. [SBN DocDB 40585](https://sbn-docdb.fnal.gov/cgi-bin/sso/ShowDocument?docid=40585).
   *
-  * The number of HIP hits is computed for a circle around the vertex in each plane.
+  * The number of HIP hits `ng_vtx_hip_hits` is computed for a circle around the vertex in each plane.
   */
   struct SRNuGraphSliceInfo {
     int mip_hits = INT_MIN;             ///< Number of hits tagged as `MIP`.
@@ -31,7 +31,7 @@ namespace caf {
   * @brief Categorization of the object/PFP by NuGraph.
   *
   * This object summarizes the results from running NuGraph over hits in a slice
-  * (see e.g. [https://sbn-docdb.fnal.gov/cgi-bin/sso/ShowDocument?docid=40585](SBN DocDB 40585).
+  * (see e.g. [SBN DocDB 40585](https://sbn-docdb.fnal.gov/cgi-bin/sso/ShowDocument?docid=40585).
   *
   * The semantic category is the one that most hits belong to.
   * The fractions describe the categorization of the hits in the object/PFP.
