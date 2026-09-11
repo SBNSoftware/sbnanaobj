@@ -17,18 +17,14 @@ namespace caf {
   *
   * The number of HIP hits is computed for a circle around the vertex in each plane.
   */
-  class SRNuGraphSliceInfo {
-  public:
-  
-    SRNuGraphSliceInfo();
-
-    int mip_hits;             ///< Number of hits tagged as `MIP`.
-    int hip_hits;             ///< Number of hits tagged as `HIP`.
-    int shr_hits;             ///< Number of hits tagged as `Shower`.
-    int mhl_hits;             ///< Number of hits tagged as `Michel`.
-    int dif_hits;             ///< Number of hits tagged as `Diffuse`.
-    int ng_vtx_hip_hits;      ///< Number of hits tagged as `HIP` around the reconstructed interaction vertex.
-    int unclustered_shr_hits; ///< Number of hits tagged as `Shower` not belonging to any reconstructed Pandora PFP object.
+  struct SRNuGraphSliceInfo {
+    int mip_hits = INT_MIN;             ///< Number of hits tagged as `MIP`.
+    int hip_hits = INT_MIN;             ///< Number of hits tagged as `HIP`.
+    int shr_hits = INT_MIN;             ///< Number of hits tagged as `Shower`.
+    int mhl_hits = INT_MIN;             ///< Number of hits tagged as `Michel`.
+    int dif_hits = INT_MIN;             ///< Number of hits tagged as `Diffuse`.
+    int ng_vtx_hip_hits = INT_MIN;      ///< Number of hits tagged as `HIP` around the reconstructed interaction vertex.
+    int unclustered_shr_hits = INT_MIN; ///< Number of hits tagged as `Shower` not belonging to any reconstructed Pandora PFP object.
   };
 
   /**
