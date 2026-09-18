@@ -11,15 +11,11 @@ namespace caf
   SRSlice::SRSlice()
   {  }
 
-
   SRSlice::~SRSlice(){  }
-
 
   void SRSlice::setDefault()
   {
     charge         = -5;
   }
-
-
 } // end namespace caf
 ////////////////////////////////////////////////////////////////////////
