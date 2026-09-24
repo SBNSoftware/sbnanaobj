@@ -314,6 +314,8 @@ c14:debug	c14:p3915:debug	py3915	-nq-
 c14:prof	c14:p3915:prof	py3915	-nq-
 e26:debug	e26:p3915:debug	py3915	-nq-
 e26:prof	e26:p3915:prof	py3915	-nq-
+e28:debug	e28:p3915:debug	py3915	-nq-
+e28:prof	e28:p3915:prof	py3915	-nq-
 end_qualifier_list
 ####################################
 

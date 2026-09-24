@@ -9,10 +9,28 @@
 namespace caf {
 
   /**
+  * @brief Information on the slice by NuGraph.
+  *
+  * This object summarizes the results from running NuGraph over hits in a slice
+  * (see e.g. [SBN DocDB 40585](https://sbn-docdb.fnal.gov/cgi-bin/sso/ShowDocument?docid=40585).
+  *
+  * The number of HIP hits `ng_vtx_hip_hits` is computed for a circle around the vertex in each plane.
+  */
+  struct SRNuGraphSliceInfo {
+    int mip_hits = caf::kUninitializedInt;             ///< Number of hits tagged as `MIP`.
+    int hip_hits = caf::kUninitializedInt;             ///< Number of hits tagged as `HIP`.
+    int shr_hits = caf::kUninitializedInt;             ///< Number of hits tagged as `Shower`.
+    int mhl_hits = caf::kUninitializedInt;             ///< Number of hits tagged as `Michel`.
+    int dif_hits = caf::kUninitializedInt;             ///< Number of hits tagged as `Diffuse`.
+    int ng_vtx_hip_hits = caf::kUninitializedInt;      ///< Number of hits tagged as `HIP` around the reconstructed interaction vertex.
+    int unclustered_shr_hits = caf::kUninitializedInt; ///< Number of hits tagged as `Shower` not belonging to any reconstructed Pandora PFP object.
+  };
+
+  /**
   * @brief Categorization of the object/PFP by NuGraph.
   *
   * This object summarizes the results from running NuGraph over hits in a slice
-  * (see e.g. [https://sbn-docdb.fnal.gov/cgi-bin/sso/ShowDocument?docid=40585](SBN DocDB 40585).
+  * (see e.g. [SBN DocDB 40585](https://sbn-docdb.fnal.gov/cgi-bin/sso/ShowDocument?docid=40585).
   *
   * The semantic category is the one that most hits belong to.
   * The fractions describe the categorization of the hits in the object/PFP.
@@ -37,6 +55,7 @@ namespace caf {
     float dif_frac = caf::kSignalingNaN; ///< Fraction of hits that are labeled as `Diffuse`.
     float bkg_frac = caf::kSignalingNaN; ///< Fraction of hits that are labeled as `Background`.
   };
+  
 }
 
 #endif

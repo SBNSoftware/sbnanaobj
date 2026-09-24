@@ -20,5 +20,5 @@ target_include_directories(sbnanaobj_StandardRecordFlat PRIVATE ${_srproxy_bin_d
 if (DEFINED ENV{MRB_BUILDDIR})
   install_headers(EXTRAS $ENV{MRB_BUILDDIR}/sbnanaobj/sbnanaobj/StandardRecord/Flat/FlatRecord.h $ENV{MRB_BUILDDIR}/sbnanaobj/sbnanaobj/StandardRecord/Flat/FwdDeclare.h)
 else()
-  install_headers(EXTRAS ${CMAKE_BINARY_DIR}/sbnanaobj/StandardRecord/Flat/FlatRecord.h ${CMAKE_BINARY_DIR}/sbnanaobj/StandardRecord/Flat/FwdDeclare.h)
+  install_headers(EXTRAS ${PROJECT_BINARY_DIR}/sbnanaobj/StandardRecord/Flat/FlatRecord.h ${PROJECT_BINARY_DIR}/sbnanaobj/StandardRecord/Flat/FwdDeclare.h)
 endif()

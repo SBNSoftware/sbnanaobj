@@ -50,6 +50,11 @@
    <version ClassVersion="10" checksum="705810055"/>
   </class>
 
+  <class name="caf::SRNuGraphSliceInfo" ClassVersion="13" >
+   <version ClassVersion="13" checksum="2711257956"/>
+   <version ClassVersion="12" checksum="434873519"/>
+  </class>
+
   <class name="caf::SRHit" ClassVersion="10">
    <version ClassVersion="10" checksum="1494967532"/>
   </class>
@@ -76,7 +81,8 @@
    <version ClassVersion="10" checksum="83320005"/>
   </class>
 
-  <class name="caf::SRSlice" ClassVersion="23">
+  <class name="caf::SRSlice" ClassVersion="24">
+   <version ClassVersion="24" checksum="4280559577"/>
    <version ClassVersion="23" checksum="3825810478"/>
    <version ClassVersion="22" checksum="2124497341"/>
    <version ClassVersion="21" checksum="3825441135"/>

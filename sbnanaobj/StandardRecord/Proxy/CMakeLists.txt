@@ -22,5 +22,5 @@ target_include_directories(sbnanaobj_StandardRecordProxy PRIVATE ${_srproxy_bin_
 if (DEFINED ENV{MRB_BUILDDIR})
   install_headers(EXTRAS $ENV{MRB_BUILDDIR}/sbnanaobj/sbnanaobj/StandardRecord/Proxy/SRProxy.h $ENV{MRB_BUILDDIR}/sbnanaobj/sbnanaobj/StandardRecord/Proxy/FwdDeclare.h)
 else()
-  install_headers(EXTRAS ${CMAKE_BINARY_DIR}/sbnanaobj/StandardRecord/Proxy/SRProxy.h ${CMAKE_BINARY_DIR}/sbnanaobj/StandardRecord/Proxy/FwdDeclare.h)
+  install_headers(EXTRAS ${PROJECT_BINARY_DIR}/sbnanaobj/StandardRecord/Proxy/SRProxy.h ${PROJECT_BINARY_DIR}/sbnanaobj/StandardRecord/Proxy/FwdDeclare.h)
 endif()
