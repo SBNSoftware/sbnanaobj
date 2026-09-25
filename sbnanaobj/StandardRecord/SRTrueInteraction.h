@@ -54,7 +54,8 @@ namespace caf
 
     SRTrueInteractionPlaneInfo plane[2][3]; //!< Per-plane, per-cryostat deposition information
 
-    float      time;           ///< Time
+    float      time;              ///< Neutrino interaction time, from the start of proton spill [ns]
+    float      prod_time;         //!< Neutrino production time at meson decay relative to t = 0, retrieved from dk2nu [ns] 
     float      bjorkenX;          //!< Bjorken x = (k-k')^2/(2*p.q) [Dimensionless]
     float      inelasticityY;     //!< Inelasticity y
     float      Q2;                //!< Q squared
@@ -65,7 +66,8 @@ namespace caf
     float      w;                 //!< Hadronic invariant mass W
     float      t;                 //!< Kinematic t
     float      eccqe;             //!< CCQE energy
-    float      baseline;          //!< Distance from decay to interaction [m]
+    float      baseline;          //!< Distance from meson decay to interaction = meson decay to flux (dk2gen) + flux to interaction (gen2vtx) [m]
+    float      dk2gen;            //!< Distance from meson decay to flux window placement set by GENIE [m]
 
     unsigned int npiplus;  ///< Number of \f$\pi^+\f$'s after neutrino reaction, before FSI
     unsigned int npiminus; ///< Number of \f$\pi^1\f$'s after neutrino reaction, before FSI
