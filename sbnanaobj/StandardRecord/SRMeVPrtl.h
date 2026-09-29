@@ -20,7 +20,8 @@ namespace caf
 
     caf::mevprtlchannel_ gen; //!< Generator physics channel for this event
     caf::SRVector3D position; //!< Decay location [cm]
-    double time; //!< Decay time [us]
+    double time; //!< Decay time [ns]
+    double prod_time; //!< Production time of the parent meson, before the beam-bunch offset [ns]
     caf::SRVector3D momentum; //!< Portal momentum [GeV]
     double E; //!< Portal Energy [GeV]
     double M; //!< Portal Mass [GeV]
