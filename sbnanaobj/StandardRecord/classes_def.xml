@@ -214,6 +214,7 @@
   </class>
 
   <class name="caf::SRMeVPrtl" ClassVersion="15">
+   <version ClassVersion="15" checksum="1226845203"/>
    <version ClassVersion="14" checksum="448458469"/>
    <version ClassVersion="13" checksum="1679355068"/>
    <version ClassVersion="12" checksum="485663119"/>
