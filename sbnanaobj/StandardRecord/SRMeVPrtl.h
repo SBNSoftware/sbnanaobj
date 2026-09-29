@@ -20,7 +20,8 @@ namespace caf
 
     caf::mevprtlchannel_ gen; //!< Generator physics channel for this event
     caf::SRVector3D position; //!< Decay location [cm]
-    double time; //!< Decay time [us]
+    double time; ///< Portal decay time, from the start of proton spill [ns]
+    double prod_time; //!< Portal production time at meson decay relative to t = 0, retrieved from the BNB flux ntuple [ns]
     caf::SRVector3D momentum; //!< Portal momentum [GeV]
     double E; //!< Portal Energy [GeV]
     double M; //!< Portal Mass [GeV]
