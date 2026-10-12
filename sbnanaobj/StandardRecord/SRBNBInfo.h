@@ -26,6 +26,20 @@ namespace caf
 
     float FOM; //!< Figure of Merit for BNB ([SBN DocDB 41901](https://sbn-docdb.fnal.gov/cgi-bin/sso/ShowDocument?docid=41901))
 
+    // Beam-quality result for this spill (see sbnobj BNBSpillInfo and the BNB
+    // beam-quality technote); NaN when not available.
+    float FOM_best; //!< best FOM of the spill, in [0, 1]; NaN if none can be formed. Cut on this, not on `FOM`
+    int fom_source; //!< width used for FOM_best: 1/2 fitted M876/M875 profile, 3/4 M876/M875 database width, 5 nominal; -1 no FOM
+    unsigned int fom_status; //!< bit mask: why the FOM is missing (1, 2, 4), substitutions, recoveries (sbncode getFOM.h, `sbn::fomstatus`)
+    float tor_used; //!< intensity used for the FOM, units Protons: TOR860, or TOR875 after a TOR860 drop-out
+    float hpos_tgt; //!< horizontal beam position at the target centre, units mm
+    float hang_tgt; //!< horizontal beam angle at the target, units mrad
+    float vpos_tgt; //!< vertical beam position at the target centre, units mm
+    float vang_tgt; //!< vertical beam angle at the target, units mrad
+    float tgt_sigx; //!< horizontal beam width at the target used for the FOM, units mm; NaN: nominal width
+    float tgt_sigy; //!< vertical beam width at the target used for the FOM, units mm; NaN: nominal width
+    unsigned int fom_version; //!< version of the beam-quality algorithm; 0: not computed (older input)
+
     float LM875A; //!< Loss Monitor before the RWM, unit R/s
     float LM875B; //!< Loss Monitor after the RWM, unit R/s
     float LM875C; //!< Loss Monitor after the RWM, unit R/s
