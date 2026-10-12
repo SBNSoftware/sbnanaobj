@@ -67,6 +67,12 @@ namespace caf
 
     float THCURR; //!< Current applied to Horn, units kiloAmperes 
 
+    // Booster bunch-rotation settings in force at the spill (logged every 15 min);
+    // NaN when not available
+    float BRRMPS8; //!< B_BRRMPS[8]: scale factor of the bunch-rotation signal (0: bunch rotation off)
+    float BRRMPQ1; //!< B_BRRMPQ[1]: bunch-rotation frequency, units kHz
+    float BRRMPL9; //!< B_BRRMPL[9]: start time of the bunch-rotation curve, units microseconds
+
     float M875HS; //!< Multiwire station before Mag 875 fit horizontal sigma...?
     float M875VS; //!< Multiwire station before Mag 875 fit vertical sigma...?
     float M875HM; //!< Multiwire station before Mag 875 fit horizontal mean...?

@@ -43,6 +43,9 @@ namespace caf
     VPTG2Offset(std::numeric_limits<float>::signaling_NaN()),
     BTJT2(std::numeric_limits<float>::signaling_NaN()),
     THCURR(std::numeric_limits<float>::signaling_NaN()),
+    BRRMPS8(std::numeric_limits<float>::signaling_NaN()),
+    BRRMPQ1(std::numeric_limits<float>::signaling_NaN()),
+    BRRMPL9(std::numeric_limits<float>::signaling_NaN()),
     M875HS(std::numeric_limits<float>::signaling_NaN()),
     M875VS(std::numeric_limits<float>::signaling_NaN()),
     M875HM(std::numeric_limits<float>::signaling_NaN()),
@@ -95,6 +98,9 @@ namespace caf
     VPTG2Offset = -999;
     BTJT2 = -999.0;
     THCURR = -999.0;
+    BRRMPS8 = std::numeric_limits<float>::signaling_NaN();
+    BRRMPQ1 = std::numeric_limits<float>::signaling_NaN();
+    BRRMPL9 = std::numeric_limits<float>::signaling_NaN();
     M875HS = -999.0;
     M875VS = -999.0;
     M875HM = -999.0;
