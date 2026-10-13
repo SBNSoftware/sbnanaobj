@@ -12,6 +12,17 @@ namespace caf
     TOR860(std::numeric_limits<float>::signaling_NaN()),
     TOR875(std::numeric_limits<float>::signaling_NaN()),
     FOM(std::numeric_limits<float>::signaling_NaN()),
+    FOM_best(std::numeric_limits<float>::signaling_NaN()),
+    fom_source(-1),
+    fom_status(0),
+    tor_used(std::numeric_limits<float>::signaling_NaN()),
+    hpos_tgt(std::numeric_limits<float>::signaling_NaN()),
+    hang_tgt(std::numeric_limits<float>::signaling_NaN()),
+    vpos_tgt(std::numeric_limits<float>::signaling_NaN()),
+    vang_tgt(std::numeric_limits<float>::signaling_NaN()),
+    tgt_sigx(std::numeric_limits<float>::signaling_NaN()),
+    tgt_sigy(std::numeric_limits<float>::signaling_NaN()),
+    fom_version(0),
     LM875A(std::numeric_limits<float>::signaling_NaN()),
     LM875B(std::numeric_limits<float>::signaling_NaN()),
     LM875C(std::numeric_limits<float>::signaling_NaN()),
@@ -53,6 +64,17 @@ namespace caf
     TOR860 = -999.0;
     TOR875 = -999.0;
     FOM = -999;
+    FOM_best = std::numeric_limits<float>::signaling_NaN();
+    fom_source = -1;
+    fom_status = 0;
+    tor_used = std::numeric_limits<float>::signaling_NaN();
+    hpos_tgt = std::numeric_limits<float>::signaling_NaN();
+    hang_tgt = std::numeric_limits<float>::signaling_NaN();
+    vpos_tgt = std::numeric_limits<float>::signaling_NaN();
+    vang_tgt = std::numeric_limits<float>::signaling_NaN();
+    tgt_sigx = std::numeric_limits<float>::signaling_NaN();
+    tgt_sigy = std::numeric_limits<float>::signaling_NaN();
+    fom_version = 0;
     LM875A = -999.0;
     LM875B = -999.0;
     LM875C = -999.0;
