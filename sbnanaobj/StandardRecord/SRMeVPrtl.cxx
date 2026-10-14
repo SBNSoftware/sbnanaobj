@@ -11,6 +11,7 @@ namespace caf
   SRMeVPrtl::SRMeVPrtl():
     gen(kUnknownMeVPrtlChannel),
     time(std::numeric_limits<double>::signaling_NaN()),
+    prod_time(std::numeric_limits<double>::signaling_NaN()),
     E(std::numeric_limits<double>::signaling_NaN()),
     M(std::numeric_limits<double>::signaling_NaN()),
     flux_weight(std::numeric_limits<double>::signaling_NaN()),
