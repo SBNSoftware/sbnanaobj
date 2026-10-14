@@ -55,7 +55,7 @@ namespace caf
     SRTrueInteractionPlaneInfo plane[2][3]; //!< Per-plane, per-cryostat deposition information
 
     float      time;              ///< Neutrino interaction time, from the start of proton spill [us]
-    float      prod_time;         //!< Neutrino production time at meson decay relative to t = 0, retrieved from dk2nu [ns] 
+    float      prod_time;         //!< Neutrino production time at meson decay relative to t = 0, retrieved from dk2nu [us]
     float      bjorkenX;          //!< Bjorken x = (k-k')^2/(2*p.q) [Dimensionless]
     float      inelasticityY;     //!< Inelasticity y
     float      Q2;                //!< Q squared
