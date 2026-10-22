@@ -28,12 +28,15 @@ namespace caf
         SRParticleDLP();
 
         float axial_spread;                                 //!< Axial spread of the particle.
+        int64_t best_match_id;                              //!< ID of the highest-overlap matched true particle (-1 if unmatched).
+        float best_match_overlap;                           //!< Overlap (IoU) with the highest-overlap matched true particle (-1 if unmatched).
         double calo_ke;                                     //!< Calorimetric kinetic energy.
         double cathode_offset;                              //!< Distance from the cathode [cm].
         double chi2_per_pid[6];                             //!< Chi2 score per PID hypothesis.
         int64_t chi2_pid;                                   //!< PID from the chi2-based PID.
         double csda_ke;                                     //!< Continuous-slowing-down-approximation kinetic energy.
         double csda_ke_per_pid[6];                          //!< CSDA kinetic energy per PID.
+        float depositions_q_sum;                            //!< Total input charge of the object [ADC].
         float depositions_sum;                              //!< Sum of deposited (de-ghosted) energy [MeV].
         float directional_spread;                           //!< Directional spread of the particle.
         float end_dir[3];                                   //!< Unit direction vector calculated at the particle end point.

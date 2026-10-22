@@ -506,20 +506,24 @@
   <enum name="caf::g4_process_" ClassVersion="10"/>
   <enum name="caf::ReweightType_t" ClassVersion="10"/>
 
-  <class name="caf::SRParticleDLP" ClassVersion="10">
+  <class name="caf::SRParticleDLP" ClassVersion="11">
+   <version ClassVersion="11" checksum="1209618601"/>
    <version ClassVersion="10" checksum="645076472"/>
   </class>
 
-  <class name="caf::SRParticleTruthDLP" ClassVersion="11">
+  <class name="caf::SRParticleTruthDLP" ClassVersion="12">
+   <version ClassVersion="12" checksum="2870079995"/>
    <version ClassVersion="11" checksum="284698024"/>
    <version ClassVersion="10" checksum="2779095606"/>
   </class>
 
-  <class name="caf::SRInteractionDLP" ClassVersion="10">
+  <class name="caf::SRInteractionDLP" ClassVersion="11">
+   <version ClassVersion="11" checksum="1616590116"/>
    <version ClassVersion="10" checksum="2111034330"/>
   </class>
 
-  <class name="caf::SRInteractionTruthDLP" ClassVersion="11">
+  <class name="caf::SRInteractionTruthDLP" ClassVersion="12">
+   <version ClassVersion="12" checksum="783851931"/>
    <version ClassVersion="11" checksum="2909471694"/>
    <version ClassVersion="10" checksum="3723117796"/>
   </class>
