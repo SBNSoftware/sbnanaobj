@@ -13,12 +13,15 @@ namespace caf
 {
     SRParticleDLP::SRParticleDLP():
         axial_spread(caf::kSignalingNaN),
+        best_match_id(caf::kUninitializedInt),
+        best_match_overlap(caf::kSignalingNaN),
         calo_ke(caf::kSignalingNaN),
         cathode_offset(caf::kSignalingNaN),
         chi2_per_pid{caf::kSignalingNaN, caf::kSignalingNaN, caf::kSignalingNaN, caf::kSignalingNaN, caf::kSignalingNaN, caf::kSignalingNaN},
         chi2_pid(caf::kUninitializedInt),
         csda_ke(caf::kSignalingNaN),
         csda_ke_per_pid{caf::kSignalingNaN, caf::kSignalingNaN, caf::kSignalingNaN, caf::kSignalingNaN, caf::kSignalingNaN, caf::kSignalingNaN},
+        depositions_q_sum(caf::kSignalingNaN),
         depositions_sum(caf::kSignalingNaN),
         directional_spread(caf::kSignalingNaN),
         end_dir{caf::kSignalingNaN, caf::kSignalingNaN, caf::kSignalingNaN},
