@@ -29,6 +29,8 @@ namespace caf
         public:
         SRInteractionTruthDLP();
 
+        int64_t best_match_id;                              //!< ID of the highest-overlap matched reco interaction (-1 if unmatched).
+        float best_match_overlap;                           //!< Overlap (IoU) with the highest-overlap matched reco interaction (-1 if unmatched).
         double bjorken_x;                                   //!< Bjorken x of the neutrino interaction.
         double cathode_offset;                              //!< Distance from the cathode [cm].
         std::string creation_process;                       //!< Creation process associated with the neutrino (see MCParticle).
@@ -38,10 +40,12 @@ namespace caf
         float depositions_g4_sum;                           //!< Total energy deposited energy at the G4 level [MeV].
         float depositions_q_sum;                            //!< Total tagged (true non-ghost) charge deposited [ADC].
         float depositions_sum;                              //!< Total tagged (true non-ghost) energy deposited [MeV].
+        float dir[3];                                       //!< Direction of the neutrino at its interaction point.
         double distance_travel;                             //!< Distance traveled by the neutrino from production to the interaction.
         double energy_init;                                 //!< Initial energy of the neutrino.
         double energy_transfer;                             //!< Energy transfer (Q0) of the neutrino interaction.
         double flash_hypo_pe;                               //!< Total PE of the hypothesized flash.
+        std::vector<int64_t> flash_hypothesis_ids;          //!< Indices of the optical flash hypotheses associated with the interaction.
         std::vector<int64_t> flash_ids;                     //!< Flash IDs for the matched flashes (uses OpT0Finder, lowest score first).
         std::vector<float> flash_scores;                    //!< Flash score for the matched flashes (uses OpT0Finder, same order as flash_ids).
         std::vector<float> flash_times;                     //!< Time of the matched flashes (uses OpT0Finder, same order as flash_ids).
@@ -81,12 +85,14 @@ namespace caf
         int64_t primary_particle_counts[6];                 //!< Number of primary particles of each type in the interaction (photon, electron, muon, pion, proton, kaon).
         std::vector<int64_t> primary_particle_ids;          //!< Primary particle IDs in the interaction (see 'id' attribute of SRParticleTruthDLP).
         int64_t quark;                                      //!< Hit quark in the neutrino interaction (see MCNeutrino).
+        float reco_dir[3];                                  //!< Reconstructed direction of the interaction.
         float reco_vertex[3];                               //!< Vertex of the interaction in detector coordinates (reco).
         int64_t size;                                       //!< Number of true non-ghost true-tagged space points.
         int64_t size_adapt;                                 //!< Number of reco non-ghost true-tagged space points.
         int64_t size_g4;                                    //!< Number of (rasterized) g4 energy depositions (no detector effects).
         int64_t target;                                     //!< Target in the neutrino interaction.
         double theta;                                       //!< Angle between the neutrino and the outgoing lepton [radians].
+        double time;                                        //!< Interaction time [ns] (neutrino time if available, else earliest particle time).
         std::string topology;                               //!< Topology of the interaction (e.g. "0g0e1mu0pi2p") considering only primaries.
         int64_t track_id;                                   //!< Track ID of the neutrino interaction.
         float vertex[3];                                    //!< Vertex of the interaction in detector coordinates (truth).
