@@ -42,6 +42,9 @@ namespace caf
         std::vector<int64_t> children_counts;          //!< Number of children of the particle.
         std::vector<int64_t> children_id;              //!< List of particle ID of children particles.
         std::string creation_process;                  //!< Geant4 creation process associated with the particle (see MCParticle).
+        std::vector<int64_t> crt_ids;                  //!< Indices of the CRT hits the particle is matched to.
+        std::vector<float> crt_scores;                 //!< Quality metric associated with the CRT matches.
+        std::vector<float> crt_times;                  //!< Times at which the matched CRT hits occurred [us].
         double csda_ke;                                //!< Continuous-slowing-down-approximation kinetic energy.
         double csda_ke_per_pid[6];                     //!< CSDA kinetic energy per PID.
         float depositions_adapt_q_sum;                 //!< Total tagged (reco non-ghost) charge deposited [ADC].
@@ -68,6 +71,7 @@ namespace caf
         int64_t interaction_primary;                   //!< Whether the particle is a primary within its interaction (equivalent to is_primary).
         bool is_cathode_crosser;                       //!< Whether the particle is a cathode-crosser.
         bool is_contained;                             //!< Whether the particle is contained within some margin from the detector walls (see SPINE configuration).
+        bool is_crt_matched;                           //!< Whether the particle was matched to a CRT hit.
         bool is_matched;                               //!< Whether the particle is matched.
         bool is_primary;                               //!< Whether the particle is a primary particle.
         bool is_time_contained;                        //!< Whether the particle is time-contained (within the "in-time" region of the drift window).
@@ -117,6 +121,7 @@ namespace caf
         float start_point[3];                          //!< Start point (vector) of the particle.
         double t;                                      //!< Time of the particle.
         int64_t track_id;                              //!< Track ID of the particle.
+        std::string units;                             //!< Units in which the position coordinates are expressed.
     };
 } // namespace caf
 #endif // SRPARTICLETRUTHDLP_H

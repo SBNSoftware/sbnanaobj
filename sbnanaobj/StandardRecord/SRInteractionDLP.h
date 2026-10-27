@@ -32,6 +32,9 @@ namespace caf
         int64_t best_match_id;                              //!< ID of the highest-overlap matched true interaction (-1 if unmatched).
         float best_match_overlap;                           //!< Overlap (IoU) with the highest-overlap matched true interaction (-1 if unmatched).
         double cathode_offset;                              //!< Distance from the cathode [cm].
+        std::vector<int64_t> crt_ids;                       //!< Indices of the CRT hits the interaction is matched to.
+        std::vector<float> crt_scores;                      //!< Quality metric associated with the CRT matches.
+        std::vector<float> crt_times;                       //!< Times at which the matched CRT hits occurred [us].
         float depositions_q_sum;                            //!< Total input charge of the object [ADC].
         float depositions_sum;                              //!< Sum of deposited (de-ghosted) energy [MeV].
         float dir[3];                                       //!< Direction of the interaction.
@@ -45,6 +48,7 @@ namespace caf
         int64_t id;                                         //!< Interaction ID (dense enumeration starting from 0 within the event).
         bool is_cathode_crosser;                            //!< Whether the interaction is a cathode-crosser (some particle crosses the cathode).
         bool is_contained;                                  //!< Whether the interaction is contained within some margin from the detector walls (see SPINE configuration)
+        bool is_crt_matched;                                //!< Whether any particle in the interaction was matched to a CRT hit.
         bool is_fiducial;                                   //!< Whether the interaction is in the fiducial volume (see SPINE configuration).
         bool is_flash_matched;                              //!< Whether the flash is matched to the interaction (uses OpT0Finder).
         bool is_matched;                                    //!< Whether the interaction is matched to a true interaction.
@@ -61,6 +65,7 @@ namespace caf
         std::vector<int64_t> primary_particle_ids;          //!< Primary particle IDs in the interaction (see 'id' attribute of SRParticleDLP).
         int64_t size;                                       //!< The size of the interaction (number of voxels).
         std::string topology;                               //!< Topology of the interaction (e.g. "0g0e1mu0pi2p") considering only primaries.
+        std::string units;                                  //!< Units in which the position coordinates are expressed.
         float vertex[3];                                    //!< Vertex of the interaction in detector coordinates.
         std::vector<SRParticleDLP> particles;               //!< Particles in the interaction.
   };
