@@ -34,11 +34,15 @@ namespace caf
         double cathode_offset;                              //!< Distance from the cathode [cm].
         double chi2_per_pid[6];                             //!< Chi2 score per PID hypothesis.
         int64_t chi2_pid;                                   //!< PID from the chi2-based PID.
+        std::vector<int64_t> crt_ids;                       //!< Indices of the CRT hits the particle is matched to.
+        std::vector<float> crt_scores;                      //!< Quality metric associated with the CRT matches.
+        std::vector<float> crt_times;                       //!< Times at which the matched CRT hits occurred [us].
         double csda_ke;                                     //!< Continuous-slowing-down-approximation kinetic energy.
         double csda_ke_per_pid[6];                          //!< CSDA kinetic energy per PID.
         float depositions_q_sum;                            //!< Total input charge of the object [ADC].
         float depositions_sum;                              //!< Sum of deposited (de-ghosted) energy [MeV].
         float directional_spread;                           //!< Directional spread of the particle.
+        double end_dedx;                                    //!< dE/dx at the end of the particle.
         float end_dir[3];                                   //!< Unit direction vector calculated at the particle end point.
         float end_point[3];                                 //!< End point (vector) of the particle.
         std::vector<int32_t> fragment_ids;                  //!< Fragment IDs comprising the particle.
@@ -46,6 +50,7 @@ namespace caf
         int64_t interaction_id;                             //!< Parent interaction ID.
         bool is_cathode_crosser;                            //!< Whether the particle is a cathode-crosser.
         bool is_contained;                                  //!< Whether the particle is contained within some margin from the detector walls (see SPINE configuration).
+        bool is_crt_matched;                                //!< Whether the particle was matched to a CRT hit.
         bool is_matched;                                    //!< Whether the particle is matched.
         bool is_primary;                                    //!< Whether the particle is a primary particle.
         bool is_time_contained;                             //!< Whether the particle is time-contained (within the "in-time" region of the drift window).
@@ -73,6 +78,7 @@ namespace caf
         float start_dir[3];                                 //!< Unit direction vector calculated at the particle start point.
         float start_point[3];                               //!< Start point (vector) of the particle.
         float start_straightness;                           //!< Straightness at the start of the particle.
+        std::string units;                                  //!< Units in which the position coordinates are expressed.
         double vertex_distance;                             //!< Distance from the vertex.
   };
 } // namespace caf

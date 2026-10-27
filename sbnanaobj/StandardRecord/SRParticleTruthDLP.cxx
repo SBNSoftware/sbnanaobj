@@ -24,6 +24,9 @@ namespace caf
         chi2_pid(caf::kUninitializedInt),
         children_counts(),
         children_id(),
+        crt_ids(),
+        crt_scores(),
+        crt_times(),
         csda_ke(caf::kSignalingNaN),
         csda_ke_per_pid{caf::kSignalingNaN, caf::kSignalingNaN, caf::kSignalingNaN, caf::kSignalingNaN, caf::kSignalingNaN, caf::kSignalingNaN},
         depositions_adapt_q_sum(caf::kSignalingNaN),
@@ -50,6 +53,7 @@ namespace caf
         interaction_primary(caf::kUninitializedInt),
         is_cathode_crosser(false),
         is_contained(false),
+        is_crt_matched(false),
         is_matched(false),
         is_primary(false),
         is_time_contained(true),
@@ -98,5 +102,6 @@ namespace caf
         start_dir{caf::kSignalingNaN, caf::kSignalingNaN, caf::kSignalingNaN},
         start_point{caf::kSignalingNaN, caf::kSignalingNaN, caf::kSignalingNaN},
         t(caf::kSignalingNaN),
-        track_id(caf::kUninitializedInt) { }
+        track_id(caf::kUninitializedInt),
+        units() { }
 } // namespace caf

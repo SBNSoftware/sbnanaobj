@@ -34,6 +34,9 @@ namespace caf
         double bjorken_x;                                   //!< Bjorken x of the neutrino interaction.
         double cathode_offset;                              //!< Distance from the cathode [cm].
         std::string creation_process;                       //!< Creation process associated with the neutrino (see MCParticle).
+        std::vector<int64_t> crt_ids;                       //!< Indices of the CRT hits the interaction is matched to.
+        std::vector<float> crt_scores;                      //!< Quality metric associated with the CRT matches.
+        std::vector<float> crt_times;                       //!< Times at which the matched CRT hits occurred [us].
         int64_t current_type;                               //!< Current type of the neutrino (see MCNeutrino; 0=CC, 1=NC).
         float depositions_adapt_q_sum;                      //!< Total tagged (reco non-ghost) charge deposited [ADC].
         float depositions_adapt_sum;                        //!< Total tagged (reco non-ghost) energy deposited [MeV].
@@ -54,10 +57,13 @@ namespace caf
         double hadronic_invariant_mass;                     //!< Hadronic invariant mass of the neutrino.
         int64_t id;                                         //!< Interaction ID (dense enumeration starting from 0 within the event).
         double inelasticity;                                //!< Inelasticity of the neutrino interaction.
+        int64_t interaction_id;                             //!< Index of the neutrino interaction at the generator stage (e.g. GENIE).
         int64_t interaction_mode;                           //!< Interaction mode of the neutrino (see MCNeutrino).
+        int64_t interaction_scheme;                         //!< Generator of the interaction (-1=unknown, 0=LArSoft, 1=GENIE, 2=GiBUU, 3=NuWro, 4=NEUT).
         int64_t interaction_type;                           //!< Interaction type of the neutrino (see MCNeutrino).
         bool is_cathode_crosser;                            //!< Whether the interaction is a cathode-crosser (some particle crosses the cathode).
         bool is_contained;                                  //!< Whether the interaction is contained within some margin from the detector walls.
+        bool is_crt_matched;                                //!< Whether any particle in the interaction was matched to a CRT hit.
         bool is_fiducial;                                   //!< Whether the interaction is in the fiducial volume (see SPINE configuration).
         bool is_flash_matched;                              //!< Whether the flash is matched to the interaction.
         bool is_matched;                                    //!< Whether the interaction is matched to a true interaction.
@@ -90,11 +96,13 @@ namespace caf
         int64_t size;                                       //!< Number of true non-ghost true-tagged space points.
         int64_t size_adapt;                                 //!< Number of reco non-ghost true-tagged space points.
         int64_t size_g4;                                    //!< Number of (rasterized) g4 energy depositions (no detector effects).
+        double t;                                           //!< Time of the neutrino interaction at the generator stage [ns].
         int64_t target;                                     //!< Target in the neutrino interaction.
         double theta;                                       //!< Angle between the neutrino and the outgoing lepton [radians].
         double time;                                        //!< Interaction time [ns] (neutrino time if available, else earliest particle time).
         std::string topology;                               //!< Topology of the interaction (e.g. "0g0e1mu0pi2p") considering only primaries.
         int64_t track_id;                                   //!< Track ID of the neutrino interaction.
+        std::string units;                                  //!< Units in which the position coordinates are expressed.
         float vertex[3];                                    //!< Vertex of the interaction in detector coordinates (truth).
         std::vector<SRParticleTruthDLP> particles;          //!< Particles in the interaction.
   };
