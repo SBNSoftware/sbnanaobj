@@ -33,18 +33,18 @@ namespace caf
         float ancestor_position[3];                    //!< Position of the ancestor particle.
         double ancestor_t;                             //!< Time of the ancestor particle.
         int64_t ancestor_track_id;                     //!< Track ID of the ancestor particle.
-        int64_t best_match_id;                         //!< ID of the highest-overlap matched reco particle (-1 if unmatched).
+        int best_match_id;                             //!< ID of the highest-overlap matched reco particle (-1 if unmatched).
         float best_match_overlap;                      //!< Overlap (IoU) with the highest-overlap matched reco particle (-1 if unmatched).
         double calo_ke;                                //!< Calorimetric kinetic energy.
         double cathode_offset;                         //!< Distance from the cathode [cm].
         double chi2_per_pid[6];                        //!< Chi2 score per PID hypothesis.
-        int64_t chi2_pid;                              //!< PID from the chi2-based PID.
+        int chi2_pid;                                  //!< PID from the chi2-based PID.
         std::vector<int64_t> children_counts;          //!< Number of children of the particle.
         std::vector<int64_t> children_id;              //!< List of particle ID of children particles.
         std::string creation_process;                  //!< Geant4 creation process associated with the particle (see MCParticle).
-        std::vector<int64_t> crt_ids;                  //!< Indices of the CRT hits the particle is matched to.
-        std::vector<float> crt_scores;                 //!< Quality metric associated with the CRT matches.
-        std::vector<float> crt_times;                  //!< Times at which the matched CRT hits occurred [us].
+        std::vector<int> crt_ids;                      //!< Indices of the reconstructed CRT hits matched to the true particle by the SPINE CRT-TPC matching run on truth, not backtracked (empty if not run).
+        std::vector<float> crt_scores;                 //!< Distance [cm] in the CRT plane between the extrapolated track and the matched CRT hit (SPINE CRTMatcher; same order as crt_ids).
+        std::vector<float> crt_times;                  //!< Times of the matched CRT hits relative to the trigger [us] (CRT hit ts1; same order as crt_ids).
         double csda_ke;                                //!< Continuous-slowing-down-approximation kinetic energy.
         double csda_ke_per_pid[6];                     //!< CSDA kinetic energy per PID.
         float depositions_adapt_q_sum;                 //!< Total tagged (reco non-ghost) charge deposited [ADC].
@@ -121,7 +121,6 @@ namespace caf
         float start_point[3];                          //!< Start point (vector) of the particle.
         double t;                                      //!< Time of the particle.
         int64_t track_id;                              //!< Track ID of the particle.
-        std::string units;                             //!< Units in which the position coordinates are expressed.
     };
 } // namespace caf
 #endif // SRPARTICLETRUTHDLP_H

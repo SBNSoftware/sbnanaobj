@@ -29,14 +29,14 @@ namespace caf
         public:
         SRInteractionTruthDLP();
 
-        int64_t best_match_id;                              //!< ID of the highest-overlap matched reco interaction (-1 if unmatched).
+        int best_match_id;                                  //!< ID of the highest-overlap matched reco interaction (-1 if unmatched).
         float best_match_overlap;                           //!< Overlap (IoU) with the highest-overlap matched reco interaction (-1 if unmatched).
         double bjorken_x;                                   //!< Bjorken x of the neutrino interaction.
         double cathode_offset;                              //!< Distance from the cathode [cm].
         std::string creation_process;                       //!< Creation process associated with the neutrino (see MCParticle).
-        std::vector<int64_t> crt_ids;                       //!< Indices of the CRT hits the interaction is matched to.
-        std::vector<float> crt_scores;                      //!< Quality metric associated with the CRT matches.
-        std::vector<float> crt_times;                       //!< Times at which the matched CRT hits occurred [us].
+        std::vector<int> crt_ids;                           //!< Indices of the reconstructed CRT hits matched to the particles of the true interaction by the SPINE CRT-TPC matching run on truth, not backtracked (empty if not run).
+        std::vector<float> crt_scores;                      //!< Distance [cm] in the CRT plane between the extrapolated track and the matched CRT hit (SPINE CRTMatcher; same order as crt_ids).
+        std::vector<float> crt_times;                       //!< Times of the matched CRT hits relative to the trigger [us] (CRT hit ts1; same order as crt_ids).
         int64_t current_type;                               //!< Current type of the neutrino (see MCNeutrino; 0=CC, 1=NC).
         float depositions_adapt_q_sum;                      //!< Total tagged (reco non-ghost) charge deposited [ADC].
         float depositions_adapt_sum;                        //!< Total tagged (reco non-ghost) energy deposited [MeV].
@@ -48,7 +48,7 @@ namespace caf
         double energy_init;                                 //!< Initial energy of the neutrino.
         double energy_transfer;                             //!< Energy transfer (Q0) of the neutrino interaction.
         double flash_hypo_pe;                               //!< Total PE of the hypothesized flash.
-        std::vector<int64_t> flash_hypothesis_ids;          //!< Indices of the optical flash hypotheses associated with the interaction.
+        std::vector<int> flash_hypothesis_ids;              //!< Indices of the flash hypotheses (OpT0Finder PE prediction from the true interaction charge) compared to the reconstructed flashes in flash_ids (empty unless stored).
         std::vector<int64_t> flash_ids;                     //!< Flash IDs for the matched flashes (uses OpT0Finder, lowest score first).
         std::vector<float> flash_scores;                    //!< Flash score for the matched flashes (uses OpT0Finder, same order as flash_ids).
         std::vector<float> flash_times;                     //!< Time of the matched flashes (uses OpT0Finder, same order as flash_ids).
@@ -57,9 +57,9 @@ namespace caf
         double hadronic_invariant_mass;                     //!< Hadronic invariant mass of the neutrino.
         int64_t id;                                         //!< Interaction ID (dense enumeration starting from 0 within the event).
         double inelasticity;                                //!< Inelasticity of the neutrino interaction.
-        int64_t interaction_id;                             //!< Index of the neutrino interaction at the generator stage (e.g. GENIE).
+        int interaction_id;                                 //!< Index of the neutrino interaction at the generator stage (e.g. GENIE).
         int64_t interaction_mode;                           //!< Interaction mode of the neutrino (see MCNeutrino).
-        int64_t interaction_scheme;                         //!< Generator of the interaction (-1=unknown, 0=LArSoft, 1=GENIE, 2=GiBUU, 3=NuWro, 4=NEUT).
+        int interaction_scheme;                             //!< Generator of the interaction (-1=unknown, 0=LArSoft, 1=GENIE, 2=GiBUU, 3=NuWro, 4=NEUT).
         int64_t interaction_type;                           //!< Interaction type of the neutrino (see MCNeutrino).
         bool is_cathode_crosser;                            //!< Whether the interaction is a cathode-crosser (some particle crosses the cathode).
         bool is_contained;                                  //!< Whether the interaction is contained within some margin from the detector walls.
@@ -96,13 +96,12 @@ namespace caf
         int64_t size;                                       //!< Number of true non-ghost true-tagged space points.
         int64_t size_adapt;                                 //!< Number of reco non-ghost true-tagged space points.
         int64_t size_g4;                                    //!< Number of (rasterized) g4 energy depositions (no detector effects).
-        double t;                                           //!< Time of the neutrino interaction at the generator stage [ns].
+        double t;                                           //!< Neutrino interaction time [ns] in the simulation (Geant4) time scale, i.e. simb::MCParticle::T() of its primaries (NaN if no neutrino).
         int64_t target;                                     //!< Target in the neutrino interaction.
         double theta;                                       //!< Angle between the neutrino and the outgoing lepton [radians].
-        double time;                                        //!< Interaction time [ns] (neutrino time if available, else earliest particle time).
+        double time;                                        //!< Interaction time [ns] in the simulation (Geant4) time scale: t if valid, else the earliest simb::MCParticle::T() of its particles.
         std::string topology;                               //!< Topology of the interaction (e.g. "0g0e1mu0pi2p") considering only primaries.
         int64_t track_id;                                   //!< Track ID of the neutrino interaction.
-        std::string units;                                  //!< Units in which the position coordinates are expressed.
         float vertex[3];                                    //!< Vertex of the interaction in detector coordinates (truth).
         std::vector<SRParticleTruthDLP> particles;          //!< Particles in the interaction.
   };

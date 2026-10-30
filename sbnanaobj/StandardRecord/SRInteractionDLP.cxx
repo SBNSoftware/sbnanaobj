@@ -47,7 +47,6 @@ namespace caf
         primary_particle_ids(),
         size(caf::kUninitializedInt),
         topology(),
-        units(),
         vertex{caf::kSignalingNaN, caf::kSignalingNaN, caf::kSignalingNaN},
         particles() { }
 } // namespace caf

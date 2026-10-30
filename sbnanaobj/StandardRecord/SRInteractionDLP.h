@@ -29,17 +29,17 @@ namespace caf
         public:
         SRInteractionDLP();
 
-        int64_t best_match_id;                              //!< ID of the highest-overlap matched true interaction (-1 if unmatched).
+        int best_match_id;                                  //!< ID of the highest-overlap matched true interaction (-1 if unmatched).
         float best_match_overlap;                           //!< Overlap (IoU) with the highest-overlap matched true interaction (-1 if unmatched).
         double cathode_offset;                              //!< Distance from the cathode [cm].
-        std::vector<int64_t> crt_ids;                       //!< Indices of the CRT hits the interaction is matched to.
-        std::vector<float> crt_scores;                      //!< Quality metric associated with the CRT matches.
-        std::vector<float> crt_times;                       //!< Times at which the matched CRT hits occurred [us].
+        std::vector<int> crt_ids;                           //!< Indices of the reconstructed CRT hits matched to the particles of the interaction by the SPINE CRT-TPC matching (empty if not run).
+        std::vector<float> crt_scores;                      //!< Distance [cm] in the CRT plane between the extrapolated track and the matched CRT hit (SPINE CRTMatcher; same order as crt_ids).
+        std::vector<float> crt_times;                       //!< Times of the matched CRT hits relative to the trigger [us] (CRT hit ts1; same order as crt_ids).
         float depositions_q_sum;                            //!< Total input charge of the object [ADC].
         float depositions_sum;                              //!< Sum of deposited (de-ghosted) energy [MeV].
         float dir[3];                                       //!< Direction of the interaction.
         double flash_hypo_pe;                               //!< Total PE of the hypothesized flash from OpT0Finder.
-        std::vector<int64_t> flash_hypothesis_ids;          //!< Indices of the optical flash hypotheses associated with the interaction.
+        std::vector<int> flash_hypothesis_ids;              //!< Indices of the flash hypotheses (OpT0Finder PE prediction from the interaction charge) compared to the reconstructed flashes in flash_ids (empty unless stored).
         std::vector<int64_t> flash_ids;                     //!< Flash IDs for the matched flashes (uses OpT0Finder, lowest score first).
         std::vector<float> flash_scores;                    //!< Score of the matched flashes (uses OpT0Finder, same order as flash_ids).
         std::vector<float> flash_times;                     //!< Time of the matched flashes (uses OpT0Finder, same order as flash_ids).
@@ -65,7 +65,6 @@ namespace caf
         std::vector<int64_t> primary_particle_ids;          //!< Primary particle IDs in the interaction (see 'id' attribute of SRParticleDLP).
         int64_t size;                                       //!< The size of the interaction (number of voxels).
         std::string topology;                               //!< Topology of the interaction (e.g. "0g0e1mu0pi2p") considering only primaries.
-        std::string units;                                  //!< Units in which the position coordinates are expressed.
         float vertex[3];                                    //!< Vertex of the interaction in detector coordinates.
         std::vector<SRParticleDLP> particles;               //!< Particles in the interaction.
   };
