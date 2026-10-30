@@ -63,6 +63,5 @@ namespace caf
         start_dir{caf::kSignalingNaN, caf::kSignalingNaN, caf::kSignalingNaN},
         start_point{caf::kSignalingNaN, caf::kSignalingNaN, caf::kSignalingNaN},
         start_straightness(caf::kSignalingNaN),
-        units(),
         vertex_distance(caf::kSignalingNaN) { }
 } // namespace caf

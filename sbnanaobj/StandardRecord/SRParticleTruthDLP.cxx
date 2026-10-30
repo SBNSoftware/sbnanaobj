@@ -102,6 +102,5 @@ namespace caf
         start_dir{caf::kSignalingNaN, caf::kSignalingNaN, caf::kSignalingNaN},
         start_point{caf::kSignalingNaN, caf::kSignalingNaN, caf::kSignalingNaN},
         t(caf::kSignalingNaN),
-        track_id(caf::kUninitializedInt),
-        units() { }
+        track_id(caf::kUninitializedInt) { }
 } // namespace caf

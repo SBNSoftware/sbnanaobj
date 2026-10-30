@@ -81,7 +81,6 @@ namespace caf
         time(caf::kSignalingNaN),
         topology(),
         track_id(caf::kUninitializedInt),
-        units(),
         vertex{caf::kSignalingNaN, caf::kSignalingNaN, caf::kSignalingNaN},
         particles() { }
 } // namespace caf

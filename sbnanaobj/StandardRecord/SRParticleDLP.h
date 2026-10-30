@@ -28,15 +28,15 @@ namespace caf
         SRParticleDLP();
 
         float axial_spread;                                 //!< Axial spread of the particle.
-        int64_t best_match_id;                              //!< ID of the highest-overlap matched true particle (-1 if unmatched).
+        int best_match_id;                                  //!< ID of the highest-overlap matched true particle (-1 if unmatched).
         float best_match_overlap;                           //!< Overlap (IoU) with the highest-overlap matched true particle (-1 if unmatched).
         double calo_ke;                                     //!< Calorimetric kinetic energy.
         double cathode_offset;                              //!< Distance from the cathode [cm].
         double chi2_per_pid[6];                             //!< Chi2 score per PID hypothesis.
         int64_t chi2_pid;                                   //!< PID from the chi2-based PID.
-        std::vector<int64_t> crt_ids;                       //!< Indices of the CRT hits the particle is matched to.
-        std::vector<float> crt_scores;                      //!< Quality metric associated with the CRT matches.
-        std::vector<float> crt_times;                       //!< Times at which the matched CRT hits occurred [us].
+        std::vector<int> crt_ids;                           //!< Indices of the reconstructed CRT hits matched to the particle by the SPINE CRT-TPC matching (empty if not run).
+        std::vector<float> crt_scores;                      //!< Distance [cm] in the CRT plane between the extrapolated track and the matched CRT hit (SPINE CRTMatcher; same order as crt_ids).
+        std::vector<float> crt_times;                       //!< Times of the matched CRT hits relative to the trigger [us] (CRT hit ts1; same order as crt_ids).
         double csda_ke;                                     //!< Continuous-slowing-down-approximation kinetic energy.
         double csda_ke_per_pid[6];                          //!< CSDA kinetic energy per PID.
         float depositions_q_sum;                            //!< Total input charge of the object [ADC].
@@ -78,7 +78,6 @@ namespace caf
         float start_dir[3];                                 //!< Unit direction vector calculated at the particle start point.
         float start_point[3];                               //!< Start point (vector) of the particle.
         float start_straightness;                           //!< Straightness at the start of the particle.
-        std::string units;                                  //!< Units in which the position coordinates are expressed.
         double vertex_distance;                             //!< Distance from the vertex.
   };
 } // namespace caf
