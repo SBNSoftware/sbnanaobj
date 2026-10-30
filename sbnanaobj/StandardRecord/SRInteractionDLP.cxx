@@ -11,9 +11,17 @@
 namespace caf
 {
     SRInteractionDLP::SRInteractionDLP():
+        best_match_id(caf::kUninitializedInt),
+        best_match_overlap(caf::kSignalingNaN),
         cathode_offset(caf::kSignalingNaN),
+        crt_ids(),
+        crt_scores(),
+        crt_times(),
+        depositions_q_sum(caf::kSignalingNaN),
         depositions_sum(caf::kSignalingNaN),
+        dir{caf::kSignalingNaN, caf::kSignalingNaN, caf::kSignalingNaN},
         flash_hypo_pe(caf::kSignalingNaN),
+        flash_hypothesis_ids(),
         flash_ids(),
         flash_scores(),
         flash_times(),
@@ -22,6 +30,7 @@ namespace caf
         id(caf::kUninitializedInt),
         is_cathode_crosser(false),
         is_contained(true),
+        is_crt_matched(false),
         is_fiducial(true),
         is_flash_matched(false),
         is_matched(false),

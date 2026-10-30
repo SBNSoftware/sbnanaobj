@@ -33,11 +33,18 @@ namespace caf
         float ancestor_position[3];                    //!< Position of the ancestor particle.
         double ancestor_t;                             //!< Time of the ancestor particle.
         int64_t ancestor_track_id;                     //!< Track ID of the ancestor particle.
+        int best_match_id;                             //!< ID of the highest-overlap matched reco particle (-1 if unmatched).
+        float best_match_overlap;                      //!< Overlap (IoU) with the highest-overlap matched reco particle (-1 if unmatched).
         double calo_ke;                                //!< Calorimetric kinetic energy.
         double cathode_offset;                         //!< Distance from the cathode [cm].
+        double chi2_per_pid[6];                        //!< Chi2 score per PID hypothesis.
+        int chi2_pid;                                  //!< PID from the chi2-based PID.
         std::vector<int64_t> children_counts;          //!< Number of children of the particle.
         std::vector<int64_t> children_id;              //!< List of particle ID of children particles.
         std::string creation_process;                  //!< Geant4 creation process associated with the particle (see MCParticle).
+        std::vector<int> crt_ids;                      //!< Indices of the reconstructed CRT hits matched to the true particle by the SPINE CRT-TPC matching run on truth, not backtracked (empty if not run).
+        std::vector<float> crt_scores;                 //!< Distance [cm] in the CRT plane between the extrapolated track and the matched CRT hit (SPINE CRTMatcher; same order as crt_ids).
+        std::vector<float> crt_times;                  //!< Times of the matched CRT hits relative to the trigger [us] (CRT hit ts1; same order as crt_ids).
         double csda_ke;                                //!< Continuous-slowing-down-approximation kinetic energy.
         double csda_ke_per_pid[6];                     //!< CSDA kinetic energy per PID.
         float depositions_adapt_q_sum;                 //!< Total tagged (reco non-ghost) charge deposited [ADC].
@@ -55,6 +62,7 @@ namespace caf
         double energy_deposit;                         //!< Energy deposited by the particle.
         double energy_init;                            //!< Initial energy of the particle. 
         float first_step[3];                           //!< Coordinates of the first step of the particle.
+        double first_step_t;                           //!< Time of the first energy deposition of the particle [ns].
         std::vector<int32_t> fragment_ids;             //!< Fragment IDs comprising the particle.
         int64_t group_id;                              //!< Group ID of the particle.
         int64_t group_primary;                         //!< Whether the particle is a primary within its group.
@@ -63,6 +71,7 @@ namespace caf
         int64_t interaction_primary;                   //!< Whether the particle is a primary within its interaction (equivalent to is_primary).
         bool is_cathode_crosser;                       //!< Whether the particle is a cathode-crosser.
         bool is_contained;                             //!< Whether the particle is contained within some margin from the detector walls (see SPINE configuration).
+        bool is_crt_matched;                           //!< Whether the particle was matched to a CRT hit.
         bool is_matched;                               //!< Whether the particle is matched.
         bool is_primary;                               //!< Whether the particle is a primary particle.
         bool is_time_contained;                        //!< Whether the particle is time-contained (within the "in-time" region of the drift window).
@@ -70,6 +79,7 @@ namespace caf
         bool is_valid;                                 //!< Whether the particle passes thresholds and counts towards topology.
         double ke;                                     //!< Kinetic energy from best energy estimator (CSDA, calorimetric, or MCS). 
         float last_step[3];                            //!< Coordinates of the last step of the particle.
+        double last_step_t;                            //!< Time of the last energy deposition of the particle [ns].
         double length;                                 //!< Length of the particle.
         double mass;                                   //!< Mass of the particle.
         std::vector<int64_t> match_ids;                //!< Particle IDs of the considered matches (correspond to reco particle IDs).

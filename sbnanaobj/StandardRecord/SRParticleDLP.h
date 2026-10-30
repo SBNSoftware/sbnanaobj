@@ -28,14 +28,21 @@ namespace caf
         SRParticleDLP();
 
         float axial_spread;                                 //!< Axial spread of the particle.
+        int best_match_id;                                  //!< ID of the highest-overlap matched true particle (-1 if unmatched).
+        float best_match_overlap;                           //!< Overlap (IoU) with the highest-overlap matched true particle (-1 if unmatched).
         double calo_ke;                                     //!< Calorimetric kinetic energy.
         double cathode_offset;                              //!< Distance from the cathode [cm].
         double chi2_per_pid[6];                             //!< Chi2 score per PID hypothesis.
         int64_t chi2_pid;                                   //!< PID from the chi2-based PID.
+        std::vector<int> crt_ids;                           //!< Indices of the reconstructed CRT hits matched to the particle by the SPINE CRT-TPC matching (empty if not run).
+        std::vector<float> crt_scores;                      //!< Distance [cm] in the CRT plane between the extrapolated track and the matched CRT hit (SPINE CRTMatcher; same order as crt_ids).
+        std::vector<float> crt_times;                       //!< Times of the matched CRT hits relative to the trigger [us] (CRT hit ts1; same order as crt_ids).
         double csda_ke;                                     //!< Continuous-slowing-down-approximation kinetic energy.
         double csda_ke_per_pid[6];                          //!< CSDA kinetic energy per PID.
+        float depositions_q_sum;                            //!< Total input charge of the object [ADC].
         float depositions_sum;                              //!< Sum of deposited (de-ghosted) energy [MeV].
         float directional_spread;                           //!< Directional spread of the particle.
+        double end_dedx;                                    //!< dE/dx at the end of the particle.
         float end_dir[3];                                   //!< Unit direction vector calculated at the particle end point.
         float end_point[3];                                 //!< End point (vector) of the particle.
         std::vector<int32_t> fragment_ids;                  //!< Fragment IDs comprising the particle.
@@ -43,6 +50,7 @@ namespace caf
         int64_t interaction_id;                             //!< Parent interaction ID.
         bool is_cathode_crosser;                            //!< Whether the particle is a cathode-crosser.
         bool is_contained;                                  //!< Whether the particle is contained within some margin from the detector walls (see SPINE configuration).
+        bool is_crt_matched;                                //!< Whether the particle was matched to a CRT hit.
         bool is_matched;                                    //!< Whether the particle is matched.
         bool is_primary;                                    //!< Whether the particle is a primary particle.
         bool is_time_contained;                             //!< Whether the particle is time-contained (within the "in-time" region of the drift window).
