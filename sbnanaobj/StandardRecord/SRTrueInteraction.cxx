@@ -32,6 +32,7 @@ namespace caf
 
     E(std::numeric_limits<float>::signaling_NaN()),
     time(std::numeric_limits<float>::signaling_NaN()),
+    prod_time(std::numeric_limits<float>::signaling_NaN()),
     bjorkenX(std::numeric_limits<float>::signaling_NaN()),
     inelasticityY(std::numeric_limits<float>::signaling_NaN()),
     Q2(std::numeric_limits<float>::signaling_NaN()),
@@ -43,6 +44,7 @@ namespace caf
     t(std::numeric_limits<float>::signaling_NaN()),
     eccqe(std::numeric_limits<float>::signaling_NaN()),
     baseline(std::numeric_limits<float>::signaling_NaN()),
+    dk2gen(std::numeric_limits<float>::signaling_NaN()),
 
     npiplus(0),
     npiminus(0),
