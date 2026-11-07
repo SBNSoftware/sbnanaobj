@@ -37,7 +37,7 @@ cet_set_compiler_flags(DIAGS CAUTIOUS
 cet_report_compiler_flags(REPORT_THRESHOLD VERBOSE)
 
 # these are minimum required versions, not the actual product versions
-find_package(ROOT REQUIRED)
+find_package(ROOT REQUIRED EXPORT )
 
 include(BuildDictionary)
 
