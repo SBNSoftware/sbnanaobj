@@ -39,6 +39,9 @@ namespace caf
       float     energy=caf::kSignalingNaN;          ///< Reconstructed energy in the calorimetry plane (const dE/dx, fcl-configurable) [GeV]
       float     energyESTAR=caf::kSignalingNaN;     ///< Reconstructed energy in the calorimetry plane (ESTAR method from ArgoNeuT)    [GeV]
       float     energyPSTAR=caf::kSignalingNaN;     ///< Reconstructed energy in the calorimetry plane (PSTAR method similar with ESTAR method from ArgoNeuT) [GeV]
+      float     energyNoDriftCorr=caf::kSignalingNaN;          ///< Reconstructed energy in the calorimetry plane (const dE/dx, fcl-configurable) [GeV]
+      float     energyESTARnoDriftCorr=caf::kSignalingNaN;     ///< Reconstructed energy in the calorimetry plane (ESTAR method from ArgoNeuT)    [GeV]
+      float     energyPSTARnoDriftCorr=caf::kSignalingNaN;     ///< Reconstructed energy in the calorimetry plane (PSTAR method similar with ESTAR method from ArgoNeuT) [GeV]
       float     proxTrkDist=caf::kSignalingNaN;     ///< 3-D distance to closest track, assuming the blip was coincident with event trigger [cm]
       /*!
         for properly flash matched out-of-time tracks this distance will be wrong! The blips have no such flash matching ability as of yet
