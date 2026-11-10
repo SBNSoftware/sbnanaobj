@@ -1,4 +1,5 @@
 #include "sbnanaobj/StandardRecord/SRBNBInfo.h"
+#include "sbnanaobj/StandardRecord/SRConstants.h"
 
 #include <limits>
 #include <climits>
@@ -13,8 +14,8 @@ namespace caf
     TOR875(std::numeric_limits<float>::signaling_NaN()),
     FOM(std::numeric_limits<float>::signaling_NaN()),
     FOM_best(std::numeric_limits<float>::signaling_NaN()),
-    fom_source(-1),
-    fom_status(0),
+    fom_source(kUninitializedInt),
+    fom_status(kUninitializedInt),
     tor_used(std::numeric_limits<float>::signaling_NaN()),
     hpos_tgt(std::numeric_limits<float>::signaling_NaN()),
     hang_tgt(std::numeric_limits<float>::signaling_NaN()),
@@ -22,7 +23,7 @@ namespace caf
     vang_tgt(std::numeric_limits<float>::signaling_NaN()),
     tgt_sigx(std::numeric_limits<float>::signaling_NaN()),
     tgt_sigy(std::numeric_limits<float>::signaling_NaN()),
-    fom_version(0),
+    fom_version(kUninitializedInt),
     LM875A(std::numeric_limits<float>::signaling_NaN()),
     LM875B(std::numeric_limits<float>::signaling_NaN()),
     LM875C(std::numeric_limits<float>::signaling_NaN()),
@@ -67,16 +68,16 @@ namespace caf
     TOR860 = -999.0;
     TOR875 = -999.0;
     FOM = -999;
-    FOM_best = std::numeric_limits<float>::signaling_NaN();
+    FOM_best = -999.0;
     fom_source = -1;
     fom_status = 0;
-    tor_used = std::numeric_limits<float>::signaling_NaN();
-    hpos_tgt = std::numeric_limits<float>::signaling_NaN();
-    hang_tgt = std::numeric_limits<float>::signaling_NaN();
-    vpos_tgt = std::numeric_limits<float>::signaling_NaN();
-    vang_tgt = std::numeric_limits<float>::signaling_NaN();
-    tgt_sigx = std::numeric_limits<float>::signaling_NaN();
-    tgt_sigy = std::numeric_limits<float>::signaling_NaN();
+    tor_used = -999.0;
+    hpos_tgt = -999.0;
+    hang_tgt = -999.0;
+    vpos_tgt = -999.0;
+    vang_tgt = -999.0;
+    tgt_sigx = -999.0;
+    tgt_sigy = -999.0;
     fom_version = 0;
     LM875A = -999.0;
     LM875B = -999.0;
@@ -98,9 +99,9 @@ namespace caf
     VPTG2Offset = -999;
     BTJT2 = -999.0;
     THCURR = -999.0;
-    BRRMPS8 = std::numeric_limits<float>::signaling_NaN();
-    BRRMPQ1 = std::numeric_limits<float>::signaling_NaN();
-    BRRMPL9 = std::numeric_limits<float>::signaling_NaN();
+    BRRMPS8 = -999.0;
+    BRRMPQ1 = -999.0;
+    BRRMPL9 = -999.0;
     M875HS = -999.0;
     M875VS = -999.0;
     M875HM = -999.0;

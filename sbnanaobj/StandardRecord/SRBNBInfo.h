@@ -5,6 +5,50 @@
 
 namespace caf
 {
+  /**
+   * @brief Values of `SRBNBInfo::fom_source`: the beam width used for `FOM_best`.
+   *
+   * Same values as `sbn::BNBFOMResult::WidthSource_t` (sbncode `getFOM.h`).
+   */
+  namespace FOMSource {
+    constexpr int kNone         = -1; ///< No FOM could be formed.
+    constexpr int kFitM876      =  1; ///< Fitted M876 profile.
+    constexpr int kFitM875      =  2; ///< Fitted M875 profile.
+    constexpr int kDatabaseM876 =  3; ///< M876 width from the database.
+    constexpr int kDatabaseM875 =  4; ///< M875 width from the database.
+    constexpr int kNominal      =  5; ///< Nominal width.
+  } // namespace FOMSource
+
+  /**
+   * @brief Bits of `SRBNBInfo::fom_status`.
+   *
+   * Same values as `sbn::fomstatus` (sbncode `getFOM.h`). `kNoTOR`, `kNoHBPM` and
+   * `kNoVBPM` say why there is no FOM; the other bits record substitutions and
+   * recoveries. The bits marked "analysis level" are set only by the flat-CAF
+   * update (sbncode `BeamSpillInfoRetriever/python/update_flatcafs.py`).
+   */
+  namespace FOMStatus {
+    constexpr unsigned int kNoTOR              = 1;     ///< No valid, positive TOR860 or TOR875 (no beam).
+    constexpr unsigned int kNoHBPM             = 2;     ///< Horizontal position/angle cannot be formed.
+    constexpr unsigned int kNoVBPM             = 4;     ///< Vertical position/angle cannot be formed.
+    constexpr unsigned int kOffsetFilled       = 8;     ///< A BPM offset was taken from the cache of valid offsets.
+    constexpr unsigned int kLowTOR             = 16;    ///< Intensity below 1e11 protons.
+    constexpr unsigned int kMWTimeCut          = 32;    ///< A profile was rejected by the time cut (analysis level).
+    constexpr unsigned int kNoMWWidth          = 64;    ///< No usable multiwire width: nominal width.
+    constexpr unsigned int kNeighborFilled     = 128;   ///< Position/angle from the adjacent spills.
+    constexpr unsigned int kTOR875Used         = 256;   ///< Intensity from TOR875: TOR860 dropped out, <= 0 or missing.
+    constexpr unsigned int kMWEmpty            = 512;   ///< Database multiwire width is an empty chamber.
+    constexpr unsigned int kWidthFromNeighbors = 1024;  ///< Width from the adjacent spills.
+    constexpr unsigned int kFallbackRemoved    = 2048;  ///< Only the non-primary BPM read: not used.
+    constexpr unsigned int kMMBTBBDropped      = 4096;  ///< The only width was an MMBTBB fit (analysis level).
+    constexpr unsigned int kLoggerFill         = 8192;  ///< Filled from the ACNet logger (analysis level).
+    constexpr unsigned int kBurstFill          = 16384; ///< 875-station drop-out filled from both sides.
+    constexpr unsigned int kHPTG2Primary       = 32768; ///< Horizontal projection through HPTG2.
+
+    /// Bits for which no FOM can be formed.
+    constexpr unsigned int kNoFOM = kNoTOR | kNoHBPM | kNoVBPM;
+  } // namespace FOMStatus
+
 /**
  * @brief Readings of the BNB beam monitors.
  * 
@@ -26,19 +70,26 @@ namespace caf
 
     float FOM; //!< Figure of Merit for BNB ([SBN DocDB 41901](https://sbn-docdb.fnal.gov/cgi-bin/sso/ShowDocument?docid=41901))
 
-    // Beam-quality result for this spill (see sbnobj BNBSpillInfo and the BNB
-    // beam-quality technote); NaN when not available.
-    float FOM_best; //!< best FOM of the spill, in [0, 1]; NaN if none can be formed. Cut on this, not on `FOM`
-    int fom_source; //!< width used for FOM_best: 1/2 fitted M876/M875 profile, 3/4 M876/M875 database width, 5 nominal; -1 no FOM
-    unsigned int fom_status; //!< bit mask: why the FOM is missing (1, 2, 4), substitutions, recoveries (sbncode getFOM.h, `sbn::fomstatus`)
-    float tor_used; //!< intensity used for the FOM, units Protons: TOR860, or TOR875 after a TOR860 drop-out
-    float hpos_tgt; //!< horizontal beam position at the target centre, units mm
-    float hang_tgt; //!< horizontal beam angle at the target, units mrad
-    float vpos_tgt; //!< vertical beam position at the target centre, units mm
-    float vang_tgt; //!< vertical beam angle at the target, units mrad
-    float tgt_sigx; //!< horizontal beam width at the target used for the FOM, units mm; NaN: nominal width
-    float tgt_sigy; //!< vertical beam width at the target used for the FOM, units mm; NaN: nominal width
-    unsigned int fom_version; //!< version of the beam-quality algorithm; 0: not computed (older input)
+    /**
+     * @name Beam-quality result for this spill
+     *
+     * Filled from `sbn::BNBSpillInfo` (sbnobj; see sbncode
+     * `BeamSpillInfoRetriever/getFOM.h` and the BNB beam-quality technote).
+     * A value that is missing is -999 (`fom_source`: -1).
+     */
+    /// @{
+    float FOM_best; //!< Best FOM of the spill, in [0, 1]; -999 if none can be formed. Cut on this, not on `FOM`.
+    int fom_source; //!< Width used for `FOM_best`, one of `caf::FOMSource`; -1 (`FOMSource::kNone`) if there is no FOM.
+    unsigned int fom_status; //!< Bit mask of `caf::FOMStatus` bits: why the FOM is missing, substitutions, recoveries.
+    float tor_used; //!< Intensity used for the FOM, units protons: TOR860, or TOR875 after a TOR860 drop-out.
+    float hpos_tgt; //!< Horizontal beam position at the target centre, units mm.
+    float hang_tgt; //!< Horizontal beam angle at the target, units mrad.
+    float vpos_tgt; //!< Vertical beam position at the target centre, units mm.
+    float vang_tgt; //!< Vertical beam angle at the target, units mrad.
+    float tgt_sigx; //!< Horizontal beam width at the target used for the FOM, units mm; -999: nominal width.
+    float tgt_sigy; //!< Vertical beam width at the target used for the FOM, units mm; -999: nominal width.
+    unsigned int fom_version; //!< Version of the beam-quality algorithm; 0: not computed (input made before it existed).
+    /// @}
 
     float LM875A; //!< Loss Monitor before the RWM, unit R/s
     float LM875B; //!< Loss Monitor after the RWM, unit R/s
@@ -67,11 +118,16 @@ namespace caf
 
     float THCURR; //!< Current applied to Horn, units kiloAmperes 
 
-    // Booster bunch-rotation settings in force at the spill (logged every 15 min);
-    // NaN when not available
-    float BRRMPS8; //!< B_BRRMPS[8]: scale factor of the bunch-rotation signal (0: bunch rotation off)
-    float BRRMPQ1; //!< B_BRRMPQ[1]: bunch-rotation frequency, units kHz
-    float BRRMPL9; //!< B_BRRMPL[9]: start time of the bunch-rotation curve, units microseconds
+    /**
+     * @name Booster bunch-rotation settings in force at the spill
+     *
+     * The settings are logged every 15 minutes; -999 when not available.
+     */
+    /// @{
+    float BRRMPS8; //!< `B_BRRMPS[8]`: scale factor of the bunch-rotation signal (0: bunch rotation off).
+    float BRRMPQ1; //!< `B_BRRMPQ[1]`: bunch-rotation frequency, units kHz.
+    float BRRMPL9; //!< `B_BRRMPL[9]`: start time of the bunch-rotation curve, units microseconds.
+    /// @}
 
     float M875HS; //!< Multiwire station before Mag 875 fit horizontal sigma...?
     float M875VS; //!< Multiwire station before Mag 875 fit vertical sigma...?
