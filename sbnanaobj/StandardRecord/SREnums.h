@@ -233,6 +233,9 @@ namespace caf
     kG4StepLimiter=62,
     kG4LegacyUNKNOWN=63,
     kG4RadioactiveDecayBase=64,
+    kG4NoProcess=65,
+    kG4Radioactivation=66,
+    kG4nCaptureHP=67,
     kG4UNKNOWN=1024
   };// g4_process_
 
