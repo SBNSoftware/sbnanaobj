@@ -45,6 +45,23 @@ namespace caf
       */
       int       proxTrkID=caf::kUninitializedInt;   ///< index of the of closest track, assuming the blip was coincident with event trigger (recob::Track::ID())
       bool      inCylinder=false;                   ///< Bool for whether this blip falls in a 45 degree cone relative to any track closer than fcl-set CylinderRadius (15 cm)
+      float     proxPrimVtxDist=caf::kSignalingNaN;   ///< 3-D distance to closest primary vertex (neutrino or cosmic), [cm]
+      int       proxPrimVtxID=caf::kUninitializedInt; ///< index of the of closest primary vertex (neutrino or cosmic)
+      float     proxVtxDist=caf::kSignalingNaN;         ///< 3-D distance to closest vertex (neutrino or cosmic), not necessarily a primary PFP, [cm]
+      int       proxVtxID=caf::kUninitializedInt;       ///< index of the of closest vertex (neutrino or cosmic), not necessarily a primary PFP
+     
+      float     proxNuTrkDist=caf::kSignalingNaN;   ///< 3-D distance to closest track in neutrino slice, [cm]
+      /*!
+        blip distance variables to neutrino slices
+      */
+      int       proxNuTrkID=caf::kUninitializedInt; ///< index of the of closest track in neutrino slice
+      float     proxNuVtxDist=caf::kSignalingNaN;   ///< 3-D distance to closest neutrino vertex, [cm]
+      int       proxNuVtxID=caf::kUninitializedInt; ///< index of the of closest neutrino vertex
+      float     proxNuPFPVtxDist=caf::kSignalingNaN;  ///< 3-D distance to closest PFP vertex in the neutrino hierarchy [cm]
+      int       proxNuPFPID=caf::kUninitializedInt;       ///< index of the of closest PFP vertex in the neutrino hierarchy
+      bool      inNuCylinder=false;                        ///< Bool for whether this blip falls in a 45 degree cone relative to any neutrino PFP closer than fcl-set CylinderRadius (15 cm)
+
+
       /*!
         please note the blip X position is unreliable, so these distance and 3-d position derived variables may be incorrect
       */
