@@ -5,7 +5,8 @@
 <!-- art::Wrappers for these products are defined in CAFMaker -->
 
 <lcgdict>
-  <class name="caf::StandardRecord" ClassVersion="17">
+  <class name="caf::StandardRecord" ClassVersion="18">
+   <version ClassVersion="18" checksum="1873831035"/>
    <version ClassVersion="17" checksum="4258387040"/>
    <version ClassVersion="16" checksum="3621177915"/>
    <version ClassVersion="15" checksum="1805006132"/>
@@ -357,6 +358,10 @@
    <version ClassVersion="10" checksum="3711015306"/>
   </class>
 
+  <class name="caf::SRQELambda" ClassVersion="12">
+    <version ClassVersion="12" checksum="651063049"/>
+  </class>
+
   <!--<class name="caf::SRLorentzVector" /> -->
 
   <class name="std::vector<int>" />
@@ -392,6 +397,7 @@
   <class name="std::vector<caf::SRBlip>" />
   <class name="std::vector<caf::SRBlipHitClust>" />
   <class name="std::vector<caf::SRTrueBlip>" />
+  <class name="std::vector<caf::SRQELambda>" />
 
  <class name="caf::SRCRTHitTruth" ClassVersion="10">
   <version ClassVersion="10" checksum="3618232749"/>

@@ -26,6 +26,7 @@
 #include "sbnanaobj/StandardRecord/SRInteractionDLP.h"
 #include "sbnanaobj/StandardRecord/SRInteractionTruthDLP.h"
 #include "sbnanaobj/StandardRecord/SRBlip.h"
+#include "sbnanaobj/StandardRecord/SRQELambda.h"
 
 /// Common Analysis Files
 namespace caf
@@ -74,6 +75,7 @@ namespace caf
     std::vector<SRInteractionDLP>      dlp;        ///< Reco DLP (ML) interactions.  
     int                                ndlp_true = 0;  ///< Number of true DLP (ML) interactions.
     std::vector<SRInteractionTruthDLP> dlp_true;   ///< True DLP (ML) interactions.
+    SRQELambda qelambda; ///< QE Lambda reco information
   };
 
 } // end namespace
